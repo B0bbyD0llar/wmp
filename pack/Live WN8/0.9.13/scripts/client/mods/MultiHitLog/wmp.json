@@ -1,0 +1,82 @@
+{
+"ShowPen": 					"False",
+"ShowBounce": 				"False",
+"ShowAlly": 				"False",
+"AP_Shell":					"AP",
+"APCR_Shell":				"APCR",
+"APCR_G_Shell":				"APCR",
+"HE_Shell":					"HE",
+"HEAT_G_Shell":				"HEAT",
+"HESH_G_Shell":				"HESH", 
+"KeyToShowOwnTankInfo": 	"KEY_RALT",
+"groupHitLog": 				"False",
+"HL_Killed_Text": 			"Kill",
+"HL_Ally_Text": 			"! Ally !",
+"TimeDelayAfterKeyRelease":	0,
+"Class_Light_Tank":			"LT",
+"Class_Medium_Tank":		"MT",
+"Class_Heavy_Tank":			"HT",
+"Class_Tank_Destroyer":		"TD",
+"Class_SPG":				"SPG",
+
+"AnnounceDamageForPlatoon": "False",
+"AnnounceDamageMessage": 	"Damage done: {{HL_DMG}}!",
+"MinimumTeamDamage": 		50,
+"ReportTeamDamage": 		"False",
+"ReportTeamDamageMessage": 	"Watch it {{DL_AttackerName}} ({{DL_AttackerTank}})! You just did {{DL_AttackerDamage}} damage to me!",
+"TeamDamageForYou": 		"False",
+"TeamDamageMessageForYou": 	"TEAMDAMAGE: {{DL_AttackerName}} in {{DL_AttackerTank}} for {{DL_AttackerDamage}}",
+
+"WindowKeyList":[
+   {"xAlign": "Normal", "x": 116, 	"offsetX": 17, 
+	"yAlign": "Normal", "y": 37, 	"offsetY": 5, 
+	"width": 320,		"height": 45,	
+	"backgroundLevel": 0, 			"backgroundFile": "BackGround.dds", 
+	"ConfigName": "expD",			"time": 0, "Key": "ALWAYS"}
+	],
+
+
+"expD":[
+	{"LineType": "expD_Line1"}
+	],
+		
+	"expD_Line1": [
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#F0F0F0",	"text": "WN8:"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "WN8",		"text": "{{HL_WN8}}"}
+		],
+
+"Colors": [
+	   
+    {"type": "WN8",     "value": 0,             "color": "#FE0E00"},
+    {"type": "WN8",     "value": 380,           "color": "#FE7903"},
+    {"type": "WN8",     "value": 860,           "color": "#F8F400"},
+    {"type": "WN8",     "value": 1420,          "color": "#60FF00"},
+    {"type": "WN8",     "value": 2105,          "color": "#02C9B3"},
+    {"type": "WN8",     "value": 2770,          "color": "#D042F3"},
+	
+	{"type": "EFF",		"value": 0,				"color": "#BC0303"},
+	{"type": "EFF",		"value": 610,			"color": "#FF2F2F"},
+	{"type": "EFF",		"value": 850,			"color": "#e6df27"},
+	{"type": "EFF",		"value": 1145,			"color": "#00FF55"},
+	{"type": "EFF",		"value": 1475,			"color": "#00BAE4"},
+	{"type": "EFF",		"value": 1775,			"color": "#CC5BFF"}
+	],
+
+"Fonts":[
+	{"value": 0,	"font": "",						"width": 0,		"height": 0},
+	{"value": 1,	"font": "default_smaller.font",	"width": 8,		"height": 16},
+	{"value": 2,	"font": "default_small.font",	"width": 10,	"height": 18},
+	{"value": 3,	"font": "default_medium.font",	"width": 12,	"height": 22},
+	{"value": 4,	"font": "verdana_medium.font",	"width": 12,	"height": 22}
+	],
+	
+"Attack_Reasons" : [
+	{"type": "Shot"},
+	{"type": "Fire"},
+	{"type": "Ram"},
+	{"type": "Fall"},
+	{"type": "Expl"},
+	{"type": "Drown"}
+    ]
+}
+    

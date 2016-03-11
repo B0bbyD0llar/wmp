@@ -1,0 +1,38 @@
+<ScriptLoaderPRO.xml>
+<!-- ScriptLoader PRO configuration (c) KT, Budyx69 2015
+=============================================================================================
+					ScriptLoader PRO Settings
+=============================================================================================
+!!! SAVE THIS FILE AS "ANSI" !!!
+
+TestMode                = if set to "True" the folder .\scripts\client\test will
+						  be set as actual script folder [True/False]
+DebugMode               = if set to "True" detailed informations will be written in logfile.
+						  Set to: [True/False]
+SystemMessage           = Activate or deactivate ingame System Messages [True/False]								  
+							
+DO NOT DELETE OR OVERWRITE THE FILE (.\scripts\client\CameraNode.pyc)
+THIS WILL TERMINATE Script Loader PRO.
+=============================================================================================
+
+=============================================================================================
+TestMode (Tags: [True/False])
+=============================================================================================
+!-->   
+  <TestMode>False</TestMode>
+ <!--
+=============================================================================================
+DebugMode (Tags: [True/False])
+=============================================================================================
+!-->   
+  <DebugMode>False</DebugMode>
+ <!--
+=============================================================================================
+SystemMessage (Tags: [True/False])
+=============================================================================================
+!-->   
+  <SystemMessage>Test</SystemMessage>
+ <!--
+=============================================================================================
+!-->   
+</ScriptLoaderPRO.xml>

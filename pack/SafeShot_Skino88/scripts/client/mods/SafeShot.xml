@@ -1,0 +1,31 @@
+<safeShotSetting>
+	
+    <!-- Der Autor des ursprünglichen Mods: Skino88  -->
+    <!-- Autor der Anpassung: P0LIR0ID   -->
+	
+	<!-- Die Taste zum Ausschalten. -->
+	<disableKey>KEY_RSHIFT</disableKey>
+	
+	<!-- Modus "Sticky" Hotkey -->
+	<toggledDisableKey>true</toggledDisableKey>
+	
+	<!-- Fehlschüsse Sperrschalter auf die Alliierten. -->
+	<teamShot>true</teamShot>
+		<!-- Schalter Meldung beim Versuch, auf einem Verbündeten zu schießen. -->
+		<toggleMessage>true</toggleMessage>
+		
+		<!-- Ihre Nachricht beim Versuch, auf einem Verbündeten zu schießen. -->
+		<textMessage>%s, you are blocking my shot!</textMessage>
+
+		<!-- Text der Mitteilung über die Sperre -->
+		<teamShotMessage>Schuss auf den Verbündeten ist gesperrt</teamShotMessage>
+		
+	<!-- Verriegelungsschalter für den anvisierten Panzer. -->
+	<deadShot>true</deadShot>
+		<!-- Die Dauer des zu blockieren Schusses auf den Panzer. (0.5 - 4.0) -->
+		<deadShotTime>2.0</deadShotTime>
+
+		<!-- Text der Mitteilung über die Sperre -->
+		<deadShotMessage>Der Schuss wurde geblockt</deadShotMessage>		
+
+</safeShotSetting>

@@ -1,0 +1,180 @@
+{
+#Секция "language", описывающая Базовые настройки мода
+    "config": {
+        "debug": false,			#Включить\Отключить Отладочные сообщения, может вызывать замедление работы
+        "enable": true,			#Включить\Отключить мод
+        "hangar_crew": true,	#Включить\Отключить показ данных мода в ангарных ушах
+        "barracks_crew": true,	#Включить\Отключить показ даных мода в казарме
+        "language": "Deutsch"	#Переключение языка мода, данные берутся из секции "language" текущего конфига
+    },
+#Секция "language", описывающая языковые и интерфейсные настройки мода
+#Можно добавлять свои собственные языки\интерфейсы
+#In section "language" you may add custom language, or change current
+#Доступные макросы в языковой секции ("hangar_crew" и "barracks_crew" разделы)
+#Avaliable macroses in "language" section ("hangar_crew" and "barracks_crew" sub-sections):
+#{skillicons} : (only in "barracks_crew") иконки умений
+#{training-level} : текущий уровень умений без бонусов
+#{basic-training-level} : текущий уровень умений с бонусами
+#{firstname} : Имя
+#{lastname} : Фамилия
+#{rank} : Звание
+#{exp-total} : общее количество опыта до следующего скилла (округляется)
+#{training-battles} : количество боёв до следующего скилла, с учетом прем-статуса (округляется)
+#{nxtskillvlv} : Следующий доступный уровень умения
+#{skillsCnt} : текущее количество умений
+#{training-progress} : текущий уровень изучаемого на данный момент умения
+#{role} : Должность
+#{curexp} : набраный опыт
+#{vehicleType} : класс техники
+#{exp-step} : количество опыта до следующего уровня изучаемого умения
+#{exp-step-battles} : количество боёв до следующего уровня умения, с учетом прем-статуса (округляется)
+#{exp-free} : свободный, не распределенный опыт
+#{lastSkillLevel} :  текущий уровень умения
+
+
+
+    "language": {
+									#bulk and test language settings
+        "test_language": {	
+									#barracks sections \ казарма
+            "barracks_crew": {
+
+                "firstname_string": "[{training-battles}|{exp-total}] {firstname}",
+                "lastname_string": "{lastname}",
+                "rank_string": "{role}",
+                "role_string": "{skillicons}{training-progress}%",
+                "vehicletype_string": "{vehicleType}"
+            },
+									#hangar sections \ Ангарные уши
+            "hangar_crew": {		
+                "firstname_string": "{firstname}",
+                "lastname_string": "{lastname}",
+                "rank_string": "[{exp-step-battles}|{exp-step}] {rank}",
+                "role_string": "[<font color=\"#00FF00\">{training-battles}</font><img align=\"top\" src=\"img://gui/maps//icons/library/BattleResultIcon-1.png\" height=\"14\" width=\"14\" vspace=\"-3\"/><font color=\"#FFFF00\">{exp-total}</font><img align=\"top\" src=\"img://gui/maps//icons/library/XpIcon-1.png\" height=\"16\" width=\"16\" vspace=\"-3\"/>]{role}",
+                "vehicletype_string": "{vehicleType}"
+            },
+									#numeric suffix used in personal file \ суффикс, используется в личном деле танкиста
+            "ordinator": {
+                "1": "st",
+                "2": "nd",
+                "3": "rd",
+                "none": "th"
+            },
+#personal file sections \ Личное дело танкиста
+            "personal_file": {		
+                "basic_skill": "Basic skill",
+                "premium_bonus_off": "No premium XP bonus",
+                "premium_bonus_on": "Premium XP bonus",
+                "relearn": "Retraining for credits",
+                "relearn_need": "needs further",
+                "relearn_notready": "not ready!",
+                "relearn_ready": "ready!",
+                "skill_number": "Skill",
+                "skilldrop": "New skill level after dropping skills",
+                "skilldrop_ready": "Dropping skills for credits ready!",
+                "value_to": "to"
+            }
+        },	
+#English language settings
+        "English": { 			
+            "barracks_crew": {
+                "firstname_string": "[{training-battles}|{exp-total}] {firstname}",
+                "lastname_string": "{lastname}",
+                "rank_string": "{role}",
+                "role_string": "{skillicons}{training-progress}%",
+                "vehicletype_string": "{vehicleType}"
+            },
+            "hangar_crew": {
+                "firstname_string": "{firstname}",
+                "lastname_string": "{lastname}",
+                "rank_string": "[{exp-step-battles}|{exp-step}] {rank}",
+                "role_string": "[<font color=\"#00FF00\">{training-battles}</font><img align=\"top\" src=\"img://gui/maps//icons/library/BattleResultIcon-1.png\" height=\"14\" width=\"14\" vspace=\"-3\"/><font color=\"#FFFF00\">{exp-total}</font><img align=\"top\" src=\"img://gui/maps//icons/library/XpIcon-1.png\" height=\"16\" width=\"16\" vspace=\"-3\"/>]{role}",
+                "vehicletype_string": "{vehicleType}"
+            },
+            "ordinator": {
+                "1": "st",
+                "2": "nd",
+                "3": "rd",
+                "none": "th"
+            },
+            "personal_file": {
+                "basic_skill": "Basic skill",
+                "premium_bonus_off": "No premium XP bonus",
+                "premium_bonus_on": "Premium XP bonus",
+                "relearn": "Retraining for credits",
+                "relearn_need": "needs further",
+                "relearn_notready": "not ready!",
+                "relearn_ready": "ready!",
+                "skill_number": "Skill",
+                "skilldrop": "New skill level after dropping skills",
+                "skilldrop_ready": "Dropping skills for credits ready!",
+                "value_to": "to"
+            }
+        },	
+        "Deutsch": {
+            "barracks_crew": {
+                "firstname_string": "[{exp-step-battles}|{exp-step}] {firstname}",
+                "lastname_string": "{lastname}",
+                "rank_string": "{role}",
+                "role_string": "{skillicons}{training-progress}%",
+                "vehicletype_string": "{vehicleType}"
+            },
+            "hangar_crew": {
+                "firstname_string": "{firstname}",
+                "lastname_string": "{lastname}",
+                "rank_string": "[{exp-step-battles}|{training-battles}] {rank}",
+                "role_string": "[<font color=\"#00FF00\">{exp-step}</font><img align=\"top\" src=\"img://gui/maps//icons/library/BattleResultIcon-1.png\" height=\"14\" width=\"14\" vspace=\"-3\"/><font color=\"#FFFF00\">{exp-total}</font><img align=\"top\" src=\"img://gui/maps//icons/library/XpIcon-1.png\" height=\"16\" width=\"16\" vspace=\"-3\"/>]{role}",
+                "vehicletype_string": "{vehicleType}"
+            },
+            "ordinator": {
+                "none": "."
+            },
+            "personal_file": {
+                "basic_skill": "Grundfertigkeit",
+                "premium_bonus_off": "Kein Erfahrungsbonus",
+                "premium_bonus_on": "Erfahrungsbonus",
+                "relearn": "Umschulung für Kreditpunkte",
+                "relearn_need": "benötigt weitere",
+                "relearn_notready": "nicht verfügbar!",
+                "relearn_ready": "verfügbar!",
+                "skill_number": "Fertigkeit",
+                "skilldrop": "Neue Ausbildungsstufe nach verlernen",
+                "skilldrop_ready": "Verlernen für Kreditpunkte verfügbar!",
+                "value_to": "für"
+            }
+        },
+        
+        "Русский": {
+            "barracks_crew": {
+                "firstname_string": "[{training-battles}|{exp-total}] {firstname}",
+                "lastname_string": "{lastname}",
+                "rank_string": "{role}",
+                "role_string": "{skillicons}{training-progress}%",
+                "vehicletype_string": "{vehicleType}"
+            },
+            "hangar_crew": {
+                "firstname_string": "{firstname}",
+                "lastname_string": "{lastname}",
+                "rank_string": "[{exp-step-battles}|{exp-step}] {rank}",
+                "role_string": "[<font color=\"#00FF00\">{training-battles}</font><img align=\"top\" src=\"img://gui/maps//icons/library/BattleResultIcon-1.png\" height=\"14\" width=\"14\" vspace=\"-3\"/><font color=\"#FFFF00\">{exp-total}</font><img align=\"top\" src=\"img://gui/maps//icons/library/XpIcon-1.png\" height=\"16\" width=\"16\" vspace=\"-3\"/>]{role}",
+                "vehicletype_string": "{vehicleType}"
+            },
+            "ordinator": {
+                "none": "-й"
+            },
+            "personal_file": {
+                "basic_skill": "Базовый навык",
+                "premium_bonus_off": "Премиум бонус на опыт: Неактивен",
+                "premium_bonus_on": "Премиум бонус на опыт: Активирован",
+                "relearn": "Переобучение",
+                "relearn_need": "за кредиты надо",
+                "relearn_notready": "за кредиты не доступно",
+                "relearn_ready": "за кредиты Готово!",
+                "skill_number": "Навык",
+                "skilldrop": "Уровень умения, после сброса за кредиты",
+                "skilldrop_ready": "Возможен сброс умений за кредиты",
+                "value_to": "Опыта до"
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+	"Button1": {
+    "enable": true,
+	"position_x": 400,
+	"position_y": 6,
+	"align": "left",
+	"icon_name": "ModpackButton.png",
+	"tooltip_left": "Webbers ModPack ChatChannel",
+	"tooltip_right": "Homepage",
+	"channel": "Webbers ModPack (GER)",
+	"url": "http://materialvernichtungskombinat.de/hilfe/webbers-modpack/"
+	},
+	"Debug": false
+}

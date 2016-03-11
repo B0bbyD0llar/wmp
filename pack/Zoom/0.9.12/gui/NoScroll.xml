@@ -1,0 +1,27 @@
+<NoScroll.xml>
+    <!--
+        Отключение перехода между режимами используя scroll(колесико мышки)
+        "True" -  модификация включена
+        "False" - модификация отключена (равносильно отсутствию модификации)
+        Если данный файл(gui/noscroll.xml) отсутствует - равносильно "<noscroll>False</noscroll>"
+    -->
+    <!--
+        "True" disables mouse scroll to enter Sniper Mode, "False" mouse scroll enabled (default)
+    -->
+    <noScroll>false</noScroll>
+
+    <!--
+        Определение дефолтовой кратности при активации снайперского режима
+        <defZoom>True</defZoom> - при активировании снайперского режима устаналивается кратность зума
+                                  указанная параметром <defZoomVal>X</defZoomVal>
+        <defZoom>False</defZoom> - отключает модификацию
+    -->
+    <!--
+        "True" min. zoom lvl. used for first step of sniper mode (default), "False" remember last time used zoom lvl.
+    -->
+    <defZoom>False</defZoom>
+    <!--
+        Zoom level for first step of sniper mode, works only if "defZoom" is "False"
+    -->
+    <defZoomVal>2.0</defZoomVal>
+</NoScroll.xml>

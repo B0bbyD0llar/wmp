@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ip>
+
+	<!-- Author: Shtys -->
+
+	<!-- List of available macros:
+	{{n}}					- newline
+	{{t}}					- fixed offset (equivalent to TAB)
+	{{target}}				- the name of the target tank
+	{{target-gun}}			- the name of the target tank gun
+	{{target-reload-100}}	- approximate time of recharge tank gun targets, rounded to two decimal places (with rammer and 110% crew)
+	{{target-reload-10}}	- approximate time of recharge tank gun targets, rounded to one decimal place (with rammer and 110% crew)
+	{{target-reload}}		- approximate time of recharge tank gun targets, rounded to the nearest (to the rammer and 110% crew)
+	{{vision}}				- view range (for 100% of the crew)
+	{{player-weight}}		- weight of his tank in tonnes
+	{{weight}}				- the target weight of the tank in tonnes
+	{{sw}}					- symbols comparing the mass of his tank with a mass of tank targets
+	{{swi}}					- symbols of the tank weight comparison purposes with the mass of his tank	
+	{{hull-front}}			- front hull armor
+	{{hull-side}}			- side hull armor
+	{{hull-back}}			- back hull armor
+	{{turret-front}}		- front turret armor
+	{{turret-side}}			- side turret armor
+	{{turret-back}}			- back turret armor
+	{{damage-1}}			- damage for shell type 1
+	{{damage-2}}			- damage for shell type 2
+	{{damage-3}}			- damage for shell type 3
+	{{power-1}}				- penetration for shell type 1
+	{{power-2}}				- penetration for shell type 2
+	{{power-3}}				- penetration for shell type 3
+	{{type-1}}				- shell type 1
+	{{type-2}}				- shell type 2
+	{{type-3}}				- shell type 3 -->
+
+	<!-- Global setttings -->
+	<infoPanel>
+
+		<!-- Setting the display panel when pointing at the target -->
+		<targetEnable>
+			<team>true</team> <!-- Allies. true / false - on / off -->
+			<enemy>true</enemy> <!-- Opponents. true / false - on / off -->
+			<dead>false</dead> <!-- Dead. true / false - on / off -->
+		</targetEnable>
+
+		<!-- arcade sight -->
+		<arcade visible="true"> <!-- visible - element is visible, true / false - on / off -->
+			<location x="-280" y="5"/> <!-- x, y - coordinates of the location of an item. Countdown coordinate goes from center of the screen in the arcade sight cross hairs not the center of the screen -->
+			<delay>10</delay> <!-- The time after which the panel disappears in seconds. 0 - always display -->
+		</arcade>
+		
+		<!-- sniper sight -->
+		<sniper visible="true"> <!-- visible - element is visible, true / false - on / off -->
+			<location x="-355" y="-2"/> <!-- x, y - coordinates of the location of an item. Countdown coordinate goes from center of the screen in the arcade sight cross hairs not the center of the screen -->
+			<delay>10</delay> <!-- The time after which the panel disappears in seconds. 0 - always display -->
+		</sniper>
+		
+		<!-- artillery sight -->
+		<strategic visible="true"> <!-- element is visible, true / false - on / off -->
+			<location x="-385" y="35"/> <!-- x, y - coordinates of the location of an item. Countdown coordinate goes from center of the screen in the arcade sight cross hairs not the center of the screen -->
+			<delay>10</delay> <!-- The time after which the panel disappears in seconds. 0 - always display -->
+		</strategic>
+		
+		<!-- postmortem sight -->
+		<postmortem visible="true"> <!-- element is visible, true / false - on / off -->
+			<location x="-280" y="5"/> <!-- x, y - coordinates of the location of an item. Countdown coordinate goes from center of the screen in the arcade sight cross hairs not the center of the screen -->
+			<delay>10</delay> <!-- The time after which the panel disappears in seconds. 0 - always display -->
+		</postmortem>
+		
+	</infoPanel>
+	
+	<!-- Background panel -->
+	<background visible="false" alpha="0"> <!-- visible - the element is visible, true / false - on / off -->
+		<location x="-85" y="-123"/> <!-- x, y - coordinates of the location of an item. Countdown coordinate is inside the panel itself, depending on its position and by default from the bottom and the center of the tank icons -->
+		<scale x="85" y="118"/> <!-- x, y - back element percentage. 100 - original size -->
+	</background>
+	
+	<!-- Configure the name of the target tank -->
+	<targetName visible="true"> <!-- visible - the element is visible, true / false - on / off -->
+		<location x="-80" y="-35"/> <!-- x, y - coordinates of the location of an item. Countdown coordinate is inside the panel itself, depending on its position and by default from the bottom and the center of the tank icons -->
+		<text font="$FieldFont" size="14" color="0xFFFFFF" alpha="100" align="left" bold="true" leading="0" width="200" height="35"/> <!-- font - the font. size - the size of the font. color - color of the font. alpha - the transparency of the shadow (100 - opaque, 0 - transparent). align - the alignment of the text, left / right / center - left / right / center. bold - bold test, true / false - on / off. leading - line spacing. width, height - width and height fields -->
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/> <!-- size - the size of the shadow. angle - the angle of the shadow. distance - the distance the shadow offset. color - color of the shadow. alpha - the transparency of the shadow (100 - opaque, 0 - transparent). strength - the degree of application of the shadow of a percentage -->
+		<format>{{target}}</format> <!-- As will appear in the string match. It is formed from a macro and (or) any characters. List of macros listed at the beginning of the config -->
+	</targetName>
+	
+	<!-- Configure the name of the targets gun -->
+	<gunName visible="false">
+		<location x="-80" y="110"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="300" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{target-gun}}</format>
+	</gunName>
+	
+	<!-- Configure the estimated reload time of targets gun (with rammer and 110% crew) -->
+	<gunReload visible="true">
+		<location x="-80" y="32"/>
+		<text font="$FieldFont" size="18" color="0xFFFFFF" alpha="100" align="left" bold="true" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0xFE3C33" alpha="80" strength="200"/>
+		<format>{{target-reload-10}}s</format>
+	</gunReload>
+	
+	<!-- Configure the targets vision radius -->
+	<visionRadius visible="true">
+		<location x="-80" y="36"/>
+		<text font="$FieldFont" size="14" color="0xFFFFFF" alpha="100" align="left" bold="true" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x00BBFF" alpha="80" strength="200"/>
+		<format>{{t}}{{t}}{{t}}{{t}}{{vision}}м</format>
+	</visionRadius>
+	
+	<!-- Configure the targets front turret armor -->
+	<turretArmorF visible="true">
+		<location x="-80" y="53"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>Turm:{{t}}{{t}}{{turret-front}}{{t}}{{turret-side}}{{t}}{{turret-back}}</format>
+	</turretArmorF>
+	
+	<!-- Configure the targets side turret armor -->
+	<turretArmorS visible="false">
+		<location x="-55" y="0"/>
+		<text font="$FieldFont" size="13" color="0xFFFF00" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{turret-side}}</format>
+	</turretArmorS>
+	
+	<!-- Configure the target back turret armor -->
+	<turretArmorB visible="false">
+		<location x="-30" y="0"/>
+		<text font="$FieldFont" size="13" color="0x00FF00" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{turret-back}}</format>
+	</turretArmorB>
+	
+	<!-- Configure the targets front hull armor -->
+	<hullArmorF visible="true">
+		<location x="-80" y="69"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>Wanne:{{t}}{{hull-front}}{{t}}{{hull-side}}{{t}}{{hull-back}}</format>
+	</hullArmorF>
+	
+	<!-- Configure the targets side hull armor -->
+	<hullArmorS visible="false">
+		<location x="-105" y="85"/>
+		<text font="$FieldFont" size="13" color="0xFFFF00" alpha="100" align="right" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{hull-side}}</format>
+	</hullArmorS>
+	
+	<!-- Configure the target back hull armor -->
+	<hullArmorB visible="false">
+		<location x="-80" y="85"/>
+		<text font="$FieldFont" size="13" color="0x00FF00" alpha="100" align="right" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{hull-back}}</format>
+	</hullArmorB>
+	
+	<!-- Configure the targets first shell type -->
+	<shellType1 visible="true">
+		<location x="-80" y="85"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>Munition:{{t}}{{type-1}}{{t}}{{type-2}}{{t}}{{type-3}}</format>
+	</shellType1>
+	
+	<!-- Configure the targets second shell type -->
+	<shellType2 visible="false">
+		<location x="-140" y="20"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{type-2}}</format>
+	</shellType2>
+	
+	<!-- Configure the targets third shell type -->
+	<shellType3 visible="false">
+		<location x="-110" y="20"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{type-3}}</format>
+	</shellType3>
+			
+	<!-- Configure the targets frist shell type damage -->
+	<shellDamage1 visible="true">
+		<location x="-80" y="101"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>Schaden:{{t}}{{damage-1}}{{t}}{{damage-2}}{{t}}{{damage-3}}</format>
+	</shellDamage1>
+	
+	<!-- Configure the targets second shell type damage -->
+	<shellDamage2 visible="false">
+		<location x="-140" y="50"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{damage-2}}</format>
+	</shellDamage2>
+	
+	<!-- Configure the targets third shell type damage -->
+	<shellDamage3 visible="false">
+		<location x="-110" y="40"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{damage-3}}</format>
+	</shellDamage3>
+
+	<!-- Configure the targets first shell type penetration -->
+	<shellPower1 visible="true">
+		<location x="-80" y="117"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>Durchschl.:{{t}}{{power-1}}{{t}}{{power-2}}{{t}}{{power-3}}</format>
+	</shellPower1>
+	
+	<!-- Configure the targets second shell type penetration -->
+	<shellPower2 visible="false">
+		<location x="-140" y="60"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{power-2}}</format>
+	</shellPower2>
+	
+	<!-- Configure the targets third shell type penetration -->
+	<shellPower3 visible="false">
+		<location x="-110" y="60"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format>{{power-3}}</format>
+	</shellPower3>		
+
+	<!-- Setting the weight of own tank -->
+	<playerWeight visible="false">
+		<location x="-80" y="-18"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="true" leading="0" width="160" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>	
+		<color poor="0xF9F733" good="0x80FF33"/> <!-- poor - color with a moderately effective ram. good - the color with the effective ram -->
+		<format>{{player-weight}}t</format>
+	</playerWeight>
+
+	<!-- Setting the weight of the tank target -->
+	<targetWeight visible="true">
+		<location x="-80" y="-18"/>
+		<text font="$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="true" leading="0" width="160" height="500"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>	
+		<color poor="0xF9F733" good="0x80FF33"/> <!-- poor - color with a moderately effective ram. good - the color with the effective ram -->
+		<format>{{weight}}t</format> <!-- As will appear in the string match. It is formed from a macro and (or) any characters. List of macros listed at the beginning of the config -->
+	</targetWeight>
+	
+	<!-- Empty field -->
+	<emptyField visible="false">
+		<location x="-100" y="-100"/>
+		<text font="$$FieldFont" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/>
+		<filter size="2" angle="0" distance="0" color="0x000000" alpha="80" strength="200"/>
+		<format></format>
+	</emptyField>
+	
+	<!-- Traget Tank Icon -->
+	<tankIcon visible="true" alpha="80"> <!-- visible - the element is visible, true / false - on / off. alpha - transparency. 100 - opaque, 0 - transparent -->
+		<location x="-80" y="-30"/> <!-- x, y - coordinates of the location of an item. Countdown coordinate is inside the panel itself, depending on its position and by default from the bottom and the center of the tank icons -->
+		<common large="true"/> <!-- large - the size of the image of the tank - purpose. true - a big picture, as in the carousel hangar, false - a small picture, as in the players panel -->
+	</tankIcon>
+	
+	<!-- Configure the shell types -->
+	<shellType>
+		<AP>AP</AP> <!-- Armor Piercing -->
+		<CR>APCR</CR> <!-- Armor Piercing Composite Rigid -->
+		<HC>HEAT</HC> <!-- High Explosive Anti-Tank -->
+		<HE>HE</HE> <!-- High Explosive -->
+	</shellType>
+
+</ip>
