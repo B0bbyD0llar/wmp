@@ -73,7 +73,7 @@ Name: xvm; Description: XVM 6.2.1; Types: DMVK; MinVersion: 0.0,5.0
 Name: xvm\autologin; Description: automatisch anmelden; Types: DMVK; Languages: de
 Name: xvm\dyn; Description: dynamsiche Kameraeffekte deaktivieren; Types: DMVK
 Name: xvm\wn8mm; Description: zeige WN8x Werte auf der Minimap (dezent); Types: DMVK; Languages: de
-Name: xvm\flagwg; Description: Flaggen nach Clientsprache statt XVM Einstellungen
+;Name: xvm\flagwg; Description: Flaggen nach Clientsprache statt XVM Einstellungen
 Name: xvm\hitlog; Description: zeige verteilten Schaden (links unter dem Spielerpanel); Types: DMVK
 Name: xvm\pp; Description: Playerpanel (Spielerlisten links und rechts oben im Gefecht)
 Name: xvm\pp\std; Description: Standard XVM Playerpanel; Flags: exclusive
@@ -95,10 +95,10 @@ Name: xvm\sixthpic\bulb; Description: Glühbirne; Types: DMVK; Flags: exclusive
 Name: xvm\sixthpic\hdr; Description: Saurons Auge; Flags: exclusive
 Name: xvm\sixthpic\cat; Description: Depri Cat; Flags: exclusive
 Name: xvm\sixthpic\doug; Description: Doug; Flags: exclusive
-Name: xvm\sixthsound; Description: Sechter Sinn Ton
-Name: xvm\sixthsound\mgs; Description: Metal Gear Solid; Types: DMVK; Flags: exclusive
-Name: xvm\sixthsound\road; Description: Road Runner; Flags: exclusive
-Name: xvm\sixthsound\timer; Description: Beep mit Countdown; Flags: exclusive
+;Name: xvm\sixthsound; Description: Sechter Sinn Ton
+;Name: xvm\sixthsound\mgs; Description: Metal Gear Solid; Types: DMVK; Flags: exclusive
+;Name: xvm\sixthsound\road; Description: Road Runner; Flags: exclusive
+;Name: xvm\sixthsound\timer; Description: Beep mit Countdown; Flags: exclusive
 ;Name: xvm\sixthsound\doug; Description: Gaaatzeeee (Doug); Flags: exclusive
 Name: xvm\contour; Description: Contour Icons
 Name: xvm\contour\korolins; Description: Korolins Contour Icons (DMVK Setting); Types: DMVK; Flags: exclusive
@@ -109,9 +109,9 @@ Name: hangar; Description: Garagen Mods
 Name: hangar\extvehicle; Description: Erweiterte Fahrzeuginformationen; Types: DMVK
 ;Name: hangar\extcrew; Description: Erweiterte Besatzungsinformationen
 ;Name: hangar\omv; Description: Offline Karten Erkunder
-;Name: hangar\man; Description: Garagen Manager (HangMan)
+Name: hangar\man; Description: Garagen Manager (HangMan)
 
-Name: session; Description: verbesserte Sitzungsstatistik; Types: DMVK
+Name: session; Description: Sitzungsstatistik; Types: DMVK
 Name: session\resetdaily; Description: automatisch zurücksetzen (6Uhr); Types: DMVK
 Name: session\short; Description: kurze Tagesauswertung; Types: DMVK; Flags: exclusive
 Name: session\long; Description: ausführliche Tagesauswertung; Flags: exclusive
@@ -119,27 +119,21 @@ Name: session\long; Description: ausführliche Tagesauswertung; Flags: exclusive
 
 Name: crosshair; Description: Fadenkreuz Mods
 Name: crosshair\std; Description: Standard Crosshair benutzen; Flags: exclusive
-;Name: crosshair\jimbo; Description: J1mB0's Crosshair v1.54; Types: DMVK; Flags: exclusive
+Name: crosshair\jimbo; Description: J1mB0's Crosshair; Types: DMVK; Flags: exclusive
 
 Name: battle; Description: Gefechtsmods; Types: DMVK
 Name: battle\autoaim; Description: AutoAIM Indicator mit Snapping; Types: DMVK
 Name: battle\assistant; Description: BattleAssistant (Taste J); Types: DMVK
 Name: battle\directionbox; Description: Direction Indicator Ext; Types: DMVK
-;Name: battle\teamhp; Description: alternatives Team HP Pool Panel
+Name: battle\teamhp; Description: alternatives Team HP Pool Panel
 ;Name: battle\dirmap; Description: zeige Blickrichtung auf Minimap; Types: DMVK
-;Name: battle\allysilouhette; Description: zeige eine Silouhette bei Allierten Fahrzeugen; Flags: fixed
-;Name: battle\dmgindicator; Description: verbesserte Schadens-Richtungs-Anzeige; Types: DMVK
 Name: battle\dmglog; Description: Damage Log (zeigt den erhaltenen Schaden); Types: DMVK
 ;Name: battle\infopanel; Description: zusätzliche Informationen zum anvisierten Ziel einblenden; Types: DMVK
 ;Name: battle\artyreload; Description: Arty Reload Timer Anzeige; Types: DMVK
 Name: battle\igwn8; Description: InGame Live WN8 (nur Näherungswert); Types: DMVK
-;Name: battle\servercross; Description: zusätzliches Serverfadenkreuz im Artymodus; Types: DMVK
-
-;Name: tank; Description: Panzer (Erscheinungsbild) Mods
-;Name: tank\stickers; Description: Colored Damage Stickers
 
 Name: other; Description: Sonstiges
-;Name: other\replayman; Description: Replay Manager
+Name: other\replayman; Description: Replay Manager
 Name: other\ts3; Description: TS3 Plugin; Types: DMVK
 ;Name: other\ts3\minimap; Description: zusätzliche Benachrichtigung auf der Minimap; Types: DMVK
 ;Name: other\tankinspector; Description: Tank Inspektor 1.4.3.80 mit installieren; Types: DMVK
@@ -179,17 +173,14 @@ Name: {app}\res_mods\mods\shared_resources\xvm\res; Components: xvm
 Name: {app}\res_mods\mods\shared_resources\xvm\res\clanicons; Components: xvm
 Name: {app}\res_mods\mods\shared_resources\xvm\res\clanicons\EU; Components: xvm
 Name: {app}\res_mods\mods\shared_resources\xvm\res\clanicons\EU\clan; Components: xvm
-;Name: {app}\res_mods\{#MyAppWotVersion}\maps; Components: tank\stickers
-;Name: {app}\res_mods\{#MyAppWotVersion}\maps\fx; Components: tank\stickers
-;Name: {app}\res_mods\{#MyAppWotVersion}\maps\fx\damage_stickers; Components: tank\stickers
 
 [Files]
 Source: pack\xvm\res_mods\*; DestDir: {app}\res_mods; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm
 Source: {fonts}\DamageLog.otf; DestDir: {fonts}; FontInstall: DamageLog; Components: battle\dmglog; MinVersion: 0.0,5.0; Flags: uninsneveruninstall
 
-Source: pack\xvmWGFlags\res_mods\mods\packages\xvm_main\python\stats.pyc; DestDir: {app}\res_mods\mods\packages\xvm_main\python; Components: xvm\flagwg
-Source: pack\xvmWGFlags\res_mods\mods\packages\xvm_main\python\stats.pyc.org; DestDir: {app}\res_mods\mods\packages\xvm_main\python; Components: xvm\flagwg
-Source: pack\xvmWGFlags\res_mods\mods\shared_resources\xvm\res\icons\flags\*; DestDir: {app}\res_mods\mods\shared_resources\xvm\res\icons\flags; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm\flagwg
+;Source: pack\xvmWGFlags\res_mods\mods\packages\xvm_main\python\stats.pyc; DestDir: {app}\res_mods\mods\packages\xvm_main\python; Components: xvm\flagwg
+;Source: pack\xvmWGFlags\res_mods\mods\packages\xvm_main\python\stats.pyc.org; DestDir: {app}\res_mods\mods\packages\xvm_main\python; Components: xvm\flagwg
+;Source: pack\xvmWGFlags\res_mods\mods\shared_resources\xvm\res\icons\flags\*; DestDir: {app}\res_mods\mods\shared_resources\xvm\res\icons\flags; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm\flagwg
 
 Source: pack\xvmConfig\xvm.xc; DestDir: {app}\res_mods\configs\xvm; Components: xvm
 Source: pack\xvmConfig\ltdwebber\img\*; DestDir: {app}\res_mods\configs\xvm\ltdwebber\img; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm
@@ -202,12 +193,12 @@ Source: pack\xvmConfig\ltdwebber\battleLoading.xc; DestDir: {app}\res_mods\confi
 Source: pack\xvmConfig\ltdwebber\battleLoading.v2.xc; DestName: battleLoading.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\sf\v2
 Source: pack\xvmConfig\ltdwebber\battleResults.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
 Source: pack\xvmConfig\ltdwebber\captureBar.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-;Source: pack\xvmConfig\ltdwebber\camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\dyn AND NOT crosshair\jimbo
-Source: pack\xvmConfig\ltdwebber\camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\dyn
-;Source: pack\xvmConfig\ltdwebber\camera.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\dyn AND NOT crosshair\jimbo
-Source: pack\xvmConfig\ltdwebber\camera.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\dyn
-;Source: pack\xvmConfig\ltdwebber\camera.jimbo.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\dyn AND crosshair\jimbo
-;Source: pack\xvmConfig\ltdwebber\camera.jimbo.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\dyn AND crosshair\jimbo
+Source: pack\xvmConfig\ltdwebber\camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\dyn AND NOT crosshair\jimbo
+;Source: pack\xvmConfig\ltdwebber\camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\dyn
+Source: pack\xvmConfig\ltdwebber\camera.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\dyn AND NOT crosshair\jimbo
+;Source: pack\xvmConfig\ltdwebber\camera.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\dyn
+Source: pack\xvmConfig\ltdwebber\camera.jimbo.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\dyn AND crosshair\jimbo
+Source: pack\xvmConfig\ltdwebber\camera.jimbo.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\dyn AND crosshair\jimbo
 Source: pack\xvmConfig\ltdwebber\carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\carousel\1
 Source: pack\xvmConfig\ltdwebber\carousel.2.xc; DestName: carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\carousel\2
 Source: pack\xvmConfig\ltdwebber\carousel.3.xc; DestName: carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\carousel\3
@@ -216,9 +207,8 @@ Source: pack\xvmConfig\ltdwebber\clock.xc; DestDir: {app}\res_mods\configs\xvm\l
 Source: pack\xvmConfig\ltdwebber\colors.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
 Source: pack\xvmConfig\ltdwebber\common.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
 ;Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-;Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT battle\teamhp
-;Source: pack\xvmConfig\ltdwebber\elements.teamhp.xc; DestName: elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND battle\teamhp
+Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT battle\teamhp
+Source: pack\xvmConfig\ltdwebber\elements.teamhp.xc; DestName: elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND battle\teamhp
 Source: pack\xvmConfig\ltdwebber\hangar.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
 Source: pack\xvmConfig\ltdwebber\hitlog.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND xvm\hitlog
 Source: pack\xvmConfig\ltdwebber\hitlog.aus.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; DestName: hitlog.xc; Components: xvm AND NOT xvm\hitlog
@@ -256,17 +246,17 @@ Source: pack\xvmConfig\ltdwebber\export.xc; DestDir: {app}\res_mods\configs\xvm\
 Source: pack\xvmConfig\ltdwebber\userInfo.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
 Source: pack\xvmConfig\ltdwebber\vehicleNames.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
 
-Source: pack\6Sense\Ton\mgs\res_mods\0.9.6\gui\gui_sounds.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\mgs
-Source: pack\6Sense\Ton\mgs\res\audio\xvm.fev; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\mgs
-Source: pack\6Sense\Ton\mgs\res\audio\xvm.fsb; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\mgs
-
-Source: pack\6Sense\Ton\road\res_mods\0.9.6\gui\gui_sounds.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\road
-Source: pack\6Sense\Ton\road\res\audio\xvm.fev; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\road
-Source: pack\6Sense\Ton\road\res\audio\xvm.fsb; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\road
-
-Source: pack\6Sense\Ton\timer\res_mods\0.9.6\gui\gui_sounds.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\timer
-Source: pack\6Sense\Ton\timer\res\audio\xvm.fev; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\timer
-Source: pack\6Sense\Ton\timer\res\audio\xvm.fsb; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\timer
+;Source: pack\6Sense\Ton\mgs\res_mods\0.9.6\gui\gui_sounds.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\mgs
+;Source: pack\6Sense\Ton\mgs\res\audio\xvm.fev; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\mgs
+;Source: pack\6Sense\Ton\mgs\res\audio\xvm.fsb; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\mgs
+;
+;Source: pack\6Sense\Ton\road\res_mods\0.9.6\gui\gui_sounds.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\road
+;Source: pack\6Sense\Ton\road\res\audio\xvm.fev; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\road
+;Source: pack\6Sense\Ton\road\res\audio\xvm.fsb; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\road
+;
+;Source: pack\6Sense\Ton\timer\res_mods\0.9.6\gui\gui_sounds.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\timer
+;Source: pack\6Sense\Ton\timer\res\audio\xvm.fev; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\timer
+;Source: pack\6Sense\Ton\timer\res\audio\xvm.fsb; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\timer
 
 Source: pack\6Sense\Pics\ausrufezeichen.png; DestDir: {app}\res_mods\mods\shared_resources\xvm\res; DestName: SixthSense.png; Components: xvm\sixthpic\mgs
 Source: pack\6Sense\Pics\DepriCat.png; DestDir: {app}\res_mods\mods\shared_resources\xvm\res; DestName: SixthSense.png; Components: xvm\sixthpic\cat
@@ -291,19 +281,38 @@ Source: pack\Basis\scripts\client\CameraNode.pyc; DestDir: {app}\res_mods\{#MyAp
 Source: pack\Basis\scripts\client\ScriptLoaderPRO.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client
 Source: pack\System\res_mods\0.9.12\system\fonts\*; Flags: ignoreversion createallsubdirs recursesubdirs; DestDir: {app}\res_mods\{#MyAppWotVersion}\system\fonts
 
-Source: pack\dirindicator ext\0.9.14\gui\flash\mods_gui.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
-Source: pack\dirindicator ext\0.9.14\gui\flash\mods_gui_button.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
-Source: pack\dirindicator ext\0.9.14\gui\flash\mods_gui_popup.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
-Source: pack\dirindicator ext\0.9.14\gui\scaleform\dir_indicator_extended.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\dirindicator ext\0.9.14\gui\flash\mods_gui.swf; Components: battle\directionbox; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
+Source: pack\dirindicator ext\0.9.14\gui\flash\mods_gui_button.swf; Components: battle\directionbox; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
+Source: pack\dirindicator ext\0.9.14\gui\flash\mods_gui_popup.swf; Components: battle\directionbox; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
+Source: pack\dirindicator ext\0.9.14\gui\scaleform\dir_indicator_extended.swf; Components: battle\directionbox; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
 Source: pack\dirindicator ext\0.9.14\scripts\client\gui\mods\mod_dir_indicator_extended.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-Source: pack\dirindicator ext\0.9.14\scripts\client\gui\mods\mod_mods_gui.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-Source: pack\dirindicator ext\configs\spoter_mods\i18n\de.json; DestDir: {app}\res_mods\configs\spoter_mods\i18n
-Source: pack\dirindicator ext\configs\spoter_mods\i18n\en.json; DestDir: {app}\res_mods\configs\spoter_mods\i18n
-Source: pack\dirindicator ext\configs\spoter_mods\i18n\ru.json; DestDir: {app}\res_mods\configs\spoter_mods\i18n
+Source: pack\dirindicator ext\0.9.14\scripts\client\gui\mods\mod_mods_gui.pyc; Components: battle\directionbox; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\dirindicator ext\configs\spoter_mods\i18n\de.json; Components: battle\directionbox; DestDir: {app}\res_mods\configs\spoter_mods\i18n
+Source: pack\dirindicator ext\configs\spoter_mods\i18n\en.json; Components: battle\directionbox; DestDir: {app}\res_mods\configs\spoter_mods\i18n
+Source: pack\dirindicator ext\configs\spoter_mods\i18n\ru.json; Components: battle\directionbox; DestDir: {app}\res_mods\configs\spoter_mods\i18n
 
-;Source: pack\Team HP Pool\0.9.12\gui\scaleform\FragCorrelation.swf; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
-;Source: pack\Team HP Pool\0.9.12\scripts\client\gui\mods\mod_team_hp.json; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-;Source: pack\Team HP Pool\0.9.12\scripts\client\gui\mods\mod_team_hp.pyc; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\Team HP Pool\0.9.14\gui\scaleform\FragCorrelation.swf; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Team HP Pool\0.9.14\scripts\client\gui\mods\mod_team_hp.json; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\Team HP Pool\0.9.14\scripts\client\gui\mods\mod_team_hp.pyc; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\modsListApi\ModsListButton.swf; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\modsListApi
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\modsListApi\ModsListButtonIcon.png; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\modsListApi
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\modsListApi\ModsListPopover.swf; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\modsListApi
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\modsListApi\__init__.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\modsListApi
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\database_controller.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\data_providers.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\hooks.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\lang.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\parser.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\replay_actions_controller.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\replay_cm_handlers.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\rmanager_constants.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\upload_controller.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\utils.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\rmanager\__init__.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\rmanager
+Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\mod_rmanager.pyc; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\Replay Manager\0.9.14\gui\flash\ReplaysManagerUpload.swf; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
+Source: pack\Replay Manager\0.9.14\gui\flash\ReplaysManagerWindow.swf; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
 
 ;Source: pack\Replay Manager\0.9.10\gui\flash\ModsListButton.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash; Components: other\replayman
 ;Source: pack\Replay Manager\0.9.10\gui\flash\ModsListPopover.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash; Components: other\replayman
@@ -325,9 +334,9 @@ Source: pack\dirindicator ext\configs\spoter_mods\i18n\ru.json; DestDir: {app}\r
 ;Source: pack\Replay Manager\0.9.10\scripts\client\mods\ReplaysManager.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods; Components: other\replayman
 
 Source: pack\Vehicle Extended\configs\spoter_mods\vehicle_exp_extended\vehicle_exp_extended.json; Components: hangar\extvehicle; DestDir: {app}\res_mods\configs\spoter_mods\vehicle_exp_extended
-Source: pack\Vehicle Extended\0.9.12\scripts\client\gui\mods\mod_hangar_tooltips.pyc; Components: hangar\extvehicle; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+;Source: pack\Vehicle Extended\0.9.12\scripts\client\gui\mods\mod_hangar_tooltips.pyc; Components: hangar\extvehicle; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\Vehicle Extended\0.9.12\scripts\client\gui\mods\mod_vehicle_exp_extended.pyc; Components: hangar\extvehicle; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-;
+
 ;Source: pack\Minimap Gun Dir\gui\scaleform\SpotIndicator.swf; Components: battle\dirmap; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
 ;Source: pack\Minimap Gun Dir\scripts\client\mods\MinimapGunMarkers.pyc; Components: battle\dirmap; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods
 ;Source: pack\Minimap Gun Dir\scripts\client\mods\MinimapGunMarkers.xml; Components: battle\dirmap; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods
@@ -345,19 +354,18 @@ Source: pack\YasenKrasen\0.9.13\scripts\client\mods\stat.pyc; Components: sessio
 ;Source: {app}\res\text\*; DestDir: {app}\res_mods\{#MyAppWotVersion}\text; Flags: ignoreversion external createallsubdirs recursesubdirs; Components: session\textchange
 ;Source: pack\YasenKrasen\0.9.13\text\*; DestDir: {app}\res_mods\{#MyAppWotVersion}\text; Flags: ignoreversion external createallsubdirs recursesubdirs; Components: session\textchange
 
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\gui\avatar_input_handler.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\gui\scaleform\crosshair_panel_arcade.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\gui\scaleform\crosshair_panel_postmortem.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\gui\scaleform\crosshair_panel_sniper.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\gui\scaleform\crosshair_panel_strategic.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\gui\scaleform\crosshair_sniper.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\gui\scaleform\crosshair_strategic.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\gui\scaleform\GunConstraints.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\gui\scaleform\GunConstraints.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\gui\flash\crosshairSniper.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\scripts\client\mods\GunConstraints.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\scripts\client\mods\GunConstraints.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
-;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.13\scripts\client\mods\J1mB091.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods; Flags: overwritereadonly replacesameversion; Components: crosshair\jimbo
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\gui\flash\crosshairSniper.swf; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\gui\scaleform\crosshair_panel_arcade.swf; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\gui\scaleform\crosshair_panel_postmortem.swf; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\gui\scaleform\crosshair_panel_sniper.swf; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\gui\scaleform\crosshair_panel_strategic.swf; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\gui\scaleform\crosshair_sniper.swf; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\gui\scaleform\crosshair_strategic.swf; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\gui\scaleform\GunConstraints.swf; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\gui\scaleform\GunConstraints.xml; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\scripts\client\gui\mods\GunConstraints.xml; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\scripts\client\gui\mods\mod_GunConstraints.pyc; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.14\scripts\client\gui\mods\mod_J1mB091.pyc; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
 ;Source: pack\Damage Log\audio\damageLog.fsb; Components: battle\dmglog; DestDir: {app}\res\audio
 ;Source: pack\Damage Log\audio\damageLog.fev; Components: battle\dmglog; DestDir: {app}\res\audio
@@ -407,39 +415,30 @@ Source: pack\TS3\configs\tessu_mod\tessu_mod.ini; DestDir: {app}\res_mods\config
 Source: pack\Waggons\content\Railway\rw004_Carriage\rw004_Carriage.dds; DestDir: {app}\res_mods\{#MyAppWotVersion}\content\Railway\rw004_Carriage
 Source: pack\Waggons\content\Railway\rw004_Carriage\rw004_Carriage_crash.dds; DestDir: {app}\res_mods\{#MyAppWotVersion}\content\Railway\rw004_Carriage
 
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\swf\HangManButton.swf; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan\swf
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\swf\HangManSettingsWindow.swf; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan\swf
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\swf\HangManWindow.swf; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan\swf
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\button.json; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\Button.png; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\HangMan.json; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\HangMan.xml; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\lang_de.json; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\lang_en.json; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\lang_ru.json; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\HangMan\no_preview.png; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
-;Source: pack\HangMan\res_mods\0.9.13\scripts\client\gui\mods\mod_HangMan.pyc; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-;Source: pack\HangMan\res_mods\0.9.13\spaces\h03_shopfest_2015\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\h03_shopfest_2015
-;Source: pack\HangMan\res_mods\0.9.13\spaces\h07_newyear_2015\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\h07_newyear_2015
-;Source: pack\HangMan\res_mods\0.9.13\spaces\hangar_premium_v2\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\hangar_premium_v2
-;Source: pack\HangMan\res_mods\0.9.13\spaces\hangar_v2\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\hangar_v2
+Source: pack\HangMan\res_mods\0.9.14\spaces\h09_bday_CN_2016\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\h09_bday_CN_2016
+Source: pack\HangMan\res_mods\0.9.14\spaces\h11_WGL_GrandFinal_2016\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\h11_WGL_GrandFinal_2016
+Source: pack\HangMan\res_mods\0.9.14\spaces\h12_bday_EU_2015\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\h12_bday_EU_2015
+Source: pack\HangMan\res_mods\0.9.14\spaces\hangar_premium_1may\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\hangar_premium_1may
+Source: pack\HangMan\res_mods\0.9.14\spaces\hangar_premium_26apr\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\hangar_premium_26apr
+Source: pack\HangMan\res_mods\0.9.14\spaces\hangar_premium_v2\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\hangar_premium_v2
+Source: pack\HangMan\res_mods\0.9.14\spaces\hangar_v2\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\hangar_v2
+Source: pack\HangMan\res_mods\0.9.14\spaces\hangar_victory_day\preview.jpg; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\spaces\hangar_victory_day
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\swf\HangManButton.swf; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan\swf
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\swf\HangManSettingsWindow.swf; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan\swf
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\swf\HangManWindow.swf; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan\swf
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\button.json; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\Button.png; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\HangMan.json; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\HangMan.xml; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\lang_de.json; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\lang_en.json; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\lang_ru.json; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\HangMan\no_preview.png; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\HangMan
+Source: pack\HangMan\res_mods\0.9.14\scripts\client\gui\mods\mod_HangMan.pyc; Components: hangar\man; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
 Source: pack\Autoaimindicator\0.9.14\scripts\client\gui\mods\mod_autoaim_indicator.dds; Components: battle\autoaim; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\Autoaimindicator\0.9.14\scripts\client\gui\mods\mod_autoaim_indicator.json; Components: battle\autoaim; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\Autoaimindicator\0.9.14\scripts\client\gui\mods\mod_autoaim_indicator.pyc; Components: battle\autoaim; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-
-;Source: pack\Offline Map Viewer\gui\flash\ModsListButton.swf; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
-;Source: pack\Offline Map Viewer\gui\flash\ModsListPopover.swf; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
-;Source: pack\Offline Map Viewer\gui\flash\ObserverWindow.swf; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
-;Source: pack\Offline Map Viewer\gui\scaleform\VehicleBattleSelector.swf; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
-;Source: pack\Offline Map Viewer\scripts\client\gui\mods\observer_utils\FakeAvatar.pyc; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\observer_utils
-;Source: pack\Offline Map Viewer\scripts\client\gui\mods\observer_utils\ModsListAPI.pyc; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\observer_utils
-;Source: pack\Offline Map Viewer\scripts\client\gui\mods\observer_utils\ObserverWindow.pyc; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\observer_utils
-;Source: pack\Offline Map Viewer\scripts\client\gui\mods\observer_utils\VehicleBattleSelector.pyc; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\observer_utils
-;Source: pack\Offline Map Viewer\scripts\client\gui\mods\observer_utils\VehiclesManager.pyc; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\observer_utils
-;Source: pack\Offline Map Viewer\scripts\client\gui\mods\observer_utils\WorldTimer.pyc; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\observer_utils
-;Source: pack\Offline Map Viewer\scripts\client\gui\mods\observer_utils\__init__.pyc; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\observer_utils
-;Source: pack\Offline Map Viewer\scripts\client\gui\mods\mod_observer.pyc; Components: hangar\omv; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
 ;Source: pack\Arty Reload\scripts\client\gui\mods\mod_artyReloadTimer.json; Components: battle\artyreload; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 ;Source: pack\Arty Reload\scripts\client\gui\mods\mod_artyReloadTimer.pyc; Components: battle\artyreload; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
@@ -448,13 +447,6 @@ Source: pack\Autoaimindicator\0.9.14\scripts\client\gui\mods\mod_autoaim_indicat
 Source: pack\Live WN8\0.9.14\scripts\client\gui\mods\mod_calculator_rankings_battle.json; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\Live WN8\0.9.14\scripts\client\gui\mods\mod_calculator_rankings_battle.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\Live WN8\0.9.14\gui\scaleform\ekspoint_mods.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
-
-;Source: pack\ServerCross\0.9.13\gui\maps\ingame\aim\gun_marker_blue.dds; Components: battle\servercross; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\maps\ingame\aim
-;Source: pack\ServerCross\0.9.13\gui\maps\ingame\aim\gun_marker_red.dds; Components: battle\servercross; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\maps\ingame\aim
-;Source: pack\ServerCross\0.9.13\gui\ServerCross2.arty.xml; DestName: ServerCross2.xml; Components: battle\servercross; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\
-;;Source: pack\ServerCross\0.9.13\gui\ServerCross2.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\
-;Source: pack\ServerCross\0.9.13\scripts\client\AvatarInputHandler\control_modes.pyc; Components: battle\servercross; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\AvatarInputHandler
-;Source: pack\ServerCross\0.9.13\scripts\client\AvatarInputHandler\__init__.pyc; Components: battle\servercross; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\AvatarInputHandler
 
 [INI]
 Filename: {app}\wmp\Zur Modpack Homepage.url; Section: InternetShortcut; Key: URL; String: http://materialvernichtungskombinat.de/hilfe/webbers-modpack/
