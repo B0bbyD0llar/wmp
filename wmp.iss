@@ -68,7 +68,7 @@ Name: aduondesktop; Description: Verknüpfung zum ActiveDossierUploader auf dem D
 ;Name: wotnumbers; Description: WOT Number im Anschluß installieren; GroupDescription: Statistiktools
 
 [Components]
-Name: xvm; Description: XVM 6.2.1; Types: DMVK; MinVersion: 0.0,5.0
+Name: xvm; Description: XVM; Types: DMVK; MinVersion: 0.0,5.0
 ;Name: xvm\hpplayerpanel; Description: zeige HP Balken im Spielerpanel (rechts und links oben im Gefecht) [P-]
 Name: xvm\autologin; Description: automatisch anmelden; Types: DMVK; Languages: de
 Name: xvm\dyn; Description: dynamsiche Kameraeffekte deaktivieren; Types: DMVK
@@ -155,6 +155,7 @@ Name: {app}\res_mods\{#MyAppWotVersion}\scripts
 Name: {app}\res_mods\{#MyAppWotVersion}\scripts\client
 Name: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods
 Name: {app}\res_mods\{#MyAppWotVersion}\system
+Name: {app}\res_mods\{#MyAppWotVersion}\audioww
 ;Name: {app}\res_mods\{#MyAppWotVersion}\text; Components: session\textchange
 ;Name: {app}\res_mods\configs; Components: xvm OR other\ts3 OR hangar\extcrew OR battle\dmglog
 ;Name: {app}\res_mods\configs; Components: xvm battle\dmglog battle\directionbox hangar\extvehicle
@@ -173,6 +174,10 @@ Name: {app}\res_mods\mods\shared_resources\xvm\res; Components: xvm
 Name: {app}\res_mods\mods\shared_resources\xvm\res\clanicons; Components: xvm
 Name: {app}\res_mods\mods\shared_resources\xvm\res\clanicons\EU; Components: xvm
 Name: {app}\res_mods\mods\shared_resources\xvm\res\clanicons\EU\clan; Components: xvm
+Name: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
+Name: {app}\res_mods\configs\xvm\ltdwebber\img; Components: xvm
+Name: {app}\res_mods\configs\xvm\ltdwebber\img\marksongun; Components: xvm
+Name: {app}\res_mods\configs\tessu_mod
 
 [Files]
 Source: pack\xvm\res_mods\*; DestDir: {app}\res_mods; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm
@@ -182,69 +187,66 @@ Source: {fonts}\DamageLog.otf; DestDir: {fonts}; FontInstall: DamageLog; Compone
 ;Source: pack\xvmWGFlags\res_mods\mods\packages\xvm_main\python\stats.pyc.org; DestDir: {app}\res_mods\mods\packages\xvm_main\python; Components: xvm\flagwg
 ;Source: pack\xvmWGFlags\res_mods\mods\shared_resources\xvm\res\icons\flags\*; DestDir: {app}\res_mods\mods\shared_resources\xvm\res\icons\flags; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm\flagwg
 
-Source: pack\xvmConfig\xvm.xc; DestDir: {app}\res_mods\configs\xvm; Components: xvm
 Source: pack\xvmConfig\ltdwebber\img\*; DestDir: {app}\res_mods\configs\xvm\ltdwebber\img; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm
-Source: pack\xvmConfig\ltdwebber\@xvm.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\alpha.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-;Source: pack\xvmConfig\ltdwebber\battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\hpplayerpanel
-;Source: pack\xvmConfig\ltdwebber\battle.hp.xc; DestName: battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND xvm\hpplayerpanel
-Source: pack\xvmConfig\ltdwebber\battleLoading.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\sf\v2
-Source: pack\xvmConfig\ltdwebber\battleLoading.v2.xc; DestName: battleLoading.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\sf\v2
-Source: pack\xvmConfig\ltdwebber\battleResults.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\captureBar.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\dyn AND NOT crosshair\jimbo
-;Source: pack\xvmConfig\ltdwebber\camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\dyn
-Source: pack\xvmConfig\ltdwebber\camera.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\dyn AND NOT crosshair\jimbo
-;Source: pack\xvmConfig\ltdwebber\camera.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\dyn
-Source: pack\xvmConfig\ltdwebber\camera.jimbo.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\dyn AND crosshair\jimbo
-Source: pack\xvmConfig\ltdwebber\camera.jimbo.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\dyn AND crosshair\jimbo
-Source: pack\xvmConfig\ltdwebber\carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\carousel\1
-Source: pack\xvmConfig\ltdwebber\carousel.2.xc; DestName: carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\carousel\2
-Source: pack\xvmConfig\ltdwebber\carousel.3.xc; DestName: carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\carousel\3
-Source: pack\xvmConfig\ltdwebber\carousel.4.xc; DestName: carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\carousel\4
-Source: pack\xvmConfig\ltdwebber\clock.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\colors.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\common.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-;Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT battle\teamhp
-Source: pack\xvmConfig\ltdwebber\elements.teamhp.xc; DestName: elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND battle\teamhp
-Source: pack\xvmConfig\ltdwebber\hangar.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\hitlog.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND xvm\hitlog
-Source: pack\xvmConfig\ltdwebber\hitlog.aus.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; DestName: hitlog.xc; Components: xvm AND NOT xvm\hitlog
-Source: pack\xvmConfig\ltdwebber\hotkeys.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\iconset.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\login.autologin.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; DestName: login.xc; Components: xvm\autologin
-Source: pack\xvmConfig\ltdwebber\login.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\autologin
-Source: pack\xvmConfig\ltdwebber\markers.std.xc; DestName: markers.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm OR xvm\otm\std
-Source: pack\xvmConfig\ltdwebber\markers.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\otm\std
-Source: pack\xvmConfig\ltdwebber\markersAliveExtended.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\markersAliveNormal.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\markersDeadExtended.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\markersDeadNormal.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\minimap.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\minimapAlt.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\minimapLabelsData.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\minimapLabelsTemplates.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\wn8mm
-Source: pack\xvmConfig\ltdwebber\minimapLabelsTemplates.wn8.xc; DestName: minimapLabelsTemplates.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\wn8mm
-Source: pack\xvmConfig\ltdwebber\minimapMapSize.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\minimapCircles.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\minimapLabels.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\minimapLabelsAlt.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\minimapLines.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\playersPanel.std.xc; DestName: playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm OR xvm\pp\std AND NOT xvm\pp\xvm
-Source: pack\xvmConfig\ltdwebber\playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\pp\xvm
-;Source: pack\xvmConfig\ltdwebber\playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\hpplayerpanel
-;Source: pack\xvmConfig\ltdwebber\playersPanel.hp.xc; DestName: playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND xvm\hpplayerpanel
-Source: pack\xvmConfig\ltdwebber\sounds.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\squad.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\statisticForm.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm AND NOT xvm\sf\v2
-Source: pack\xvmConfig\ltdwebber\statisticForm.v2.xc; DestName: statisticForm.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm\sf\v2
-Source: pack\xvmConfig\ltdwebber\texts.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\tooltips.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\export.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\userInfo.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
-Source: pack\xvmConfig\ltdwebber\vehicleNames.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
+Source: pack\xvmConfig\ltdwebber\@xvm.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\alpha.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\battle.hp.xc; DestName: battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\battleLoading.v2.xc; DestName: battleLoading.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\sf\v2
+Source: pack\xvmConfig\ltdwebber\battleLoading.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\sf\v2
+Source: pack\xvmConfig\ltdwebber\battleLoadingTips.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\battleResults.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\camera.jimbo.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\dyn AND crosshair\jimbo
+Source: pack\xvmConfig\ltdwebber\camera.jimbo.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\dyn AND crosshair\jimbo
+Source: pack\xvmConfig\ltdwebber\camera.nodyn.xc; DestName: camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\dyn AND NOT crosshair\jimbo
+Source: pack\xvmConfig\ltdwebber\camera.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\dyn AND NOT crosshair\jimbo
+Source: pack\xvmConfig\ltdwebber\captureBar.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\carousel.2.xc; DestName: carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\carousel\2
+Source: pack\xvmConfig\ltdwebber\carousel.3.xc; DestName: carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\carousel\3
+Source: pack\xvmConfig\ltdwebber\carousel.4.xc; DestName: carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\carousel\4
+Source: pack\xvmConfig\ltdwebber\carousel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\carousel\1
+Source: pack\xvmConfig\ltdwebber\clock.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\colors.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\common.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\elements.teamhp.xc; DestName: elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND battle\teamhp
+Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT battle\teamhp
+Source: pack\xvmConfig\ltdwebber\export.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\hangar.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\hitlog.aus.xc; DestName: hitlog.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\hitlog
+Source: pack\xvmConfig\ltdwebber\hitlog.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND xvm\hitlog
+Source: pack\xvmConfig\ltdwebber\hotkeys.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\iconset.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\login.autologin.xc; DestName: login.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\autologin
+Source: pack\xvmConfig\ltdwebber\login.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\autologin
+Source: pack\xvmConfig\ltdwebber\markers.std.xc; DestName: markers.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm OR xvm\otm\std
+Source: pack\xvmConfig\ltdwebber\markers.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\otm\std
+Source: pack\xvmConfig\ltdwebber\markersAliveExtended.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\markersAliveNormal.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\markersDeadExtended.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\markersDeadNormal.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\minimap.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\minimapAlt.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\minimapCircles.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\minimapLabels.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\minimapLabelsAlt.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\minimapLabelsData.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\minimapLabelsTemplates.wn8.xc; DestName: minimapLabelsTemplates.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\wn8mm
+Source: pack\xvmConfig\ltdwebber\minimapLabelsTemplates.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\wn8mm
+Source: pack\xvmConfig\ltdwebber\minimapLines.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\minimapMapSize.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+;Source: pack\xvmConfig\ltdwebber\playersPanel.hp.xc; DestName:playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm;
+;Source: pack\xvmConfig\ltdwebber\playersPanel.hp.xc.old; DestName:playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\playersPanel.std.xc; DestName: playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm OR xvm\pp\std AND NOT xvm\pp\xvm
+Source: pack\xvmConfig\ltdwebber\playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\pp\xvm
+Source: pack\xvmConfig\ltdwebber\sounds.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\squad.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\statisticForm.v2.xc; DestName: statisticForm.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\sf\v2
+Source: pack\xvmConfig\ltdwebber\statisticForm.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\sf\v2
+Source: pack\xvmConfig\ltdwebber\texts.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\tooltips.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\userInfo.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\vehicleNames.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\xvm.xc; DestDir: {app}\res_mods\configs\xvm; Components: xvm
 
 ;Source: pack\6Sense\Ton\mgs\res_mods\0.9.6\gui\gui_sounds.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\mgs
 ;Source: pack\6Sense\Ton\mgs\res\audio\xvm.fev; DestDir: {app}\res\audio; Flags: overwritereadonly replacesameversion; Components: xvm\sixthsound\mgs
@@ -447,6 +449,7 @@ Source: pack\Autoaimindicator\0.9.14\scripts\client\gui\mods\mod_autoaim_indicat
 Source: pack\Live WN8\0.9.14\scripts\client\gui\mods\mod_calculator_rankings_battle.json; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\Live WN8\0.9.14\scripts\client\gui\mods\mod_calculator_rankings_battle.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\Live WN8\0.9.14\gui\scaleform\ekspoint_mods.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\xvmConfig\xvm.xc; DestDir: {app}\res_mods\configs\xvm
 
 [INI]
 Filename: {app}\wmp\Zur Modpack Homepage.url; Section: InternetShortcut; Key: URL; String: http://materialvernichtungskombinat.de/hilfe/webbers-modpack/
