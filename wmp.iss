@@ -2,11 +2,11 @@
 #define MyAppPublisher "Ltd Webber"
 #define MyAppURL "http://materialvernichtungskombinat.de"
 #define MyDefaultDir "C:\Games\World_of_Tanks"
-#define MyAppWotVersion "0.9.14"
+#define MyAppWotVersion "0.9.14.1"
 #define BuildNum Int(ReadIni(SourcePath	+ "\\BuildInfo.ini","Info","Build","0"))
 #expr BuildNum = BuildNum + 1
 ;#expr WriteIni(SourcePath + "\\BuildInfo.ini","Info","Build", BuildNum)
-#define MyAppVersion '1.914.' + Str(BuildNum)
+#define MyAppVersion '1.9141.' + Str(BuildNum)
 
 [Setup]
 AppId={{15C07E64-0DDA-4864-A175-4C481004C53C}
