@@ -49,7 +49,7 @@
     "mapSize": ${"minimapMapSize.xc":"mapSize"},
     // Use standard circles
     // Использовать стандартные круги
-    "useStandardCircles": true,
+    "useStandardCircles": false,
     // Use standard labels
     // Использовать стандартные надписи
     "useStandardLabels": false,

@@ -1,269 +1,270 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ip>
+﻿<ip>
 
-	<!-- Автор: Shtys -->
+	<!-- Author: Shtys -->
+	<!-- Restyle and translation: Artasan/masheene (german) -->
+	<!-- Version of the game: 0.9.3 -->
 
-	<!-- Список возможных макросов:
-	{{n}}					- переход на новую строку
-	{{t}}					- фиксированный отступ (равнозначен TAB)
-	{{target}}				- название танка выбранной цели
-	{{target-gun}}			- названия орудия танка цели
-	{{target-reload-100}}	- примерное время перезарядки орудия танка цели с округлением до сотых (с досылателем и 110% экипажем)
-	{{target-reload-10}}	- примерное время перезарядки орудия танка цели с округлением до десятых (с досылателем и 110% экипажем)
-	{{target-reload}}		- примерное время перезарядки орудия танка цели с округлением до целых (с досылателем и 110% экипажем)
-	{{vision}}				- радиус обзора танка цели (для 100% экипажа)
-	{{player-weight}}		- масса своего танка в тоннах
-	{{weight}}				- масса танка выбранной цели в тоннах
-	{{sw}}					- символы сравнения массы своего танка с массой танка цели
-	{{swi}}					- символы сравнения массы танка цели с массой своего танка 
-	{{hull-front}}			- лобовое бронирование корпуса танка цели
-	{{hull-side}}			- бортовое бронирование корпуса танка цели
-	{{hull-back}}			- бронирование кормы корпуса танка цели
-	{{turret-front}}		- лобовое бронирование башни танка цели
-	{{turret-side}}			- бортовое бронирование башни танка цели
-	{{turret-back}}			- бронирование кормы башни танка цели
-	{{damage-1}}			- урон первого типа снаряда танка цели
-	{{damage-2}}			- урон второго типа снаряда танка цели
-	{{damage-3}}			- урон третьего типа снаряда танка цели
-	{{power-1}}				- бронепробиваемость первого типа снаряда танка цели
-	{{power-2}}				- бронепробиваемость второго типа снаряда танка цели
-	{{power-3}}				- бронепробиваемость третьего типа снаряда танка цели
-	{{type-1}}				- первый тип снаряда танка цели
-	{{type-2}}				- второй тип снаряда танка цели
-	{{type-3}}				- третий тип снаряда танка цели -->
+	<!-- Macros list:
+	{{n}}					- new line/Zeilenumbruch
+	{{t}}					- TAB offset/fester Offset (TAB)
+	{{target}}				- targeted tank name/Name des Ziels
+	{{target-gun}}			- targeted tank gun name/Geschütz des Ziels
+	{{target-reload-100}}	- aprox. targeted tank gun reloading time (with 110% crew) in "X.XX sec" format/Nachladezeit des Geschützes, in Hundertstel
+	{{target-reload-10}}	- aprox. targeted tank gun reloading time (with 110% crew) in "X.X sec" format/Nachladezeit des Geschützes, in Zehntel
+	{{target-reload}}		- aprox. targeted tank gun reloading time (with 110% crew) in "X sec" format/Nachladezeit des Geschützes, in aufgerundeten Sekunden
+	{{vision}}				- view range of targeted tank in metres (with 100% crew)/Sichtweite des Ziels
+	{{player-weight}}		- player's tank weight/Gewicht des eigenen Panzers in Tonnen
+	{{weight}}				- targeted tank weight/Gewicht des gegnerischen Panzers in Tonnen
+	{{sw}}					- puts comparison sign when comparing player's tank weight with targeted tank weight/Verhältnis eigenes Panzergewicht zu Gewicht des anvisierten Panzers
+	{{swi}}					- puts comparison sign when comparing targeted tank weight with player's tank weight/Verhältnis eigenes Panzergewicht zu Gewicht des anvisierten Panzers
+	{{hull-front}}			- hull front armor of targeted tank (in mm)/Panzerung Wanne Vorne
+	{{hull-side}}			- hull side armor of targeted tank (in mm)/Panzerung Wanne Seite
+	{{hull-back}}			- hull back armor of targeted tank (in mm)/Panzerung Wanne Hinten
+	{{turret-front}}		- turret front armor of targeted tank (in mm)/Panzerung Turm Vorne
+	{{turret-side}}			- turret side armor of targeted tank (in mm)/Panzerung Turm Seite
+	{{turret-back}}			- turret back armor of targeted tank (in mm)/Panzerung Turm Hinten
+	{{damage-1}}			- damage of first type ammo of targeted tank/Schaden Munitionsart 1
+	{{damage-2}}			- damage of second type ammo of targeted tank/Schaden Munitionsart 2
+	{{damage-3}}			- damage of third type ammo of targeted tank/Schaden Munitionsart 3
+	{{power-1}}				- penetration of first type ammo of targeted tank (in mm)/Durchschlagskraft Munitionsart 1
+	{{power-2}}				- penetration of second shell type of targeted tank (in mm)/Durchschlagskraft Munitionsart 2
+	{{power-3}}				- penetration of third type ammo of targeted tank (in mm)/Durchschlagskraft Munitionsart 3
+	{{type-1}}				- name string of first type ammo of targeted tank/Name Munitionsart 1
+	{{type-2}}				- name string of second type ammo of targeted tank/Name Munitionsart 2
+	{{type-3}}				- name string of third type ammo of targeted tank/Name Munitionsart 3 -->
 
-	<!-- Глобальные настройки панели информации о цели -->
+	<!-- Globale Einstellungen -->
 	<infoPanel>
 		
-		<!-- Настройка отображения панели при наведении на цель -->
+		<!-- Aktivierungseinstellungen für InfoPanel bei Anvisierung -->
 		<targetEnable>
-			<team>true</team> <!-- Союзники. true/false - включено/выключено -->
-			<enemy>true</enemy> <!-- Противники. true/false - включено/выключено -->
-			<dead>false</dead> <!-- Мертвые. true/false - включено/выключено -->
+			<team>true</team> <!-- Allierte mit InfoPanel angezeigt. true/false - Ja/Nein -->
+			<enemy>true</enemy> <!-- Gegner mit InfoPanel angezeigt. true/false - Ja/Nein -->
+			<dead>true</dead> <!-- Zerstörte mit InfoPanel angezeigt. true/false - Ja/Nein -->
 		</targetEnable>
 		
-		<!-- Аркадный прицел -->
-		<arcade visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-			<location x="-250" y="250"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от центра экрана, в аркадном прицеле перекрестие не является центром экрана -->
-			<delay>10</delay> <!-- Время, через которое исчезнет панель, в секундах. 0 - отображать всегда -->
+		<!-- ARCADE -->
+		<arcade visible="true"> <!-- InfoPanel in der Arcade-Ansicht aktiviert - true/false - Ja/Nein -->
+			<location x="300" y="300"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+			<delay>10</delay> <!-- Anzeigedauer in Sekunden, nachdem das Ziel nicht mehr Anvisiert ist -->
 		</arcade>
 		
-		<!-- Снайперский прицел -->
-		<sniper visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-			<location x="-250" y="250"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от центра экрана, в аркадном прицеле перекрестие не является центром экрана -->
-			<delay>10</delay> <!-- Время, через которое исчезнет панель, в секундах. 0 - отображать всегда -->
+		<!-- SNIPER -->
+		<sniper visible="true"> <!-- InfoPanel in der Sniper-Ansicht aktiviert - true/false - Ja/Nein -->
+			<location x="300" y="300"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+			<delay>10</delay> <!-- Anzeigedauer in Sekunden, nachdem das Ziel nicht mehr Anvisiert ist -->
 		</sniper>
 		
-		<!-- Артиллерийский прицел -->
-		<strategic visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-			<location x="-250" y="250"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от центра экрана, в аркадном прицеле перекрестие не является центром экрана -->
-			<delay>10</delay> <!-- Время, через которое исчезнет панель, в секундах. 0 - отображать всегда -->
+		<!-- ARTY SICHT -->
+		<strategic visible="true"> <!-- InfoPanel in der Arty-Ansicht aktiviert - true/false - Ja/Nein -->
+			<location x="300" y="300"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+			<delay>10</delay> <!-- Anzeigedauer in Sekunden, nachdem das Ziel nicht mehr Anvisiert ist -->
 		</strategic>
 		
-		<!-- Посмертный прицел -->
-		<postmortem visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-			<location x="-250" y="250"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от центра экрана, в аркадном прицеле перекрестие не является центром экрана -->
-			<delay>10</delay> <!-- Время, через которое исчезнет панель, в секундах. 0 - отображать всегда -->
+		<!-- NACH DEM TOD -->
+		<postmortem visible="true"> <!-- InfoPanel in der PostMortem-Ansicht aktiviert - true/false - Ja/Nein -->
+			<location x="300" y="300"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+			<delay>5</delay> <!-- Anzeigedauer in Sekunden, nachdem das Ziel nicht mehr Anvisiert ist -->
 		</postmortem>
 		
 	</infoPanel>
 	
-	<!-- Настройка фона панели -->
-	<background alpha="0"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-85" y="-123"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<scale x="85" y="127"/> <!-- x, y - масштаб элемента в процентах. 100 - оригинальный размер -->
+	<!-- HINTERGRUND -->
+	<background alpha="25"> <!-- visible - 0-100 0=transparent -->
+		<location x="-90" y="-125"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<scale x="153" y="68"/> <!-- x, y - Grösse. 100 - Original -->
 	</background>
 	
-	<!-- Настройка названия танка цели -->
-	<targetName visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="-120"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="300" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{target}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- NAME DES ZIELS -->
+	<targetName visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="-85" y="-120"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFFFFFF" alpha="100" align="left" bold="true" leading="0" width="140" height="35"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>{{target}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</targetName>
 	
-	<!-- Настройка названия орудия танка цели -->
-	<gunName visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="110"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="300" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{target-gun}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- NAME DER KANONE -->
+	<gunName visible="false"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="-80" y="54"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="300" height="35"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>Waffe: {{t}}{{t}}{{target-gun}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</gunName>
 	
-	<!-- Настройка примерного времени перезарядки орудия танка цели (с досылателем и 110% экипажем) -->
-	<gunReload visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="-102"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{target-reload-10}} sec</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- NACHLADEZEIT -->
+	<gunReload visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="-85" y="-48"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xC8FFC6" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>Ladezeit: {{target-reload-100}} sek.</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</gunReload>
 	
-	<!-- Настройка радиуса обзора танка цели -->
-	<visionRadius visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="0"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>View:{{t}}{{t}}{{vision}} m</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- SICHTWEITE -->
+	<visionRadius visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="-85" y="-30"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xC8FFC6" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>Sichtweite: {{vision}}m</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</visionRadius>
 	
-	<!-- Настройка лобового бронирования башни -->
-	<turretArmorF visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="36"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>Turret:{{t}}{{turret-front}}{{t}}{{turret-side}}{{t}}{{turret-back}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- TURMPANZERUNG VORNE -->
+	<turretArmorF visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="57" y="-120"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFFFFF0" alpha="100" align="left" bold="false" leading="0" width="100" height="30"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>Turm: {{turret-front}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</turretArmorF>
 	
-	<!-- Настройка бортового бронирования башни -->
-	<turretArmorS visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-55" y="0"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFF00" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{turret-side}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- TURMPANZERUNG SEITE -->
+	<turretArmorS visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="134" y="-120"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFFFFF0" alpha="100" align="left" bold="false" leading="0" width="30" height="30"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>{{turret-side}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</turretArmorS>
 	
-	<!-- Настройка бронирования кормы башни -->
-	<turretArmorB visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-30" y="0"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0x00FF00" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{turret-back}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- TURMPANZERUNG HECK -->
+	<turretArmorB visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="174" y="-120"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFFFFF0" alpha="100" align="left" bold="false" leading="0" width="30" height="30"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>{{turret-back}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</turretArmorB>
 	
-	<!-- Настройка лобового бронирования корпуса -->
-	<hullArmorF visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="54"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>Hull:{{t}}{{t}}{{hull-front}}{{t}}{{hull-side}}{{t}}{{hull-back}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- WANNENPANZERUNG VORNE -->
+	<hullArmorF visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="46" y="-30"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFFFFF0" alpha="100" align="left" bold="false" leading="0" width="100" height="30"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>Wanne: {{hull-front}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</hullArmorF>
 	
-	<!-- Настройка бортового бронирования корпуса -->
-	<hullArmorS visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-105" y="85"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFF00" alpha="100" align="right" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{hull-side}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- WANNENPANZERUNG SEITE -->
+	<hullArmorS visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="134" y="-30"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFFFFF0" alpha="100" align="left" bold="false" leading="0" width="30" height="30"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>{{hull-side}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</hullArmorS>
 	
-	<!-- Настройка бронирования кормы корпуса -->
-	<hullArmorB visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="85"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0x00FF00" alpha="100" align="right" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{hull-back}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- WANNENPANZERUNG HECK -->
+	<hullArmorB visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="174" y="-30"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFFFFF0" alpha="100" align="left" bold="false" leading="0" width="30" height="30"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>{{hull-back}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</hullArmorB>
 	
-	<!-- Настройка типа первого снаряда -->
-	<shellType1 visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="72"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>Type:{{t}}{{t}}{{type-1}}{{t}}{{type-2}}{{t}}{{type-3}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- GRANATENTYP 1 -->
+	<shellType1 visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="-85" y="-102"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFF4137" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>{{type-1}}{{t}}{{power-1}}{{t}}{{damage-1}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</shellType1>
 	
-	<!-- Настройка типа второго снаряда -->
-	<shellType2 visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-140" y="20"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{type-2}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- GRANATENTYP 2 -->
+	<shellType2 visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="-85" y="-84"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0x48D1CC" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>{{type-2}}{{t}}{{power-2}}{{t}}{{damage-2}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</shellType2>
 	
-	<!-- Настройка типа третьего снаряда -->
-	<shellType3 visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-110" y="20"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{type-3}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- GRANATENTYP 3 -->
+	<shellType3 visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="-85" y="-66"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFF8523" alpha="100" align="left" bold="false" leading="0" width="200" height="35"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>{{type-3}}{{t}}{{power-3}}{{t}}{{damage-3}}</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</shellType3>
 			
-	<!-- Настройка урона первого типа снаряда -->
-	<shellDamage1 visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="90"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>Damage:{{t}}{{damage-1}}{{t}}{{damage-2}}{{t}}{{damage-3}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- GRANATENTYP 1 SCHADEN -->
+	<shellDamage1 visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="74.00" y="-158"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="wide latin" size="15000" color="0xFF0000" alpha="15" align="left" bold="true" leading="0" width="100" height="250"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>|</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</shellDamage1>
 	
-	<!-- Настройка урона второго типа снаряда -->
-	<shellDamage2 visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-140" y="50"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{damage-2}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- GRANATENTYP 2 SCHADEN -->
+	<shellDamage2 visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="114" y="-158"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="wide latin" size="15000" color="0xFFFF00" alpha="15" align="left" bold="true" leading="0" width="100" height="250"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>|</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</shellDamage2>
 	
-	<!-- Настройка урона третьего типа снаряда -->
-	<shellDamage3 visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-110" y="40"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{damage-3}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- GRANATENTYP 3 SCHADEN -->
+	<shellDamage3 visible="true"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="154" y="-158"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="wide latin" size="10000" color="0x00FF00" alpha="15" align="left" bold="true" leading="0" width="100" height="250"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>|</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</shellDamage3>
 
-	<!-- Настройка бронепробиваемости первого типа снаряда -->
-	<shellPower1 visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="108"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>Penetr.:{{t}}{{power-1}}{{t}}{{power-2}}{{t}}{{power-3}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- GRANATENTYP 1 PENETRATION -->
+	<shellPower1 visible="false"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="130.8" y="-148"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="15000" color="0xFFFF00" alpha="15" align="left" bold="true" leading="0" width="100" height="160"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>|</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</shellPower1>
 	
-	<!-- Настройка бронепробиваемости второго типа снаряда -->
-	<shellPower2 visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-140" y="60"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{power-2}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- GRANATENTYP 2 PENETRATION -->
+	<shellPower2 visible="false"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="152.49" y="-148"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="10000" color="0x00FF00" alpha="15" align="left" bold="true" leading="0" width="100" height="160"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>|</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</shellPower2>
 	
-	<!-- Настройка бронепробиваемости третьего типа снаряда -->
-	<shellPower3 visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-110" y="60"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{power-3}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
-	</shellPower3>		
+	<!-- GRANATENTYP 3 PENETRATIONа -->
+	<shellPower3 visible="false"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="165.8" y="-148"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="10000" color="0x00FF00" alpha="15" align="left" bold="true" leading="0" width="100" height="160"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->
+		<format>|</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
+	</shellPower3>
 
-	<!-- Настройка массы своего танка -->
-	<playerWeight visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-80" y="18"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFF0000" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->  
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->			
-		<color poor="0xFFFF00" good="0x00FF00"/> <!-- poor - цвет при умеренно эффективном таране. good - цвет при эффективном таране -->
-		<format>Weight:{{t}}{{weight}} t</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- PANZERGEWICHT FÜR RAMMANGRIFFE AUS EIGENER SICHT -->
+	<playerWeight visible="true"> <!-- visible - Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="-85" y="-12"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="arial" size="13" color="0xFF0000" alpha="100" align="left" bold="false" leading="0" width="400" height="30"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->  
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->			
+		<color poor="0xFF0000" good="0x0DFF00"/> <!-- poor - Farbe bei einem mäßig wirksamen Rammangriff. good - Farbe bei einem sehr wirksamen Rammangriff -->
+		<format>Chance für Rammangriff:   {{player-weight}} t  versus  {{weight}} t</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</playerWeight>
 
-	<!-- Настройка массы танка цели -->
-	<targetWeight visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-100" y="-150"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFF0000" alpha="100" align="left" bold="false" leading="0" width="160" height="500"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->  
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->			
-		<color poor="0xFFFF00" good="0x00FF00"/> <!-- poor - цвет при умеренно эффективном таране. good - цвет при эффективном таране -->
-		<format>{{weight}} t</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- PANZERGEWICHT FÜR RAMMANGRIFFE AUS GEGNERISCHER SICHT -->
+	<targetWeight visible="false"> <!-- visible - Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="-100" y="-150"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="Cuprum" size="15" color="0xFF0000" alpha="100" align="left" bold="false" leading="0" width="160" height="500"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->  
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->			
+		<color poor="0xFFFF00" good="0x00FF00"/> <!-- poor - Farbe bei einem mäßig wirksamen Rammangriff. good - Farbe bei einem sehr wirksamen Rammangriff -->
+		<format>{{weight}} tn</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</targetWeight>
 	
-	<!-- Свободное поле -->
-	<emptyField visible="false"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-100" y="-100"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="0" width="160" height="35"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->  
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->			
-		<format></format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- LEER -->
+	<emptyField visible="false"> <!-- Sichtbarkeit - true/false - Ja/Nein -->
+		<location x="100" y="-150"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<text font="wide latin" size="10000" color="0xFF0000" alpha="25" align="left" bold="true" leading="0" width="100" height="160"/> <!-- Font=Schriftart, size=Die Größe der Schriftart, color=Farbe der Schrift, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), align=die Ausrichtung des Textes, left / right / center, bold=fett, leading=Zeilenabstand, width/height - Breite und Höhe der Felder -->  
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size=die Größe des Schattens, angle=der Winkel des Schattens, distance=die Entfernung des Schattens, color=Farbe des Schattens, alpha=die Transparenz der Schatten (100 - undurchsichtig, 0 - transparent), strength=Die Stärke des Schattens -->			
+		<format>I</format> <!-- Hier wird festgelegt, was angezeigt werden soll. Makros sind in der Legende am Anfang des Scriptes. -->
 	</emptyField>
 	
-	<!-- Настройка иконки танка -->
-	<tankIcon visible="true" alpha="100"> <!-- visible - видимость элемента, true/false - включено/выключено. alpha - прозрачность. 100 - непрозрачно, 0 - прозрачно -->
-		<location x="-80" y="-100"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет внутри самой панели в зависимости от ее положения и по умолчанию от низа и центра иконки танка -->
-		<common large="true"/> <!-- large - размер изображения танка - цели. true - большая картинка, как в карусели ангара, false - маленькая картинка, как в ушах -->
+	<!-- PANZERBILD -->
+	<tankIcon visible="true" alpha="80"> <!-- visible=true/false - Sichtbar/Nicht Sichtbar, alpha=Transparenz 100 - undurchsichtig, 0 - transparent -->
+		<location x="55" y="-120"/> <!-- x, y - Koordinaten x=seite Y=höhe -->
+		<common large="true"/> <!-- large=Grösse des Bildes = true/false = Grosses Bild wie im Hangar/Kleines Bild wie beim Contour Icon -->
 	</tankIcon>
 	
-	<!-- Настройка отображения типов снарядов -->
+	<!-- NAMEN DER MUNITIONSTYPEN -->
 	<shellType>
-		<AP>AP</AP> <!-- Armor Piercing -->
-		<CR>APCR</CR> <!-- Armor Piercing Composite Rigid -->
-		<HC>HEAT</HC> <!-- High Explosive Anti-Tank -->
-		<HE>HE</HE> <!-- High Explosive -->
+		<AP>AP</AP> <!-- Panzerbrechend -->
+		<CR>CR</CR> <!-- Hartkern -->
+		<HC>HC</HC> <!-- Hohlladung -->
+		<HE>HE</HE> <!-- Hochexplosiv -->
 	</shellType>
 
 </ip>

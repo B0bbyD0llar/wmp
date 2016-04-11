@@ -128,8 +128,9 @@ Name: battle\directionbox; Description: Direction Indicator Ext; Types: DMVK
 Name: battle\teamhp; Description: alternatives Team HP Pool Panel
 ;Name: battle\dirmap; Description: zeige Blickrichtung auf Minimap; Types: DMVK
 Name: battle\dmglog; Description: Damage Log (zeigt den erhaltenen Schaden); Types: DMVK
-;Name: battle\infopanel; Description: zusätzliche Informationen zum anvisierten Ziel einblenden; Types: DMVK
-;Name: battle\artyreload; Description: Arty Reload Timer Anzeige; Types: DMVK
+Name: battle\infopanel; Description: zusätzliche Informationen zum anvisierten Ziel einblenden; Types: DMVK
+Name: battle\artyreload; Description: Arty Reload Timer Anzeige; Types: DMVK
+Name: battle\artyreload; Description: Arty Reload Timer Anzeige; Types: DMVK
 Name: battle\igwn8; Description: InGame Live WN8 (nur Näherungswert); Types: DMVK
 
 Name: other; Description: Sonstiges
@@ -316,25 +317,6 @@ Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\mod_rmanager.pyc; Com
 Source: pack\Replay Manager\0.9.14\gui\flash\ReplaysManagerUpload.swf; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
 Source: pack\Replay Manager\0.9.14\gui\flash\ReplaysManagerWindow.swf; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
 
-;Source: pack\Replay Manager\0.9.10\gui\flash\ModsListButton.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\gui\flash\ModsListPopover.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\gui\flash\ReplaysManagerUpload.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\gui\flash\ReplaysManagerWindow.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\gui\maps\rmanager\icons\filter.png; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\maps\rmanager\icons; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\database_controller.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\data_providers.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\hooks.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\lang.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\mods_list.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\parser.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\replay_actions_controller.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\replay_cm_handlers.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\rmanager_constants.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\upload_controller.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\utils.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\rmanager\__init__.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods\rmanager; Components: other\replayman
-;Source: pack\Replay Manager\0.9.10\scripts\client\mods\ReplaysManager.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods; Components: other\replayman
-
 Source: pack\Vehicle Extended\configs\spoter_mods\vehicle_exp_extended\vehicle_exp_extended.json; Components: hangar\extvehicle; DestDir: {app}\res_mods\configs\spoter_mods\vehicle_exp_extended
 ;Source: pack\Vehicle Extended\0.9.12\scripts\client\gui\mods\mod_hangar_tooltips.pyc; Components: hangar\extvehicle; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\Vehicle Extended\0.9.12\scripts\client\gui\mods\mod_vehicle_exp_extended.pyc; Components: hangar\extvehicle; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
@@ -385,9 +367,9 @@ Source: pack\BattleAssistant\0.9.10\scripts\client\gui\mods\yaml\*; Components: 
 Source: pack\BattleAssistant\0.9.10\scripts\client\gui\mods\mod_battle_assistant.pyc; Components: battle\assistant; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\BattleAssistant\0.9.10\scripts\client\gui\mods\mod_battle_assistant.txt; Components: battle\assistant; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
-;Source: pack\InfoPanel\gui\scaleform\InfoPanel.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform; Components: battle\infopanel
-;Source: pack\InfoPanel\gui\scaleform\InfoPanel.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform; Components: battle\infopanel
-;Source: pack\InfoPanel\scripts\client\mods\InfoPanel.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods; Components: battle\infopanel
+Source: pack\InfoPanel\gui\scaleform\InfoPanel.swf; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\InfoPanel\gui\scaleform\InfoPanel.xml; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\InfoPanel\scripts\client\gui\mods\mod_InfoPanel.pyc; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
 Source: pack\ADU\ActiveDossierUploader 3.4.0.7.exe; DestName: ActiveDossierUploader.exe; DestDir: {app}; Components: other\vbaddict\adu
 Source: pack\ADU\scripts\client\mods\ATS.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods; Components: other\vbaddict\ats
@@ -442,14 +424,13 @@ Source: pack\Autoaimindicator\0.9.14\scripts\client\gui\mods\mod_autoaim_indicat
 Source: pack\Autoaimindicator\0.9.14\scripts\client\gui\mods\mod_autoaim_indicator.json; Components: battle\autoaim; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\Autoaimindicator\0.9.14\scripts\client\gui\mods\mod_autoaim_indicator.pyc; Components: battle\autoaim; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
-;Source: pack\Arty Reload\scripts\client\gui\mods\mod_artyReloadTimer.json; Components: battle\artyreload; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-;Source: pack\Arty Reload\scripts\client\gui\mods\mod_artyReloadTimer.pyc; Components: battle\artyreload; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-;Source: pack\Arty Reload\gui\scaleform\TextPanel.swf; Components: battle\artyreload; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Arty Reload\scripts\client\gui\mods\mod_artyReloadTimer.json; Components: battle\artyreload; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\Arty Reload\scripts\client\gui\mods\mod_artyReloadTimer.pyc; Components: battle\artyreload; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\Arty Reload\gui\scaleform\TextPanel.swf; Components: battle\artyreload; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
 
-Source: pack\Live WN8\0.9.14\scripts\client\gui\mods\mod_calculator_rankings_battle.json; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-Source: pack\Live WN8\0.9.14\scripts\client\gui\mods\mod_calculator_rankings_battle.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-Source: pack\Live WN8\0.9.14\gui\scaleform\ekspoint_mods.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
-Source: pack\xvmConfig\xvm.xc; DestDir: {app}\res_mods\configs\xvm
+Source: pack\Live WN8\0.9.14\gui\scaleform\ekspoint_battle_flash.swf; Components: battle\igwn8; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+Source: pack\Live WN8\0.9.14\scripts\client\gui\mods\mod_calculator_rankings_battle.json; Components: battle\igwn8; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\Live WN8\0.9.14\scripts\client\gui\mods\mod_calculator_rankings_battle.pyc; Components: battle\igwn8; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
 [INI]
 Filename: {app}\wmp\Zur Modpack Homepage.url; Section: InternetShortcut; Key: URL; String: http://materialvernichtungskombinat.de/hilfe/webbers-modpack/

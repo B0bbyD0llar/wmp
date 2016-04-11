@@ -8,53 +8,53 @@
 	{
 		"id": "allyreload",
 		"position": {
-			"x": "25%",
-			"y": "-200"
+			"x": "35%",
+			"y": "30"
 		},
 		"font": {
-			"size": 16,
+			"size": 11,
 			"color": "#aaff80",
 			"face": "$IMELanguageBar",
 			"shadow": {
-				"distance": 1,
-				"angle": 45,
+				"distance": 0,
+				"angle": 0,
 				"color": "0x000000",
-				"alpha": 80,
-				"blur": 8,
-				"strength": 8,
+				"alpha": 10,
+				"blur": 3,
+				"strength": 3,
 				"quality": 3
 			}
 		},
-		"format": "{{vehicleName}}: ~{{reloadRemain}} sek",
+		"format": "{{vehicleName}}: {{reloadRemain}}s ({{totalReloadTime}}s)",
 		"reload": {
 			"showEnemy": false,
 			"showAlly": true,
 			"SPGonly": true,
 			"reloadlimit": 0
 		},
-		"visible": false
+		"visible": true
 	},
 	{
 		"id": "enemyreload",
 		"position": {
-			"x": "65%",
-			"y": "-100"
+			"x": "59%",
+			"y": "30"
 		},
 		"font": {
-			"size": 16,
+			"size": 11,
 			"color": "#ffaaaa",
 			"face": "$IMELanguageBar",
 			"shadow": {
-				"distance": 1,
-				"angle": 45,
+				"distance": 0,
+				"angle": 0,
 				"color": "0x000000",
-				"alpha": 80,
-				"blur": 8,
-				"strength": 8,
+				"alpha": 10,
+				"blur": 3,
+				"strength": 3,
 				"quality": 3
 			}
 		},
-		"format": "{{vehicleName}}: ~{{reloadRemain}} sek",
+		"format": "{{vehicleName}}: {{reloadRemain}}s ({{totalReloadTime}}s)",
 		"reload": {
 			"showEnemy": true,
 			"showAlly": false,
