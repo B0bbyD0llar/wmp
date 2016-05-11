@@ -61,7 +61,7 @@
     "blowupMarker": "&#x78;",
     // Default header format (before first hit). Only localization macros are allowed, see macros.txt.
     // Формат заголовка по умолчанию (до первого попадания). Допускаются только макросы перевода, см. macros.txt.
-    "defaultHeader":  " ",
+    "defaultHeader":  "Webbers ModPack",
     // Hits header format, including last hit (macros allowed, see macros.txt).
     // Формат заголовка (допускаются макроподстановки, см. macros.txt).
     "formatHeader":  "<font color='#FFFFFF'>{{l10n:Hits}}:</font> <font size='13'>#{{n}}</font> <font color='#FFFFFF'>{{l10n:Total}}: </font><b>{{dmg-total}}</b>  <font color='#FFFFFF'>{{l10n:Last}}:</font> <font color='{{c:dmg-kind}}'><b>{{dmg}}</b></font> <font face='xvm' size='21'>{{dead=&#x77;?&#x29;|{{dead=&#x78;?&#x28;}}}}</font>",

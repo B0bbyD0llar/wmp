@@ -31,7 +31,7 @@
     "postmortem": {
       // Camera distance range: [min, max], default - [2, 25]
       // Отдаление камеры: [мин, макс], по умолчанию - [2, 25]
-      "distRange": [2, 25],
+      "distRange": [2, 250],
       // Start distance (null for default behavior - maximum distance)
       // Начальная дистанция (null для поведения по умолчанию - максимальная дистанция)
       "startDist": null,

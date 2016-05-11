@@ -42,7 +42,7 @@
     "enableEquipAutoReturn": true,
     // true - Make vehicle not ready for battle if less than 20% ammo loaded
     // true - Сделать машину не готовой к битве если заряжено менее 20% снарядов
-        "blockVehicleIfLowAmmo": false,
+    "blockVehicleIfLowAmmo": true,
     // Below this percentage, ammo is low. (0 - 100)
     // Ниже этого процента, снарядов считается мало. (0 - 100)
     "lowAmmoPercentage": 20,

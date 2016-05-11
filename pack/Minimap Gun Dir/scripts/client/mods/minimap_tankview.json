@@ -1,0 +1,10 @@
+{
+    "showAllySPG": true,
+    "showAllyTD": false,
+    "showEnemy": true,
+    "showInBattleReplay": true,
+    "toggleKeyCode": 0,
+    "toggleStateOn": true,
+    "toggledOffMsg": "<font color='#FF0000'>Minimap indicators turned OFF</font>",
+    "toggledOnMsg": "<font color='#00FF00'>Minimap indicators turned ON</font>"
+}

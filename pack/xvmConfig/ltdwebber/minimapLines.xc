@@ -38,26 +38,26 @@
        // Own vehicle direction.
        // Направление корпуса своей техники.    
 	   "vehicle": [
-         { "$ref": { "path": "def.vehicle" }, "from": 50,  "to": 97, "thickness": 0.65, "alpha": 45 },
-         { "$ref": { "path": "def.vehicle" }, "from": 100,  "to": 147, "thickness": 0.6, "alpha": 40 },
-         { "$ref": { "path": "def.vehicle" }, "from": 150,  "to": 197, "thickness": 0.55, "alpha": 35 },
-         { "$ref": { "path": "def.vehicle" }, "from": 200, "to": 248, "thickness": 0.5, "alpha": 33 },
-         { "$ref": { "path": "def.vehicle" }, "from": 250, "to": 298, "thickness": 0.45, "alpha": 30 },
-         { "$ref": { "path": "def.vehicle" }, "from": 300, "to": 398, "thickness": 0.4, "alpha": 30 },
-         { "$ref": { "path": "def.vehicle" }, "from": 400, "to": 498, "thickness": 0.3, "alpha": 30 },
-         { "$ref": { "path": "def.vehicle" }, "from": 500, "to": 2000, "thickness": 0.2, "alpha": 30 }
+         { "$ref": { "path": "def.vehicle" }, "from": 50,  "to": 97, "thickness": 0.7, "alpha": 45 },
+         { "$ref": { "path": "def.vehicle" }, "from": 100,  "to": 147, "thickness": 0.65, "alpha": 40 },
+         { "$ref": { "path": "def.vehicle" }, "from": 150,  "to": 197, "thickness": 0.6, "alpha": 35 },
+         { "$ref": { "path": "def.vehicle" }, "from": 200, "to": 248, "thickness": 0.55, "alpha": 33 },
+         { "$ref": { "path": "def.vehicle" }, "from": 250, "to": 298, "thickness": 0.5, "alpha": 30 },
+         { "$ref": { "path": "def.vehicle" }, "from": 300, "to": 398, "thickness": 0.45, "alpha": 30 },
+         { "$ref": { "path": "def.vehicle" }, "from": 400, "to": 498, "thickness": 0.4, "alpha": 30 },
+         { "$ref": { "path": "def.vehicle" }, "from": 500, "to": 2000, "thickness": 0.3, "alpha": 30 }
     ],
     // Camera direction.
 	// Направление камеры от своей техники.
     "camera": [
-	     { "$ref": { "path": "def.camera" }, "from": 50,  "to": 97, "thickness": 0.9, "alpha": 45 },
-         { "$ref": { "path": "def.camera" }, "from": 100,  "to": 147, "thickness": 0.8, "alpha": 40 },
-         { "$ref": { "path": "def.camera" }, "from": 150,  "to": 197, "thickness": 0.7, "alpha": 35 },
-         { "$ref": { "path": "def.camera" }, "from": 200, "to": 248, "thickness": 0.6, "alpha": 33 },
-         { "$ref": { "path": "def.camera" }, "from": 250, "to": 298, "thickness": 0.5, "alpha": 30 },
-         { "$ref": { "path": "def.camera" }, "from": 300, "to": 398, "thickness": 0.4, "alpha": 30 },
-         { "$ref": { "path": "def.camera" }, "from": 400, "to": 498, "thickness": 0.3, "alpha": 30 },
-         { "$ref": { "path": "def.camera" }, "from": 500, "to": 2000, "thickness": 0.2, "alpha": 30 }
+	     { "$ref": { "path": "def.camera" }, "from": 50,  "to": 97, "thickness": 0.95, "alpha": 45 },
+         { "$ref": { "path": "def.camera" }, "from": 100,  "to": 147, "thickness": 0.9, "alpha": 40 },
+         { "$ref": { "path": "def.camera" }, "from": 150,  "to": 197, "thickness": 0.8, "alpha": 35 },
+         { "$ref": { "path": "def.camera" }, "from": 200, "to": 248, "thickness": 0.7, "alpha": 33 },
+         { "$ref": { "path": "def.camera" }, "from": 250, "to": 298, "thickness": 0.6, "alpha": 30 },
+         { "$ref": { "path": "def.camera" }, "from": 300, "to": 398, "thickness": 0.5, "alpha": 30 },
+         { "$ref": { "path": "def.camera" }, "from": 400, "to": 498, "thickness": 0.4, "alpha": 30 },
+         { "$ref": { "path": "def.camera" }, "from": 500, "to": 2000, "thickness": 0.3, "alpha": 30 }
     ],
     // Gun traverse angles may differ depending on vehicle angle relative to ground. See pics at http://goo.gl/ZqlPa
        // Углы горизонтальной наводки могут меняться в зависимости от углов постановки машины на склонах местности. Подробнее по ссылке: http://goo.gl/ZqlPa	
@@ -67,12 +67,12 @@
     "traverseAngle": [
          { "$ref": { "path": "def.traverseAngle" }, "from": 50, "to": 97, "thickness": 0.7, "alpha": 50 },
          { "$ref": { "path": "def.traverseAngle" }, "from": 100, "to": 147, "thickness": 0.6, "alpha": 48 },
-         { "$ref": { "path": "def.traverseAngle" }, "from": 150, "to": 197, "thickness": 0.5, "alpha": 46 },
-         { "$ref": { "path": "def.traverseAngle" }, "from": 200, "to": 248, "thickness": 0.4, "alpha": 44 },
-         { "$ref": { "path": "def.traverseAngle" }, "from": 250, "to": 298, "thickness": 0.35, "alpha": 42 },
-         { "$ref": { "path": "def.traverseAngle" }, "from": 300, "to": 398, "thickness": 0.3, "alpha": 40 },
-         { "$ref": { "path": "def.traverseAngle" }, "from": 400, "to": 498, "thickness": 0.25, "alpha": 40 },
-         { "$ref": { "path": "def.traverseAngle" }, "from": 500, "to": 2000, "thickness": 0.2, "alpha": 40 }
+         { "$ref": { "path": "def.traverseAngle" }, "from": 150, "to": 197, "thickness": 0.55, "alpha": 46 },
+         { "$ref": { "path": "def.traverseAngle" }, "from": 200, "to": 248, "thickness": 0.5, "alpha": 44 },
+         { "$ref": { "path": "def.traverseAngle" }, "from": 250, "to": 298, "thickness": 0.45, "alpha": 42 },
+         { "$ref": { "path": "def.traverseAngle" }, "from": 300, "to": 398, "thickness": 0.4, "alpha": 40 },
+         { "$ref": { "path": "def.traverseAngle" }, "from": 400, "to": 498, "thickness": 0.35, "alpha": 40 },
+         { "$ref": { "path": "def.traverseAngle" }, "from": 500, "to": 2000, "thickness": 0.3, "alpha": 40 }
     ]
   }
 }

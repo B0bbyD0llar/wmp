@@ -119,6 +119,7 @@
       },
       "sniper": {
         "zooms": [2, 4, 8, 16],
+        //"startZoom": 4,
         "dynamicCameraEnabled": false,
         "zoomIndicator": {
           //"x": -100,
@@ -324,5 +325,8 @@
       "__stub__": null
     }
   },
-  "consts": { "VM_COEFF_VMM_DEAD": 0.75 }
+  "consts": {
+      "VM_COEFF_VMM_DEAD": 0.75,
+      "X_MINIMAP_COLOR": "0xFF9000"
+  }
 }

@@ -22,6 +22,12 @@
     // true - enable {{marksOnGun}} macro in players panels and minimap. WARNING: performance expensive
 	// true - включить макрос {{marksOnGun}} в ушах и на миникарте. ВНИМАНИЕ: может понизить производительность
     "allowMarksOnGunInPanelsAndMinimap": false,
+    // true - enable custom labels on battle interface window
+    // true - показывать пользовательские текстовые поля в окне боевого интерфейса
+    "allowLabelsOnBattleInterface": true,
+    // true - enable {{x-*}} macros ability in players panels. WARNING: performance expensive
+    // true - включить возможность {{x-*}} макросов в ушах. ВНИМАНИЕ: может понизить производительность
+    "allowXmqpMacrosInPanels": true,
     // Format of clock on the Debug Panel (near FPS).
     // Формат часов на экране панели отладки (возле FPS).
     "clockFormat": "H:N", // TODO: "H:i"
@@ -54,9 +60,13 @@
     // true - show total HP of teams
     // true - показывать общее ХП команд
     "enabled": true, 
-    // Color of HP, hex rgb
-    // Цвет ХП, hex rgb
-    "color": "D8D8D8",
+    // Color of HP per ratio ally/enemy team, hex rgb
+    // Цвет ХП в зависимости от отношения хп союзной и вражеской команд, hex rgb
+    "colors": {
+        "bad":     "FF0000",
+        "neutral": "FFFFFF",
+        "good":    "00FF00"
+    },
     // Font of HP (used fonts from: res/packages/misk.pkg/system/fonts/)
     // Шрифт ХП (используются шрифты из: res/packages/misk.pkg/system/fonts/)
     // default_medium.font, default_smaller.font, default_small.font, hpmp_panel.font, system_large.font, system_medium.font, system_small.font, system_tiny.font, verdana_medium.font, verdana_small.font

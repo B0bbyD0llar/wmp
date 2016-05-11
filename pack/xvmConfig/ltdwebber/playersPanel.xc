@@ -28,6 +28,9 @@
 	// настройки тени (см. ниже).
     "shadow": {}
   },
+  // XMQP service activation indicator definition.
+  // Шаблон индикатора активации сервиса XMQP.
+  "xmqpService": { "x": 1, "y": 1, "w": 3, "h": 22, "bgColor": "{{alive?{{x-enabled?0xFFBB00|0x595959}}|0x595959}}", "borderColor": "0x000000", "alpha": "{{x-enabled?{{alive?100|50}}|0}}" },
   // Parameters of the Players Panels ("ears").
   // Параметры панелей игроков ("ушей").
   "playersPanel": {
@@ -159,7 +162,11 @@
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsLeft": [],
+      "extraFieldsLeft": [
+        // XMQP service activation indicator (see above).
+        // Индикатор активации сервиса XMQP (см. выше).
+        ${"xmqpService"}
+      ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
@@ -196,7 +203,11 @@
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsLeft": [],
+      "extraFieldsLeft": [
+        // XMQP service activation indicator (see above).
+        // Индикатор активации сервиса XMQP (см. выше).
+        ${"xmqpService"}
+      ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
@@ -233,7 +244,11 @@
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsLeft": [],
+      "extraFieldsLeft": [
+        // XMQP service activation indicator (see above).
+        // Индикатор активации сервиса XMQP (см. выше).
+        ${"xmqpService"}
+      ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
@@ -275,6 +290,9 @@
       "extraFieldsLeft": [
             //{ "x": 165, "y": 1, "h": 3, "w": "{{hp-max:120|120}}", "bgColor": 0, "alpha": "{{alive?50|0}}" },
             //{ "x": 165, "y": 1, "h": 3, "w": "{{hp:120|120}}", "bgColor": ${"colors.xc":"def.al"}, "alpha": "{{alive?30|0}}" }
+        // XMQP service activation indicator (see above).
+        // Индикатор активации сервиса XMQP (см. выше).
+        ${"xmqpService"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)

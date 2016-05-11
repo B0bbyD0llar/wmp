@@ -125,11 +125,10 @@ Name: battle; Description: Gefechtsmods; Types: DMVK
 Name: battle\autoaim; Description: AutoAIM Indicator mit Snapping; Types: DMVK
 Name: battle\assistant; Description: BattleAssistant (Taste J); Types: DMVK
 Name: battle\directionbox; Description: Direction Indicator Ext; Types: DMVK
-Name: battle\teamhp; Description: alternatives Team HP Pool Panel
-;Name: battle\dirmap; Description: zeige Blickrichtung auf Minimap; Types: DMVK
+;Name: battle\teamhp; Description: alternatives Team HP Pool Panel
+Name: battle\dirmap; Description: zeige Blickrichtung auf Minimap; Types: DMVK
 Name: battle\dmglog; Description: Damage Log (zeigt den erhaltenen Schaden); Types: DMVK
 Name: battle\infopanel; Description: zusätzliche Informationen zum anvisierten Ziel einblenden; Types: DMVK
-Name: battle\artyreload; Description: Arty Reload Timer Anzeige; Types: DMVK
 Name: battle\artyreload; Description: Arty Reload Timer Anzeige; Types: DMVK
 Name: battle\igwn8; Description: InGame Live WN8 (nur Näherungswert); Types: DMVK
 
@@ -139,7 +138,7 @@ Name: other\ts3; Description: TS3 Plugin; Types: DMVK
 ;Name: other\ts3\minimap; Description: zusätzliche Benachrichtigung auf der Minimap; Types: DMVK
 ;Name: other\tankinspector; Description: Tank Inspektor 1.4.3.80 mit installieren; Types: DMVK
 Name: other\vbaddict; Description: vbAddict.net Vorbereitungen; Types: DMVK
-Name: other\vbaddict\adu; Description: ActiveDossierUploader 3.4.0.7 installieren; Types: DMVK
+Name: other\vbaddict\adu; Description: ActiveDossierUploader 3.4.0.8 installieren; Types: DMVK
 Name: other\vbaddict\ats; Description: ATS - Advanced Tank Statistics Mod installieren; Types: DMVK
 Name: other\vbaddict\brr; Description: BRR - Battle Result Reciever Mod installieren; Types: DMVK
 
@@ -193,6 +192,8 @@ Source: pack\xvmConfig\ltdwebber\@xvm.xc; DestDir: {app}\res_mods\configs\xvm\lt
 Source: pack\xvmConfig\ltdwebber\alpha.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\battle.hp.xc; DestName: battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\battleLabels.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber
+Source: pack\xvmConfig\ltdwebber\battleLabelsTemplates.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber
 Source: pack\xvmConfig\ltdwebber\battleLoading.v2.xc; DestName: battleLoading.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\sf\v2
 Source: pack\xvmConfig\ltdwebber\battleLoading.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\sf\v2
 Source: pack\xvmConfig\ltdwebber\battleLoadingTips.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
@@ -209,8 +210,9 @@ Source: pack\xvmConfig\ltdwebber\carousel.xc; DestDir: {app}\res_mods\configs\xv
 Source: pack\xvmConfig\ltdwebber\clock.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\colors.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\common.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
-Source: pack\xvmConfig\ltdwebber\elements.teamhp.xc; DestName: elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND battle\teamhp
-Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT battle\teamhp
+;Source: pack\xvmConfig\ltdwebber\elements.teamhp.xc; DestName: elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND battle\teamhp
+;Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT battle\teamhp
+Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\export.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\hangar.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\hitlog.aus.xc; DestName: hitlog.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\hitlog
@@ -235,8 +237,6 @@ Source: pack\xvmConfig\ltdwebber\minimapLabelsTemplates.wn8.xc; DestName: minima
 Source: pack\xvmConfig\ltdwebber\minimapLabelsTemplates.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\wn8mm
 Source: pack\xvmConfig\ltdwebber\minimapLines.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\minimapMapSize.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
-;Source: pack\xvmConfig\ltdwebber\playersPanel.hp.xc; DestName:playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm;
-;Source: pack\xvmConfig\ltdwebber\playersPanel.hp.xc.old; DestName:playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\playersPanel.std.xc; DestName: playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm OR xvm\pp\std AND NOT xvm\pp\xvm
 Source: pack\xvmConfig\ltdwebber\playersPanel.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm\pp\xvm
 Source: pack\xvmConfig\ltdwebber\sounds.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
@@ -294,9 +294,9 @@ Source: pack\dirindicator ext\configs\spoter_mods\i18n\de.json; Components: batt
 Source: pack\dirindicator ext\configs\spoter_mods\i18n\en.json; Components: battle\directionbox; DestDir: {app}\res_mods\configs\spoter_mods\i18n
 Source: pack\dirindicator ext\configs\spoter_mods\i18n\ru.json; Components: battle\directionbox; DestDir: {app}\res_mods\configs\spoter_mods\i18n
 
-Source: pack\Team HP Pool\0.9.14\gui\scaleform\FragCorrelation.swf; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
-Source: pack\Team HP Pool\0.9.14\scripts\client\gui\mods\mod_team_hp.json; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-Source: pack\Team HP Pool\0.9.14\scripts\client\gui\mods\mod_team_hp.pyc; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+;Source: pack\Team HP Pool\0.9.14\gui\scaleform\FragCorrelation.swf; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
+;Source: pack\Team HP Pool\0.9.14\scripts\client\gui\mods\mod_team_hp.json; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+;Source: pack\Team HP Pool\0.9.14\scripts\client\gui\mods\mod_team_hp.pyc; Components: battle\teamhp; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
 Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\modsListApi\ModsListButton.swf; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\modsListApi
 Source: pack\Replay Manager\0.9.14\scripts\client\gui\mods\modsListApi\ModsListButtonIcon.png; Components: other\replayman; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\modsListApi
@@ -320,6 +320,9 @@ Source: pack\Replay Manager\0.9.14\gui\flash\ReplaysManagerWindow.swf; Component
 Source: pack\Vehicle Extended\configs\spoter_mods\vehicle_exp_extended\vehicle_exp_extended.json; Components: hangar\extvehicle; DestDir: {app}\res_mods\configs\spoter_mods\vehicle_exp_extended
 ;Source: pack\Vehicle Extended\0.9.12\scripts\client\gui\mods\mod_hangar_tooltips.pyc; Components: hangar\extvehicle; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\Vehicle Extended\0.9.12\scripts\client\gui\mods\mod_vehicle_exp_extended.pyc; Components: hangar\extvehicle; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+
+Source: pack\Minimap Gun Dir\scripts\client\mods\minimap_tankview.json; Components: battle\dirmap; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods
+Source: pack\Minimap Gun Dir\scripts\client\mods\minimap_tankview.pyc; Components: battle\dirmap; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods
 
 ;Source: pack\Minimap Gun Dir\gui\scaleform\SpotIndicator.swf; Components: battle\dirmap; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
 ;Source: pack\Minimap Gun Dir\scripts\client\mods\MinimapGunMarkers.pyc; Components: battle\dirmap; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods
@@ -371,7 +374,7 @@ Source: pack\InfoPanel\gui\scaleform\InfoPanel.swf; Components: battle\infopanel
 Source: pack\InfoPanel\gui\scaleform\InfoPanel.xml; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\scaleform
 Source: pack\InfoPanel\scripts\client\gui\mods\mod_InfoPanel.pyc; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
-Source: pack\ADU\ActiveDossierUploader 3.4.0.7.exe; DestName: ActiveDossierUploader.exe; DestDir: {app}; Components: other\vbaddict\adu
+Source: pack\ADU\ActiveDossierUploader 3.4.0.8.exe; DestName: ActiveDossierUploader.exe; DestDir: {app}; Components: other\vbaddict\adu
 Source: pack\ADU\scripts\client\mods\ATS.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods; Components: other\vbaddict\ats
 Source: pack\ADU\scripts\client\mods\BRR.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\mods; Components: other\vbaddict\brr
 
