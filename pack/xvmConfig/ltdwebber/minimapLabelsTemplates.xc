@@ -15,7 +15,7 @@
   //    Если не указаны "lost" и "spotted", то используются оба - и "lost", и "spotted".
   //    Если не указаны "alive", "dead", то используются оба - и "alive", и "dead".
   //    "flags": [ "player", "ally", "squadman", "enemy", "teamKiller", "lost", "spotted", "alive", "dead" ],
-//    "enabled" - enable/disable field creation (global macros allowed)
+  //    "enabled" - enable/disable field creation (global macros allowed)
   //    "format": "...",
   //    "shadow": { ... },
   //    "alpha": "...",
@@ -31,7 +31,7 @@
     "defaultItem": {
       "enabled": true,
       "flags": [ "player", "ally", "squadman", "enemy", "teamKiller", "lost", "spotted", "alive", "dead" ],
-      "shadow": { "distance": 0, "angle": 45, "color": "0x000000", "alpha": 80, "blur": 3, "strength": 4 },
+      "shadow": { "distance": 0, "angle": 45, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 4 },
       "alpha": 100,
       "x": 0,
       "y": 0,
@@ -43,7 +43,7 @@
       "bgColor": null,
       "borderColor": null
     },
-	// Vehicle type, visible
+    // Vehicle type, visible
     // Тип техники, видимый
     "vtypeSpotted": {
       "$ref": { "path":"def.defaultItem" },
@@ -52,14 +52,20 @@
       "align": "center",
       "valign": "center"
     },
-	// Vehicle name, visible
+    // Vehicle name, visible
     // Название техники, видимый
     "vehicleSpotted": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
       "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>",
       "x": 2,
-      "y": -1
+      "y": "{{squad?7|-1}}"
+    },
+    // Vehicle name, visible, company config
+    // Название техники, видимый, ротный конфиг
+    "vehicleSpottedCompany": {
+      "$ref": { "path":"def.vehicleSpotted" },
+      "y": "{{ally?{{battletype?7|{{squad?7|-1}}}}|-1}}"
     },
     // Player nickname, visible
     // Ник игрока, видимый
@@ -68,16 +74,23 @@
       "flags": [ "squadman", "spotted", "alive" ],
       "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{name%.7s~..}}</i></font>",
       "x": 2,
-      "y": -9
+      "y": -1
     },
-    // Nick teamkiller, visible
-    // Ник тимкиллера, видимый
-    "nickTeamkillerSpotted": {
+    // Player nickname, visible, company config
+    // Ник игрока, видимый, ротный конфиг
+    "nickSpottedCompany": {
+      "$ref": { "path": "def.nickSpotted" },
+      "flags": [ "ally", "squadman", "teamKiller", "spotted", "alive" ],
+      "format": "<font size='{{battletype?8|{{squad?8|0}}}}' color='{{squad?{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}|{{tk?{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}|#BFBFBF}}}}'><i>{{name%.7s~..}}</i></font>"
+    },
+    // XMQP event marker.
+    // Маркер события XMQP.
+    "xmqpEvent": {
       "$ref": { "path":"def.defaultItem" },
-      "flags": [ "ally", "teamKiller", "spotted", "alive" ],
-      "format": "<font size='{{battletype?8|0}}' color='{{tk?{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}|#BFBFBF}}'><i>{{name%.7s~..}}</i></font>",
-      "x": 2,
-      "y": -9
+      "flags": [ "ally", "squadman", "teamKiller", "spotted", "alive" ],
+      "format": "<font face='xvm' size='8' color='#FFBB00'>{{x-spotted?&#x70;&nbsp;}}{{x-overturned?&#x112;}}</font>",
+      "x": 3,
+      "y": -7
     },
     // Vehicle type, missing
     // Тип техники, пропавший
@@ -89,7 +102,7 @@
       "valign": "center",
       "alpha": 75
     },
-	// Vehicle name, missing
+    // Vehicle name, missing
     // Название техники, пропавший
     "vehicleLost": {
       "$ref": { "path":"def.defaultItem" },
@@ -99,7 +112,7 @@
       "x": 2,
       "y": -1
     },
-	// Player nickname, missing
+    // Player nickname, missing
     // Ник игрока, пропавший
     "nickLost": {
       "$ref": { "path":"def.defaultItem" },
@@ -109,18 +122,18 @@
       "x": 2,
       "y": -9
     },
-	// Vehicle type, dead
+    // Vehicle type, dead
     // Тип техники, мертвый
     "vtypeDead": {
       "$ref": { "path":"def.defaultItem" },
-      "flags": [ "squadman", "dead" ],
+      "flags": [ "ally", "enemy", "squadman", "teamKiller", "dead" ],
       "format": "<font face='xvm' size='8' color='{{.minimap.labelsData.colors.lostDot.{{sys-color-key}}}}'>&#x44;</font>",
       "shadow": { "$ref": { "path":"def.defaultItem.shadow" }, "strength": 3 },
       "align": "center",
       "valign": "center",
       "alpha": 90
     },
-	// Vehicle name, dead
+    // Vehicle name, dead
     // Название техники, мертвый
     "vehicleDead": {
       "$ref": { "path":"def.defaultItem" },
@@ -130,7 +143,7 @@
       "x": 2,
       "y": -1
     },
-	// Vehicle type, dead
+    // Player nickname, dead
     // Ник игрока, мертвый
     "nickDead": {
       "$ref": { "path":"def.defaultItem" },

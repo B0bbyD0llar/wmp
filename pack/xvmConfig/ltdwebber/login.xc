@@ -4,9 +4,6 @@
  */
 {
   "login": {
-    // Skip intro movie
-    // Пропустить вступительное видео
-    "skipIntro": true,
     // Save last server
     // Сохранять последний сервер
     "saveLastServer": true,
@@ -21,14 +18,14 @@
     "pingServers": {
       // true - Enable display of ping to the servers
       // true - показывать пинг до серверов
-      "enabled": true,
+      "enabled": false,
       // Update interval, in ms
       // Интервал обновления, в мс
       "updateInterval": 10000,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 15,
-      "y": 24,
+      "x": 5,
+      "y": 30,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
       "hAlign": "left",
@@ -43,16 +40,16 @@
       "delimiter": ": ",
       // Maximum number of column rows
       // Максимальное количество строк одной колонки
-      "maxRows": 2,
+      "maxRows": 3,
       // Gap between columns
       // Пространство между колонками
-      "columnGap": 0,
+      "columnGap": 10,
       // Leading between lines.
       // Пространство между строками
       "leading": 0,
       // true - show title "Ping"
       // true - показывать заголовок "Пинг"
-      "showTitle": false,
+      "showTitle": true,
       // true - show server names in list
       // true - показывать названия серверов в списке
       "showServerName": true,
@@ -64,24 +61,24 @@
       "minimalValueLength": 0,
       // text to show in case of error
       // текст показываемый в случае ошибки
-      "errorString": "--",	  
+      "errorString": "--",
       // Text style
       // Стиль текста
       "fontStyle": {
         // Font name
         // Название шрифта
         "name": "$TextFont",
-        "size": 12,         // Размер
-        "bold": false,      // Жирный
-        "italic": false,    // Курсив
+        "size": 12, // Размер
+        "bold": false,  // Жирный
+        "italic": false, // Курсив
         // Different colors depending on server response time
         // Разные цвета в зависимости от времени отклика сервера
         "color": {
-          "great": "0x60ff00",  // Отличный
-          "good":  "0xF8F400",  // Хороший
-          "poor":  "0xFE7903",  // Так себе
-          "bad":   "0xFE0E00"   // Плохой
-         },
+          "great": "0xFFCC66", // Отличный
+          "good": "0xE5E4E1",  // Хороший
+          "poor": "0x96948F",  // Так себе
+          "bad": "0xD64D4D"    // Плохой
+        },
         // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
         // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна
         "serverColor": ""
@@ -101,28 +98,31 @@
         // Values above define bad response
         // Значения более считаются плохим откликом
       },
+      // Shadow options
       // Параметры тени
       "shadow": {
+        // false - no shadow
+        // false - без тени
         "enabled": true,
-        "color": "0x000000",
-        "distance": 0,
-        "angle": 0,
-        "alpha": 70,
-        "blur": 4,
-        "strength": 2
+        "distance": 0,             // (in pixels)     / offset distance / дистанция смещения
+        "angle": 0,                // (0.0 .. 360.0)  / offset angle    / угол смещения
+        "color": "0x000000",       // "0xXXXXXX"      / color           / цвет
+        "alpha": 70,               // (0 .. 100)      / opacity         / прозрачность
+        "blur": 4,                 // (0.0 .. 255.0)  / blur            / размытие
+        "strength": 2              // (0.0 .. 255.0)  / intensity       / интенсивность
       }
     },
     "onlineServers": {
       // true - Enable display online of servers
       // true - показывать онлайн серверов
-      "enabled": true,
+      "enabled": false,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 75,
-      "y": 24,
+      "x": -5,
+      "y": 30,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
-      "hAlign": "left",
+      "hAlign": "right",
       // Vertical alignment of field at screen ("top", "center", "bottom").
       // Вертикальное выравнивание поля на экране ("top", "center", "bottom").
       "vAlign": "top",
@@ -134,26 +134,26 @@
       "delimiter": ": ",
       // Maximum number of column rows
       // Максимальное количество строк одной колонки
-      "maxRows": 2,
+      "maxRows": 3,
       // Gap between columns
       // Пространство между колонками
-      "columnGap": 0,
+      "columnGap": 10,
       // Leading between lines.
       // Пространство между строками
       "leading": 0,
       // true - show title "Online"
       // true - показывать заголовок "Онлайн"
-      "showTitle": false,
+      "showTitle": true,
       // true - show server names in list
       // true - показывать названия серверов в списке
-      "showServerName": false,
+      "showServerName": true,
       // expand server names to this amount of symbols. recommended to use monospace font if this option is set.
       // расширить названия серверов до данного количества символов. рекомендуется использовать моноширинный шрифт если данная опция задана.
       "minimalNameLength": 4,
       // expand values to this amount of symbols. recommended to use monospace font if this option is set.
       // расширить значения до данного количества символов. рекомендуется использовать моноширинный шрифт если данная опция задана.
       "minimalValueLength": 0,
-	  // text to show in case of error
+      // text to show in case of error
       // текст показываемый в случае ошибки
       "errorString": "--k",
       // Text style
@@ -162,21 +162,21 @@
         // Font name
         // Название шрифта
         "name": "$TextFont",
-        "size": 12,         // Размер
-        "bold": false,      // Жирный
-        "italic": false,    // Курсив
+        "size": 12, // Размер
+        "bold": false,  // Жирный
+        "italic": false, // Курсив
         // Different colors depending on people online
         // Разные цвета в зависимости от количества игроков
         "color": {
-          "great": "0x60ff00",  // Отличный
-          "good":  "0xF8F400",  // Хороший
-          "poor":  "0xFE7903",  // Так себе
-          "bad":   "0xFE0E00"   // Плохой
+          "great": "0x60ff00", // Отличный
+          "good": "0xF8F400",  // Хороший
+          "poor": "0xFE7903",  // Так себе
+          "bad": "0xFE0E00"    // Плохой
         },
         // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
         // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна
         "serverColor": ""
-     },
+      },
       // Threshold values defining server online and thus shorter battle queue
       // Пороговые значения, определяющие количество человек онлайн и следовательно меньшую очередь в бой
       "threshold": {
@@ -186,12 +186,13 @@
         //below this value the queue might be long
         //ниже этого значения очередь может быть долгой
       },
+      // Shadow options
       // Параметры тени
       "shadow": {
         "enabled": true,
-        "color": "0x000000",
         "distance": 0,
         "angle": 0,
+        "color": "0x000000",
         "alpha": 70,
         "blur": 4,
         "strength": 2

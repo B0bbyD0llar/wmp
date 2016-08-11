@@ -4,9 +4,9 @@
  */
 {
   "markers": {
-    // true - use standard client vehicle markers.
-    // true - использовать стандартные маркеры клиента.
-    "useStandardMarkers": false,
+    // false - use standard client vehicle markers.
+    // false - использовать стандартные маркеры клиента.
+    "enabled": true,
     // {{turret}} marker display strings.
     // Отображаемые строки {{turret}} маркера.
     "turretMarkers": {
@@ -16,7 +16,7 @@
       // Subject has stock turret and top gun can be mounted. Subject is somewhat vulnerable.
       // Субъект имеет стоковую башню и топ орудие может быть установлено. Субъект немного уязвим.
       "lowVulnerability": "'"
-    },     
+    },
     // ally
     // союзники
     "ally": {

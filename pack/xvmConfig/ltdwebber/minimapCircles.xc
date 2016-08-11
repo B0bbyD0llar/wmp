@@ -4,7 +4,6 @@
  */
 {
   "circles": {
-    "enabled": true,
     // TODO: better description and translation
     // View distance
     // Дальность обзора
@@ -30,17 +29,17 @@
     "view": [
       // Main circles:
       // Основные круги:
-      { "enabled":  true, "distance": "blindarea", "scale": 1, "thickness": 0.3, "alpha": 50, "color": "0x00FF21" },
-      { "enabled":  true, "distance": 445,         "scale": 1, "thickness":  0.3, "alpha": 45, "color": "0xFFFFFF" },
+      { "enabled":  true, "distance": "blindarea", "scale": 1, "thickness": 0.75, "alpha": 80, "color": "0x3EB5F1" },
+      { "enabled":  true, "distance": 445,         "scale": 1, "thickness":  1.1, "alpha": 45, "color": "0xFFCC66" },
       // Circle of the maximum units appearance.
       // Окружность границы максимальной отрисовки юнитов.
-      { "enabled": "{{my-vtype-key=SPG?false|true}}", "distance": 564, "scale": 1, "thickness": 0.3, "alpha": 60, "color": "0xFFFF00" },
+      { "enabled": "{{my-vtype-key=SPG?false|true}}", "distance": 564, "scale": 1, "thickness": 0.7, "alpha": 40, "color": "0xFFFFFF" },
       // Additional circles:
       // Дополнительные круги:
-      { "enabled": true, "distance": 50,           "scale": 1, "thickness": 0.3, "alpha": 60, "color": "0xFFFFFF" },
-      { "enabled": false, "distance": "standing",  "scale": 1, "thickness":  0.3, "alpha": 60, "color": "0xFF0000" },
-      { "enabled": false, "distance": "motion",    "scale": 1, "thickness":  0.3, "alpha": 60, "color": "0x0000FF" },
-      { "enabled": false, "distance": "dynamic",   "scale": 1, "thickness":  0.3, "alpha": 60, "color": "0x00FF21" }
+      { "enabled": true, "distance": 50,           "scale": 1, "thickness": 0.75, "alpha": 60, "color": "0xFFFFFF" },
+      { "enabled": false, "distance": "standing",  "scale": 1, "thickness":  1.0, "alpha": 60, "color": "0xFF0000" },
+      { "enabled": false, "distance": "motion",    "scale": 1, "thickness":  1.0, "alpha": 60, "color": "0x0000FF" },
+      { "enabled": false, "distance": "dynamic",   "scale": 1, "thickness":  1.0, "alpha": 60, "color": "0x3EB5F1" }
     ],
     // Maximum range of fire for artillery
     // Artillery gun fire range may differ depending on vehicle angle relative to ground
@@ -51,10 +50,10 @@
     // Дальнобойность арты может меняться в зависимости от углов постановки машины на склонах местности
     // и высоте расположения машины относительно цели. На миникарте эти факторы не учитываются.
     // Подробнее по ссылке: http://goo.gl/ZqlPa
-    "artillery": { "enabled": true, "alpha": 55, "color": "0xFF6666", "thickness": 0.3 },
+    "artillery": { "enabled": true, "alpha": 55, "color": "0xFF6666", "thickness": 0.5 },
     // Maximum range of shooting for machine gun
     // Максимальная дальность полета снаряда для пулеметных танков
-    "shell":     { "enabled": true, "alpha": 55, "color": "0xFF6666", "thickness": 0.3 },
+    "shell":     { "enabled": true, "alpha": 55, "color": "0xFF6666", "thickness": 0.5 },
     // Special circles dependent on vehicle type.
     // Many configuration lines for the same vehicle make many circles.
     // See other vehicle types at (replace : symbol with -):

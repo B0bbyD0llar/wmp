@@ -25,13 +25,13 @@
     // true - Allow to consider the exchange of experience with gold in tech tree
     // true - Разрешить учитывать обмен опыта за золото в дереве исследований
     "allowExchangeXPInTechTree": true,
-    // true - enable crew auto return function
-    // true - включить функцию автовозврата экипажа
+    // true - Enable crew auto return function
+    // true - Включить функцию автовозврата экипажа
     "enableCrewAutoReturn": true,
     // true - Return crew check box is selected by default
     // true - Включить галочку возврата экипажа по умолчанию
     "crewReturnByDefault": false,
-	// true - Show flags in barracks
+    // true - Show flags in barracks
     // true - Показывать флаги в казарме
     "barracksShowFlags": true,
     // true - Show skills in barracks
@@ -40,8 +40,8 @@
     // true - Enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
     // true - Включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
     "enableEquipAutoReturn": true,
-    // true - Make vehicle not ready for battle if less than 20% ammo loaded
-    // true - Сделать машину не готовой к битве если заряжено менее 20% снарядов
+    // true - Make vehicle not ready for battle if low ammo
+    // true - Сделать машину не готовой к битве если мало снарядов
     "blockVehicleIfLowAmmo": true,
     // Below this percentage, ammo is low. (0 - 100)
     // Ниже этого процента, снарядов считается мало. (0 - 100)
@@ -54,14 +54,14 @@
     "pingServers": {
       // true - Enable display of ping to the servers
       // true - показывать пинг до серверов
-      "enabled": true,
+      "enabled": false,
       // Update interval, in ms
       // Интервал обновления, в мс
       "updateInterval": 10000,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 2,
-      "y": 53,
+      "x": 3,
+      "y": 51,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
       "hAlign": "left",
@@ -88,7 +88,7 @@
       "topmost": true,
       // true - show title "Ping"
       // true - показывать заголовок "Пинг"
-      "showTitle": false,
+      "showTitle": true,
       // true - show server names in list
       // true - показывать названия серверов в списке
       "showServerName": true,
@@ -98,7 +98,7 @@
       // expand values to this amount of symbols. recommended to use monospace font if this option is set.
       // расширить значения до данного количества символов. рекомендуется использовать моноширинный шрифт если данная опция задана.
       "minimalValueLength": 0,
-	  // text to show in case of error
+      // text to show in case of error
       // текст показываемый в случае ошибки
       "errorString": "--",
       // List of ignored servers, for example, ["RU1", "RU3"]
@@ -143,28 +143,31 @@
         // Values above define bad response
         // Значения более считаются плохим откликом
       },
+      // Shadow options
       // Параметры тени
       "shadow": {
+        // false - no shadow
+        // false - без тени
         "enabled": true,
-        "color": "0x000000",
-        "distance": 0,
-        "angle": 0,
-        "alpha": 70,
-        "blur": 4,
-        "strength": 2
+        "distance": 0,             // (in pixels)     / offset distance / дистанция смещения
+        "angle": 0,                // (0.0 .. 360.0)  / offset angle    / угол смещения
+        "color": "0x000000",       // "0xXXXXXX"      / color           / цвет
+        "alpha": 70,               // (0 .. 100)      / opacity         / прозрачность
+        "blur": 4,                 // (0.0 .. 255.0)  / blur            / размытие
+        "strength": 2              // (0.0 .. 255.0)  / intensity       / интенсивность
       }
     },
     "onlineServers": {
       // true - Enable display online of servers
       // true - показывать онлайн серверов
-      "enabled": true,
+      "enabled": false,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 60,
-      "y": 53,
+      "x": -3,
+      "y": 51,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
-      "hAlign": "left",
+      "hAlign": "right",
       // Vertical alignment of field at screen ("top", "center", "bottom").
       // Вертикальное выравнивание поля на экране ("top", "center", "bottom").
       "vAlign": "top",
@@ -188,10 +191,10 @@
       "topmost": true,
       // true - show title "Online"
       // true - показывать заголовок "Онлайн"
-      "showTitle": false,
+      "showTitle": true,
       // true - show server names in list
       // true - показывать названия серверов в списке
-      "showServerName": false,
+      "showServerName": true,
       // expand server names to this amount of symbols. recommended to use monospace font if this option is set.
       // расширить названия серверов до данного количества символов. рекомендуется использовать моноширинный шрифт если данная опция задана.
       "minimalNameLength": 4,
@@ -227,7 +230,7 @@
         // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
         // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна
         "serverColor": ""
-     },
+      },
       // Threshold values defining server online and thus shorter battle queue
       // Пороговые значения, определяющие количество человек онлайн и следовательно меньшую очередь в бой
       "threshold": {
@@ -237,12 +240,13 @@
         //below this value the queue might be long
         //ниже этого значения очередь может быть долгой
       },
+      // Shadow options
       // Параметры тени
       "shadow": {
         "enabled": true,
-        "color": "0x000000",
         "distance": 0,
-        "angle": 0,
+        "angle": 0,        
+        "color": "0x000000",
         "alpha": 70,
         "blur": 4,
         "strength": 2
