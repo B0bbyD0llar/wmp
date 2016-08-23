@@ -114,7 +114,7 @@ Name: battle\autoaim; Description: AutoAIM Indicator mit Snapping; Types: DMVK
 Name: battle\assistant; Description: BattleAssistant (Taste J / MBT); Types: DMVK
 ;Name: battle\directionbox; Description: Direction Indicator Ext; Types: DMVK
 ;Name: battle\dirmap; Description: zeige Blickrichtung auf Minimap; Types: DMVK
-Name: battle\dmglog; Description: Damage Log (zeigt den erhaltenen Schaden); Types: DMVK
+;Name: battle\dmglog; Description: Damage Log (zeigt den erhaltenen Schaden); Types: DMVK
 Name: battle\infopanel; Description: zusätzliche Informationen zum anvisierten Ziel einblenden; Types: DMVK
 ;Name: battle\artyreload; Description: Arty Reload Timer Anzeige; Types: DMVK
 Name: battle\igwn8; Description: InGame Live WN8 (nur Näherungswert); Types: DMVK
@@ -166,7 +166,6 @@ Name: {app}\res_mods\mods\shared_resources\xvm\res\clanicons\EU\clan; Components
 Name: {app}\res_mods\configs\xvm\py_macro; Components: xvm
 Name: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
 Name: {app}\res_mods\configs\xvm\py_macro\xvm; Components: xvm
-;Name: {app}\res_mods\configs\tessu_mod; Components: other\ts3
 
 [Files]
 Source: pack\xvm\res_mods\*; DestDir: {app}\res_mods; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm
@@ -308,15 +307,15 @@ Source: pack\ClanIcons\DMVK\DMVK.png; DestDir: {app}\res_mods\mods\shared_resour
 ;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.15\scripts\client\gui\mods\mod_GunConstraints.pyc; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 ;Source: pack\Crosshairs\J1mB0's Crosshair\res_mods\0.9.15\scripts\client\gui\mods\mod_J1mB091.pyc; Components: crosshair\jimbo; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
-Source: pack\Damage Log\0.9.15.1\scripts\client\gui\mods\mod_damagelog.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-Source: pack\Damage Log\0.9.15.1\scripts\client\gui\mods\mod_damagelog.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-Source: pack\Damage Log\configs\damagelog\Blocked.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
-Source: pack\Damage Log\configs\damagelog\Damaged.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
-Source: pack\Damage Log\configs\damagelog\Fire.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
-Source: pack\Damage Log\configs\damagelog\Log.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
-Source: pack\Damage Log\configs\damagelog\Message.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
-;Source: pack\Damage Log\configs\damagelog\Sound.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
-Source: pack\Damage Log\configs\damagelog\Timer.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
+;Source: pack\Damage Log\0.9.15.1\scripts\client\gui\mods\mod_damagelog.pyc; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+;Source: pack\Damage Log\0.9.15.1\scripts\client\gui\mods\mod_damagelog.swf; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+;Source: pack\Damage Log\configs\damagelog\Blocked.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
+;Source: pack\Damage Log\configs\damagelog\Damaged.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
+;Source: pack\Damage Log\configs\damagelog\Fire.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
+;Source: pack\Damage Log\configs\damagelog\Log.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
+;Source: pack\Damage Log\configs\damagelog\Message.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
+;;Source: pack\Damage Log\configs\damagelog\Sound.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
+;Source: pack\Damage Log\configs\damagelog\Timer.cfg; Components: battle\dmglog; DestDir: {app}\res_mods\configs\damagelog\
 
 Source: pack\BattleAssistant\0.9.15.1\scripts\client\gui\mods\mod_battle_assistant.pyc; Components: battle\assistant; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\BattleAssistant\0.9.15.1\scripts\client\gui\mods\mod_battle_assistant.txt; Components: battle\assistant; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods

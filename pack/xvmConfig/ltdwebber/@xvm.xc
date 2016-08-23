@@ -23,7 +23,7 @@
 
   // automatically reload config. Can reduce performance.
   // автоматически перезагружать конфиг. Может понизить производительность.
-  "autoReloadConfig": true,
+  "autoReloadConfig": false,
 
   // Language used in mod
   // "auto" - automatically detect language from game client,
@@ -58,7 +58,7 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "11.08.2016",
+    "date": "23.08.2016",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
@@ -66,7 +66,7 @@
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.4.1.1"
+    "modMinVersion": "6.4.2.1"
   },
 
   // Parameters for login screen.

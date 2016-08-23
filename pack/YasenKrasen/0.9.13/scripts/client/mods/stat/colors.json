@@ -25,18 +25,18 @@
             {"value": 1925,  "color": "#D042F3"}
         ],
         "WN8": [
-		    {"value": 0,     "color": "#FE0E00"},
-		    {"value": 379,   "color": "#FE0E00"},
-            {"value": 380,   "color": "#FE7903"},
-            {"value": 849,   "color": "#FE7903"},
-            {"value": 850,  "color": "#F8F400"},
-            {"value": 1419,  "color": "#F8F400"},
-            {"value": 1420,  "color": "#60FF00"},
-            {"value": 2104,  "color": "#60FF00"},
-            {"value": 2105,  "color": "#02C9B3"},
-            {"value": 2769,  "color": "#02C9B3"},
-			{"value": 2770,  "color": "#D042F3"},
-			{"value": 99999, "color": "#D042F3"}
+            {"value": 0,     "color": "#FE0E00"},
+            {"value": 399,   "color": "#FE0E00"},
+            {"value": 400,   "color": "#FE7903"},
+            {"value": 899,   "color": "#FE7903"},
+            {"value": 900,  "color": "#F8F400"},
+            {"value": 1469,  "color": "#F8F400"},
+            {"value": 1470,  "color": "#60FF00"},
+            {"value": 2179,  "color": "#60FF00"},
+            {"value": 2180,  "color": "#02C9B3"},
+            {"value": 2879,  "color": "#02C9B3"},
+            {"value": 2880,  "color": "#D042F3"},
+            {"value": 99999, "color": "#D042F3"}
         ],
         "rDAMAGE": [
             {"value": 0.34,  "color": "#FE0E00"},
