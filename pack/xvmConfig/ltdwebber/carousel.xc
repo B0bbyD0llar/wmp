@@ -117,28 +117,50 @@
     "extraFields": [
       // Средний урон
       // Average damage
-      { "x": 1, "y": 28, "width": 18, "height": 18, "alpha": "{{v.tdb?|0}}", 
+      {
+        "enabled": true,
+        "x": 1, "y": 28, "width": 18, "height": 18, "alpha": "{{v.tdb?|0}}", 
         "src": "xvm://res/icons/carousel/damage.png"
       },
-      { "x": 17, "y": 28,
+      {
+        "enabled": true,
+        "x": 17, "y": 28,
         "format": "<b><font face='$FieldFont' size='12' color='{{v.c_xtdb|#CFCFCF}}'>{{v.tdb%d}}</font></b>",
         "shadow": ${ "def.textFieldShadow" }
       },
       // Sign of mastery.
       // Знак мастерства.
-      { "x": -1, "y": 14, "format": "<img src='img://gui/maps/icons/library/proficiency/class_icons_{{v.mastery}}.png' width='25' height='25'>" },
-      // BattleTier
-      { "x": 40, "y": 1, "format": "<b><font size='9' color='#C8C8B5'>{{v.battletiermin}}-{{v.battletiermax}}</font></b>", "shadow": { "color": "0x000000", "alpha": 0.8, "blur": 1, "strength": 2, "distance": 0, "angle": 0 }},
-      // Vehicle Level
-      //{ "x": 18, "y": -3, "format": "<b><font size='15' face='$FieldFont' color='#C8C8B5' > {{v.level}}</font></b>", "shadow": { "color": "0x000000", "alpha": 0.8, "blur": 2, "strength": 3, "distance": 0, "angle": 0 }},
-      //{ "Name": "Expected Dmg", "x": 1, "y": 73, "format": "<font size='8' color='#C8C8B5'>E.Dmg: {{v.wn8expd%2d|-}}</font>" },
+      {
+        "enabled": true,
+        "x": -1, "y": 10, "width": 23, "height": 23,
+        "src": "img://gui/maps/icons/library/proficiency/class_icons_{{v.mastery}}.png"
+      },
+      // Количество боёв
+      // Battles count
+      {
+        "enabled": true,
+        "x": 158, "y": 17, "align": "right", "width": 13, "height": 13, "alpha": "{{v.battles?|0}}", 
+        "src": "xvm://res/icons/carousel/battles.png"
+      },
+      {
+        "enabled": true,
+        "x": 145, "y": 14, "align": "right",
+        "format": "<b><font face='$FieldFont' size='12' color='#CFCFCF' alpha='#F0'>{{v.battles}}</font></b>",
+        "shadow": ${ "def.textFieldShadow" }
+      },
+      // Процент побед
       // Winrate
-	  { "x": 1, "y": 80, "format": "<font face='mono' size='13' color='{{v.c_winrate}}'>{{v.winrate%2d~%|--%}}</font>", "shadow": { "color": "0x000000", "alpha": 80, "blur": 2, "strength": 3, "distance": 0, "angle": 0 }},
-      //{ "Name": "MarkOnGunIMG","x": 3, "y": 51, "w": 14, "h": 17, "src": "cfg://ltdwebber/img/marksongun/{{level<5?|{{v.marksOnGun|x}}}}.png", "shadow": {} },
-      //{ "Name": "MarkOnGun","x": 10, "y": 49, "align": "center","format": "<b><font size='9' color='#C8C8B5'>{{v.marksOnGun|-}}</font></b>", "shadow": { "color": "0x000000", "alpha": 80, "blur": 2, "strength": 3, "distance": 0, "angle": 0 } },
-      //{ "Name": "MarkOnGunPer","x": 1, "y": 66, "format": "<font face='mono' size='11' color='{{v.c_damageRating}}'>{{v.damageRating%2.0f~%|-%}}</font>", "shadow": { "color": "0x000000", "alpha": 80, "blur": 2, "strength": 3, "distance": 0, "angle": 0 } },
-      { "Name": "xTE","x": 158, "y": 69, "align":"right", "format": "<font face='mono' size='9'>xTE:</font><font size='9' color='{{v.c_xte}}'>{{v.xte%2d~|--}}</font>", "shadow": { "color": "0x000000", "alpha": 80, "blur": 2, "strength": 3, "distance": 0, "angle": 0 }}
-
+      {
+        "enabled": true,
+        "x": 158, "y": 32, "align": "right", "width": 13, "height": 13, "alpha": "{{v.winrate?|0}}", 
+        "src": "xvm://res/icons/carousel/wins.png"
+      },
+      {
+        "enabled": true,
+        "x": 145, "y": 28, "align": "right",
+        "format": "<b><font face='$FieldFont' size='12' color='{{v.c_winrate|#CFCFCF}}'>{{v.winrate%2d~%}}</font></b>",
+        "shadow": ${ "def.textFieldShadow" }
+      }
     ]
   }
 }

@@ -213,9 +213,9 @@
       "format": "{{py:xvm.total_hp.text()}}"
     },
     "avgDamage": {
-      "enabled": true,
+      "enabled": false,
       "updateEvent": "ON_DAMAGE_CAUSED",
-      "x": 170,
+      "x": -170,
       "y": 30,
       "screenHAlign": "center",
       "align": "right",
