@@ -90,8 +90,8 @@ Name: xvm; Description: XVM; Types: DMVK; MinVersion: 0.0,5.0
 ;Name: xvm\sixthpic\hdr; Description: Saurons Auge; Flags: exclusive
 ;Name: xvm\sixthpic\cat; Description: Depri Cat; Flags: exclusive
 ;Name: xvm\sixthpic\doug; Description: Doug; Flags: exclusive
-;Name: xvm\contour; Description: Contour Icons
-;Name: xvm\contour\korolins; Description: Korolins Contour Icons (DMVK Setting); Types: DMVK; Flags: exclusive
+Name: xvm\contour; Description: Contour Icons
+Name: xvm\contour\korolins; Description: Korolins Contour Icons (DMVK Setting); Types: DMVK; Flags: exclusive
 
 ;Name: hangar; Description: Garagen Mods
 ;Name: hangar\extvehicle; Description: Erweiterte Fahrzeuginformationen; Types: DMVK
@@ -174,9 +174,9 @@ Source: pack\xvm\res_mods\*; DestDir: {app}\res_mods; Flags: ignoreversion creat
 ;Source: pack\xvmConfig\*; DestDir: {app}\res_mods\configs\xvm; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm
 Source: pack\xvmConfig\ltdwebber\@xvm.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\alpha.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
-;Source: pack\xvmConfig\ltdwebber\battle.nomirror.xc; DestName: battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND xvm\contour
-;Source: pack\xvmConfig\ltdwebber\battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\contour
-Source: pack\xvmConfig\ltdwebber\battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\battle.nomirror.xc; DestName: battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND xvm\contour
+Source: pack\xvmConfig\ltdwebber\battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm AND NOT xvm\contour
+;Source: pack\xvmConfig\ltdwebber\battle.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\battleLabels.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\battleLabelsTemplates.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\battleLoading.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
@@ -371,10 +371,9 @@ Source: pack\YasenKrasen\0.9.15.1\scripts\client\gui\mods\stat\config.json; Comp
 Source: pack\YasenKrasen\0.9.15.1\scripts\client\gui\mods\stat\expected_tank_values.json; Components: session; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods\stat
 Source: pack\YasenKrasen\0.9.15.1\scripts\client\gui\mods\mod_stat.pyc; Components: session; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
-;Source: pack\Contour Icons\Korolins (DMVK)\gui\flash\atlases\battleAtlas.png; Components: xvm\contour\korolins; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
-;Source: pack\Contour Icons\Korolins (DMVK)\gui\flash\atlases\battleAtlas.xml; Components: xvm\contour\korolins; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
-;Source: pack\Contour Icons\Korolins (DMVK)\gui\maps\icons\vehicle\contour\*; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm\contour\korolins; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\maps\icons\vehicle\contour
-
+Source: pack\Contour Icons\Korolins (DMVK)\0.9.15.2\mod\gui\flash\atlases\battleAtlas.png; Components: xvm\contour\korolins; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\0.9.15.2\mod\gui\flash\atlases\battleAtlas.xml; Components: xvm\contour\korolins; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\0.9.15.2\mod\gui\maps\icons\vehicle\contour\*; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm\contour\korolins; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\maps\icons\vehicle\contour
 
 [INI]
 Filename: {app}\wmp\Zur Modpack Homepage.url; Section: InternetShortcut; Key: URL; String: http://materialvernichtungskombinat.de/hilfe/webbers-modpack/

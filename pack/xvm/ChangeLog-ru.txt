@@ -1,3 +1,14 @@
+XVM-6.4.5.1:
+  * исправлено падение клиента при не пустой секции "minimap"/"circles"/"special"
+
+XVM-6.4.5:
+  * реализованы круги на миникарте
+  * переименованы опции в секциях "minimap" и "minimapAlt" (с инвертированными значениями):
+      "useStandardCircles" -> "circlesEnabled"
+      "useStandardLabels" -> "labelsEnabled"
+      "useStandardLines" -> "linesEnabled"
+  * добавлена опция "statisticForm"/"removePlayerStatusIcon" - убрать отображение иконки статуса игрока
+
 XVM-6.4.4:
   * реализованы линии на миникарте (круги пока еще нет)
 

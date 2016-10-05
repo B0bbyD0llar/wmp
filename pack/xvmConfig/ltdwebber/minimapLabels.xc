@@ -15,7 +15,7 @@
       ${ "minimapLabelsTemplates.xc":"def.xmqpEvent" },
       ${ "minimapLabelsTemplates.xc":"def.vtypeLost" },
       ${ "minimapLabelsTemplates.xc":"def.vehicleLost" },
-      ${ "minimapLabelsTemplates.xc":"def.nickLost" },
+      ${ "minimapLabelsTemplates.xc":"def.nickLost" }
       //${ "minimapLabelsTemplates.xc":"def.vtypeDead" }
     ]
   }

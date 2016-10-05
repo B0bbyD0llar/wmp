@@ -18,6 +18,7 @@
       // Opacity (dynamic transparency allowed, see macros.txt).
       // Прозрачность (допускается использование динамической прозрачности, см. macros.txt)
       "alpha": 100,
+      "align": "center",
       // Font options.
       // Параметры шрифта.
       "textFormat": {
@@ -26,7 +27,6 @@
         // Color (dynamic colors allowed, see macros.txt).
         // Цвет (допускается использование динамического цвета, см. macros.txt)
         "color": null,
-        "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
         "bold": false,                  // True - bold    / Жирный.
         "italic": false                 // True - italic  / Курсив.
       },
@@ -64,13 +64,13 @@
       "x": 0,                         // положение по оси X
       "y": -36,                       // положение по оси Y
       "alpha": 100,                   // прозрачность (допускается использование динамической прозрачности, см. macros.txt)
+      "align": "center",              //   выравнивание текста (left, center, right)
       // Font options.
       // Параметры шрифта.
       "textFormat": {
         "font": "$FieldFont",         //   название
         "size": 13,                   //   размер
         "color": null,                //   цвет (допускается использование динамического цвета, см. macros.txt)
-        "align": "center",            //   выравнивание текста (left, center, right)
         "bold": false,                //   обычный (false) или жирный (true)
         "italic": false               //   обычный (false) или курсив (true)
       },
@@ -92,8 +92,8 @@
     "playerFlag": {
         "name": "Flag",
         "enabled": true,
-        "x": -46,
-        "y": -19,
+        "x": -45,
+        "y": -20,
         "alpha": 100,
         "color": null,
         "font": {
@@ -124,11 +124,11 @@
       "x": 0,
       "y": -20,
       "alpha": 100,
+      "align": "center",
       "textFormat": {
         "font": "$FieldFont",
         "size": 11,
         "color": "0xD9D9D9",
-        "align": "center",
         "bold": true,
         "italic": false
       },
@@ -151,11 +151,11 @@
       "x": 0,
       "y": -51,
       "alpha": 100,
+      "align": "center",
       "textFormat": {
         "font": "$FieldFont",
         "size": 13,
         "color": "{{c:r}}",
-        "align": "center",
         "bold": true,
         "italic": false
       },

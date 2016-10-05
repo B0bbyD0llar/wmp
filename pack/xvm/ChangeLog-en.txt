@@ -1,3 +1,14 @@
+XVM-6.4.5.1:
+  * fix client crash when "minimap"/"circles"/"special" section is not empty
+
+XVM-6.4.5:
+  * circles on the minimap implemented
+  * renamed option in the "minimap" and "minimapAlt" sections (with inverted values):
+      "useStandardCircles" -> "circlesEnabled"
+      "useStandardLabels" -> "labelsEnabled"
+      "useStandardLines" -> "linesEnabled"
+  * added option "statisticForm"/"removePlayerStatusIcon" - disable player status icon
+
 XVM-6.4.4:
   * lines on the minimap implemented (circles are not yet)
 

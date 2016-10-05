@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<item>
+  <Name>DMVK</Name>
+  <Author>mir</Author>
+  <PathTemplate></PathTemplate>
+  <BattleAtlasPathTemplate null="1" />
+  <VehicleMarkersAtlasPathTemplate null="1" />
+  <IconsBulkSaveEnabled>True</IconsBulkSaveEnabled>
+  <BattleAtlasBulkSaveEnabled>False</BattleAtlasBulkSaveEnabled>
+  <VehicleMarkersAtlasBulkSaveEnabled>False</VehicleMarkersAtlasBulkSaveEnabled>
+  <IconWidth>80</IconWidth>
+  <IconHeight>24</IconHeight>
+  <Centerable>True</Centerable>
+  <Layers>
+    <item type="TankIconMaker.Layers.FilenamePatternImageLayer">
+      <Name>Bild</Name>
+      <Effects />
+      <Id null="1" />
+      <Visible>True</Visible>
+      <VisibleFor>
+        <By>Single</By>
+        <By2>Single</By2>
+        <By3>Single</By3>
+        <By4>Single</By4>
+        <ClassLight>Yes</ClassLight>
+        <ClassMedium>Yes</ClassMedium>
+        <ClassHeavy>Yes</ClassHeavy>
+        <ClassDestroyer>Yes</ClassDestroyer>
+        <ClassArtillery>Yes</ClassArtillery>
+        <ClassNone>Yes</ClassNone>
+        <CountryUSSR>Yes</CountryUSSR>
+        <CountryGermany>Yes</CountryGermany>
+        <CountryUSA>Yes</CountryUSA>
+        <CountryFrance>Yes</CountryFrance>
+        <CountryChina>Yes</CountryChina>
+        <CountryUK>Yes</CountryUK>
+        <CountryJapan>Yes</CountryJapan>
+        <CountryCzech>Yes</CountryCzech>
+        <CountrySweden>Yes</CountrySweden>
+        <CountryNone>Yes</CountryNone>
+        <CategNormal>Yes</CategNormal>
+        <CategPremium>Yes</CategPremium>
+        <CategSpecial>Yes</CategSpecial>
+        <Single>Yes</Single>
+        <TierNone>Yes</TierNone>
+        <Tier1>Yes</Tier1>
+        <Tier2>Yes</Tier2>
+        <Tier3>Yes</Tier3>
+        <Tier4>Yes</Tier4>
+        <Tier5>Yes</Tier5>
+        <Tier6>Yes</Tier6>
+        <Tier7>Yes</Tier7>
+        <Tier8>Yes</Tier8>
+        <Tier9>Yes</Tier9>
+        <Tier10>Yes</Tier10>
+      </VisibleFor>
+      <SavedByVersion>1</SavedByVersion>
+      <Pattern>C:\Users\Andre\ownCloud\Projekte\WMP\Setup\pack\Contour Icons\Korolins (DMVK)\0.9.15.2\Icons\{id}.png</Pattern>
+    </item>
+  </Layers>
+  <ForumLink null="1" />
+</item>
