@@ -1,563 +1,565 @@
 WOT-DATA,2
 {{EN}},"Short tank names, original – like in the game."
 {{RU}},"Короткие названия танков, оригинал – как в игре."
-china-Ch01_Type59,Type 59,#216
-china-Ch01_Type59_Gold,Type 59 G,#216
-china-Ch02_Type62,Type 62,#216
-china-Ch03_WZ-111,WZ-111,#216
-china-Ch04_T34_1,T-34-1,#216
-china-Ch04_T34_1_training,T-34-1,#216
-china-Ch05_T34_2,T-34-2,#216
-china-Ch06_Renault_NC31,NC-31,#216
-china-Ch06_Renault_NC31_bot,NC-31,#216
-china-Ch07_Vickers_MkE_Type_BT26,VAE Type B,#216
-china-Ch08_Type97_Chi_Ha,Chi-Ha,#216
-china-Ch09_M5,M5A1 Stuart,#216
-china-Ch10_IS2,IS-2,#216
-china-Ch11_110,110,#216
-china-Ch11_110_IGR,110,#216
-china-Ch12_111_1_2_3,WZ-111 1-4,#216
-china-Ch14_T34_3,T-34-3,#216
-china-Ch15_59_16,59-16,#216
-china-Ch16_WZ_131,WZ-131,#216
-china-Ch17_WZ131_1_WZ132,WZ-132,#216
-china-Ch17_WZ131_1_WZ132_IGR,WZ-132,#216
-china-Ch18_WZ-120,WZ-120,#216
-china-Ch19_121,121,#216
-china-Ch19_121_IGR,121,#216
-china-Ch20_Type58,Type 58,#216
-china-Ch21_T34,Type T-34,#216
-china-Ch22_113,113,#216
-china-Ch23_112,112,#216
-china-Ch24_Type64,Type 64,#216
-china-Ch25_121_mod_1971B,121B,#216
-china-Ch26_59_Patton,59-Patton,#216
-czech-Cz01_Skoda_T40,Škoda T 40,#216
-czech-Cz02_TVP_T50,Škoda T 50,#216
-czech-Cz03_LT_vz35,LT vz. 35,#216
-czech-Cz04_T50_51,TVP T 50/51,#216
-czech-Cz05_T34_100,T-34/100,#216
-czech-Cz06_Kolohousenka,K-housenka,#216
-czech-Cz07_TVP_46,TVP VTU,#216
-czech-Cz08_T_25,Škoda T 25,#216
-czech-Cz09_T_24,Škoda T 24,#216
-czech-Cz10_LT_vz38,LT vz. 38,#216
-czech-Cz11_V_8_H,ST vz. 39,#216
-france-F01_RenaultFT,FT,#216
-france-F01_RenaultFT_bot,FT,#216
-france-F02_D1,D1,#216
-france-F03_D2,D2,#216
-france-F04_B1,B1,#216
-france-F05_BDR_G1B,BDR G1 B,#216
-france-F06_ARL_44,ARL 44,#216
-france-F07_AMX_M4_1945,AMX M4 45,#216
-france-F08_AMX_50_100,AMX 50 100,#216
-france-F08_AMX_50_100_IGR,AMX 50 100,#216
-france-F09_AMX_50_120,AMX 50 120,#216
-france-F10_AMX_50B,AMX 50 B,#216
-france-F10_AMX_50B_fallout,(R) AMX 50 B,#216
-france-F11_Renault_G1R,G1 R,#216
-france-F12_Hotchkiss_H35,H35,#216
-france-F13_AMX38,AMX 38,#216
-france-F14_AMX40,AMX 40,#216
-france-F15_AMX_12t,AMX 12 t,#216
-france-F16_AMX_13_75,AMX 13 75,#216
-france-F17_AMX_13_90,AMX 13 90,#216
-france-F17_AMX_13_90_IGR,AMX 13 90,#216
-france-F18_Bat_Chatillon25t,B-C 25 t,#216
-france-F18_Bat_Chatillon25t_IGR,B-C 25 t,#216
-france-F19_Lorraine40t,Lorr. 40 t,#216
-france-F20_RenaultBS,FT BS,#216
-france-F21_Lorraine39_L_AM,Lorr. 39L AM,#216
-france-F22_AMX_105AM,AMX 13 AM,#216
-france-F23_AMX_13F3AM,AMX 13 F3,#216
-france-F24_Lorraine155_50,Lorr. 155 50,#216
-france-F25_Lorraine155_51,Lorr. 155 51,#216
-france-F27_FCM_36Pak40,FCM36Pak40,#216
-france-F28_105_leFH18B2,leFH18B2,#216
-france-F28_105_leFH18B2_IGR,leFH18B2,#216
-france-F30_RenaultFT_AC,FT AC,#216
-france-F32_Somua_Sau_40,SAu 40,#216
-france-F33_S_35CA,S35 CA,#216
-france-F33_S_35CA_IGR,S35 CA,#216
-france-F34_ARL_V39,ARL V39,#216
-france-F35_AMX_AC_Mle1946,AMX AC 46,#216
-france-F36_AMX_AC_Mle1948,AMX AC 48,#216
-france-F36_AMX_AC_Mle1948_IGR,AMX AC 48,#216
-france-F37_AMX50_Foch,Foch,#216
-france-F38_Bat_Chatillon155_58,B-C 155 58,#216
-france-F44_Somua_S35,Somua S35,#216
-france-F49_RenaultR35,R35,#216
-france-F50_FCM36_20t,FCM 36,#216
-france-F52_RenaultUE57,UE 57,#216
-france-F62_ELC_AMX,AMX ELC bis,#216
-france-F62_ELC_AMX_IGR,ELC AMX,#216
-france-F64_AMX_50Fosh_155,Foch 155,#216
-france-F65_FCM_50t,FCM 50 t,#216
-france-F66_AMX_Ob_Am105,AMX 105 AM,#216
-france-F67_Bat_Chatillon155_55,B-C 155 55,#216
-france-F68_AMX_Chasseur_de_char_46,AMX CDC,#216
-france-F69_AMX13_57_100,AMX 13 57,#216
-france-F69_AMX13_57_100_GrandFinal,AMX 13 57F,#216
-france-F70_SARL42,SARL 42,#216
-france-F71_AMX_30_prototype,AMX 30,#216
-france-F72_AMX_30,AMX 30 B,#216
-france-F73_M4A1_Revalorise,M4A1 Rev.,#216
-france-F74_AMX_M4_1949,AMX M4 49,#216
-france-F75_Char_de_25t,B-C 25 t AP,#216
-germany-Env_Artillery,#germany_vehicles:Env_Artillery,#216
-germany-G02_Hummel,Hummel,#216
-germany-G03_PzV_Panther,Panther,#216
-germany-G03_PzV_Panther_IGR,Panther,#216
-germany-G03_PzV_Panther_training,Panther,#216
-germany-G04_PzVI_Tiger_I,Tiger I,#216
-germany-G04_PzVI_Tiger_I_IGR,Tiger I,#216
-germany-G04_PzVI_Tiger_IA,Tiger I L/56,#216
-germany-G05_StuG_40_AusfG,StuG III G,#216
-germany-G05_StuG_40_AusfG_IGR,StuG III G,#216
-germany-G06_PzII,Pz. II,#216
-germany-G06_PzII_bot,Pz. II,#216
-germany-G07_Pz35t,Pz. 35 (t),#216
-germany-G08_Pz38t,Pz. 38 (t),#216
-germany-G09_Hetzer,Hetzer,#216
-germany-G10_PzIII_AusfJ,Pz. III,#216
-germany-G10_PzIII_AusfJ_training,Pz. III,#216
-germany-G100_Gtraktor_Krupp,Gr.Tr.,#216
-germany-G101_StuG_III,StuG III B,#216
-germany-G103_RU_251,Ru 251,#216
-germany-G104_Stug_IV,StuG IV,#216
-germany-G105_T-55_NVA_DDR,T 55A,#216
-germany-G106_PzKpfwPanther_AusfF,"Panther 8,8",#216
-germany-G107_PzKpfwIII_AusfK,Pz. III K,#216
-germany-G108_PzKpfwII_AusfD,Pz. II D,#216
-germany-G109_Steyr_WT,Steyr WT,#216
-germany-G11_Bison_I,Bison,#216
-germany-G112_KanonenJagdPanzer,KanJPz,#216
-germany-G113_SP_I_C,SP I C,#216
-germany-G114_Rheinmetall_Skorpian,Skorpion G,#216
-germany-G114_Skorpian,Skorpion,#216
-germany-G115_Typ_205_4_Jun,VK 100.01 P,#216
-germany-G116_Turan_III_prot,Turán III PT,#216
-germany-G117_Toldi_III,Toldi III,#216
-germany-G118_VK4503,VK 45.03,#216
-germany-G119_Panzer58,Pz. 58,#216
-germany-G119_Pz58_Mutz,Pz. 58 Mutz,#216
-germany-G12_Ltraktor,L.Tr.,#216
-germany-G12_Ltraktor_bot,L.Tr.,#216
-germany-G120_M41_90,M 41 90 mm,#216
-germany-G120_M41_90_GrandFinal,M 41 90 GF,#216
-germany-G121_Grille_15_L63,Grille 15,#216
-germany-G122_VK6501H,VK 65.01 (H),#216
-germany-G13_VK3001H,VK 30.01 H,#216
-germany-G14_PzIII_A,Pz. III E,#216
-germany-G15_VK3601H,VK 36.01 H,#216
-germany-G16_PzVIB_Tiger_II,Tiger II,#216
-germany-G16_PzVIB_Tiger_II_IGR,Tiger II,#216
-germany-G16_PzVIB_Tiger_II_training,Tiger II,#216
-germany-G17_JagdPzIV,Jg.Pz. IV,#216
-germany-G18_JagdPanther,JPanther,#216
-germany-G19_Wespe,Wespe,#216
-germany-G20_Marder_II,Marder II,#216
-germany-G21_PanzerJager_I,Pz.Jäg. I,#216
-germany-G22_Sturmpanzer_II,St.Pz. II,#216
-germany-G23_Grille,Grille,#216
-germany-G24_VK3002DB,VK 30.02 D,#216
-germany-G25_PzII_Luchs,Luchs,#216
-germany-G26_VK1602,Leopard,#216
-germany-G27_VK3001P,VK 30.01 P,#216
-germany-G28_PzIII_IV,Pz. III/IV,#216
-germany-G32_PzV_PzIV,Pz. V/IV,#216
-germany-G32_PzV_PzIV_ausf_Alfa,Pz. V/IV A,#216
-germany-G32_PzV_PzIV_ausf_Alfa_CN,Pz. V BP A,#216
-germany-G32_PzV_PzIV_CN,Pz. V BP,#216
-germany-G33_H39_captured,Pz. 38H,#216
-germany-G34_S35_captured,Pz. S35,#216
-germany-G35_B-1bis_captured,Pz. B2,#216
-germany-G36_PzII_J,Pz. II J,#216
-germany-G37_Ferdinand,Ferdinand,#216
-germany-G37_Ferdinand_IGR,Ferdinand,#216
-germany-G39_Marder_III,Marder 38T,#216
-germany-G40_Nashorn,Nashorn,#216
-germany-G41_DickerMax,Dicker Max,#216
-germany-G42_Maus,Maus,#216
-germany-G42_Maus_IGR,Maus,#216
-germany-G43_Sturer_Emil,St. Emil,#216
-germany-G44_JagdTiger,Jagdtiger,#216
-germany-G45_G_Tiger,G.W. Tiger,#216
-germany-G46_T-25,Pz. T 25,#216
-germany-G48_E-25,E 25,#216
-germany-G48_E-25_IGR,E 25,#216
-germany-G49_G_Panther,G.W. Panther,#216
-germany-G50_T-15,Pz. T 15,#216
-germany-G51_Lowe,Löwe,#216
-germany-G52_Pz38_NA,Pz. 38 nA,#216
-germany-G53_PzI,Pz. I,#216
-germany-G54_E-50,E 50,#216
-germany-G55_E-75,E 75,#216
-germany-G56_E-100,E 100,#216
-germany-G57_PzVI_Tiger_P,Tiger (P),#216
-germany-G58_VK4502P,VK 45.02 B,#216
-germany-G58_VK4502P7,VK 45.02 B7,#216
-germany-G61_G_E,G.W. E 100,#216
-germany-G63_PzI_ausf_C,Pz. I C,#216
-germany-G64_Panther_II,Panther II,#216
-germany-G64_Panther_II_IGR,Panther II,#216
-germany-G65_JagdTiger_SdKfz_185,"JgTig.8,8 cm",#216
-germany-G65_JagdTiger_SdKfz_185_IGR,"JgTig.8,8 cm",#216
-germany-G66_VK2801,VK 28.01,#216
-germany-G67_VK4502A,VK 45.02 A,#216
-germany-G70_PzIV_Hydro,Pz. IV hydr.,#216
-germany-G71_JagdPantherII,JPanther II,#216
-germany-G72_JagdPz_E100,Jg.Pz. E 100,#216
-germany-G73_E50_Ausf_M,E 50 M,#216
-germany-G76_Pz_Sfl_IVc,Pz.Sfl. IVc,#216
-germany-G77_PzIV_Schmalturm,Pz. IV S.,#216
-germany-G78_Panther_M10,Panther/M10,#216
-germany-G79_Pz_IV_AusfGH,Pz. IV,#216
-germany-G80_Pz_IV_AusfD,Pz. IV D,#216
-germany-G81_Pz_IV_AusfH,Pz. IV H,#216
-germany-G82_Pz_II_AusfG,Pz. II G,#216
-germany-G83_Pz_IV_AusfA,Pz. IV A,#216
-germany-G85_Auf_Panther,Aufkl.Panther,#216
-germany-G86_VK2001DB,VK 20.01 D,#216
-germany-G87_VK3002DB_V1,VK 30.01 D,#216
-germany-G88_Indien_Panzer,Indien-Pz.,#216
-germany-G89_Leopard1,Leopard 1,#216
-germany-G90_DW_II,D.W. 2,#216
-germany-G91_Pro_Ag_A,Leopard PT A,#216
-germany-G92_VK7201,VK 72.01 K,#216
-germany-G93_GW_Mk_VIe,G.Pz. Mk. VI,#216
-germany-G94_GW_Tiger_P,G.W. Tiger P,#216
-germany-G95_Pz_Sfl_IVb,Pz.Sfl. IVb,#216
-germany-G96_VK3002M,VK 30.02 M,#216
-germany-G97_Waffentrager_IV,WT auf Pz. IV,#216
-germany-G98_Waffentrager_E100,WT auf E 100,#216
-germany-G99_RhB_Waffentrager,Rhm.-B. WT,#216
-japan-J01_NC27,R. Otsu,#216
-japan-J01_NC27_bot,R. Otsu,#216
-japan-J02_Te_Ke,Te-Ke,#216
-japan-J03_Ha_Go,Ha-Go,#216
-japan-J04_Ke_Ni,Ke-Ni,#216
-japan-J05_Ke_Ni_B,Ke-Ni Otsu,#216
-japan-J06_Ke_Ho,Ke-Ho,#216
-japan-J07_Chi_Ha,Chi-Ha,#216
-japan-J08_Chi_Nu,Chi-Nu,#216
-japan-J09_Chi_He,Chi-He,#216
-japan-J10_Chi_To,Chi-To,#216
-japan-J11_Chi_Ri,Chi-Ri,#216
-japan-J11_Chi_Ri_IGR,Chi-Ri,#216
-japan-J12_Chi_Nu_Kai,Chi-Nu Kai,#216
-japan-J13_STA_1,STA-1,#216
-japan-J13_STA_1_IGR,STA-1,#216
-japan-J14_Type_61,Type 61,#216
-japan-J15_Chi_Ni,Chi-Ni,#216
-japan-J16_ST_B1,STB-1,#216
-japan-J16_ST_B1_IGR,STB-1,#216
-japan-J18_STA_2_3,STA-2,#216
-japan-J19_Tiger_I_Jpn,SP Nr. VI,#216
-japan-J20_Type_2605,Type 5 Schwer,#216
-japan-J21_Type_91,Type 91,#216
-japan-J22_Type_95,Type 95,#216
-japan-J23_Mi_To,O-I Exp.,#216
-japan-J24_Mi_To_130_tons,O-I,#216
-japan-J25_Type_4,Type 4 Schwer,#216
-japan-J26_Type_89,I-Go/Chi-Ro,#216
-japan-J27_O_I_120,O-Ho,#216
-japan-J28_O_I_100,O-Ni,#216
-sweden-S01_Strv_74_A2,Strv m/42-57,#216
-uk-GB01_Medium_Mark_I,Medium I,#216
-uk-GB01_Medium_Mark_I_bot,Medium I,#216
-uk-GB03_Cruiser_Mk_I,Cruiser I,#216
-uk-GB04_Valentine,Valentine,#216
-uk-GB05_Vickers_Medium_Mk_II,Medium II,#216
-uk-GB05_Vickers_Medium_Mk_II_bot,Medium II,#216
-uk-GB06_Vickers_Medium_Mk_III,Medium III,#216
-uk-GB07_Matilda,Matilda,#216
-uk-GB08_Churchill_I,Churchill I,#216
-uk-GB08_Churchill_I_IGR,Churchill I,#216
-uk-GB09_Churchill_VII,Churchill VII,#216
-uk-GB10_Black_Prince,Black Prince,#216
-uk-GB11_Caernarvon,Caernarvon,#216
-uk-GB11_Caernarvon_IGR,Caernarvon,#216
-uk-GB12_Conqueror,Conqueror,#216
-uk-GB13_FV215b,FV215b,#216
-uk-GB13_FV215b_IGR,FV215b,#216
-uk-GB14_M2,M2,#216
-uk-GB15_Stuart_I,Stuart I-IV,#216
-uk-GB17_Grant_I,Grant,#216
-uk-GB19_Sherman_Firefly,Firefly,#216
-uk-GB20_Crusader,Crusader,#216
-uk-GB21_Cromwell,Cromwell,#216
-uk-GB21_Cromwell_IGR,Cromwell,#216
-uk-GB22_Comet,Comet,#216
-uk-GB23_Centurion,Centurion I,#216
-uk-GB23_Centurion_IGR,Centurion I,#216
-uk-GB24_Centurion_Mk3,Centurion 7/1,#216
-uk-GB25_Loyd_Gun_Carriage,Loyd GC,#216
-uk-GB26_Birch_Gun,Birch Gun,#216
-uk-GB27_Sexton,Sexton II,#216
-uk-GB28_Bishop,Bishop,#216
-uk-GB29_Crusader_5inch,Crusader SP,#216
-uk-GB30_FV3805,FV3805,#216
-uk-GB31_Conqueror_Gun,ConquerorGC,#216
-uk-GB32_Tortoise,Tortoise,#216
-uk-GB33_Sentinel_AC_I,Sentinel,#216
-uk-GB35_Sentinel_AC_IV,AC 4 Exp.,#216
-uk-GB39_Universal_CarrierQF2,UC 2-pdr,#216
-uk-GB40_Gun_Carrier_Churchill,Churchill GC,#216
-uk-GB41_Challenger,Challenger,#216
-uk-GB42_Valentine_AT,Valentine AT,#216
-uk-GB44_Archer,Archer,#216
-uk-GB45_Achilles_IIC,Achilles,#216
-uk-GB48_FV215b_183,FV215b 183,#216
-uk-GB50_Sherman_III,Sherman III,#216
-uk-GB51_Excelsior,Excelsior,#216
-uk-GB52_A45,FV201 (A45),#216
-uk-GB57_Alecto,Alecto,#216
-uk-GB58_Cruiser_Mk_III,Cruiser III,#216
-uk-GB59_Cruiser_Mk_IV,Cruiser IV,#216
-uk-GB60_Covenanter,Covenanter,#216
-uk-GB63_TOG_II,TOG II*,#216
-uk-GB68_Matilda_Black_Prince,Matilda BP,#216
-uk-GB69_Cruiser_Mk_II,Cruiser II,#216
-uk-GB70_FV4202_105,FV4202,#216
-uk-GB70_N_FV4202_105,FV4202 (P),#216
-uk-GB71_AT_15A,AT 15A,#216
-uk-GB72_AT15,AT 15,#216
-uk-GB72_AT15_IGR,AT 15,#216
-uk-GB73_AT2,AT 2,#216
-uk-GB74_AT8,AT 8,#216
-uk-GB75_AT7,AT 7,#216
-uk-GB76_Mk_VIC,Light VIC,#216
-uk-GB77_FV304,FV304,#216
-uk-GB77_FV304_IGR,FV304,#216
-uk-GB78_Sexton_I,Sexton I,#216
-uk-GB79_FV206,FV207,#216
-uk-GB80_Charioteer,Charioteer,#216
-uk-GB81_FV4004,Conway,#216
-uk-GB83_FV4005,FV4005,#216
-uk-GB84_Chieftain_Mk6,Chieftain,#216
-uk-GB85_Cromwell_Berlin,Cromwell B,#216
-uk-GB86_Centurion_Action_X,Centurion AX,#216
-uk-GB87_Chieftain_T95_turret,Chieftain/T95,#216
-uk-GB88_T95_Chieftain_turret,T95/Chieftain,#216
-uk-GB89_Mark_I_Male,Mk. I,#216
-uk-GB90_Lanchester_Armored_Car,Lanchester,#216
-usa-A01_T1_Cunningham,T1,#216
-usa-A01_T1_Cunningham_bot,T1,#216
-usa-A02_M2_lt,M2 Light,#216
-usa-A03_M3_Stuart,M3 Stuart,#216
-usa-A04_M3_Grant,M3 Lee,#216
-usa-A05_M4_Sherman,M4,#216
-usa-A05_M4_Sherman_IGR,M4,#216
-usa-A06_M4A3E8_Sherman,M4A3E8,#216
-usa-A06_M4A3E8_Sherman_training,M4A3E8,#216
-usa-A07_T20,T20,#216
-usa-A08_T23,T23,#216
-usa-A09_T1_hvy,T1 Heavy,#216
-usa-A10_M6,M6,#216
-usa-A100_T49,T49,#216
-usa-A101_M56,Scorpion,#216
-usa-A102_T28_concept,T28 HTC,#216
-usa-A103_T71E1,T71,#216
-usa-A103_T71E1_IGR,T71,#216
-usa-A104_M4A3E8A,Fury,#216
-usa-A106_M48A2_120,M48/T54E2,#216
-usa-A107_T1_HMC,T1 HMC,#216
-usa-A108_T18_HMC,T18 HMC,#216
-usa-A109_T56_GMC,T56 GMC,#216
-usa-A11_T29,T29,#216
-usa-A11_T29_IGR,T29,#216
-usa-A111_T25_Pilot,T25 Pilot 1,#216
-usa-A112_T71E2,T71 CMCD,#216
-usa-A12_T32,T32,#216
-usa-A13_T34_hvy,T34,#216
-usa-A13_T34_hvy_IGR,T34,#216
-usa-A14_T30,T30,#216
-usa-A15_T57,T57,#216
-usa-A16_M7_Priest,M7 Priest,#216
-usa-A17_M37,M37,#216
-usa-A18_M41,M41 HMC,#216
-usa-A19_T2_lt,T2 Light,#216
-usa-A21_T14,T14,#216
-usa-A22_M5_Stuart,M5 Stuart,#216
-usa-A23_M7_med,M7,#216
-usa-A24_T2_med,T2 Medium,#216
-usa-A24_T2_med_bot,T2 Medium,#216
-usa-A25_M2_med,M2 Medium,#216
-usa-A26_T18,T18,#216
-usa-A27_T82,T82 HMC,#216
-usa-A29_T40,T40,#216
-usa-A30_M10_Wolverine,Wolverine,#216
-usa-A31_M36_Slagger,Jackson,#216
-usa-A32_M12,M12,#216
-usa-A33_MTLS-1G14,MTLS-1G14,#216
-usa-A34_M24_Chaffee,Chaffee,#216
-usa-A35_Pershing,Pershing,#216
-usa-A35_Pershing_IGR,Pershing,#216
-usa-A36_Sherman_Jumbo,M4A3E2,#216
-usa-A36_Sherman_Jumbo_IGR,M4A3E2,#216
-usa-A37_M40M43,M40/M43,#216
-usa-A38_T92,T92,#216
-usa-A39_T28,T28,#216
-usa-A40_T95,T95,#216
-usa-A41_M18_Hellcat,Hellcat,#216
-usa-A43_M22_Locust,Locust,#216
-usa-A44_M4A2E4,M4A2E4,#216
-usa-A45_M6A2E1,M6A2E1,#216
-usa-A46_T3,T3 HMC,#216
-usa-A57_M8A1,M8A1,#216
-usa-A58_T67,T67,#216
-usa-A58_T67_IGR,T67,#216
-usa-A62_Ram-II,Ram II,#216
-usa-A63_M46_Patton,M46 Patton,#216
-usa-A63_M46_Patton_KR,M46 KR,#216
-usa-A64_T25_AT,T25 AT,#216
-usa-A66_M103,M103,#216
-usa-A67_T57_58,T57 Heavy,#216
-usa-A68_T28_Prototype,T28 Prot.,#216
-usa-A69_T110E5,T110E5,#216
-usa-A71_T21,T21,#216
-usa-A72_T25_2,T25/2,#216
-usa-A74_T1_E6,T1E6,#216
-usa-A78_M4_Improved,M4 Improved,#216
-usa-A80_T26_E4_SuperPershing,T26E4,#216
-usa-A81_T95_E2,T95E2,#216
-usa-A83_T110E4,T110E4,#216
-usa-A84_M48A1,M48 Patton,#216
-usa-A84_M48A1_IGR,M48 Patton,#216
-usa-A85_T110E3,T110E3,#216
-usa-A86_T23E3,T23E3,#216
-usa-A87_M44,M44,#216
-usa-A88_M53_55,M53/M55,#216
-usa-A89_T54E1,T54E1,#216
-usa-A90_T69,T69,#216
-usa-A90_T69_IGR,T69,#216
-usa-A92_M60,M60,#216
-usa-A93_T7_Combat_Car,T7 Car,#216
-usa-A94_T37,T37,#216
-usa-A95_T95_E6,T95E6,#216
-usa-A97_M41_Bulldog,M41 Bulldog,#216
-ussr-Observer,Zuschauer,#216
-ussr-R01_IS,IS,#216
-ussr-R02_SU-85,SU-85,#216
-ussr-R03_BT-7,BT-7,#216
-ussr-R04_T-34,T-34,#216
-ussr-R05_KV,KV,#216
-ussr-R06_T-28,T-28,#216
-ussr-R07_T-34-85,T-34-85,#216
-ussr-R07_T-34-85_training,T-34-85,#216
-ussr-R08_BT-2,BT-2,#216
-ussr-R09_T-26,T-26,#216
-ussr-R09_T-26_bot,T-26,#216
-ussr-R10_AT-1,AT-1,#216
-ussr-R100_SU122A,SU-122A,#216
-ussr-R101_MT25,MT-25,#216
-ussr-R104_Object_430_II,Obj. 430 II,#216
-ussr-R105_BT_7A,BT-7 Art.,#216
-ussr-R106_KV85,KV-85,#216
-ussr-R106_KV85_IGR,KV-85,#216
-ussr-R107_LTB,LTTB,#216
-ussr-R108_T34_85M,T-34-85M,#216
-ussr-R109_T54S,T-54 lt.,#216
-ussr-R11_MS-1,MS-1,#216
-ussr-R11_MS-1_bot,MS-1,#216
-ussr-R110_Object_260,Obj. 260,#216
-ussr-R111_ISU130,ISU-130,#216
-ussr-R112_T54_45,T-54 Mod. 1,#216
-ussr-R113_Object_730,IS-5,#216
-ussr-R114_Object_244,Obj. 244,#216
-ussr-R115_IS-3_auto,IS-3A,#216
-ussr-R116_ISU122C_Berlin,ISU-122S,#216
-ussr-R117_T34_85_Rudy,Rudy,#216
-ussr-R118_T28_F30,T-28E F-30,#216
-ussr-R119_Object_777,Obj. 777 II,#216
-ussr-R12_A-20,A-20,#216
-ussr-R120_T22SR_A22,T-22 med.,#216
-ussr-R121_KV4_KTT,KV-4 KTTS,#216
-ussr-R122_T44_100,T-44-100,#216
-ussr-R123_Kirovets_1,Kirovets-1,#216
-ussr-R125_T_45,T-45,#216
-ussr-R126_Object_730_5,Obj. 268 5,#216
-ussr-R127_T44_100_P,T-44-100 (P),#216
-ussr-R128_KV4_Kreslavskiy,KV-4 Kresl.,#216
-ussr-R129_Object_257,Obj. 257,#216
-ussr-R13_KV-1s,KV-1S,#216
-ussr-R14_SU-5,SU-5,#216
-ussr-R15_S-51,S-51,#216
-ussr-R16_SU-18,SU-18,#216
-ussr-R17_SU-100,SU-100,#216
-ussr-R18_SU-152,SU-152,#216
-ussr-R18_SU-152_IGR,SU-152,#216
-ussr-R19_IS-3,IS-3,#216
-ussr-R19_IS-3_IGR,IS-3,#216
-ussr-R20_T-44,T-44,#216
-ussr-R20_T-44_IGR,T-44,#216
-ussr-R22_T-46,T-46,#216
-ussr-R23_T-43,T-43,#216
-ussr-R24_SU-76,SU-76M,#216
-ussr-R25_GAZ-74b,SU-85B,#216
-ussr-R26_SU-8,SU-8,#216
-ussr-R27_SU-14,SU-14-2,#216
-ussr-R31_Valentine_LL,Valentine II,#216
-ussr-R31_Valentine_LL_IGR,Valentine II,#216
-ussr-R32_Matilda_II_LL,Matilda IV,#216
-ussr-R33_Churchill_LL,Churchill III,#216
-ussr-R34_BT-SV,BT-SV,#216
-ussr-R38_KV-220,KV-220-2 T,#216
-ussr-R38_KV-220_action,KV-220-2,#216
-ussr-R39_KV-3,KV-3,#216
-ussr-R40_T-54,T-54,#216
-ussr-R41_T-50,T-50,#216
-ussr-R42_T-60,T-60,#216
-ussr-R43_T-70,T-70,#216
-ussr-R44_T80,T-80,#216
-ussr-R45_IS-7,IS-7,#216
-ussr-R45_IS-7_fallout,(R) IS-7,#216
-ussr-R45_IS-7_IGR,IS-7,#216
-ussr-R46_KV-13,KV-13,#216
-ussr-R47_ISU-152,ISU-152,#216
-ussr-R47_ISU-152_IGR,ISU-152,#216
-ussr-R49_SU100Y,SU-100Y,#216
-ussr-R50_SU76I,SU-76I,#216
-ussr-R51_Object_212,212A,#216
-ussr-R52_Object_261,Obj. 261,#216
-ussr-R53_Object_704,Obj. 704,#216
-ussr-R54_KV-5,KV-5,#216
-ussr-R54_KV-5_IGR,KV-5,#216
-ussr-R56_T-127,T-127,#216
-ussr-R57_A43,A-43,#216
-ussr-R58_SU-101,SU-101,#216
-ussr-R59_A44,A-44,#216
-ussr-R60_Object416,Obj. 416,#216
-ussr-R61_Object252,IS-6,#216
-ussr-R63_ST_I,ST-I,#216
-ussr-R66_SU-26,SU-26,#216
-ussr-R67_M3_LL,M3 Light,#216
-ussr-R68_A-32,A-32,#216
-ussr-R70_T_50_2,T-50-2,#216
-ussr-R71_IS_2B,IS-2,#216
-ussr-R72_T150,T-150,#216
-ussr-R73_KV4,KV-4,#216
-ussr-R74_SU100M1,SU-100M1,#216
-ussr-R75_SU122_54,SU-122-54,#216
-ussr-R77_KV2,KV-2,#216
-ussr-R77_KV2_IGR,KV-2,#216
-ussr-R78_SU_85I,SU-85I,#216
-ussr-R80_KV1,KV-1,#216
-ussr-R81_IS8,T-10,#216
-ussr-R84_Tetrarch_LL,Tetrarch,#216
-ussr-R86_LTP,LTP,#216
-ussr-R87_T62A,T-62A,#216
-ussr-R87_T62A_fallout,(R) T-62A,#216
-ussr-R88_Object268,Obj. 268,#216
-ussr-R89_SU122_44,SU-122-44,#216
-ussr-R90_IS_4M,IS-4,#216
-ussr-R91_SU14_1,SU-14-1,#216
-ussr-R93_Object263,Obj. 263,#216
-ussr-R95_Object_907,Obj. 907,#216
-ussr-R95_Object_907A,Obj. 907A,#216
-ussr-R96_Object_430,Obj. 430,#216
-ussr-R97_Object_140,Obj. 140,#216
-ussr-R98_T44_85,T-44-85,#216
-ussr-R99_T44_122,T-44-122,#216
+china-Ch01_Type59,Type 59,#228
+china-Ch01_Type59_Gold,Type 59 G,#228
+china-Ch02_Type62,Type 62,#228
+china-Ch03_WZ-111,WZ-111,#228
+china-Ch04_T34_1,T-34-1,#228
+china-Ch04_T34_1_training,T-34-1,#228
+china-Ch05_T34_2,T-34-2,#228
+china-Ch06_Renault_NC31,NC-31,#228
+china-Ch06_Renault_NC31_bot,NC-31,#228
+china-Ch07_Vickers_MkE_Type_BT26,VAE Type B,#228
+china-Ch08_Type97_Chi_Ha,Chi-Ha,#228
+china-Ch09_M5,M5A1 Stuart,#228
+china-Ch10_IS2,IS-2,#228
+china-Ch11_110,110,#228
+china-Ch11_110_IGR,110,#228
+china-Ch12_111_1_2_3,WZ-111 1-4,#228
+china-Ch14_T34_3,T-34-3,#228
+china-Ch15_59_16,59-16,#228
+china-Ch16_WZ_131,WZ-131,#228
+china-Ch17_WZ131_1_WZ132,WZ-132,#228
+china-Ch17_WZ131_1_WZ132_IGR,WZ-132,#228
+china-Ch18_WZ-120,WZ-120,#228
+china-Ch19_121,121,#228
+china-Ch19_121_IGR,121,#228
+china-Ch20_Type58,Type 58,#228
+china-Ch21_T34,Type T-34,#228
+china-Ch22_113,113,#228
+china-Ch23_112,112,#228
+china-Ch24_Type64,Type 64,#228
+china-Ch25_121_mod_1971B,121B,#228
+china-Ch26_59_Patton,59-Patton,#228
+czech-Cz01_Skoda_T40,Škoda T 40,#228
+czech-Cz02_TVP_T50,Škoda T 50,#228
+czech-Cz03_LT_vz35,LT vz. 35,#228
+czech-Cz04_T50_51,TVP T 50/51,#228
+czech-Cz05_T34_100,T-34/100,#228
+czech-Cz06_Kolohousenka,K-housenka,#228
+czech-Cz07_TVP_46,TVP VTU,#228
+czech-Cz08_T_25,Škoda T 25,#228
+czech-Cz09_T_24,Škoda T 24,#228
+czech-Cz10_LT_vz38,LT vz. 38,#228
+czech-Cz11_V_8_H,ST vz. 39,#228
+france-F01_RenaultFT,FT,#228
+france-F01_RenaultFT_bot,FT,#228
+france-F02_D1,D1,#228
+france-F03_D2,D2,#228
+france-F04_B1,B1,#228
+france-F05_BDR_G1B,BDR G1 B,#228
+france-F06_ARL_44,ARL 44,#228
+france-F07_AMX_M4_1945,AMX M4 45,#228
+france-F08_AMX_50_100,AMX 50 100,#228
+france-F08_AMX_50_100_IGR,AMX 50 100,#228
+france-F09_AMX_50_120,AMX 50 120,#228
+france-F10_AMX_50B,AMX 50 B,#228
+france-F10_AMX_50B_fallout,(R) AMX 50 B,#228
+france-F11_Renault_G1R,G1 R,#228
+france-F12_Hotchkiss_H35,H35,#228
+france-F13_AMX38,AMX 38,#228
+france-F14_AMX40,AMX 40,#228
+france-F15_AMX_12t,AMX 12 t,#228
+france-F16_AMX_13_75,AMX 13 75,#228
+france-F17_AMX_13_90,AMX 13 90,#228
+france-F17_AMX_13_90_IGR,AMX 13 90,#228
+france-F18_Bat_Chatillon25t,B-C 25 t,#228
+france-F18_Bat_Chatillon25t_IGR,B-C 25 t,#228
+france-F19_Lorraine40t,Lorr. 40 t,#228
+france-F20_RenaultBS,FT BS,#228
+france-F21_Lorraine39_L_AM,Lorr. 39L AM,#228
+france-F22_AMX_105AM,AMX 13 AM,#228
+france-F23_AMX_13F3AM,AMX 13 F3,#228
+france-F24_Lorraine155_50,Lorr. 155 50,#228
+france-F25_Lorraine155_51,Lorr. 155 51,#228
+france-F27_FCM_36Pak40,FCM36Pak40,#228
+france-F28_105_leFH18B2,leFH18B2,#228
+france-F28_105_leFH18B2_IGR,leFH18B2,#228
+france-F30_RenaultFT_AC,FT AC,#228
+france-F32_Somua_Sau_40,SAu 40,#228
+france-F33_S_35CA,S35 CA,#228
+france-F33_S_35CA_IGR,S35 CA,#228
+france-F34_ARL_V39,ARL V39,#228
+france-F35_AMX_AC_Mle1946,AMX AC 46,#228
+france-F36_AMX_AC_Mle1948,AMX AC 48,#228
+france-F36_AMX_AC_Mle1948_IGR,AMX AC 48,#228
+france-F37_AMX50_Foch,Foch,#228
+france-F38_Bat_Chatillon155_58,B-C 155 58,#228
+france-F44_Somua_S35,Somua S35,#228
+france-F49_RenaultR35,R35,#228
+france-F50_FCM36_20t,FCM 36,#228
+france-F52_RenaultUE57,UE 57,#228
+france-F62_ELC_AMX,AMX ELC bis,#228
+france-F62_ELC_AMX_IGR,ELC AMX,#228
+france-F64_AMX_50Fosh_155,Foch 155,#228
+france-F65_FCM_50t,FCM 50 t,#228
+france-F66_AMX_Ob_Am105,AMX 105 AM,#228
+france-F67_Bat_Chatillon155_55,B-C 155 55,#228
+france-F68_AMX_Chasseur_de_char_46,AMX CDC,#228
+france-F69_AMX13_57_100,AMX 13 57,#228
+france-F69_AMX13_57_100_GrandFinal,AMX 13 57F,#228
+france-F70_SARL42,SARL 42,#228
+france-F71_AMX_30_prototype,AMX 30,#228
+france-F72_AMX_30,AMX 30 B,#228
+france-F73_M4A1_Revalorise,M4A1 Rev.,#228
+france-F74_AMX_M4_1949,AMX M4 49,#228
+france-F74_AMX_M4_1949_Liberte,AMX M4 49 L,#228
+france-F75_Char_de_25t,B-C 25 t AP,#228
+france-F84_Somua_SM,Somua SM,#228
+germany-Env_Artillery,#germany_vehicles:Env_Artillery,#228
+germany-G02_Hummel,Hummel,#228
+germany-G03_PzV_Panther,Panther,#228
+germany-G03_PzV_Panther_IGR,Panther,#228
+germany-G03_PzV_Panther_training,Panther,#228
+germany-G04_PzVI_Tiger_I,Tiger I,#228
+germany-G04_PzVI_Tiger_I_IGR,Tiger I,#228
+germany-G04_PzVI_Tiger_IA,Tiger I L/56,#228
+germany-G05_StuG_40_AusfG,StuG III G,#228
+germany-G05_StuG_40_AusfG_IGR,StuG III G,#228
+germany-G06_PzII,Pz. II,#228
+germany-G06_PzII_bot,Pz. II,#228
+germany-G07_Pz35t,Pz. 35 (t),#228
+germany-G08_Pz38t,Pz. 38 (t),#228
+germany-G09_Hetzer,Hetzer,#228
+germany-G10_PzIII_AusfJ,Pz. III J,#228
+germany-G10_PzIII_AusfJ_training,Pz. III J,#228
+germany-G100_Gtraktor_Krupp,Gr.Tr.,#228
+germany-G101_StuG_III,StuG III B,#228
+germany-G102_Pz_III,Pz. III E,#228
+germany-G103_RU_251,Ru 251,#228
+germany-G104_Stug_IV,StuG IV,#228
+germany-G105_T-55_NVA_DDR,T 55A,#228
+germany-G106_PzKpfwPanther_AusfF,"Panther 8,8",#228
+germany-G107_PzKpfwIII_AusfK,Pz. III K,#228
+germany-G108_PzKpfwII_AusfD,Pz. II D,#228
+germany-G109_Steyr_WT,Steyr WT,#228
+germany-G11_Bison_I,Bison,#228
+germany-G112_KanonenJagdPanzer,KanJPz,#228
+germany-G113_SP_I_C,SP I C,#228
+germany-G114_Rheinmetall_Skorpian,Skorpion G,#228
+germany-G114_Skorpian,Skorpion,#228
+germany-G115_Typ_205_4_Jun,VK 100.01 P,#228
+germany-G116_Turan_III_prot,Turán III PT,#228
+germany-G117_Toldi_III,Toldi III,#228
+germany-G118_VK4503,VK 45.03,#228
+germany-G119_Panzer58,Pz. 58,#228
+germany-G119_Pz58_Mutz,Pz. 58 Mutz,#228
+germany-G12_Ltraktor,L.Tr.,#228
+germany-G12_Ltraktor_bot,L.Tr.,#228
+germany-G120_M41_90,M 41 90 mm,#228
+germany-G120_M41_90_GrandFinal,M 41 90 GF,#228
+germany-G121_Grille_15_L63,Grille 15,#228
+germany-G122_VK6501H,VK 65.01 (H),#228
+germany-G13_VK3001H,VK 30.01 H,#228
+germany-G15_VK3601H,VK 36.01 H,#228
+germany-G16_PzVIB_Tiger_II,Tiger II,#228
+germany-G16_PzVIB_Tiger_II_IGR,Tiger II,#228
+germany-G16_PzVIB_Tiger_II_training,Tiger II,#228
+germany-G17_JagdPzIV,Jg.Pz. IV,#228
+germany-G18_JagdPanther,JPanther,#228
+germany-G19_Wespe,Wespe,#228
+germany-G20_Marder_II,Marder II,#228
+germany-G21_PanzerJager_I,Pz.Jäg. I,#228
+germany-G22_Sturmpanzer_II,St.Pz. II,#228
+germany-G23_Grille,Grille,#228
+germany-G24_VK3002DB,VK 30.02 D,#228
+germany-G25_PzII_Luchs,Luchs,#228
+germany-G26_VK1602,Leopard,#228
+germany-G27_VK3001P,VK 30.01 P,#228
+germany-G28_PzIII_IV,Pz. III/IV,#228
+germany-G32_PzV_PzIV,Pz. V/IV,#228
+germany-G32_PzV_PzIV_ausf_Alfa,Pz. V/IV A,#228
+germany-G32_PzV_PzIV_ausf_Alfa_CN,Pz. V BP A,#228
+germany-G32_PzV_PzIV_CN,Pz. V BP,#228
+germany-G33_H39_captured,Pz. 38H,#228
+germany-G34_S35_captured,Pz. S35,#228
+germany-G35_B-1bis_captured,Pz. B2,#228
+germany-G36_PzII_J,Pz. II J,#228
+germany-G37_Ferdinand,Ferdinand,#228
+germany-G37_Ferdinand_IGR,Ferdinand,#228
+germany-G39_Marder_III,Marder 38T,#228
+germany-G40_Nashorn,Nashorn,#228
+germany-G41_DickerMax,Dicker Max,#228
+germany-G42_Maus,Maus,#228
+germany-G42_Maus_IGR,Maus,#228
+germany-G43_Sturer_Emil,St. Emil,#228
+germany-G44_JagdTiger,Jagdtiger,#228
+germany-G45_G_Tiger,G.W. Tiger,#228
+germany-G46_T-25,Pz. T 25,#228
+germany-G48_E-25,E 25,#228
+germany-G48_E-25_IGR,E 25,#228
+germany-G49_G_Panther,G.W. Panther,#228
+germany-G50_T-15,Pz. T 15,#228
+germany-G51_Lowe,Löwe,#228
+germany-G52_Pz38_NA,Pz. 38 nA,#228
+germany-G53_PzI,Pz. I,#228
+germany-G54_E-50,E 50,#228
+germany-G55_E-75,E 75,#228
+germany-G56_E-100,E 100,#228
+germany-G57_PzVI_Tiger_P,Tiger (P),#228
+germany-G58_VK4502P,VK 45.02 B,#228
+germany-G58_VK4502P7,VK 45.02 B7,#228
+germany-G61_G_E,G.W. E 100,#228
+germany-G63_PzI_ausf_C,Pz. I C,#228
+germany-G64_Panther_II,Panther II,#228
+germany-G64_Panther_II_IGR,Panther II,#228
+germany-G65_JagdTiger_SdKfz_185,"JgTig.8,8 cm",#228
+germany-G65_JagdTiger_SdKfz_185_IGR,"JgTig.8,8 cm",#228
+germany-G66_VK2801,VK 28.01,#228
+germany-G67_VK4502A,VK 45.02 A,#228
+germany-G70_PzIV_Hydro,Pz. IV hydr.,#228
+germany-G71_JagdPantherII,JPanther II,#228
+germany-G72_JagdPz_E100,Jg.Pz. E 100,#228
+germany-G73_E50_Ausf_M,E 50 M,#228
+germany-G76_Pz_Sfl_IVc,Pz.Sfl. IVc,#228
+germany-G77_PzIV_Schmalturm,Pz. IV S.,#228
+germany-G78_Panther_M10,Panther/M10,#228
+germany-G79_Pz_IV_AusfGH,Pz. IV,#228
+germany-G80_Pz_IV_AusfD,Pz. IV D,#228
+germany-G81_Pz_IV_AusfH,Pz. IV H,#228
+germany-G82_Pz_II_AusfG,Pz. II G,#228
+germany-G83_Pz_IV_AusfA,Pz. IV A,#228
+germany-G85_Auf_Panther,Aufkl.Panther,#228
+germany-G86_VK2001DB,VK 20.01 D,#228
+germany-G87_VK3002DB_V1,VK 30.01 D,#228
+germany-G88_Indien_Panzer,Indien-Pz.,#228
+germany-G89_Leopard1,Leopard 1,#228
+germany-G90_DW_II,D.W. 2,#228
+germany-G91_Pro_Ag_A,Leopard PT A,#228
+germany-G92_VK7201,VK 72.01 K,#228
+germany-G93_GW_Mk_VIe,G.Pz. Mk. VI,#228
+germany-G94_GW_Tiger_P,G.W. Tiger P,#228
+germany-G95_Pz_Sfl_IVb,Pz.Sfl. IVb,#228
+germany-G96_VK3002M,VK 30.02 M,#228
+germany-G97_Waffentrager_IV,WT auf Pz. IV,#228
+germany-G98_Waffentrager_E100,WT auf E 100,#228
+germany-G99_RhB_Waffentrager,Rhm.-B. WT,#228
+japan-J01_NC27,R. Otsu,#228
+japan-J01_NC27_bot,R. Otsu,#228
+japan-J02_Te_Ke,Te-Ke,#228
+japan-J03_Ha_Go,Ha-Go,#228
+japan-J04_Ke_Ni,Ke-Ni,#228
+japan-J05_Ke_Ni_B,Ke-Ni Otsu,#228
+japan-J06_Ke_Ho,Ke-Ho,#228
+japan-J07_Chi_Ha,Chi-Ha,#228
+japan-J08_Chi_Nu,Chi-Nu,#228
+japan-J09_Chi_He,Chi-He,#228
+japan-J10_Chi_To,Chi-To,#228
+japan-J11_Chi_Ri,Chi-Ri,#228
+japan-J11_Chi_Ri_IGR,Chi-Ri,#228
+japan-J12_Chi_Nu_Kai,Chi-Nu Kai,#228
+japan-J13_STA_1,STA-1,#228
+japan-J13_STA_1_IGR,STA-1,#228
+japan-J14_Type_61,Type 61,#228
+japan-J15_Chi_Ni,Chi-Ni,#228
+japan-J16_ST_B1,STB-1,#228
+japan-J16_ST_B1_IGR,STB-1,#228
+japan-J18_STA_2_3,STA-2,#228
+japan-J19_Tiger_I_Jpn,SP Nr. VI,#228
+japan-J20_Type_2605,Type 5 Schwer,#228
+japan-J21_Type_91,Type 91,#228
+japan-J22_Type_95,Type 95,#228
+japan-J23_Mi_To,O-I Exp.,#228
+japan-J24_Mi_To_130_tons,O-I,#228
+japan-J25_Type_4,Type 4 Schwer,#228
+japan-J26_Type_89,I-Go/Chi-Ro,#228
+japan-J27_O_I_120,O-Ho,#228
+japan-J28_O_I_100,O-Ni,#228
+sweden-S01_Strv_74_A2,Strv m/42-57,#228
+sweden-S15_L_60,L-60,#228
+uk-GB01_Medium_Mark_I,Medium I,#228
+uk-GB01_Medium_Mark_I_bot,Medium I,#228
+uk-GB03_Cruiser_Mk_I,Cruiser I,#228
+uk-GB04_Valentine,Valentine,#228
+uk-GB05_Vickers_Medium_Mk_II,Medium II,#228
+uk-GB05_Vickers_Medium_Mk_II_bot,Medium II,#228
+uk-GB06_Vickers_Medium_Mk_III,Medium III,#228
+uk-GB07_Matilda,Matilda,#228
+uk-GB08_Churchill_I,Churchill I,#228
+uk-GB08_Churchill_I_IGR,Churchill I,#228
+uk-GB09_Churchill_VII,Churchill VII,#228
+uk-GB10_Black_Prince,Black Prince,#228
+uk-GB11_Caernarvon,Caernarvon,#228
+uk-GB11_Caernarvon_IGR,Caernarvon,#228
+uk-GB12_Conqueror,Conqueror,#228
+uk-GB13_FV215b,FV215b,#228
+uk-GB13_FV215b_IGR,FV215b,#228
+uk-GB14_M2,M2,#228
+uk-GB15_Stuart_I,Stuart I-IV,#228
+uk-GB17_Grant_I,Grant,#228
+uk-GB19_Sherman_Firefly,Firefly,#228
+uk-GB20_Crusader,Crusader,#228
+uk-GB21_Cromwell,Cromwell,#228
+uk-GB21_Cromwell_IGR,Cromwell,#228
+uk-GB22_Comet,Comet,#228
+uk-GB23_Centurion,Centurion I,#228
+uk-GB23_Centurion_IGR,Centurion I,#228
+uk-GB24_Centurion_Mk3,Centurion 7/1,#228
+uk-GB25_Loyd_Gun_Carriage,Loyd GC,#228
+uk-GB26_Birch_Gun,Birch Gun,#228
+uk-GB27_Sexton,Sexton II,#228
+uk-GB28_Bishop,Bishop,#228
+uk-GB29_Crusader_5inch,Crusader SP,#228
+uk-GB30_FV3805,FV3805,#228
+uk-GB31_Conqueror_Gun,ConquerorGC,#228
+uk-GB32_Tortoise,Tortoise,#228
+uk-GB33_Sentinel_AC_I,Sentinel,#228
+uk-GB35_Sentinel_AC_IV,AC 4 Exp.,#228
+uk-GB39_Universal_CarrierQF2,UC 2-pdr,#228
+uk-GB40_Gun_Carrier_Churchill,Churchill GC,#228
+uk-GB41_Challenger,Challenger,#228
+uk-GB42_Valentine_AT,Valentine AT,#228
+uk-GB44_Archer,Archer,#228
+uk-GB45_Achilles_IIC,Achilles,#228
+uk-GB48_FV215b_183,FV215b 183,#228
+uk-GB50_Sherman_III,Sherman III,#228
+uk-GB51_Excelsior,Excelsior,#228
+uk-GB52_A45,FV201 (A45),#228
+uk-GB57_Alecto,Alecto,#228
+uk-GB58_Cruiser_Mk_III,Cruiser III,#228
+uk-GB59_Cruiser_Mk_IV,Cruiser IV,#228
+uk-GB60_Covenanter,Covenanter,#228
+uk-GB63_TOG_II,TOG II*,#228
+uk-GB68_Matilda_Black_Prince,Matilda BP,#228
+uk-GB69_Cruiser_Mk_II,Cruiser II,#228
+uk-GB70_FV4202_105,FV4202,#228
+uk-GB70_N_FV4202_105,FV4202 (P),#228
+uk-GB71_AT_15A,AT 15A,#228
+uk-GB72_AT15,AT 15,#228
+uk-GB72_AT15_IGR,AT 15,#228
+uk-GB73_AT2,AT 2,#228
+uk-GB74_AT8,AT 8,#228
+uk-GB75_AT7,AT 7,#228
+uk-GB76_Mk_VIC,Light VIC,#228
+uk-GB77_FV304,FV304,#228
+uk-GB77_FV304_IGR,FV304,#228
+uk-GB78_Sexton_I,Sexton I,#228
+uk-GB79_FV206,FV207,#228
+uk-GB80_Charioteer,Charioteer,#228
+uk-GB81_FV4004,Conway,#228
+uk-GB83_FV4005,FV4005,#228
+uk-GB84_Chieftain_Mk6,Chieftain,#228
+uk-GB85_Cromwell_Berlin,Cromwell B,#228
+uk-GB86_Centurion_Action_X,Centurion AX,#228
+uk-GB87_Chieftain_T95_turret,Chieftain/T95,#228
+uk-GB88_T95_Chieftain_turret,T95/Chieftain,#228
+usa-A01_T1_Cunningham,T1,#228
+usa-A01_T1_Cunningham_bot,T1,#228
+usa-A02_M2_lt,M2 Light,#228
+usa-A03_M3_Stuart,M3 Stuart,#228
+usa-A04_M3_Grant,M3 Lee,#228
+usa-A05_M4_Sherman,M4,#228
+usa-A05_M4_Sherman_IGR,M4,#228
+usa-A06_M4A3E8_Sherman,M4A3E8,#228
+usa-A06_M4A3E8_Sherman_training,M4A3E8,#228
+usa-A07_T20,T20,#228
+usa-A08_T23,T23,#228
+usa-A09_T1_hvy,T1 Heavy,#228
+usa-A10_M6,M6,#228
+usa-A100_T49,T49,#228
+usa-A101_M56,Scorpion,#228
+usa-A102_T28_concept,T28 HTC,#228
+usa-A103_T71E1,T71,#228
+usa-A103_T71E1_IGR,T71,#228
+usa-A104_M4A3E8A,Fury,#228
+usa-A106_M48A2_120,M48/T54E2,#228
+usa-A107_T1_HMC,T1 HMC,#228
+usa-A108_T18_HMC,T18 HMC,#228
+usa-A109_T56_GMC,T56 GMC,#228
+usa-A11_T29,T29,#228
+usa-A11_T29_IGR,T29,#228
+usa-A111_T25_Pilot,T25 Pilot 1,#228
+usa-A112_T71E2,T71 CMCD,#228
+usa-A12_T32,T32,#228
+usa-A13_T34_hvy,T34,#228
+usa-A13_T34_hvy_IGR,T34,#228
+usa-A14_T30,T30,#228
+usa-A15_T57,T57,#228
+usa-A16_M7_Priest,M7 Priest,#228
+usa-A17_M37,M37,#228
+usa-A18_M41,M41 HMC,#228
+usa-A19_T2_lt,T2 Light,#228
+usa-A21_T14,T14,#228
+usa-A22_M5_Stuart,M5 Stuart,#228
+usa-A23_M7_med,M7,#228
+usa-A24_T2_med,T2 Medium,#228
+usa-A24_T2_med_bot,T2 Medium,#228
+usa-A25_M2_med,M2 Medium,#228
+usa-A26_T18,T18,#228
+usa-A27_T82,T82 HMC,#228
+usa-A29_T40,T40,#228
+usa-A30_M10_Wolverine,Wolverine,#228
+usa-A31_M36_Slagger,Jackson,#228
+usa-A32_M12,M12,#228
+usa-A33_MTLS-1G14,MTLS-1G14,#228
+usa-A34_M24_Chaffee,Chaffee,#228
+usa-A35_Pershing,Pershing,#228
+usa-A35_Pershing_IGR,Pershing,#228
+usa-A36_Sherman_Jumbo,M4A3E2,#228
+usa-A36_Sherman_Jumbo_IGR,M4A3E2,#228
+usa-A37_M40M43,M40/M43,#228
+usa-A38_T92,T92,#228
+usa-A39_T28,T28,#228
+usa-A40_T95,T95,#228
+usa-A41_M18_Hellcat,Hellcat,#228
+usa-A43_M22_Locust,Locust,#228
+usa-A44_M4A2E4,M4A2E4,#228
+usa-A45_M6A2E1,M6A2E1,#228
+usa-A46_T3,T3 HMC,#228
+usa-A57_M8A1,M8A1,#228
+usa-A58_T67,T67,#228
+usa-A58_T67_IGR,T67,#228
+usa-A62_Ram-II,Ram II,#228
+usa-A63_M46_Patton,M46 Patton,#228
+usa-A63_M46_Patton_KR,M46 KR,#228
+usa-A64_T25_AT,T25 AT,#228
+usa-A66_M103,M103,#228
+usa-A67_T57_58,T57 Heavy,#228
+usa-A68_T28_Prototype,T28 Prot.,#228
+usa-A69_T110E5,T110E5,#228
+usa-A71_T21,T21,#228
+usa-A72_T25_2,T25/2,#228
+usa-A74_T1_E6,T1E6,#228
+usa-A78_M4_Improved,M4 Improved,#228
+usa-A80_T26_E4_SuperPershing,T26E4,#228
+usa-A81_T95_E2,T95E2,#228
+usa-A83_T110E4,T110E4,#228
+usa-A84_M48A1,M48 Patton,#228
+usa-A84_M48A1_IGR,M48 Patton,#228
+usa-A85_T110E3,T110E3,#228
+usa-A86_T23E3,T23E3,#228
+usa-A87_M44,M44,#228
+usa-A88_M53_55,M53/M55,#228
+usa-A89_T54E1,T54E1,#228
+usa-A90_T69,T69,#228
+usa-A90_T69_IGR,T69,#228
+usa-A92_M60,M60,#228
+usa-A93_T7_Combat_Car,T7 Car,#228
+usa-A94_T37,T37,#228
+usa-A95_T95_E6,T95E6,#228
+usa-A97_M41_Bulldog,M41 Bulldog,#228
+usa-A99_T92_LT,T92,#228
+ussr-Observer,Zuschauer,#228
+ussr-R01_IS,IS,#228
+ussr-R02_SU-85,SU-85,#228
+ussr-R03_BT-7,BT-7,#228
+ussr-R04_T-34,T-34,#228
+ussr-R05_KV,KV,#228
+ussr-R06_T-28,T-28,#228
+ussr-R07_T-34-85,T-34-85,#228
+ussr-R07_T-34-85_training,T-34-85,#228
+ussr-R08_BT-2,BT-2,#228
+ussr-R09_T-26,T-26,#228
+ussr-R09_T-26_bot,T-26,#228
+ussr-R10_AT-1,AT-1,#228
+ussr-R100_SU122A,SU-122A,#228
+ussr-R101_MT25,MT-25,#228
+ussr-R104_Object_430_II,Obj. 430 II,#228
+ussr-R105_BT_7A,BT-7 Art.,#228
+ussr-R106_KV85,KV-85,#228
+ussr-R106_KV85_IGR,KV-85,#228
+ussr-R107_LTB,LTTB,#228
+ussr-R108_T34_85M,T-34-85M,#228
+ussr-R109_T54S,T-54 lt.,#228
+ussr-R11_MS-1,MS-1,#228
+ussr-R11_MS-1_bot,MS-1,#228
+ussr-R110_Object_260,Obj. 260,#228
+ussr-R111_ISU130,ISU-130,#228
+ussr-R112_T54_45,T-54 Mod. 1,#228
+ussr-R113_Object_730,IS-5,#228
+ussr-R114_Object_244,Obj. 244,#228
+ussr-R115_IS-3_auto,IS-3A,#228
+ussr-R116_ISU122C_Berlin,ISU-122S,#228
+ussr-R117_T34_85_Rudy,Rudy,#228
+ussr-R118_T28_F30,T-28E F-30,#228
+ussr-R119_Object_777,Obj. 777 II,#228
+ussr-R12_A-20,A-20,#228
+ussr-R120_T22SR_A22,T-22 med.,#228
+ussr-R121_KV4_KTT,KV-4 KTTS,#228
+ussr-R122_T44_100,T-44-100,#228
+ussr-R123_Kirovets_1,Kirovets-1,#228
+ussr-R125_T_45,T-45,#228
+ussr-R126_Object_730_5,Obj. 268 5,#228
+ussr-R127_T44_100_P,T-44-100 (P),#228
+ussr-R128_KV4_Kreslavskiy,KV-4 Kresl.,#228
+ussr-R129_Object_257,Obj. 257,#228
+ussr-R13_KV-1s,KV-1S,#228
+ussr-R14_SU-5,SU-5,#228
+ussr-R15_S-51,S-51,#228
+ussr-R16_SU-18,SU-18,#228
+ussr-R17_SU-100,SU-100,#228
+ussr-R18_SU-152,SU-152,#228
+ussr-R18_SU-152_IGR,SU-152,#228
+ussr-R19_IS-3,IS-3,#228
+ussr-R19_IS-3_IGR,IS-3,#228
+ussr-R20_T-44,T-44,#228
+ussr-R20_T-44_IGR,T-44,#228
+ussr-R22_T-46,T-46,#228
+ussr-R23_T-43,T-43,#228
+ussr-R24_SU-76,SU-76M,#228
+ussr-R25_GAZ-74b,SU-85B,#228
+ussr-R26_SU-8,SU-8,#228
+ussr-R27_SU-14,SU-14-2,#228
+ussr-R31_Valentine_LL,Valentine II,#228
+ussr-R31_Valentine_LL_IGR,Valentine II,#228
+ussr-R32_Matilda_II_LL,Matilda IV,#228
+ussr-R33_Churchill_LL,Churchill III,#228
+ussr-R34_BT-SV,BT-SV,#228
+ussr-R38_KV-220,KV-220-2,#228
+ussr-R38_KV-220_beta,KV-220-2 T,#228
+ussr-R39_KV-3,KV-3,#228
+ussr-R40_T-54,T-54,#228
+ussr-R41_T-50,T-50,#228
+ussr-R42_T-60,T-60,#228
+ussr-R43_T-70,T-70,#228
+ussr-R44_T80,T-80,#228
+ussr-R45_IS-7,IS-7,#228
+ussr-R45_IS-7_fallout,(R) IS-7,#228
+ussr-R45_IS-7_IGR,IS-7,#228
+ussr-R46_KV-13,KV-13,#228
+ussr-R47_ISU-152,ISU-152,#228
+ussr-R47_ISU-152_IGR,ISU-152,#228
+ussr-R49_SU100Y,SU-100Y,#228
+ussr-R50_SU76I,SU-76I,#228
+ussr-R51_Object_212,212A,#228
+ussr-R52_Object_261,Obj. 261,#228
+ussr-R53_Object_704,Obj. 704,#228
+ussr-R54_KV-5,KV-5,#228
+ussr-R54_KV-5_IGR,KV-5,#228
+ussr-R56_T-127,T-127,#228
+ussr-R57_A43,A-43,#228
+ussr-R58_SU-101,SU-101,#228
+ussr-R59_A44,A-44,#228
+ussr-R60_Object416,Obj. 416,#228
+ussr-R61_Object252,IS-6,#228
+ussr-R63_ST_I,ST-I,#228
+ussr-R66_SU-26,SU-26,#228
+ussr-R67_M3_LL,M3 Light,#228
+ussr-R68_A-32,A-32,#228
+ussr-R70_T_50_2,T-50-2,#228
+ussr-R71_IS_2B,IS-2,#228
+ussr-R72_T150,T-150,#228
+ussr-R73_KV4,KV-4,#228
+ussr-R74_SU100M1,SU-100M1,#228
+ussr-R75_SU122_54,SU-122-54,#228
+ussr-R77_KV2,KV-2,#228
+ussr-R77_KV2_IGR,KV-2,#228
+ussr-R78_SU_85I,SU-85I,#228
+ussr-R80_KV1,KV-1,#228
+ussr-R81_IS8,T-10,#228
+ussr-R84_Tetrarch_LL,Tetrarch,#228
+ussr-R86_LTP,LTP,#228
+ussr-R87_T62A,T-62A,#228
+ussr-R87_T62A_fallout,(R) T-62A,#228
+ussr-R88_Object268,Obj. 268,#228
+ussr-R89_SU122_44,SU-122-44,#228
+ussr-R90_IS_4M,IS-4,#228
+ussr-R91_SU14_1,SU-14-1,#228
+ussr-R93_Object263,Obj. 263,#228
+ussr-R95_Object_907,Obj. 907,#228
+ussr-R95_Object_907A,Obj. 907A,#228
+ussr-R96_Object_430,Obj. 430,#228
+ussr-R97_Object_140,Obj. 140,#228
+ussr-R98_T44_85,T-44-85,#228
+ussr-R99_T44_122,T-44-122,#228
