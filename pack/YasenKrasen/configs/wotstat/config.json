@@ -1,0 +1,257 @@
+{
+    "showStatForBattle": true,
+    "battleStatPatterns": [
+        {
+            "pattern": "Text you want to replace",
+            "repl": "Text to replace with"
+        }
+    ],
+    "battleStatText": [
+        "<textformat tabstops='[70,135]'><font size='8'>\n\n",
+        "{{autoRepair}}",
+        "{{autoLoad}}",
+        "{{autoEquip}}",
+        "{{totalBattle}}</textformat>"
+    ],
+	"hideMessagePatterns": [
+		"кодировка UTF8",
+		"successfully trained",
+		"successfully transferred",
+		"sent to the Barracks",
+		"You have not changed your password",
+		"Sie haben Ihr Passwort in den letzten 30 Tagen nicht geändert.",
+		"The consumables on",
+		"The ammunition on",
+		"repaired successfully"
+    ],
+    "overwriteBattleResultBgIcon": false,
+    "bgIconDefeat": "img://gui/maps/icons/library/BgBattleResultIconDefeat-1.png",
+    "bgIconDraw": "img://gui/maps/icons/library/BgBattleResultIconDraw-1.png",
+    "bgIconWin": "img://gui/maps/icons/library/BgBattleResultIconVictory-1.png",
+    "debugBattleResultMessage": false,
+    "checkForUpdate": false,
+    "showPopUp": true,
+    "thousandSeparator": ".",
+    "battleType": [1],
+    "onlineReloadConfig": false,
+    "clientReloadReset": false,
+    "showResetButton": true,
+    "textResetButton": "Reset",
+    "dailyAutoReset": true,
+    "dailyAutoResetHour": 6,
+    "enableBattleEndedMessage": true,
+    "battleEndedMessageDefeat": "<img src='img://gui/maps/icons/library/YasenKrasen/splitdefeat.png' width='283' height='1' align='baseline' vspace='0'>\n<img src='img://gui/maps/icons/library/BattleResultIcon-1.png' width='16' height='16' align='baseline' vspace='-1'> <font color='#E05A5A'>Defeat!</font> <img src='img://gui/maps/icons/library/BattleResultIcon-1.png' width='16' height='16' align='baseline' vspace='-1'> <font color='#FFDA24'>{{map}}</font>\n<textformat tabstops='[80, 140]'><img src='img://gui/maps/icons/library/YasenKrasen/Tanks/{{vehicle-long}}.png' width='53' height='16' align='baseline' vspace='-3'> <font color='#D6EB88'>{{vehicle-long}}</font><tab><img src='img://gui/maps/icons/library/XpIcon-1.png' width='16' height='16' align='baseline' vspace='-3'><font color='#A0CFFF'><b>{{xp}}</b></font><tab><img src='img://gui/maps/icons/library/CreditsIcon-2.png' width='16' height='16' align='baseline' vspace='-4'><font color='{{c:color}}'><b>{{credits}}</b></font></textformat>\n<img src='img://gui/maps/icons/library/YasenKrasen/splitdefeat.png' width='283' height='1' align='baseline' vspace='0'>",
+    "battleEndedMessageDraw": "<img src='img://gui/maps/icons/library/YasenKrasen/splitdraw.png' width='283' height='1' align='baseline' vspace='0'>\n<img src='img://gui/maps/icons/library/attentionIconFilled.png' width='16' height='16' align='baseline' vspace='-1'> <font color='#D37516'>Draw!</font> <img src='img://gui/maps/icons/library/attentionIconFilled.png' width='16' height='16' align='baseline' vspace='-1'> <font color='#FFDA24'>{{map}}</font>\n<textformat tabstops='[80, 140]'><img src='img://gui/maps/icons/library/YasenKrasen/Tanks/{{vehicle-long}}.png' width='53' height='16' align='baseline' vspace='-3'> <font color='#D6EB88'>{{vehicle-long}}</font><tab><img src='img://gui/maps/icons/library/XpIcon-1.png' width='16' height='16' align='baseline' vspace='-3'><font color='#A0CFFF'><b>{{xp}}</b></font><tab><img src='img://gui/maps/icons/library/CreditsIcon-2.png' width='16' height='16' align='baseline' vspace='-4'><font color='{{c:color}}'><b>{{credits}}</b></font></textformat>\n<img src='img://gui/maps/icons/library/YasenKrasen/splitdraw.png' width='283' height='1' align='baseline' vspace='0'>",
+    "battleEndedMessageWin": "<img src='img://gui/maps/icons/library/YasenKrasen/splitwin.png' width='283' height='1' align='baseline' vspace='0'>\n<img src='img://gui/maps/icons/library/TournamentBattleResultIcon-1.png' width='16' height='16' align='baseline' vspace='-1'> <font color='#82BC45'>Victory!</font> <img src='img://gui/maps/icons/library/TournamentBattleResultIcon-1.png' width='16' height='16' align='baseline' vspace='-1'> <font color='#FFDA24'>{{map}}</font>\n<textformat tabstops='[80, 140]'><img src='img://gui/maps/icons/library/YasenKrasen/Tanks/{{vehicle-long}}.png' width='53' height='16' align='baseline' vspace='-3'> <font color='#D6EB88'>{{vehicle-long}}</font><tab><img src='img://gui/maps/icons/library/XpIcon-1.png' width='16' height='16' align='baseline' vspace='-3'><font color='#A0CFFF'><b>{{xp}}</b></font><tab><img src='img://gui/maps/icons/library/CreditsIcon-2.png' width='16' height='16' align='baseline' vspace='-4'><font color='{{c:color}}'><b>{{credits}}</b></font></textformat>\n<img src='img://gui/maps/icons/library/YasenKrasen/splitwin.png' width='283' height='1' align='baseline' vspace='0'>",
+    "statBackground": "img://gui/maps/icons/library/YasenKrasen/BG/BG_stats{{c:WN8}}.png",
+    "icon": "",
+    "showStatByTank": true,
+    "textGeneralPageButton": "Panzerstatistik",
+    "textByTankPageButton": "Übersicht",
+    "byTankTitle": "<font size='14' color='#FFCC66'><textformat leading='-4' tabstops='[69,105,160]'>Panzer<tab>Siege<tab>AvgDmg<tab>WN8</textformat></font><font size='1'>\n</font>{{Line2.png}}",
+    "byTankRow": "<font size='13'><textformat leading='-4' tabstops='[70,105,160]'><font color='#FFE6B3'>{{vehicle-short}}</font><tab><font color='{{g:avgWinRate}}'>{{winsCount}}/{{battlesCount}}</font><tab><font color='FFFFFF'>{{avgDamage}}</font><tab><font color='{{g:WN8}}'>{{WN8}} ({{XWN8}})</font></textformat></font>",
+    "sortReverse": true,
+    "sortMacro": "WN8",
+    "template": [
+        "<font size='17' color='#FF9326'><textformat tabstops='[100,170]'><b>Gefechtsstatistik</b></font>",
+        "{{Line.png}}",
+        "<font size='14' color='#DDDDDD'>Siege/Gefechte:<tab>{{TournamentBattleResultIcon.png}} <b><font color='{{g:avgWinRate}}'>{{winsCount}}</font>/<font color='#DDDDDD'>{{battlesCount}}</font><tab>| <font color='{{g:avgWinRate}}'>{{avgWinRate:1f}}%</font></font></b>",
+        "<font size='14' color='#DDDDDD'>Treffer/Sch&#252;sse:<tab>{{Support.png}} <b><font color='#DDDDDD'>{{totalHits}}</font>/<font color='#DDDDDD'>{{totalShots}}</font><tab>| <font color='{{g:hitsRate}}'>{{hitsRate:1f}}%</font></font></b>",
+		"<font size='17' color='#FF9326'><b>Erfahrung &amp; Geld</b></font>",
+        "{{Line.png}}",
+		"<font size='14' color='#DDDDDD'>Erfahrung:<tab>{{DoubleStar.png}} <b><font color='#AAAAAA'>{{totalXP}}</b></font><tab>| <font color='#AAAAAA'>{{avgXP}}</font></font>",
+		"<font size='14' color='#DDDDDD'>Freie Erfahrung:<tab>{{FreeXpIcon.png}} <b><font color='#CD853F'>{{totalFreeXP}}</font></font></b>",
+		"<font size='14' color='#DDDDDD'>Gesamterfahrung:<tab>{{XpIconAllXP.png}} <b><font color='#BBFC79'>{{allXP}}</font></font></b>",
+		"<font size='14' color='#DDDDDD'><b>Saldo:<tab>{{CreditsIcon.png}} <font color='{{c:netCredits}}'>{{netCredits}}</font></font>",
+        "<font size='17' color='#FF9326'><b>Leistungswertung</b></font>",
+        "{{Line.png}}",
+        "<font size='14' color='{{g:WN8}}'>WN8:</font><tab>   <b><font color='{{g:WN8}}'>{{WN8}} ({{XWN8}})</font></b>",
+		"</textformat>"
+    ],
+    "userMacros": {
+        "crewXP": "<tab><img src='img://gui/maps/icons/library/YasenKrasen/Crew.png' width='20' height='20' align='baseline' vspace='-4'> <font size='12' color='#CDC673'>Crew Exp: </font><font size='12' color='#928A75'><b>{{totalTmenXP}}</b></font> <img src='img://gui/maps/icons/library/YasenKrasen/XpIconBig.png' width='12' height='12' align='baseline' vspace='-3'>\n",
+        "autoRepairGBM": "<tab><img src='img://gui/maps/icons/library/YasenKrasen/Wrench.png' width='20' height='20' align='baseline' vspace='-14'> <font size='12' color='#CDC673'>Reparaturen: </font><font size='12' color='#FFFFFF'><b>{{autoRepairCost}}</b></font> <img src='img://gui/maps/icons/library/YasenKrasen/CreditsIconBig.png' width='9' height='9' align='baseline' vspace='0'>\n",
+        "autoLoadGBM": "<tab><img src='img://gui/maps/icons/library/YasenKrasen/Shell.png' width='20' height='20' align='baseline' vspace='-14'> <font size='12' color='#CDC673'>Munition: </font><font size='12' color='#FFFFFF'><b>{{autoLoadCost}}</b></font> <img src='img://gui/maps/icons/library/YasenKrasen/CreditsIconBig.png' width='9' height='9' align='baseline' vspace='0'>\n",
+        "autoEquipGBM": "<tab><img src='img://gui/maps/icons/library/YasenKrasen/Toolbox.png' width='20' height='20' align='baseline' vspace='-14'> <font size='12' color='#CDC673'>Verbrauchsmaterial: </font><font size='12' color='#FFFFFF'><b>{{autoEquipCost}}</b></font> <img src='img://gui/maps/icons/library/YasenKrasen/CreditsIconBig.png' width='9' height='9' align='baseline' vspace='0'>\n",
+        "autoRepair": "<font size='12' color='#CDC673'>Reparaturen:</font><tab><font size='12' color='#FFFFFF'>-{{autoRepairCost}}</font> <img src='img://gui/maps/icons/library/YasenKrasen/CreditsIcon.png' width='16' height='16' align='baseline' vspace='-4'>\n",
+        "autoLoad": "<font size='12' color='#CDC673'>Munition:</font><tab><font size='12' color='#FFFFFF'>-{{autoLoadCost}}</font> <img src='img://gui/maps/icons/library/YasenKrasen/CreditsIcon.png' width='16' height='16' align='baseline' vspace='-4'>\n",
+        "dailyXP": "<font size='12' color='#929292'>(<img src='img://gui/maps/icons/library/YasenKrasen/DoubleStar.png' width='16' height='16' align='baseline' vspace='-4'><font color='#FDD7A5'>x{{dailyXPFactor}}</font>)</font>",
+        "autoEquip": "<font size='12' color='#CDC673'>Verbrauchsmaterial:</font><tab><font size='12' color='#FFFFFF'>-{{autoEquipCost}}</font> <img src='img://gui/maps/icons/library/YasenKrasen/CreditsIcon.png' width='16' height='16' align='baseline' vspace='-4'>\n",
+        "totalBattle": "<font size='12' color='#CDC673'><b>Gesamt:<tab><font size='12' color='{{c:netCredits}}'>{{netCredits}}</font> <img src='img://gui/maps/icons/library/YasenKrasen/CreditsIcon.png' width='16' height='16' align='baseline' vspace='-4'><tab>WN8: <font size='12' color='{{g:WN8}}'>{{WN8}} <font size='12' color='#929292'>(</font><font size='12' color='{{g:WN8}}'>{{XWN8}}</font><font size='12' color='#929292'>)</font></b></font>",
+        "totalBattleGBM": "<font size='10'>\n</font><font size='13' color='#CDC673'><b>Total: <font size='13' color='{{c:netCredits}}'>{{netCredits}}</b></font> <img src='img://gui/maps/icons/library/YasenKrasen/CreditsIconBig.png' width='11' height='11' align='baseline' vspace='-1'><font size='13' color='#CDC673'><b>   WN8:</font> <font size='13' color='{{g:WN8}}'>{{WN8}}</font> <font color='#929292'>(<font color='{{g:WN8}}'>{{XWN8}}</font>)   <img src='img://gui/maps/icons/library/YasenKrasen/Place/{{c:place}}.png' width='20' height='20' align='baseline' vspace='-10'></b></font>",
+
+        "Line.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Line.png' width='245' height='7' align='baseline' vspace='4'>",
+        "Line2.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Line2.png' width='245' height='7' align='baseline' vspace='4'>",
+        "XpIcon.png": "<img src='img://gui/maps/icons/library/YasenKrasen/XpIcon.png' width='16' height='16' align='baseline' vspace='-3'>",
+        "XpIconAllXP.png": "<img src='img://gui/maps/icons/library/YasenKrasen/XpIconAllXP.png' width='14' height='14' align='baseline' vspace='-4'>",
+        "GoldIcon.png": "<img src='img://gui/maps/icons/library/YasenKrasen/GoldIcon.png' width='16' height='16' align='baseline' vspace='-3'>",
+        "CreditsIcon.png": "<img src='img://gui/maps/icons/library/YasenKrasen/CreditsIcon.png' width='16' height='16' align='baseline' vspace='-4'>",
+        "FreeXpIcon.png": "<img src='img://gui/maps/icons/library/YasenKrasen/FreeXpIcon.png' width='16' height='16' align='baseline' vspace='-3'>",
+        "DoubleStar.png": "<img src='img://gui/maps/icons/library/YasenKrasen/DoubleStar.png' width='16' height='16' align='baseline' vspace='-3'>",
+
+        "ClanBattleResultIcon.png": "<img src='img://gui/maps/icons/library/YasenKrasen/ClanBattleResultIcon.png' width='13' height='13' align='baseline' vspace='-3'>",
+        "BattleResultIcon.png": "<img src='img://gui/maps/icons/library/YasenKrasen/BattleResultIcon.png' width='13' height='13' align='baseline' vspace='-3'>",
+        "Reloading.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Reloading.png' width='13' height='13' align='baseline' vspace='-4'>",
+        "Support.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Support.png' width='13' height='13' align='baseline' vspace='-4'>",
+        "Skull.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Skull.png' width='13' height='13' align='baseline' vspace='-4'>",
+        "Penetration.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Penetration.png' width='13' height='13' align='baseline' vspace='-4'>",
+        "Damage1.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Damage1.png' width='13' height='13' align='baseline' vspace='-3'>",
+        "Damage2.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Damage2.png' width='13' height='13' align='baseline' vspace='-4'>",
+        "Binoculars.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Binoculars.png' width='13' height='13' align='baseline' vspace='-4'>",
+
+        "Kills.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Kills.png' width='16' height='16' align='baseline' vspace='-5'>",
+        "Tank.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Tanks/{{vehicle-long}}.png' width='40' height='12' align='baseline' vspace='-3'>",
+        "TankBig.png": "<img src='img://gui/maps/icons/vehicle/{{vehicle-raw}}.png' width='48' height='30' align='baseline' vspace='-24'>",
+        "Victory.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Victory.png' width='200' height='45' align='baseline' vspace='-0'>",
+        "Draw.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Draw.png' width='200' height='45' align='baseline' vspace='-0'>",
+        "Defeat.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Defeat.png' width='200' height='45' align='baseline' vspace='-0'>",
+        "TournamentBattleResultIcon.png": "<img src='img://gui/maps/icons/library/YasenKrasen/TournamentBattleResultIcon.png' width='13' height='13' align='baseline' vspace='-3'>",
+        "IndustrialResource.png": "<img src='img://gui/maps/icons/library/YasenKrasen/Resources.png' width='16' height='16' align='baseline' vspace='-3'>"
+    },
+    "gradient": {
+        "EFF": [
+            {"value": 610,   "color": "#FE0E00"},
+            {"value": 850,   "color": "#FE7903"},
+            {"value": 1145,   "color": "#F8F400"},
+            {"value": 1475,  "color": "#60FF00"},
+            {"value": 1775,  "color": "#02C9B3"},
+            {"value": 9999,  "color": "#D042F3"}
+        ],
+        "WN6": [
+            {"value": 410,   "color": "#FE0E00"},
+            {"value": 795,   "color": "#FE7903"},
+            {"value": 1185,   "color": "#F8F400"},
+            {"value": 1585,  "color": "#60FF00"},
+            {"value": 1925,  "color": "#02C9B3"},
+            {"value": 9999,  "color": "#D042F3"}
+        ],
+        "WN7": [
+            {"value": 505,   "color": "#FE0E00"},
+            {"value": 865,   "color": "#FE7903"},
+            {"value": 1225,   "color": "#F8F400"},
+            {"value": 1635,  "color": "#60FF00"},
+            {"value": 1995,  "color": "#02C9B3"},
+            {"value": 9999,  "color": "#D042F3"}
+        ],
+        "WN8": [
+            {"value": 0,     "color": "#FE0E00"},
+            {"value": 399,   "color": "#FE0E00"},
+            {"value": 400,   "color": "#FE7903"},
+            {"value": 899,   "color": "#FE7903"},
+            {"value": 900,  "color": "#F8F400"},
+            {"value": 1469,  "color": "#F8F400"},
+            {"value": 1470,  "color": "#60FF00"},
+            {"value": 2179,  "color": "#60FF00"},
+            {"value": 2180,  "color": "#02C9B3"},
+            {"value": 2879,  "color": "#02C9B3"},
+            {"value": 2880,  "color": "#D042F3"},
+            {"value": 99999, "color": "#D042F3"}
+        ],
+        "rDAMAGE": [
+            {"value": 0.14,  "color": "#FE0E00"},
+            {"value": 0.44,  "color": "#FE7903"},
+            {"value": 0.76,  "color": "#F8F400"},
+            {"value": 1.07,  "color": "#60FF00"},
+            {"value": 1.35,  "color": "#02C9B3"},
+            {"value": 1.60,  "color": "#D042F3"}
+        ],
+        "rFRAG": [
+            {"value": 0.14,  "color": "#FE0E00"},
+            {"value": 0.44,  "color": "#FE7903"},
+            {"value": 0.76,  "color": "#F8F400"},
+            {"value": 1.07,  "color": "#60FF00"},
+            {"value": 1.35,  "color": "#02C9B3"},
+            {"value": 1.60,  "color": "#D042F3"}
+        ],
+        "rSPOT": [
+            {"value": 0.14,  "color": "#FE0E00"},
+            {"value": 0.44,  "color": "#FE7903"},
+            {"value": 0.76,  "color": "#F8F400"},
+            {"value": 1.07,  "color": "#60FF00"},
+            {"value": 1.35,  "color": "#02C9B3"},
+            {"value": 1.60,  "color": "#D042F3"}
+        ],
+        "rDEF": [
+            {"value": 0.14,  "color": "#FE0E00"},
+            {"value": 0.44,  "color": "#FE7903"},
+            {"value": 0.76,  "color": "#F8F400"},
+            {"value": 1.07,  "color": "#60FF00"},
+            {"value": 1.35,  "color": "#02C9B3"},
+            {"value": 1.60,  "color": "#D042F3"}
+        ],
+        "avgPlace": [
+            {"value": 1,     "color": "#D042F3"},
+            {"value": 3,     "color": "#02C9B3"},
+            {"value": 5,     "color": "#60FF00"},
+            {"value": 7,     "color": "#F8F400"},
+            {"value": 10,    "color": "#FE7903"},
+            {"value": 15,    "color": "#FE0E00"}
+        ],
+        "avgWinRate": [
+            {"value": 45,    "color": "#F02828"},
+            {"value": 50,    "color": "#FFFF00"},
+            {"value": 55,    "color": "#66CC66"}
+        ],
+        "hitsRate": [
+            {"value": 55,    "color": "#F02828"},
+            {"value": 65,    "color": "#FFFF00"},
+            {"value": 75,    "color": "#66CC66"}
+        ],
+        "effHitsRate": [
+            {"value": 60,    "color": "#F02828"},
+            {"value": 70,    "color": "#FFFF00"},
+            {"value": 80,    "color": "#66CC66"}
+        ]
+    },
+    "palette" : {
+        "netCredits": [
+            {"value": -1,    "color": "#FF1010"},
+            {"value": 0,     "color": "#FFFFFF"},
+            {"value": 1,     "color": "#66CC66"}
+        ],
+        "avgWinRate": [
+            {"value": 45,    "color": "#F02828"},
+            {"value": 50,    "color": "#FFFF00"},
+            {"value": 55,    "color": "#66CC66"}
+        ],
+        "WN8": [
+            {"value": 300,   "color": "#930D0D"},
+            {"value": 450,   "color": "#F11919"},
+            {"value": 650,   "color": "#FF8A00"},
+            {"value": 900,   "color": "#E6DF27"},
+            {"value": 1200,  "color": "#77E812"},
+            {"value": 1600,  "color": "#459300"},
+            {"value": 2000,  "color": "#2AE4FF"},
+            {"value": 2450,  "color": "#00A0B8"},
+            {"value": 2900,  "color": "#C64CFF"},
+            {"value": 99999, "color": "#8225AD"}
+        ],
+        "BR": [
+            {"value": 200,   "color": "#5E0000"},
+            {"value": 500,   "color": "#CD3333"},
+            {"value": 700,   "color": "#D7B600"},
+            {"value": 900,   "color": "#6D9521"},
+            {"value": 1100,  "color": "#4C762E"},
+            {"value": 1350,  "color": "#4A92B7"},
+            {"value": 1500,  "color": "#83579D"},
+            {"value": 99999, "color": "#5A3175"}
+        ],
+        "place": [
+            {"value": 1,     "color": "#000001"},
+            {"value": 2,     "color": "#000002"},
+            {"value": 3,     "color": "#000003"},
+            {"value": 4,     "color": "#000004"},
+            {"value": 5,     "color": "#000005"},
+            {"value": 6,     "color": "#000006"},
+            {"value": 7,     "color": "#000007"},
+            {"value": 8,     "color": "#000008"},
+            {"value": 9,     "color": "#000009"},
+            {"value": 10,    "color": "#000010"},
+            {"value": 11,    "color": "#000011"},
+            {"value": 12,    "color": "#000012"},
+            {"value": 13,    "color": "#000013"},
+            {"value": 14,    "color": "#000014"},
+            {"value": 15,    "color": "#000015"}
+        ]
+    }
+}

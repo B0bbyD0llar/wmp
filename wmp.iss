@@ -66,7 +66,7 @@ Name: aduondesktop; Description: Verknüpfung zum ActiveDossierUploader auf dem D
 ;Name: uhd4k; Description: Anpassungen für 4k Auflösungen (UHD)
 
 Name: xvm; Description: XVM; Types: DMVK; MinVersion: 0.0,5.0
-;Name: session; Description: Sitzungsstatistik; Types: DMVK
+Name: session; Description: Sitzungsstatistik; Types: DMVK
 ;Name: session\resetdaily; Description: automatisch zurücksetzen (6Uhr); Types: DMVK
 ;Name: session\short; Description: kurze Tagesauswertung; Types: DMVK; Flags: exclusive
 ;Name: session\long; Description: ausführliche Tagesauswertung; Flags: exclusive
@@ -109,9 +109,10 @@ Name: {app}\res_mods\mods\shared_resources\xvm\res; Components: xvm
 Name: {app}\res_mods\mods\shared_resources\xvm\res\clanicons; Components: xvm
 Name: {app}\res_mods\mods\shared_resources\xvm\res\clanicons\EU; Components: xvm
 Name: {app}\res_mods\mods\shared_resources\xvm\res\clanicons\EU\clan; Components: xvm
-Name: {app}\res_mods\configs\xvm\py_macro; Components: xvm
 Name: {app}\res_mods\configs\xvm\ltdwebber; Components: xvm
 Name: {app}\res_mods\configs\xvm\py_macro\xvm; Components: xvm
+Name: {app}\res_mods\configs\xvm\py_macro
+Name: {app}\res_mods\configs\wotstat
 
 [Files]
 Source: pack\xvm\res_mods\*; DestDir: {app}\res_mods; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm
@@ -133,6 +134,7 @@ Source: pack\xvmConfig\ltdwebber\carouselNormal.xc; DestDir: {app}\res_mods\conf
 Source: pack\xvmConfig\ltdwebber\carouselSmall.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\clock.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\colors.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+Source: pack\xvmConfig\ltdwebber\damageLog.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\elements.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\export.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\hangar.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
@@ -163,15 +165,21 @@ Source: pack\xvmConfig\ltdwebber\tooltips.xc; DestDir: {app}\res_mods\configs\xv
 Source: pack\xvmConfig\ltdwebber\userInfo.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\vehicleNames.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
 Source: pack\xvmConfig\ltdwebber\xmqp.xc; DestDir: {app}\res_mods\configs\xvm\ltdwebber\; Components: xvm
+
+Source: pack\xvmConfig\py_macro\xvm\damageLog.py; DestDir: {app}\res_mods\configs\xvm\py_macro\xvm; Components: xvm
 Source: pack\xvmConfig\py_macro\xvm\total_hp.py; DestDir: {app}\res_mods\configs\xvm\py_macro\xvm; Components: xvm
 Source: pack\xvmConfig\py_macro\xvm\utils.py; DestDir: {app}\res_mods\configs\xvm\py_macro\xvm; Components: xvm
 Source: pack\xvmConfig\py_macro\xvm\xvm2sup.py; DestDir: {app}\res_mods\configs\xvm\py_macro\xvm; Components: xvm
 Source: pack\xvmConfig\py_macro\xvm\__init__.py; DestDir: {app}\res_mods\configs\xvm\py_macro\xvm; Components: xvm
+Source: pack\xvmConfig\py_macro\damage_log.py; DestDir: {app}\res_mods\configs\xvm\py_macro\; Components: xvm
 Source: pack\xvmConfig\py_macro\math.py; DestDir: {app}\res_mods\configs\xvm\py_macro\; Components: xvm
 Source: pack\xvmConfig\py_macro\score_panel.py; DestDir: {app}\res_mods\configs\xvm\py_macro\; Components: xvm
 Source: pack\xvmConfig\py_macro\sixthsenseduration.py; DestDir: {app}\res_mods\configs\xvm\py_macro\; Components: xvm
 Source: pack\xvmConfig\py_macro\str.py; DestDir: {app}\res_mods\configs\xvm\py_macro\; Components: xvm
+Source: pack\xvmConfig\py_macro\vinfo.py; DestDir: {app}\res_mods\configs\xvm\py_macro\; Components: xvm
 Source: pack\xvmConfig\py_macro\xvm.py; DestDir: {app}\res_mods\configs\xvm\py_macro\; Components: xvm
+Source: pack\xvmConfig\py_macro\xvm_debug.py; DestDir: {app}\res_mods\configs\xvm\py_macro\; Components: xvm
+
 Source: pack\xvmConfig\xvm.xc; DestDir: {app}\res_mods\configs\xvm; Components: xvm
 
 Source: {srcexe}; DestDir: {app}\wmp; Flags: ignoreversion external
@@ -194,11 +202,11 @@ Source: pack\ClanIcons\DMVK\DMVK.png; DestDir: {app}\res_mods\mods\shared_resour
 Source: pack\BattleAssistant\0.9.16\scripts\client\gui\mods\mod_battle_assistant.pyc; Components: battle\assistant; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\BattleAssistant\0.9.16\scripts\client\gui\mods\mod_battle_assistant.txt; Components: battle\assistant; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
-;Source: pack\InfoPanel\0.9.15.1\gui\flash\battleFlash.swf; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
-;Source: pack\InfoPanel\0.9.15.1\gui\infopanel\background.png; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\infopanel
-;Source: pack\InfoPanel\0.9.15.1\scripts\client\gui\mods\mod_battleflash.pyc; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-;Source: pack\InfoPanel\0.9.15.1\scripts\client\gui\mods\mod_info_panel_extended.json; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-;Source: pack\InfoPanel\0.9.15.1\scripts\client\gui\mods\mod_info_panel_extended.pyc; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+;Source: pack\InfoPanel\0.9.16\gui\flash\battleFlash.swf; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash
+;Source: pack\InfoPanel\0.9.16\gui\infopanel\background.png; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\infopanel
+;Source: pack\InfoPanel\0.9.16\scripts\client\gui\mods\mod_battleflash.pyc; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+;Source: pack\InfoPanel\0.9.16\scripts\client\gui\mods\mod_info_panel_extended.json; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+;Source: pack\InfoPanel\0.9.16\scripts\client\gui\mods\mod_info_panel_extended.pyc; Components: battle\infopanel; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 
 Source: pack\ADU\ActiveDossierUploader 3.4.0.11.exe; DestName: ActiveDossierUploader.exe; DestDir: {app}; Components: other\vbaddict\adu
 Source: pack\ADU\scripts\client\gui\mods\mod_ATS.pyc; Components: other\vbaddict\ats; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
@@ -227,8 +235,15 @@ Source: pack\Contour Icons\Korolins (DMVK)\0.9.16\mod\gui\flash\atlases\battleAt
 Source: pack\Contour Icons\Korolins (DMVK)\0.9.16\mod\gui\flash\atlases\battleAtlas.xml; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
 Source: pack\Contour Icons\Korolins (DMVK)\0.9.16\mod\gui\maps\icons\vehicle\contour\*; Flags: ignoreversion createallsubdirs recursesubdirs; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\maps\icons\vehicle\contour
 
+Source: pack\YasenKrasen\configs\wotstat\config.json; Components: session; DestDir: {app}\res_mods\configs\wotstat\
+Source: pack\YasenKrasen\configs\wotstat\expected_tank_values.json; Components: session; DestDir: {app}\res_mods\configs\wotstat\
+Source: pack\YasenKrasen\0.9.16\scripts\client\gui\mods\mod_stat.pyc; Components: session; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\YasenKrasen\0.9.16\gui\maps\icons\library\*; Flags: ignoreversion createallsubdirs recursesubdirs; Components: session; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\maps\icons\library
+;Source: pack\YasenKrasen\0.9.16\gui\messenger.xml; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\
+
+
 [INI]
-Filename: {app}\wmp\Zur Modpack Homepage.url; Section: InternetShortcut; Key: URL; String: http://materialvernichtungskombinat.de/hilfe/webbers-modpack/
+Filename: {app}\wmp\Zur Modpack Homepage.url; Section: InternetShortcut; Key: URL; String: https://materialvernichtungskombinat.de/hilfe/webbers-modpack/
 Filename: {app}\wmp\vbaddict öffnen.url; Section: InternetShortcut; Key: URL; String: http://www.vbaddict.net/wot.php; Components: other\vbaddict
 Filename: {app}\wmp\XVM Seite öffnen.url; Section: InternetShortcut; Key: URL; String: http://www.modxvm.com/en/; Components: xvm
 
@@ -240,7 +255,7 @@ Name: {app}\res_mods\config\*; Type: filesandordirs; Tasks: clear
 [Icons]
 Name: {userdesktop}\ActiveDossierUploader starten; Filename: {app}\ActiveDossierUploader.exe; WorkingDir: {app}; IconFilename: {app}\ActiveDossierUploader.exe; Components: other\vbaddict\adu; Tasks: aduondesktop
 Name: {group}\Webber's ModPack\ADU starten; Filename: {app}\ActiveDossierUploader.exe; WorkingDir: {app}; IconFilename: {app}\ActiveDossierUploader.exe; Components: other\vbaddict\adu; Tasks: ; Languages: ; IconIndex: 0
-Name: {group}\Webber's ModPack\zur ModPack Homepage; Filename: http://materialvernichtungskombinat.de/hilfe/modpack/
+Name: {group}\Webber's ModPack\zur ModPack Homepage; Filename: https://materialvernichtungskombinat.de/hilfe/modpack/
 Name: {group}\Webber's ModPack\zur XVM Homepage; Filename: http://www.modxvm.com/en/; Components: xvm
 Name: {group}\Webber's ModPack\zur vbAddict Homepage; Filename: http://www.vbaddict.net/wot.php; Components: other\vbaddict
 Name: {group}\Webber's ModPack\Webber's ModPack anpassen; Filename: {app}\wmp\{srcexe}; Parameters: /modify=1; WorkingDir: {app}\wmp; Languages: de; MinVersion: 0.0,5.0

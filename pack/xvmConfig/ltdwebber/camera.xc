@@ -56,13 +56,13 @@
       // Default: [ 2, 4, 8 ]. It's possible to use a greater number of values.
       // Список значений кратности для снайперского режима
       // По умолчанию: [ 2, 4, 8 ]. Можно использовать большее количество значений.
-      "zooms": [2, 4, 8, 15, 24],
+      "zooms": [2, 4, 8, 14, 20, 26],
       // Start zoom value (null for default behavior - last used state)
       // Начальное значение кратности (null для поведения по умолчанию - последнее использовавшееся значение)
       "startZoom": null,
-      // Zoom Indicator (see playersPanel.xc for parameters description)
+      // Zoom Indicator (see extra-field.txt for parameters description)
       // Global macros allowed in all fields
-      // Индикатор масштаба (см. playersPanel.xc для описания параметров)
+      // Индикатор масштаба (см. extra-field.txt для описания параметров)
       // Можно использовать глобальные макросы во всех полях
       "zoomIndicator": {
         // false - disable.
