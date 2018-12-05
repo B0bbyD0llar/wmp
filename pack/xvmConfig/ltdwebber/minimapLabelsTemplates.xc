@@ -29,6 +29,7 @@
     // Тип техники, видимый
     "vtypeSpotted": {
       "$ref": { "path":"def.defaultItem" },
+      "enabled": false,
       "align": "center",
       "valign": "center",
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
@@ -46,9 +47,20 @@
       "textFormat": { "size": 8 },
       "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>"
     },
-    // Vehicle name, visible, company config
-    // Название техники, видимый, ротный конфиг
-    "vehicleSpottedCompany": {
+    // Vehicle WN8x, visible
+    // Название техники, видимый
+    "vehicleSpottedWN8x": {
+      "$ref": { "path":"def.defaultItem" },
+      "x": -4,
+	  "layer": "top",
+      "y": "2",
+      "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
+      "textFormat": { "size": 5 },
+      "format": "<font color='{{c:xwn8}}'>{{xwn8}}</font>"
+    },	
+    // Vehicle name, visible, alternative mode
+    // Название техники, видимый, альтернативный режим
+    "vehicleSpottedAlt": {
       "$ref": { "path":"def.vehicleSpotted" },
       "y": "{{ally?{{battletype?7|{{squad?7|-1}}}}|-1}}"
     },
@@ -62,9 +74,9 @@
       "textFormat": { "size": 8 },
       "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{name%.7s~..}}</i></font>"
     },
-    // Player nickname, visible, company config
-    // Ник игрока, видимый, ротный конфиг
-    "nickSpottedCompany": {
+    // Player nickname, visible, alternative mode
+    // Ник игрока, видимый, альтернативный режим
+    "nickSpottedAlt": {
       "$ref": { "path": "def.nickSpotted" },
       "flags": [ "ally", "squadman", "teamKiller", "spotted", "alive" ],
       "format": "<font size='{{battletype?8|{{squad?8|0}}}}' color='{{squad?{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}|{{tk?{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}|#BFBFBF}}}}'><i>{{name%.7s~..}}</i></font>"
@@ -103,6 +115,18 @@
       "textFormat": { "size": 8 },
       "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{vehicle}}</i></font>"
     },
+    // Vehicle WN8x, missing
+    // Название техники, пропавший
+    "vehicleLostWN8x": {
+      "$ref": { "path":"def.defaultItem" },
+      "x": -4,
+      "y": 2,
+      "alpha": 85,
+      "flags": [ "ally", "enemy", "squadman", "teamKiller", "lost", "alive" ],
+      "layer": "bottom",
+      "textFormat": { "size": 5 },
+      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{xwn8}}</font>"
+    },	
     // Player nickname, missing
     // Ник игрока, пропавший
     "nickLost": {

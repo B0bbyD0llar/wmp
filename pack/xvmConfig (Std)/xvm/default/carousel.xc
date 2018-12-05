@@ -4,8 +4,8 @@
  */
 {
   "carousel": {
-    // false - Disable customizable carousel.
-    // false - Отключить настраиваемую карусель.
+    // false - disable customizable carousel.
+    // false - отключить настраиваемую карусель.
     "enabled": true,
     // Type of cells - "default" (depends from window size), "normal" or "small"
     // Вид ячеек - "default" (в зависимости от размера окна), "normal" (обычные), "small" (маленькие)
@@ -31,6 +31,9 @@
     // true - hide cell "Buy slot".
     // true - скрыть ячейку "Купить слот".
     "hideBuySlot": false,
+    // true - hide cell "Restore Tank".
+    // true - скрыть ячейку "Восстановить машину".
+    "hideRestoreTank": false,
     // true - show total slots count in the "Buy vehicle" cell.
     // true - показывать общее количество слотов в ячейке "Купить машину".
     "showTotalSlots": false,
@@ -57,7 +60,7 @@
     },
     // Order of nations.
     // Порядок наций.
-    //"nations_order": ["ussr", "germany", "usa", "france", "uk", "china", "japan", "czech"],
+    //"nations_order": ["ussr", "germany", "usa", "china", "france", "uk", "japan", "czech", "poland", "sweden", "italy"],
     "nations_order": [],
     // Order of types of vehicles.
     // Порядок классов техники.
@@ -66,7 +69,7 @@
     // Критерии сортировки танков, доступные значения: (минус = в обратном порядке)
     // "nation", "type", "level", "-level", "maxBattleTier", "-maxBattleTier", "premium", "-premium",
     // "winRate", "-winRate", "markOfMastery", "-markOfMastery", "xtdb", "-xtdb", "xte", "-xte",
-    // "damageRating", "-damageRating", "marksOnGun", "-marksOnGun"
+    // "wtr", "-wtr", "damageRating", "-damageRating", "marksOnGun", "-marksOnGun"
     "sorting_criteria": ["nation", "type", "level"],
     // Suppress the tooltips for tanks in carousel
     // Убрать подсказки к танкам в карусели

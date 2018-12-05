@@ -1,0 +1,8 @@
+WOT-DATA,2
+{{ID}},De
+{{DE}},"Slang tank names, in German"
+{{Inherit}},NameShort/Wargaming
+germany-G85_Auf_Panther,Auf.Panther
+usa-A97_M41_Bulldog,Bulldog
+
+# additions welcome, please send them in!

@@ -1,0 +1,28 @@
+{
+    "background": {
+        "alpha": 0,
+        "color": "000000",
+        "enable": false
+    },
+    "displayOffset": [
+        0,
+        -50
+    ],
+    "displayPattern": 1,
+    "displayType": 0,
+    "displayWidth": 300,
+    "enable": true,
+    "shadow": {
+        "alpha": 90,
+        "angle": 0,
+        "blur": 2,
+        "color": "000000",
+        "distance": 0,
+        "strength": 5
+    },
+	"pattern": [
+		"<font size=\"12\" face=\"$FieldFont\" color=\"#EEEEEE\">",
+		"WN8: <font color=\"{{c:wn8}}\">{{wn8}}</font><tab> DMG: <font color=\"{{c:damage}}\">{{damage}} </font>", 
+		"</font>"
+		]
+}

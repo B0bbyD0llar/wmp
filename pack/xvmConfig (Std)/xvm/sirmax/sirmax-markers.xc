@@ -1,8 +1,8 @@
 ﻿{
   //"enabled": false,
   "def": {
-    "markersStat": "<b><font face='$TitleFont' size='8' color='{{t-battles>19?#FFFFFF|#666666}}'>{{marksOnGun|*}}</font> <font face='Symbol' color='#CCCCCC' size='11'><font color='{{t-battles>19?{{c:xte|#666666}}|#666666}}'>·</font> <font color='{{c:xeff}}'>·</font> <font color='{{c:xwn8}}'>·</font></font></b>",
-    "markersStatAlt": "<b><font face='$TitleFont' size='8' color='{{t-battles>19?#FFFFFF|#666666}}'>{{marksOnGun|*}}</font> <font face='$FieldFont' size='12'><font color='{{t-battles>19?{{c:xte|#666666}}|#666666}}'>{{xte|--}}({{py:xvm.xvm2sup('{{xte}}', '--')}})</font> <font color='{{c:xeff}}'>{{xeff|--}}</font> <font color='{{c:xwn8}}'>{{xwn8|--}}</font></font></b>",
+    "markersStat": "<b><font face='$TitleFont' size='8' color='{{t-battles>19?#FFFFFF|#666666}}'>{{marksOnGun|*}}</font> <font face='Symbol' color='#CCCCCC' size='11'><font color='{{t-battles>19?{{c:xte|#666666}}|#666666}}'>·</font> <font color='{{c:t-battles|#666666}}'>·</font> <font color='{{c:xeff}}'>·</font> <font color='{{c:xwn8}}'>·</font></b>",
+    "markersStatAlt": "<b><font face='$TitleFont' size='8' color='{{t-battles>19?#FFFFFF|#666666}}'>{{marksOnGun|*}}</font> <font face='$FieldFont' size='12'><font color='{{t-battles>19?{{c:xte|#666666}}|#666666}}'>{{xte|--}}({{py:xvm.xvm2sup('{{xte}}', '--')}})</font> <font color='{{c:t-battles|#666666}}'>{{t-battles?{{t-battles<1000?{{t-battles%3d~}}|999}}|---}}</font> <font color='{{c:xeff}}'>{{xeff|--}}</font> <font color='{{c:xwn8}}'>{{xwn8|--}}</font></font></b>",
 
     "damageMessageAlive": "{{dmg}}",
     "damageMessageAllyDead": "({{dmg}})",
@@ -51,6 +51,16 @@
         "damageTextSquadman": ${"ally.alive.normal.damageText"},
         "actionMarker": {
           "y": -55
+        },
+        "vehicleStatusMarker": {
+          "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         },
         "textFields": [
           {
@@ -107,6 +117,16 @@
         "actionMarker": {
           "y": -55
         },
+        "vehicleStatusMarker": {
+          "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
+        },
         "clanIcon": {
           "enabled": true,
           "x": 0,
@@ -153,6 +173,16 @@
         "damageTextSquadman": ${"ally.dead.normal.damageText"},
         "actionMarker": {
           "y": -55
+        },
+        "vehicleStatusMarker": {
+          "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         }
       },
       "extended": {
@@ -169,6 +199,16 @@
         "damageTextSquadman": ${"ally.dead.extended.damageText"},
         "actionMarker": {
           "y": -55
+        },
+        "vehicleStatusMarker": {
+          "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         },
         "textFields": [
           {
@@ -221,6 +261,16 @@
         "damageTextSquadman": ${"enemy.alive.normal.damageText"},
         "actionMarker": {
           "y": -55
+        },
+        "vehicleStatusMarker": {
+          "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         },
         "textFields": [
           {
@@ -277,6 +327,16 @@
         "actionMarker": {
           "y": -55
         },
+        "vehicleStatusMarker": {
+          "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
+        },
         "clanIcon": {
           "enabled": true,
           "x": 0,
@@ -322,6 +382,16 @@
         "damageTextSquadman": ${"enemy.dead.normal.damageText"},
         "actionMarker": {
           "y": -55
+        },
+        "vehicleStatusMarker": {
+          "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         }
       },
       "extended": {
@@ -338,6 +408,16 @@
         "damageTextSquadman": ${"enemy.dead.extended.damageText"},
         "actionMarker": {
           "y": -55
+        },
+        "vehicleStatusMarker": {
+          "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         },
         "textFields": [
           {

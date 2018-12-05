@@ -4,30 +4,13 @@
   //"language": "pl",
   "def": {
     "formatNick": "{{name%.20s~..}}<font alpha='#A0'>{{clan}}</font>",
-    "formatVehicle": "<font face='Consolas' size='11'><img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png'><img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='11'><font color='{{c:avglvl|#666666}}'>{{avglvl%d|-}}</font> <font color='{{t-battles>19?{{c:xte|#666666}}|#666666}}'>{{xte|--}}</font>|<font color='{{c:xwgr|#666666}}'>{{xwgr|--}}</font>|<font color='{{c:xeff|#666666}}'>{{xeff|--}}</font>|<font color='{{c:xwn8|#666666}}'>{{xwn8|--}}</font> <font color='{{c:kb|#666666}}'>{{kb%2d~k|--k}}</font></font>",
+    "formatVehicle": "<font face='Consolas' size='11'><img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png'><img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='13' vspace='-2'><font color='{{c:avglvl|#666666}}'>{{avglvl%d|-}}</font> <font color='{{t-battles>19?{{c:xte|#666666}}|#666666}}'>{{xte|--}}</font>|<font color='{{c:xwtr|#666666}}'>{{xwtr|--}}</font>|<font color='{{c:xeff|#666666}}'>{{xeff|--}}</font>|<font color='{{c:xwn8|#666666}}'>{{xwn8|--}}</font> <font color='{{c:t-battles|#666666}}'>{{t-battles?{{t-battles<1000?{{t-battles%3d~}}|999}}|---}}</font></font>",
     //"formatVehicle": "{{vehicle}}",
-
-    "pingServers": {
-      "enabled": true,
-      //"y": 70,
-      "ignoredServers": ["RU4", "RU8", "RU9", "RU10"],
-      "showTitle": false,
-      "updateInterval": 5000
-    },
-    "onlineServers": {
-      "enabled": true,
-      "x": 5,
-      "y": 80,
-      "hAlign": "left",
-      "ignoredServers": ["RU4", "RU8", "RU9"],
-      "layer": "top",
-      "showTitle": false
-    },
     "__stub__": null
   },
   "hotkeys": {
     //"minimapZoom": { "enabled": true, "keyCode": 56, "onHold": true },
-    //"minimapAltMode": { "enabled": true, "keyCode": 56, "onHold": true },
+    "minimapAltMode": { "enabled": true, "keyCode": 56, "onHold": true },
     "playersPanelAltMode": { "enabled": true, "keyCode": 56, "onHold": true }, // LAlt
     //"markersAltMode":      { "enabled": false, "onHold": false },
     "__stub__": {}
@@ -37,51 +20,12 @@
     //${"sirmax-snippet-bt.xc":"."}, // battle timer
     ${"sirmax-snippet-test.xc":"."}
   ],
-  "login": {
-    "saveLastServer": true,
-    "autologin": true,
-    "confirmOldReplays": true,
-    "pingServers": ${"def.pingServers"},
-    "onlineServers": ${"def.onlineServers"}
-  },
-  "hangar": {
-    "enableGoldLocker": true,
-    "enableFreeXpLocker": true,
-    "defaultBoughtForCredits": true,
-    "hidePricesInTechTree": true,
-    "masteryMarkInTechTree": true,
-    "allowExchangeXPInTechTree": false,
-    "blockVehicleIfNoAmmo": true,
-    //"enableCrewAutoReturn": false,
-    //"crewReturnByDefault": true,
-    "crewMaxPerksCount": 10,
-    "enableEquipAutoReturn": true,
-    "widgetsEnabled": true,
-    "pingServers": {
-      "$ref": { "path":"def.pingServers" },
-      "x": 5
-    },
-    "carousel": ${"sirmax-carousel.xc":"carousel"},
-    "clock": {
-      //"layer": "bottom",
-      //"x": -200,
-      //"y": 70
-      //"format": "<font face='$FieldFont'><font size='26'> {{H}}:{{m%02d}} {{AM?a.m.|p.m.}}</font></font>"
-    },
-    //"showBuyPremiumButton": false,
-    //"showPremiumShopButton": false,
-    "serverInfo": {
-      "enabled": false
-      //"alpha": 75,
-      //"rotation": 0,
-      //"shiftX": 0,
-      //"shiftY": 0
-    }
-  },
+  "login": ${"sirmax-hangar.xc":"login"},
+  "hangar": ${"sirmax-hangar.xc":"hangar"},
   "userInfo": {
     "inHangarFilterEnabled": true,
-    "startPage": 4,
-    "sortColumn": 3,
+    "profileStartPage": "vehicles",
+    "contactsStartPage": "vehicles",
     //"sortColumn": -9,
     //"showXTEColumn": false,
     "defaultFilterValue": "+all -premium -master -arty"
@@ -146,6 +90,7 @@
   },
   "captureBar": {
     //"enabled": false,
+    //"y": 200,
     //"distanceOffset": -20,
     //"hideProgressBar": true,
     "enemy": {
@@ -165,10 +110,11 @@
     "__stub__": null
   },
   "battleLoading": {
-    "showBattleTier": true,
+    //"clockFormat": "H:i",
     //"removeSquadIcon": true,
+    //"removeRankBadgeIcon": true,
     //"vehicleIconAlpha": 30,
-    "removeVehicleLevel": true,
+    //"removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,
     //"nameFieldShowBorder": true,
     //"vehicleFieldShowBorder": true,
@@ -178,41 +124,64 @@
     //"nameFieldWidthDeltaLeft": 10,
     //"nameFieldOffsetXRight": "{{xvm-stat?-32|0}}",
     //"nameFieldWidthDeltaRight": 10,
-    //"vehicleFieldOffsetXLeft": 10,
-    //"vehicleFieldWidthDeltaLeft": 10,
-    //"vehicleFieldOffsetXRight": 10,
-    //"vehicleFieldWidthDeltaRight": 10,
-    //"vehicleIconOffsetXLeft": 4,
-    //"vehicleIconOffsetXRight": 4,
+    "vehicleFieldOffsetXLeft": 20,
+    //"vehicleFieldWidthDeltaLeft": 50,
+    "vehicleFieldOffsetXRight": 20,
+    //"vehicleFieldWidthDeltaRight": 50,
+    "vehicleIconOffsetXLeft": 4,
+    "vehicleIconOffsetXRight": 4,
+    //"darkenNotReadyIcon": false,
     "formatLeftNick":  ${"def.formatNick"},
     "formatRightNick":  ${"def.formatNick"},
     "formatLeftVehicle":  ${"def.formatVehicle"},
-    "formatRightVehicle": ${"def.formatVehicle"}
+    "formatRightVehicle": ${"def.formatVehicle"},
+    //"extraFieldsLeft": [
+    //  ${"templates.clanIcon"}
+    //],
+    //"extraFieldsRight": [
+    //  ${"templates.clanIcon"}
+    //],
+    "__stub__": {}
   },
   "battleLoadingTips": {
-    "showBattleTier": true,
+    //"clockFormat": "H:i",
     //"removeSquadIcon": true,
+    //"removeRankBadgeIcon": true,
     //"vehicleIconAlpha": 30,
-    "removeVehicleLevel": true,
+    //"removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,
     //"nameFieldShowBorder": true,
     //"vehicleFieldShowBorder": true,
-    "squadIconOffsetXLeft": -80,
-    "squadIconOffsetXRight": -80,
-    "nameFieldOffsetXLeft": -80,
-    "nameFieldWidthDeltaLeft": 40,
-    "nameFieldOffsetXRight": -80,
-    "nameFieldWidthDeltaRight": 40,
-    //"vehicleFieldOffsetXLeft": 10,
-    "vehicleFieldWidthDeltaLeft": 10,
-    //"vehicleFieldOffsetXRight": 10,
-    "vehicleFieldWidthDeltaRight": 10
+    "squadIconOffsetXLeft": -100,
+    "squadIconOffsetXRight": -100,
+    "nameFieldOffsetXLeft": -100,
+    "nameFieldWidthDeltaLeft": 70,
+    "nameFieldOffsetXRight": -100,
+    "nameFieldWidthDeltaRight": 70,
+    "vehicleFieldOffsetXLeft": 24,
+    "vehicleFieldWidthDeltaLeft": 50,
+    "vehicleFieldOffsetXRight": 24,
+    "vehicleFieldWidthDeltaRight": 50,
+    "vehicleIconOffsetXLeft": 4,
+    "vehicleIconOffsetXRight": 4,
+    //"darkenNotReadyIcon": false,
+    //"formatLeftNick":  ${"def.formatNick"},
+    //"formatRightNick":  ${"def.formatNick"},
+    //"formatLeftVehicle":  ${"def.formatVehicle"},
+    //"formatRightVehicle": ${"def.formatVehicle"},
+    //"extraFieldsLeft": [
+    //  ${"templates.clanIcon"}
+    //],
+    //"extraFieldsRight": [
+    //  ${"templates.clanIcon"}
+    //],
+    "__stub__": {}
   },
   "statisticForm": {
-    "showBattleTier": true,
     //"removeSquadIcon": true,
+    //"removeRankBadgeIcon": true,
     //"vehicleIconAlpha": 30,
-    "removeVehicleLevel": true,
+    //"removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,
     //"removePlayerStatusIcon": true,
     //"nameFieldShowBorder": true,
@@ -222,18 +191,18 @@
     "nameFieldOffsetXRight": -20,
     "nameFieldWidthLeft": 200,
     "nameFieldWidthRight": 200,
-    "vehicleFieldOffsetXLeft": 30,
-    "vehicleFieldOffsetXRight": 30,
+    "vehicleFieldOffsetXLeft": 25,
+    "vehicleFieldOffsetXRight": 25,
     "vehicleFieldWidthLeft": 200,
     "vehicleFieldWidthRight": 200,
     //"fragsFieldOffsetXLeft": 30,
     //"fragsFieldOffsetXRight": 30,
     //"fragsFieldWidthLeft": 100,
     //"fragsFieldWidthRight": 100,
-    "squadIconOffsetXLeft": -18,
-    "squadIconOffsetXRight": -10,
-    //"vehicleIconOffsetXLeft": 4,
-    //"vehicleIconOffsetXRight": 4,
+    "squadIconOffsetXLeft": -7,
+    "squadIconOffsetXRight": -7,
+    //"vehicleIconOffsetXLeft": 20,
+    //"vehicleIconOffsetXRight": 20,
     "formatLeftNick":  ${"def.formatNick"},
     "formatRightNick":  ${"def.formatNick"},
     "formatLeftVehicle":  ${"def.formatVehicle"},
@@ -270,9 +239,8 @@
   "battleResults": {
     "startPage": 1,
     "sortColumn": 5,
-    "showCrewExperience": true,
     //"showTotals": false,
-    "showBattleTier": true
+    "showCrewExperience": true
   },
   "minimap": ${"sirmax-minimap.xc":"minimap"},
   "minimapAlt": ${"sirmax-minimap.xc":"minimapAlt"},
@@ -290,21 +258,21 @@
   "markers": ${"sirmax-markers.xc":"."},
   "alpha": {
     "hp": [
-      { "value": 350,  "alpha": 100 },
-      { "value": 500,  "alpha": 50 },
+      { "value": 349,  "alpha": 100 },
+      { "value": 499,  "alpha": 50 },
       { "value": 9999, "alpha": 0 }
     ],
     "hp_ratio": [
-      { "value": 1, "alpha": "00" },
-      { "value": 10, "alpha": "100" },
-      { "value": 20, "alpha": "75" },
-      { "value": 50, "alpha": "00" },
-      { "value": 101, "alpha": "00" }
+      { "value": 0, "alpha": "00" },
+      { "value": 9, "alpha": "100" },
+      { "value": 19, "alpha": "75" },
+      { "value": 49, "alpha": "00" },
+      { "value": 100, "alpha": "00" }
     ]
   },
   "iconset": {
-    "battleLoadingAlly": "../../../../res/contour/Master_XH",
-    "battleLoadingEnemy": "../../../../res/contour/Master_XH",
+    "battleLoadingLeftAtlas": "../../../../res/atlases/BattleAtlasLeft",
+    "battleLoadingRightAtlas": "../../../../res/atlases/BattleAtlasRight",
     "playersPanelLeftAtlas": "../../../../res/atlases/BattleAtlasLeft",
     "playersPanelRightAtlas": "../../../../res/atlases/BattleAtlasRight",
     "fullStatsLeftAtlas": "../../../../res/atlases/BattleAtlasLeft",
@@ -346,7 +314,7 @@
   "definition": {
     "author": "sirmax2",
     "description": "Sirmax's settings for XVM",
-    "url": "http://www.modxvm.com/",
+    "url": "https://modxvm.com/",
     "date": "10.10.2012",
     "gameVersion": "0.8.0",
     "modMinVersion": "3.0.4"
@@ -371,9 +339,12 @@
     //"minimapDrawTime": 7
   },
   "tooltips": {
-    //"hideSimplifiedVehParams": false
+    //"logLocalization": true
   },
   "battleLabels": ${"sirmax-battleLabels.xc":"."},
+  "tweaks": {
+    //"allowMultipleWotInstances": true
+  },
   "consts": {
       "VM_COEFF_VMM_DEAD": 0.75
   }

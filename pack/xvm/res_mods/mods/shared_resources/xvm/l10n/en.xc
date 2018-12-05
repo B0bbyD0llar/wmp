@@ -22,20 +22,12 @@
     "Ping": "Ping",
     "Online": "Online",
 
-    // Win chance
-    "Chance error": "Chance error",
-    "Chance to win": "Chance to win",
-    "Team strength": "Team strength",
-    "chanceLive": "For alive",
-    "chanceBattleTier": "Battle tier",
-
     // Hitlog
     "shot": "shot",
     "fire": "fire",
     "ramming": "ramming",
     "world_collision": "falling",
     "death_zone": "death zone",
-    "drowning": "drowning",
 
     "Hits": "Hits",
     "Total": "Total",
@@ -51,9 +43,28 @@
     "avgDamage": "Avg damage",
     "mainGun": "High caliber",
 
+    // Devices
+    "engine": "engine",
+    "ammo_bay": "ammo bay",
+    "fuel_tank": "fuel tank",
+    "radio": "radio",
+    "left_track": "left track",
+    "right_track": "right track",
+    "gun": "gun",
+    "turret_rotator": "turret rotator",
+    "surveying_device": "surveying device",
+    
+    // Tankmen
+    "commander": "commander",
+    "driver": "driver",
+    "radioman": "radioman",
+    "gunner": "gunner",
+    "loader": "loader",
+    
     // DamageLog:
     "sec": "sec",
     "reloaded": "reloaded",
+    "drowning": "drowning",
     // Shell kind (macro {{type-shell}})
     "armor_piercing": "AP",
     "high_explosive": "HE",
@@ -69,7 +80,6 @@
     "turret": "turret",
     "hull": "hull",
     "chassis": "chassis",
-    "gun": "gun",
 
     // BattleResults
     "Hit percent": "Hit percent",
@@ -89,7 +99,7 @@
     "General stats": "General stats",
     "Summary": "Summary",
     "Avg level": "Avg level",
-    "WN6": "WN6",
+    "WTR": "WTR",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "WGR",
@@ -139,11 +149,9 @@
     "radio_range/actual": "actual",
     "lowAmmo": "Low ammo",
     "shootingRadius": "Shooting radius",
-    "pitchLimits": "Elevation arc",
     "pitchLimitsSide": "Elevation arc (side)",
     "pitchLimitsRear": "Elevation arc (rear)",
-    "traverseLimits": "Gun traverse arc",
-    "terrainResistance": "Terrain resistance",
+    "terrainResistance": "Terrain resistance (hard/medium/soft)",
     "gravity": "Gravity",
     "shellSpeed": "Shell speed",
     "general": "General",
@@ -171,8 +179,10 @@
     "uk": "UK",
     "china": "China",
     "japan": "Japan",
-    "czech": "Сzech",
+    "czech": "Czech",
+    "poland": "Poland",
     "sweden": "Sweden",
+    "italy": "Italy",
     
     // Vehicle type
     "HT": "HT",
@@ -195,9 +205,8 @@
     "token/services_inactive": "Network services inactive.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>enable</font></a>",
     "token/blocked": "Status: <font color='#FF0000'>Blocked</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED#'><font size='11'>more info</font></a>",
     "token/active": "Status:<tab/><font color='#00FF00'>Active</font>",
-    "token/time_left": "Time left:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
-    "token/time_left_warn": "Time left:<tab/><font color='#EEEE00'>{0}d. {1}h. {2}m.</font>",
-    "token/cnt": "Requests count:<tab/><font color='#EEEEEE'>{0}</font>",
+    "token/time_left": "<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
+    "token/time_left_warn": "<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>\n<tab/><a href='#XVM_SITE#'>Prolong</a>",
     "token/unknown_status": "Unknown status",
 
     // Lobby
@@ -210,7 +219,7 @@
     "lobby/crew/enable_prev_crew_tooltip": "<b><font color='#FDF4CE'>{{l10n:lobby/crew/enable_prev_crew}}</font></b>\nAutomatically return the crew that fought\nin this vehicle in the previous battle",
 
     // Profile
-    "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\nPer-vehicle efficiency\nMore info at <font color='#FDF4CE'>www.modxvm.com/ratings/</font>",
+    "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\nPer-vehicle efficiency\nMore info at <font color='#FDF4CE'>https://modxvm.com/ratings/</font>",
     "profile/xvm_xte_extended_tooltip": "<textformat tabstops='[20, 85, 140]'>{{l10n:profile/xvm_xte_tooltip}}\n\nReference values:\n\t\tdamage\tfrags\n\tCurrent:\t<font color='#FDF4CE' size='14'>{0}</font>\t<font color='#FDF4CE' size='14'>{1}</font>\n\tAverage:\t<font color='#FDF4CE' size='14'>{2}</font>\t<font color='#FDF4CE' size='14'>{3}</font>\n\tTop:\t<font color='#FDF4CE' size='14'>{4}</font>\t<font color='#FDF4CE' size='14'>{5}</font>",
 
     // Carousel
@@ -258,6 +267,10 @@
     // Config loading
     "XVM config reloaded": "XVM config reloaded",
     "Config file xvm.xc was not found, using the built-in config": "Config file xvm.xc was not found, using the built-in config",
-    "Error loading XVM config": "Error loading XVM config"
+    "Error loading XVM config": "Error loading XVM config",
+
+    //Bootcamp workaround
+    "bootcamp_workaround_title": "Warning",
+    "bootcamp_workaround_message": "Currently XVM is not compatible with the \"boot camp\" game mode.\n\nTo enter the \"boot camp\" mode, you must restart the World of Tanks client in safe mode, which does not load modifications.\n\nDo you want to restart World of Tanks without mods right now?"
   }
 }

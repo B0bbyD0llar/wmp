@@ -1,0 +1,112 @@
+{
+	"Translation": {
+		"txt:Description": {
+			"ru": "1 секция статистики, все основные типы боев, автоматический сброс статистики раз в сутки, альтернативные текстовые кнопки.",
+			"en": "1 section of statistics, all the main types of battles, automatic reset statistics once a day, alternative text-only buttons.",
+			"fr": "1 Les statistiques de tout les principaux types de combats seront automatiquement reinitialise une fois par jour, alternative text-only buttons.",
+			"pl": "1 sekcja statystyk, wszystkie glowne typy walk, automatyczny reset raz dziennie, alternatywne nazwy tylko przyciski.",
+			"de": "",
+			"hu": "1 statisztika szekció, minden főbb csatatípushoz, napi autómata újraindítás.",
+			"uk": "1 секція статистики, усі основні типи боїв, автоматичне скидання статистики раз на добу, альтернативні текстові кнопки.",
+			"cs": "1 sekce statistik, všechny typy bitev, automatický reset jednou denně, alternativní textové tlačítka."
+		},
+		"txt:DescLite": {
+			"ru": "1 секция статистики, в стиле 'первый TimeSpent'",
+			"en": "1 statistics section, in the style of first 'TimeSpent'",
+			"fr": "1 section de statistiques, dans le style du 'premier TimeSpent'",
+			"pl": "1 sekcja statystyki, w stylu 'pierwszy TimeSpent'",
+			"de": "Eine Statistik, Übersetzung DE: Semper_fi__",
+			"hu": "1 statisztika szekció, elsődleges típus 'TimeSpent'",
+			"uk": "1 секція статистики, в стилі 'перший TimeSpent'",
+			"cs": "1 sekce statistik ve stylu 'první TimeSpent'"
+		},
+		"txt:DescZero": {
+			"ru": "1 секция статистики, все основные типы боев, статистика за 7 дней, автоматический сброс статистики.",
+			"en": "1 section of statistics, all major fights, stats for 7 days, an automatic reset of the statistics.",
+			"fr": "1 section des statistiques de tout les combats majeurs, statistiques sur 7 jours, une réinitialisation automatique des statistiques.",
+			"pl": "1 sekcja statystyki, wszystkie podstawowe typy walk, statystyki za 7 dni, automatyczny reset statystyk.",
+			"de": "1 Sektion Statistik, die alle wichtigen Arten von kämpfen, die Statistik für die 7 Tage, automatisches zurücksetzen der Statistik.",
+			"hu": "1 statisztika szekció, jelentősebb csatatípusok, heti statisztika, autómata újraindítás.",
+			"uk": "1 секція статистики, усі основні типи боїв, статистика за 7 днів, автоматичне скидання статистики.",
+			"cs": "1 sekce statistik, všechny typy bitev, výsledky poslední bitvy, statistiky za 7 dnô, automatický reset"
+		},
+		"txt:DescSimple": {
+			"ru": "1 секция статистики, все основные типы боев, ручной сброс статистики.",
+			"en": "1 section of statistics, all the main types of battles, manual reset statistics.",
+			"fr": "1 section de statistiques, tous les types de combats, réinitialisation manuelle de la statistique.",
+			"pl": "1 sekcja statystyki, wszystkie podstawowe typy walk, ręczny reset statystyk.",
+			"de": "1 Sektion Statistik, die alle wichtigen Arten von Schlachten, manuelle Rückstellung Statistiken.",
+			"hu": "1 statisztika szekció, minden csatatípus, manuális újraindítás.",
+			"uk": "1 секція статистики, усі основні типи боїв, ручне скидання статистики.",
+			"cs": "1 sekce statistik, všechny typy bitev, manuální reset."
+		},
+
+		"txt:Win": {"ru": "Победа", "en": "Victory", "fr": "Victoire", "pl": "Zwycięstwo", "de": "Sieg", "hu": "Győzelem", "uk": "Перемога", "cs": "Vítězství"},
+		"txt:Defeat": {"ru": "Поражение", "en": "Defeat", "fr": "Défaite", "pl": "Porażka", "de": "Niederlage", "hu": "Vereség", "uk": "Поразка", "cs": "Porážka"},
+		"txt:Draw": {"ru": "Ничья", "en": "Draw", "fr": "Égalité", "pl": "Remis", "de": "Unentschieden", "hu": "Döntetlen", "uk": "Нічия", "cs": "Remíza"},
+		"txt:NoBattle": {
+			"ru": "Результаты боя пока не доступны.",
+			"en": "The results of the battle are not yet available.",
+			"fr": "Les résultats des batailles ne sont pas encore disponibles.",
+			"pl": "Brak bitw rozegranych do wyświetlenia.",
+			"de": "Es sind keine Ergebnisse eines Gefechtes verfügbar.",
+			"hu": "A csata eredménye nem elérhető.",
+			"uk": "Результати бою доки не доступні.",
+			"cs": "Výsledky bitev nejsou k dispozici."
+		},
+		"txt:Mod": {"ru": "Мод", "en": "Mod", "fr": "Mod", "pl": "Mod", "de": "Modifikation", "hu": "Mod", "uk": "Мод", "cs": "Mod"},
+		"txt:Skin": {"ru": "Скин", "en": "Skin", "fr": "Skin", "pl": "Szablon", "de": "Skin", "hu": "Skin", "uk": "Скин", "cs": "Skin"},
+		"txt:Autor": {"ru": "Автор скина", "en": "The author of the skin", "fr": "Auteur du skin", "pl": "Autor szablonu", "de": "Autor Skin", "hu": "fordította", "uk": "Автор скина", "cs": "Аutor skinu"},
+		"txt:Stat": {"ru": "Cтатистика текущей сессии:", "en": "Statistics for the current session:", "fr": "Statistiques de la session en cours:", "pl": "Statystyki obecnej sesji:", "de": "Statistik der aktuellen Session:", "hu": "Aktuális csata statisztika:", "uk": "Cтатистика поточної сесії:", "cs": "Statistika aktuálního sezení:"},
+		"txt:Ach": {"ru": "Достижения:", "en": "Achievements:", "fr": "Réalisations:", "pl": "Osiągniecia w walce:", "de": "Erfolge", "hu": "Kitűntetések:", "uk": "Досягнення:", "cs": "Úspěchy:"},
+		"txt:BatWin": {"ru": "Боев / Побед", "en": "Battles / Wins", "fr": "Batailles / Wins", "pl": "Bitwy / Wygrane", "de": "Kämpfe / Sieg", "hu": "Csata / Nyert", "uk": "Боїв / Перемог", "cs": "Bitev / Vítězství"},
+		"txt:Exp": {"ru": "Опыт", "en": "Experience", "fr": "Experience", "pl": "Doświadzenia", "de": "Routine", "hu": "XP", "uk": "Досвід", "cs": "Zkušenosti"},
+		"txt:Damage": {"ru": "Урон", "en": "Damage", "fr": "Dommages", "pl": "Obrażenia", "de": "Schaden", "hu": "Sebzés", "uk": "Шкода", "cs": "Poškození"},
+		"txt:Damass": {"ru": "Помощь в уроне", "en": "Damage assist", "fr": "Assit. dommages", "pl": "Obrażenia z asysty", "de": "Hilfe im Schäden", "hu": "Spotolt", "uk": "Допомога в шкоді", "cs": "Asistence"},
+		"txt:Dest": {"ru": "Уничтожено", "en": "Destroyed", "fr": "Détruits", "pl": "Zniszczono", "de": "Zerstört", "hu": "Kill", "uk": "Знищено", "cs": "Zničeno"},
+		"txt:Earned": {"ru": "Заработано", "en": "Earned", "fr": "Gain", "pl": "Kredyty", "de": "Verdient", "hu": "Kredit", "uk": "Зароблено", "cs": "Kredity"},
+		"txt:Profit": {"ru": "Доход", "en": "Profit", "fr": "Profit", "pl": "Zarobek", "de": "Erlös", "hu": "Nettó", "uk": "Доход", "cs": "Netto"},
+		"txt:inBattles": {"ru": "Проведено в боях", "en": "Held in battles", "fr": "Tenue en batailles", "pl": "Czas bitw", "de": "Dauer einer Gefechtsfolge", "hu": "Csata idő", "uk": "Проведено у боях", "cs": "Čas v bitvách"},
+		"txt:tOnline": {"ru": "Общий онлайн", "en": "Total online", "fr": "Temp en ligne", "pl": "Online", "de": "insgesamt online", "hu": "Online", "uk": "Загальний онлайн", "cs": "Online"},
+		"txt:Rating": {"ru": "Рейтинги:", "en": "Ratings:", "fr": "Évaluations:", "pl": "Rating:", "de": "Rating", "hu": "Értékelés:", "uk": "Рейтинги:", "cs": "Ratingy:"},
+		"txt:Impact": {"ru": "Влияние на аккаунт:", "en": "Impact on account:", "fr": "Impact sur le compte:", "pl": "Wpływ na konto:", "de": "Einfluss auf das Konto:", "hu": "Haladás:", "uk": "Вплив на аккаунт:", "cs": "Vliv na účet:"},
+		"txt:Map": {"ru": "Карта", "en": "Map", "fr": "Carte", "pl": "Mapa", "de": "Karten", "hu": "Map", "uk": "Карта", "cs": "Mapa"},
+		"txt:Bonn": {"ru": "Боны", "en": "Bon", "fr": "Bon", "pl": "Bon", "de": "Bon", "hu": "Bon", "uk": "Бони", "cs": "Bony"},
+
+		"txt:bStat": {"ru": "Статистика", "en": "Statistics", "fr": "Statistiques", "pl": "Statystyki", "de": "Statistik", "hu": "Statisztikák", "uk": "Статистика", "cs": "Statistiky"},
+		"txt:bMaps": {"ru": "Карты", "en": "Maps", "fr": "Cartes", "pl": "Mapy", "de": "Karte", "hu": "Mapok", "uk": "Карти", "cs": "Mapy"},
+		"txt:bTanks": {"ru": "Танки", "en": "Tanks", "fr": "Tanks", "pl": "Czołgi", "de": "Panzer", "hu": "Tankok", "uk": "Танки", "cs": "Tanky"},
+		"txt:bDetailed": {"ru": "Подробные результаты", "en": "Detailed results", "fr": "Résultats détaillés", "pl": "Szczegóły", "de": "Detaillierte Ergebnisse", "hu": "Részletes eredmények", "uk": "Детальні результати", "cs": "Detailní statistiky"},
+		"txt:bCurrent": {"ru": "Текущая", "en": "Current", "fr": "Actuel", "pl": "Aktualna", "de": "Aktuell", "hu": "Aktuális", "uk": "Поточна", "cs": "Aktuální"},
+		"txt:bReset": {"ru": "Сброс", "en": "Reset", "fr": "Réinitialisé", "pl": "Reset", "de": "Rücksetzen", "hu": "Újraindít", "uk": "Скидання", "cs": "Reset"},
+
+		"txt:onSession": {"ru": "Сессия начата", "en": "Session started", "fr": "La session est commencée", "pl": "Sesja rozpoczęta", "de": "Start der Session", "hu": "Játék kezdés", "uk": "Сесія розпочата", "cs": "Začátek session"},
+		"txt:SessionTime": {"ru": "Сессия длится", "en": "Session lasts", "fr": "Une session dure", "pl": "Sesja trwa", "de": "Dauer der Session", "hu": "Játékidő", "uk": "Сесія триває", "cs": "Session trvá"},
+		"txt:aBattle": {"ru": "Проведено боев", "en": "Number Battle", "fr": "Lieu des combats", "pl": "Przeprowadzone walk", "de": "Gefechte", "hu": "Csata szám", "uk": "Проведено боїв", "cs": "Bitev"},
+		"txt:Wins": {"ru": "Победы", "en": "Victory", "fr": "Victoire", "pl": "Zwycięstwa", "de": "Sieg", "hu": "Győzelem", "uk": "Перемоги", "cs": "Vítězství"},
+		"txt:lBattle": {"ru": "Последний бой", "en": "Last battle", "fr": "Le dernier combat", "pl": "Ostatnia walka", "de": "Letztes Gefecht", "hu": "Utolsó csata", "uk": "Останній бій", "cs": "Poslední bitva"},
+		"txt:BattleTimeAvg": {"ru": "Средняя длительность боя", "en": "The average duration of the battle", "fr": "La durée moyenne de bataille", "pl": "Średni czas trwania bitwy", "de": "Durchs. Dauer Gefecht", "hu": "Átlag csata idő", "uk": "Середня тривалість бою", "cs": "Průměrný čas bitvy"},
+		"txt:StatMaps": {"ru": "Cтатистика карт:", "en": "Stats maps:", "fr": "Les statistiques de la carte:", "pl": "Statystyki kart:", "de": "Statistik Karten:", "hu": "Map statisztika:", "uk": "Cтатистика карт:", "cs": "Statistika map:"},
+		"txt:StatTanks": {"ru": "Cтатистика танков:", "en": "Stats tanks:", "fr": "Statistiques de chars:", "pl": "Statystyki czołgów:", "de": "Statistik Panzer:", "hu": "Tank statisztika:", "uk": "Cтатистика танків :", "cs": "Statistika vozidel"},
+
+		"txt:rWN8": {"ru": "Рейтинг WN8", "en": "WN8 Rating", "fr": "Ratio WN8", "pl": "Oszacowanie od WN8", "de": "WN8 Rating", "hu": "WN8", "uk": "Рейтинг WN8", "cs": "Hodnocení WN8"},
+		"txt:Damage2": {"ru": "Нанесено урона", "en": "Damage", "fr": "Dommage", "pl": "Rozprowadzona obrażeń", "de": "Verursachten Schaden", "hu": "Sebzés", "uk": "Завдано шкоди", "cs": "Poškození"},
+		"txt:Credits": {"ru": "Кредиты", "en": "Credits", "fr": "Crédits", "pl": "Kredyty", "de": "Kredite", "hu": "Kredit", "uk": "Кредити", "cs": "Kredity"},
+		"txt:KilDam": {"ru": "Фраги|Урон", "en": "Frags|Damage", "fr": "Frags|Dommage", "pl": "Fragi|Obrażenia", "de": "Frags|Schaden", "hu": "Kill|Sebzés", "uk": "Фраги|Шкода", "cs": "Zničeno|Poškození"},
+
+		"txt:hour": {"ru": "ч.", "en": "h.", "fr": "h.", "pl": "h.", "de": "h.", "uk": "г.", "cs": "h."},
+		"txt:min": {"ru": "м.", "en": "m.", "fr": "m.", "pl": "m.", "de": "m.", "uk": "хв.", "cs": "m."},
+		"txt:sec": {"ru": "сек.", "en": "sec.", "fr": "sec.", "pl": "sec.", "de": "sec.", "uk": "сек.", "cs": "sek."},
+		
+		"txt:ByTankTitle": {"ru": "Статистика танка", "en": "Statistics of the tank", "cs": "Statistika vozidla"},
+		"txt:ByTankBattle": {"ru": "Количество боев / побед", "en": "The number of battles / wins", "cs": "Počet bitev / vítězství"},
+		"txt:ByTankWinr": {"ru": "% побед за сессию / по акаунту", "en": "% wins per session / account", "cs": "% vítězství na session / účet"},
+		"txt:ByTankDr": {"ru": "% отметки на стволе", "en": "% of the mark on the gun", "cs": "% značky na děle"},
+		"txt:ByTankDmg": {"ru": "Средний урон за сессию / по акаунту", "en": "Average damage per session / account", "cs": "Průměrné poškození za session / účet"},
+		"txt:ByTankXP": {"ru": "Средний опыт за сессию / по акаунту", "en": "Average experience per session / account", "cs": "Průměrné zkušenosti za session / účet"},
+		"txt:ByTankMaxKill": {"ru": "Фрагов за бой. Максимально / в среднем", "en": "Frags per battle. Maximum / average", "cs": "Zničeno za bitvu. Maximum / průměr"},
+		"txt:ByTankMax": {"ru": "Максимальный урон / опыт", "en": "Maximum damage", "cs": "Maximální poškození"},
+		"txt:ByTankTime": {"ru": "Время проведенное в боях за сессию", "en": "The time spent in combat per session", "cs": "Čas strávený v bitvách za session"},
+		"txt:ByTankBL": {"ru": "Средний уровень боя", "en": "The average level of combat", "cs": "Průměrný Tier bitev"}
+	}
+}

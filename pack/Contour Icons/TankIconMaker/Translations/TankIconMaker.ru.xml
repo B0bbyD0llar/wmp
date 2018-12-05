@@ -37,6 +37,10 @@
       <Translation>Идентификаторы двух слоев совпадают: “{0}”.</Translation>
       <Old>Two or more layers have the same ID “{0}”. Layer IDs must be unique.</Old>
     </ErrorConflictingId>
+    <ErrorMagickEffectNoRedist>
+      <Translation>Не найден пакет Visual C++ Redistrable 2012. Вы можете скачать его с https://www.microsoft.com/ru-ru/download/details.aspx?id=30679</Translation>
+      <Old>Visual C++ Redistrable 2012 not found. You can install it from https://www.microsoft.com/ru-ru/download/details.aspx?id=30679</Old>
+    </ErrorMagickEffectNoRedist>
     <ctGameDirLabel>
       <Translation>_Папка с игрой:</Translation>
       <Old>Game _directory:</Old>
@@ -184,7 +188,15 @@
     <ctDisplayModeCountrySweden>
       <Translation>Швеция</Translation>
       <Old>Sweden</Old>
-    </ctDisplayModeCountrySweden>    
+    </ctDisplayModeCountrySweden>
+    <ctDisplayModeCountryPoland>
+      <Translation>Польша</Translation>
+      <Old>Poland</Old>
+    </ctDisplayModeCountryPoland>
+    <ctDisplayModeCountryItaly>
+      <Translation>Италия</Translation>
+      <Old>Italy</Old>
+    </ctDisplayModeCountryItaly>
     <ctDisplayModeClassLight>
       <Translation>Легкие танки</Translation>
       <Old>Light tanks</Old>
@@ -254,21 +266,21 @@
       <Old>Save to _game folder</Old>
     </ctSaveIconsToGameFolder>
     <ctSaveIconsToSpecifiedFolder>
-      <Translation>Сохранить в _папку...</Translation>
-      <Old>Save to _folder...</Old>
+      <Translation>Сохранить иконки в _папку...</Translation>
+      <Old>Save icons to _folder...</Old>
     </ctSaveIconsToSpecifiedFolder>
     <ctSaveIconsToBattleAtlas>
-      <Translation>Сохранить в _BattleAtlas...</Translation>
-      <Old>Save to _BattleAtlas...</Old>
+      <Translation>Сохранить _BattleAtlas...</Translation>
+      <Old>Save _BattleAtlas...</Old>
     </ctSaveIconsToBattleAtlas>
     <ctSaveIconsToVehicleMarkerAtlas>
-      <Translation>Сохранить в _VehicleMarkerAtlas...</Translation>
-      <Old>Save to _VehicleMarkerAtlas...</Old>
-    </ctSaveIconsToVehicleMarkerAtlas>    
+      <Translation>Сохранить _VehicleMarkerAtlas...</Translation>
+      <Old>Save _VehicleMarkerAtlas...</Old>
+    </ctSaveIconsToVehicleMarkerAtlas>
     <ctSaveToAtlas>
-      <Translation>Сохранить в _атлас...</Translation>
-      <Old>Save to _atlas...</Old>
-    </ctSaveToAtlas>     
+      <Translation>Сохранить а_тлас...</Translation>
+      <Old>Save a_tlas...</Old>
+    </ctSaveToAtlas>
     <ctBulkSaveIcons>
       <Translation>_Массовое сохранение</Translation>
       <Old>Bulk _save</Old>
@@ -324,7 +336,7 @@
       <Old>_Add</Old>
     </BtnAdd>
     <BtnCancel>
-      <Translation>_Отменить</Translation>
+      <Translation>_Отмена</Translation>
       <Old>_Cancel</Old>
     </BtnCancel>
   </AddWindow>
@@ -333,6 +345,18 @@
       <Translation>Редактирование шаблона сохранения иконок</Translation>
       <Old>Edit Icon Path Template</Old>
     </Title>
+    <WarnIconsPathIsFolder>
+      <Translation>Похоже, вы указали в качестве пути папку. Обычно путь сохранения иконок должен заканчиваться "\{TankId}{Ext}". Дополнить?</Translation>
+      <Old>Seems like you have specified folder as path. Normally icons path should end with "\{TankId}{Ext}". Append?</Old>
+    </WarnIconsPathIsFolder>
+    <WarnIconsPathNoExt>
+      <Translation>Похоже, вы не указали расширение файла. Обычно путь сохранения иконок должен заканчиваться "{Ext}". Дополнить?</Translation>
+      <Old>Seems like you miss the extension. Normally icons path should end with "{Ext}". Append?</Old>
+    </WarnIconsPathNoExt>
+    <WarnAtlasPathIsFolder>
+      <Translation>Похоже, вы указали в качестве пути папку. Обычно путь сохранения иконок должен заканчиваться "\{0}". Дополнить?</Translation>
+      <Old>Seems like you have specified folder as path. Normally icons path should end with "\{0}". Append?</Old>
+    </WarnAtlasPathIsFolder>
     <ctHelp>
       <Translation>Данный шаблон указывает путь, по которому будут сохранены иконки. Путь указывается относительно папки с выбранным клиентом World of Tanks, однако абсолютные пути тоже допускаются. Если шаблон пуст, то используется стандартный путь, который работает для замены иконок в базовом клиенте WoT без каких-либо модов. Все нестандартные шаблоны могут иметь эффект только если у вас установлены соответствующие моды.</Translation>
       <Old>This template specifies which path the icons are to be saved to. It is relative to the selected game installation directory. Leave blank to save the icons to the standard location, which works in an unmodified World of Tanks client and requires no mods. Any non-standard paths will only have an effect if you have the appropriate mods installed.</Old>
@@ -369,6 +393,22 @@
       <Translation>Указывает страну танка для каждой конкретной иконки.</Translation>
       <Old>Specifies the tank country for a given icon. Varies for each icon.</Old>
     </ctTankCountryHelp>
+    <ctTankIdHelp>
+      <Translation>Указывает идентификатор танка (обычно используется как имя файла) для каждой конкретной иконки.</Translation>
+      <Old>Specifies the tank Id for a given icon (commonly used as name for icon file). Varies for each icon.</Old>
+    </ctTankIdHelp>
+    <ctTankFullNameHelp>
+      <Translation>Указывает полное название танка для каждой конкретной иконки.</Translation>
+      <Old>Specifies the tank full name for a given icon. Varies for each icon.</Old>
+    </ctTankFullNameHelp>
+    <ctTankShortNameHelp>
+      <Translation>Указывает краткое название танка для каждой конкретной иконки.</Translation>
+      <Old>Specifies the tank short for a given icon. Varies for each icon.</Old>
+    </ctTankShortNameHelp>
+    <ctTankTierHelp>
+      <Translation>Указывает уровень танка для каждой конкретной иконки.</Translation>
+      <Old>Specifies the tank tier for a given icon. Varies for each icon.</Old>
+    </ctTankTierHelp>
     <ctStyleNameHelp>
       <Translation>Название выбранного стиля. Текущее значение: “{cur}”</Translation>
       <Old>The name of the selected style. Current value: “{cur}”</Old>
@@ -390,6 +430,68 @@
       <Old>_Cancel</Old>
     </ctCancelBtn>
   </PathTemplateWindow>
+  <BulkSaveSettingsWindow>
+    <Title>
+      <Translation>Массовое сохранение</Translation>
+      <Old>Bulk Save Settings</Old>
+    </Title>
+    <ctPrompt>
+      <Translation>Это окно служит для настроек массового сохранения. Вы можете включить или выключить сохранение нормальных иконок или атласа и выбрать путь массового сохранения. Обратите внимание, что настройки путей не используются при массовом сохранении в папку. Путь для сохранения обычных иконок так же будет использоваться при нажатии кнопки "Сохранить".</Translation>
+      <Old>This window is used to set style bulk save settings. You can enable or disable saving to atlas or normal icons and specify bulk save path. Please note that path settings don't work when using the bulk save to folder. The path to save the normal icons will also be used when you click "Save".</Old>
+    </ctPrompt>
+    <ctNameColHeader>
+      <Translation>Наименование</Translation>
+      <Old>Name</Old>
+    </ctNameColHeader>
+	<ctEnabledColHeader>
+      <Translation>Включено</Translation>
+      <Old>Enabled</Old>
+    </ctEnabledColHeader>
+    <ctModifyColHeader>
+      <Translation>Изменить</Translation>
+      <Old>Modify</Old>
+    </ctModifyColHeader>
+    <ctPathColHeader>
+      <Translation>Путь</Translation>
+      <Old>Path</Old>
+    </ctPathColHeader>
+    <ctNormalIconsRowHeader>
+      <Translation>Обычные иконки</Translation>
+      <Old>Normal icons</Old>
+    </ctNormalIconsRowHeader>
+    <ctBattleAtlasRowHeader>
+      <Translation>Атлас иконок в бою</Translation>
+      <Old>Battle atlas</Old>
+    </ctBattleAtlasRowHeader>
+    <ctVehicleMarkersAtlasRowHeader>
+      <Translation>Атлас иконок маркеров</Translation>
+      <Old>Markers atlas</Old>
+    </ctVehicleMarkersAtlasRowHeader>
+    <ctCustomAtlasRowHeader>
+      <Translation>Пользовательский атлас</Translation>
+      <Old>Custom atlas</Old>
+    </ctCustomAtlasRowHeader>
+    <ctEditPathTemplateLabel>
+      <Translation>_...</Translation>
+      <Old>_...</Old>
+    </ctEditPathTemplateLabel>
+    <ctEdiBattleAtlastPathTemplateLabel>
+      <Translation>_...</Translation>
+      <Old>_...</Old>
+    </ctEdiBattleAtlastPathTemplateLabel>
+    <ctEditVehicleMarkersAtlasPathTemplateLabel>
+      <Translation>_...</Translation>
+      <Old>_...</Old>
+    </ctEditVehicleMarkersAtlasPathTemplateLabel>
+    <ctOkBtn>
+      <Translation>_ОК</Translation>
+      <Old>_OK</Old>
+    </ctOkBtn>
+    <ctCancelBtn>
+      <Translation>О_тмена</Translation>
+      <Old>_Cancel</Old>
+    </ctCancelBtn>
+  </BulkSaveSettingsWindow>
   <LayerAndEffect>
     <LayerId>
       <DisplayName>
@@ -2178,8 +2280,8 @@
       <Old>Class: Artillery</Old>
     </ClassArtillery>
     <ClassNone>
-      <Translation>Класс:  без класса</Translation>
-      <Old>Class:  None</Old>
+      <Translation>Класс: без класса</Translation>
+      <Old>Class: None</Old>
     </ClassNone>
     <CountryUSSR>
       <Translation>Страна: СССР</Translation>
@@ -2216,10 +2318,18 @@
     <CountrySweden>
       <Translation>Страна: Швеция</Translation>
       <Old>Country: Sweden</Old>
-    </CountrySweden>    
+    </CountrySweden>
+    <CountryPoland>
+      <Translation>Страна: Польша</Translation>
+      <Old>Country: Poland</Old>
+    </CountryPoland>
+    <CountryItaly>
+      <Translation>Страна: Италия</Translation>
+      <Old>Country: Italy</Old>
+    </CountryItaly>
     <CountryNone>
-      <Translation>Страна:  без страны</Translation>
-      <Old>Country:  None</Old>
+      <Translation>Страна: без страны</Translation>
+      <Old>Country: None</Old>
     </CountryNone>
     <CategNormal>
       <Translation>Доступ: Обычный</Translation>
@@ -2357,6 +2467,14 @@
       <Translation>Шаблон имени файла (папки поддерживаются):</Translation>
       <Old>File name template (subfolders supported):</Old>
     </ExportFormat_Label>
+    <Yes>
+      <Translation>Да</Translation>
+      <Old>Yes</Old>
+    </Yes>
+    <No>
+      <Translation>Нет</Translation>
+      <Old>No</Old>
+    </No>
     <Cancel>
       <Translation>Отмена</Translation>
       <Old>Cancel</Old>
@@ -2382,9 +2500,17 @@
       <Old>&amp;Use anyway</Old>
     </GameNotFound_Ignore>
     <IconsSaved>
-      <Translation encoding="c-literal">Иконки сохранены в папку ”{0}”!\r\n\r\n• Иконки с текстом могут отображаться зеркально.\r\n• Игра может наложить уровень танка поверх вашей иконки.\r\n\r\nЧтобы узнать о вариантах решения этих проблем, прочтите инструкцию на сайте Tank Icon Maker.</Translation>
+      <Translation encoding="c-literal">Иконки сохранены в ”{0}”!\r\n\r\n• Иконки с текстом могут отображаться зеркально.\r\n• Игра может наложить уровень танка поверх вашей иконки.\r\n\r\nЧтобы узнать о вариантах решения этих проблем, прочтите инструкцию на сайте Tank Icon Maker.</Translation>
       <Old encoding="c-literal">Icons saved to “{0}”!\n\n• Icons with text may show mirrored.\n• The game may overlay tank tiers on top of your icons.\n\nTo find out how these issues can be fixed please refer to the Tank Icon Maker website.</Old>
     </IconsSaved>
+    <IconsAndAtlasSaved>
+      <Translation encoding="c-literal">Иконки сохранены в ”{0}”!\r\nBattleAtlas сохранен в ”{1}”!\r\nVehicleMarkerAtlas сохранен в ”{2}”!\r\nПользовательский атлас сохранен в ”{3}”!\r\n\r\n• Иконки с текстом могут отображаться зеркально.\r\n• Игра может наложить уровень танка поверх вашей иконки.\r\n\r\nЧтобы узнать о вариантах решения этих проблем, прочтите инструкцию на сайте Tank Icon Maker.</Translation>
+      <Old encoding="c-literal">Icons saved to “{0}”!\nBattleAtlas saved to “{1}”\nVehicleMarkerAtlas saved to “{2}”\nCustom atlas saved to “{3}”\n\n• Icons with text may show mirrored.\n• The game may overlay tank tiers on top of your icons.\n\nTo find out how these issues can be fixed please refer to the Tank Icon Maker website.</Old>
+    </IconsAndAtlasSaved>
+    <AtlasSaved>
+      <Translation encoding="c-literal">Атлас сохранен в ”{0}”!\r\n\r\n• Иконки с текстом могут отображаться зеркально.\r\n• Игра может наложить уровень танка поверх вашей иконки.\r\n\r\nЧтобы узнать о вариантах решения этих проблем, прочтите инструкцию на сайте Tank Icon Maker.</Translation>
+      <Old encoding="c-literal">Atlas saved to “{0}”!\n\n• Icons with text may show mirrored.\n• The game may overlay tank tiers on top of your icons.\n\nTo find out how these issues can be fixed please refer to the Tank Icon Maker website.</Old>
+    </AtlasSaved>
     <IconsSavedGoToForum>
       <Translation>Открыть &amp;инструкцию в браузере</Translation>
       <Old>Open &amp;website in browser</Old>
@@ -2778,18 +2904,4 @@
       <Old>recursive layer reference: “{0}”</Old>
     </Err_RecursiveLayerReference>
   </Calculator>
-  <BulkSaveSettingsWindow>
-    <ctEnabledHeader>
-      <Translation>Включено</Translation>
-      <Old>Enabled</Old>
-    </ctEnabledHeader>
-    <ctModifyHeader>
-      <Translation>Изменить</Translation>
-      <Old>Modify</Old>
-    </ctModifyHeader>
-    <ctPathHeader>
-      <Translation>Путь</Translation>
-      <Old>Path</Old>
-    </ctPathHeader>
-  </BulkSaveSettingsWindow>
 </item>

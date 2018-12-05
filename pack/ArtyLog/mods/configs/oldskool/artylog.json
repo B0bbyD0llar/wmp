@@ -1,0 +1,69 @@
+/**  
+ * Mod: Arty Log Extended (v 0.9.20.0)
+ * ---------------------------------------------------------------
+ * Made by OldSkool (http://www.oldskool.vip)
+ * Configuration latest update: 30.08.2017
+ * ---------------------------------------------------------------
+ */   
+
+{
+
+    "modSettings": {
+	
+		// Enable the mod by default (true/false)
+		"modActive": true,
+	
+		// Hotkey for resetting the cache (disable with KEY_NONE)
+		"resetKey": "KEY_NUMPAD0", 
+
+		// Hotkey for extended arty log (on hold - disable with KEY_NONE)
+		"onHoldKey": "KEY_LALT", 
+		
+		// Disable the mod in all other game mode then random? (true/false)
+		"disableInOtherModes": true
+
+    },
+	
+	// Message Content
+    "guiSettings": {
+	
+		// Currently macros: {{date}} {{hits}}, {{damage}}, {{battles}}, {{ratio}}, {{stunTime}}
+		"normal": {
+	
+			"header": "<img align='top' height='32' vspace='-25' width='32' src='img://gui/maps/icons/vehicleTypes/big/SPG_elite.png'><font size='16' color='#FFCC66'> Arty Log Extended<font size='12'> (since {{date}})</font>",
+			"body": "<img align='top' height='15' vspace='-9' width='15' src='img://gui/maps/icons/library/dossier/avgDamage40x32.png'><font size='14'> <font color='#FFFFFF'>{{hits}}</font><font color='#FFCC66'> Treffer in </font><font color='#FFFFFF'>{{battles}}</font><font color='#FFCC66'> Gefechten erhalten.<br><img align='top' height='15' vspace='-9' width='15' src='img://gui/maps/icons/library/dossier/dmgRatio40x32.png'> Gesamtschaden durch Arty: <font color='#FFFFFF'>{{damage}} ({{ratio}}%)</font><font color='#FFFFFF'></font>",
+			"stun": "<img align='top' height='15' vspace='-9' width='15' src='img://gui/maps/icons/library/dossier/survival40x32.png'> Gesamte Betäubungsdauer durch die Arty ist <font color='#FFFFFF'> {{stunTime}} </font><font color='#FFFFFF'>Minuten.</font>"
+
+		},
+		
+		"extended": {
+
+			// Currently macros: {{dmgLT}} {{hitsLT}} {{ratioLT}}
+			"LightTank": "<img align='top' height='20' vspace='-6' width='20' src='img://gui/maps/icons/library/artylog/lt.png'> .. <font size='14'><font color='#DFDFDF'>{{hitsLT}}</font><font color='#FFCC66'> hits for </font><font color='#DFDFDF'>{{dmgLT}}</font> damage (<font color='#DFDFDF'>{{ratioLT}}%</font>)",
+			
+			// Currently macros: {{dmgMT}} {{hitsMT}} {{ratioMT}}
+			"MediumTank": "<img align='top' height='20' vspace='-6' width='20' src='img://gui/maps/icons/library/artylog/mt.png'> .. <font size='14'><font color='#DFDFDF'>{{hitsMT}}</font><font color='#FFCC66'> hits for </font><font color='#DFDFDF'>{{dmgMT}}</font> damage (<font color='#DFDFDF'>{{ratioMT}}%</font>)",
+			
+			// Currently macros: {{dmgHT}} {{hitsHT}} {{ratioHT}}
+			"HeavyTank": "<img align='top' height='20' vspace='-6' width='20' src='img://gui/maps/icons/library/artylog/ht.png'> .. <font size='14'><font color='#DFDFDF'>{{hitsHT}}</font><font color='#FFCC66'> hits for </font><font color='#DFDFDF'>{{dmgHT}}</font> damage (<font color='#DFDFDF'>{{ratioHT}}%</font>)",
+			
+			// Currently macros: {{dmgATSPG}} {{hitsATSPG}} {{ratioATSPG}}
+			"AT-SPG": "<img align='top' height='20' vspace='-6' width='20' src='img://gui/maps/icons/library/artylog/td.png'> .. <font size='14'><font color='#DFDFDF'>{{hitsATSPG}}</font><font color='#FFCC66'> hits for </font><font color='#DFDFDF'>{{dmgATSPG}}</font> damage (<font color='#DFDFDF'>{{ratioATSPG}}%</font>)",
+			
+			// Currently macros: {{dmgSPG}} {{hitsSPG}} {{ratioSPG}}
+			"SPG": "<img align='top' height='20' vspace='-6' width='20' src='img://gui/maps/icons/library/artylog/spg.png'> .. <font size='14'><font color='#DFDFDF'>{{hitsSPG}}</font><font color='#FFCC66'> hits for </font><font color='#DFDFDF'>{{dmgSPG}}</font> damage (<font color='#DFDFDF'>{{ratioSPG}}%</font>)"
+			
+		}	
+    }, 
+	
+	// Ingame Panel Layout
+    "battleFlashSettings": {
+	
+        "x": 1720, 
+        "y": 53,
+		
+        "height": 240,
+        "width": 310
+
+    }
+}

@@ -10,11 +10,13 @@
     // Набор форматов (поддерживается расширенный формат, см. extra-field.txt).
     "formats": [
       //${ "minimapLabelsTemplates.xc":"def.vtypeSpotted" },
-      ${ "minimapLabelsTemplates.xc":"def.vehicleSpottedCompany" },
-      ${ "minimapLabelsTemplates.xc":"def.nickSpottedCompany" },
+      ${ "minimapLabelsTemplates.xc":"def.vehicleSpottedAlt" },
+      ${ "minimapLabelsTemplates.xc":"def.vehicleSpottedWN8x" },
+      ${ "minimapLabelsTemplates.xc":"def.nickSpottedAlt" },
       ${ "minimapLabelsTemplates.xc":"def.xmqpEvent" },
       ${ "minimapLabelsTemplates.xc":"def.vtypeLost" },
       ${ "minimapLabelsTemplates.xc":"def.vehicleLost" },
+      ${ "minimapLabelsTemplates.xc":"def.vehicleLostWN8x" },
       ${ "minimapLabelsTemplates.xc":"def.nickLost" },
       ${ "minimapLabelsTemplates.xc":"def.vtypeDead" },
       ${ "minimapLabelsTemplates.xc":"def.vehicleDead" },

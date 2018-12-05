@@ -6,17 +6,20 @@
   "login": {
     // Save last server
     // Сохранять последний сервер
-    "saveLastServer": true,
+    "saveLastServer": false,
     // Auto enter to the game
     // Автоматический вход в игру
     "autologin": false,
     // Auto confirm old replays playing
     // Автоматически подтверждать проигрывание старых реплеев
     "confirmOldReplays": false,
+    // Do not show the specified servers in the servers list, for example, ["RU1", "RU3"]
+    // Не показывать заданные серверы в выпадающем списке серверов, например, ["RU1", "RU3"]
+    "disabledServers": [],
     // Ping servers
     // Пинг серверов
     "pingServers": {
-      // true - Enable display of ping to the servers
+      // true - enable display of ping to the servers
       // true - показывать пинг до серверов
       "enabled": false,
       // Update interval, in ms
@@ -25,7 +28,7 @@
       // Axis field coordinates
       // Положение поля по осям
       "x": 5,
-      "y": 30,
+      "y": 40,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
       "hAlign": "left",
@@ -35,6 +38,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to response time text delimiter
       // Разделитель сервера от времени отклика
       "delimiter": ": ",
@@ -62,6 +69,9 @@
       // text to show in case of error
       // текст показываемый в случае ошибки
       "errorString": "--",
+      // List of ignored servers, for example, ["RU1", "RU3"]
+      // Список игнорируемых серверов, например, ["RU1", "RU3"]
+      "ignoredServers": [],
       // Text style
       // Стиль текста
       "fontStyle": {
@@ -113,13 +123,13 @@
       }
     },
     "onlineServers": {
-      // true - Enable display online of servers
+      // true - enable display online of servers
       // true - показывать онлайн серверов
       "enabled": false,
       // Axis field coordinates
       // Положение поля по осям
       "x": -5,
-      "y": 30,
+      "y": 40,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
       "hAlign": "right",
@@ -129,6 +139,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to online text delimiter
       // Разделитель сервера от онлайна
       "delimiter": ": ",
@@ -156,6 +170,9 @@
       // text to show in case of error
       // текст показываемый в случае ошибки
       "errorString": "--k",
+      // List of ignored servers, for example, ["RU1", "RU3"]
+      // Список игнорируемых серверов, например, ["RU1", "RU3"]
+      "ignoredServers": [],
       // Text style
       // Стиль текста
       "fontStyle": {
@@ -168,10 +185,10 @@
         // Different colors depending on people online
         // Разные цвета в зависимости от количества игроков
         "color": {
-          "great": "0x60ff00", // Отличный
-          "good": "0xF8F400",  // Хороший
-          "poor": "0xFE7903",  // Так себе
-          "bad": "0xFE0E00"    // Плохой
+          "great": "0xFFCC66", // Отличный
+          "good": "0xE5E4E1",  // Хороший
+          "poor": "0x96948F",  // Так себе
+          "bad": "0xD64D4D"    // Плохой
         },
         // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
         // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна
@@ -197,6 +214,9 @@
         "blur": 4,
         "strength": 2
       }
-    }
+    },
+    // Parameters for widgets
+    // Параметры виджетов
+    "widgets": ${"widgets.xc":"widgets.login"}
   }
 }

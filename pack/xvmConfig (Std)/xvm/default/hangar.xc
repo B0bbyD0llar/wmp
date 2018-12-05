@@ -4,58 +4,158 @@
  */
 {
   "hangar": {
-    // true - Show XWN8 instead of XEFF in company windows
-    // true - показывать XWN8 вместо XEFF в окнах рот
-    "xwnInCompany": true,
+    // Show "Buy premium" button
+    // Показать кнопку "Купить премиум"
+    "showBuyPremiumButton": true,
+    // Show "Premium shop" button
+    // Показать кнопку "Премиум магазин"
+    "showPremiumShopButton": true,
+    // Show "Create squad" text on the squad creation button
+    // Показать текст "Создать взвод" на кнопке создания взвода
+    "showCreateSquadButtonText": true,
+    // Show selected battle mode text
+    // Показать текст с названием выбранного режима боя
+    "showBattleTypeSelectorText": true,
+    // Show "General chat" button
+    // Показать кнопку "Общий чат"
+    "showGeneralChatButton": true,
+    // false - disable display promo of premium vehicle (on the background in the hangar)
+    // false - отключить отображение рекламы премиум техники (на фоне в ангаре)
+    "showPromoPremVehicle": true,
+    // false - disable display of the widget with ads
+    // false - отключить отображение виджета с рекламой
+    "showTeaserWidget": true,
     // true - enable locker for gold
     // true - включить замок для золота
     "enableGoldLocker": false,
     // true - enable locker for free XP
     // true - включить замок для свободного опыта
     "enableFreeXpLocker": false,
-    // true - Use credits instead of gold as default currency for ammo and equipment
-    // true - Использовать кредиты, а не золото как валюту по умолчанию для снарядов и снаряжения
-    "defaultBoughtForCredits": false,
-    // true - Hide price button in tech tree
-    // true - Прятать кнопку с ценой в дереве исследований
-    "hidePricesInTechTree": false,
-    // true - Show mastery mark in tech tree
-    // true - Показывать знак мастерства в дереве исследований
-    "masteryMarkInTechTree": true,
-    // true - Allow to consider the exchange of experience with gold in tech tree
-    // true - Разрешить учитывать обмен опыта за золото в дереве исследований
-    "allowExchangeXPInTechTree": true,
-    // true - Enable crew auto return function
-    // true - Включить функцию автовозврата экипажа
+    // Show/hide server info or change its parameters
+    // Показать/спрятать информацию о сервере, или изменить ее параметры
+    "serverInfo": {
+      // Show server info in hangar.
+      // Показывать информацию о сервере в ангаре.
+      "enabled": true,
+      // Transparency in percents [0..100].
+      // Прозрачность в процентах [0..100].
+      "alpha": 100,
+      // Rotation in degrees [0..360].
+      // Угол поворота в градусах [0..360].
+      "rotation": 0,
+      // X offset
+      // Смещение по оси X
+      "offsetX": 0,
+      // Y offset
+      // Смещение по оси Y
+      "offsetY": 0
+    },
+    // true - enable crew auto return function
+    // true - включить функцию автовозврата экипажа
     "enableCrewAutoReturn": true,
-    // true - Return crew check box is selected by default
-    // true - Включить галочку возврата экипажа по умолчанию
+    // true - return crew check box is selected by default
+    // true - включить галочку возврата экипажа по умолчанию
     "crewReturnByDefault": false,
     // Number of perks to show without grouping
     // Количество перков, которые отображаются без группировки
     "crewMaxPerksCount": 8,
-    // true - Show flags in barracks
-    // true - Показывать флаги в казарме
-    "barracksShowFlags": true,
-    // true - Show skills in barracks
-    // true - Показывать умения в казарме
-    "barracksShowSkills": true,
-    // true - Enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
-    // true - Включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
+    // Show/hide common quests button or change its parameters
+    // Показать/спрятать кнопку общих задач, или изменить ее параметры
+    "commonQuests": {
+      // Show common quests button in hangar.
+      // Показывать кнопку общих задач в ангаре.
+      "enabled": true,
+      // Transparency in percents [0..100].
+      // Прозрачность в процентах [0..100].
+      "alpha": 100,
+      // Rotation in degrees [0..360].
+      // Угол поворота в градусах [0..360].
+      "rotation": 0,
+      // X offset
+      // Смещение по оси X
+      "offsetX": 0,
+      // Y offset
+      // Смещение по оси Y
+      "offsetY": 0
+    },
+    // Show/hide personal quests button or change its parameters
+    // Показать/спрятать кнопку персональных задач, или изменить ее параметры
+    "personalQuests": {
+      // Show personal quests button in hangar.
+      // Показывать кнопку персональных задач в ангаре.
+      "enabled": true,
+      // Transparency in percents [0..100].
+      // Прозрачность в процентах [0..100].
+      "alpha": 100,
+      // Rotation in degrees [0..360].
+      // Угол поворота в градусах [0..360].
+      "rotation": 0,
+      // X offset
+      // Смещение по оси X
+      "offsetX": 0,
+      // Y offset
+      // Смещение по оси Y
+      "offsetY": 0
+    },
+    // Show/hide current vehicle name, type and level or change their parameters
+    // Показать/спрятать название, тип и уровень текущего танка, или изменить их параметры
+    "vehicleName": {
+      // Show current vehicle name, type and level in hangar.
+      // Показывать название, тип и уровень текущего танка в ангаре.
+      "enabled": true,
+      // Transparency in percents [0..100].
+      // Прозрачность в процентах [0..100].
+      "alpha": 100,
+      // Rotation in degrees [0..360].
+      // Угол поворота в градусах [0..360].
+      "rotation": 0,
+      // X offset
+      // Смещение по оси X
+      "offsetX": 0,
+      // Y offset
+      // Смещение по оси Y
+      "offsetY": 0
+    },
+    // true - enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
+    // true - включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
     "enableEquipAutoReturn": false,
-    // true - Make vehicle not ready for battle if low ammo
-    // true - Сделать машину не готовой к битве если мало снарядов
+    // true - make vehicle not ready for battle if low ammo
+    // true - сделать машину не готовой к битве если мало снарядов
     "blockVehicleIfLowAmmo": false,
     // Below this percentage, ammo is low. (0 - 100)
     // Ниже этого процента, снарядов считается мало. (0 - 100)
     "lowAmmoPercentage": 20,
-    // true - Enable widgets
-    // true - включить виджеты
-    "widgetsEnabled": false,
+    // Behavior of the system channel notifications button on new notifications:
+    //   none - do nothing
+    //   blink - blink button
+    //   full - blink and show counter (default client behavior)
+    // Поведение кнопки оповещений системного канала при новых оповещениях:
+    //   none - ничего не делать
+    //   blink - мигать кнопкой
+    //   full - мигать и показать счетчик (поведение клиента по-умолчанию)
+    "notificationsButtonType": "full",
+    // true - hide price button in tech tree
+    // true - прятать кнопку с ценой в дереве исследований
+    "hidePricesInTechTree": false,
+    // true - show mastery mark in tech tree
+    // true - показывать знак мастерства в дереве исследований
+    "masteryMarkInTechTree": true,
+    // true - allow to consider the exchange of experience with gold in tech tree
+    // true - разрешить учитывать обмен опыта за золото в дереве исследований
+    "allowExchangeXPInTechTree": true,
+    // true - show flags in barracks
+    // true - показывать флаги в казарме
+    "barracksShowFlags": true,
+    // true - show skills in barracks
+    // true - показывать умения в казарме
+    "barracksShowSkills": true,
+    // true - restore selected battle type on switching to another server (only random, frontline and rank battle modes)
+    // true - восстанавливать выбранный тип боя при переключении на другой сервер (только рандом, Линия Фронта и ранговые бои)
+    "restoreBattleType": false,
     // Ping servers
     // Пинг серверов
     "pingServers": {
-      // true - Enable display of ping to the servers
+      // true - enable display of ping to the servers
       // true - показывать пинг до серверов
       "enabled": false,
       // Update interval, in ms
@@ -74,6 +174,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to response time text delimiter
       // Разделитель сервера от времени отклика
       "delimiter": ": ",
@@ -124,13 +228,14 @@
           "poor":  "0x96948F",  // Так себе
           "bad":   "0xD64D4D"   // Плохой
         },
-        // Mark current server in the list, possible options: "none" (don't mark), "normal", "bold", "italic", "underline"
-        // Выделять текущий сервер в списке, доступные опции: "none" (не выделять), "normal", "bold", "italic", "underline"
-        "markCurrentServer": "bold",
         // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
         // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна
         "serverColor": ""
       },
+      // Text format for current server in the list, Flash HTML tags supported. "{server}" for the server value
+      // Форматирование текста для текущего сервер в списке. Поддерживаются теги Flash HTML. "{server}" заменяется
+      // на значение текущего сервера
+      "currentServerFormat": "<b>{server}</b>",
       // Threshold values defining response quality
       // Пороговые значения, определяющие качество отклика
       "threshold": {
@@ -161,7 +266,7 @@
       }
     },
     "onlineServers": {
-      // true - Enable display online of servers
+      // true - enable display online of servers
       // true - показывать онлайн серверов
       "enabled": false,
       // Axis field coordinates
@@ -177,6 +282,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to online text delimiter
       // Разделитель сервера от онлайна
       "delimiter": ": ",
@@ -222,18 +331,19 @@
         // Different colors depending on people online
         // Разные цвета в зависимости от количества игроков
         "color": {
-          "great": "0x60ff00",  // Отличный
-          "good":  "0xF8F400",  // Хороший
-          "poor":  "0xFE7903",  // Так себе
-          "bad":   "0xFE0E00"   // Плохой
+          "great": "0xFFCC66",  // Отличный
+          "good":  "0xE5E4E1",  // Хороший
+          "poor":  "0x96948F",  // Так себе
+          "bad":   "0xD64D4D"   // Плохой
         },
-        // Mark current server in the list, possible options: "none" (don't mark), "normal", "bold", "italic", "underline"
-        // Выделять текущий сервер в списке, доступные опции: "none" (не выделять), "normal", "bold", "italic", "underline"
-        "markCurrentServer": "bold",
         // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
         // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна
         "serverColor": ""
       },
+      // Text format for current server in the list, Flash HTML tags supported. "{server}" for the server value
+      // Форматирование текста для текущего сервер в списке. Поддерживаются теги Flash HTML. "{server}" заменяется
+      // на значение текущего сервера
+      "currentServerFormat": "<b>{server}</b>",
       // Threshold values defining server online and thus shorter battle queue
       // Пороговые значения, определяющие количество человек онлайн и следовательно меньшую очередь в бой
       "threshold": {
@@ -255,36 +365,19 @@
         "strength": 2
       }
     },
-    // Show/hide server info or change its parameters
-    // Показать/спрятать информацию о сервере, или изменить ее параметры
-    "serverInfo": {
-      // Show server info in hangar.
-      // Показывать информацию о сервере в ангаре.
-      "enabled": true,
-      // Transparency in percents [0..100].
-      // Прозрачность в процентах [0..100].
-      "alpha": 100,
-      // Rotation in degrees [0..360].
-      // Угол поворота в градусах [0..360].
-      "rotation": 0,
-      // Shift X position
-      // Сдвиг по оси X
-      "shiftX": 0,
-      // Shift Y position
-      // Сдвиг по оси Y
-      "shiftY": 0
+    // Show/hide notifications counters in the main menu
+    // Показывать/прятать счетчики уведомлений в главном меню
+    "notificationCounter": {
+      "store": true,                        // Store / Магазин
+      "missions": true,                     // Missions / Задачи
+      "profile": true,                      // Service Record / Достижения
+      "PersonalMissionOperationsPage": true // Campaigns / Кампании
     },
-    // Show "Buy premium" button
-    // Показать кнопку "Купить премиум"
-    "showBuyPremiumButton": true,
-    // Show "Premium shop" button
-    // Показать кнопку "Премиум магазин"
-    "showPremiumShopButton": true,
     // Parameters for tank carousel
     // Параметры карусели танков
     "carousel": ${"carousel.xc":"carousel"},
-    // Parameters for hangar clock
-    // Параметры часов в ангаре
-    "clock": ${"clock.xc":"clock"}
+    // Parameters for widgets
+    // Параметры виджетов
+    "widgets": ${"widgets.xc":"widgets.lobby"}
   }
 }

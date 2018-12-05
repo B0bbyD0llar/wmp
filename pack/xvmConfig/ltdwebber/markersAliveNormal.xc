@@ -155,7 +155,7 @@
       "textFormat": {
         "font": "xvm",
         "size": 17,
-        "color": "{{c:r|#999999}}",
+        "color": "{{c:xr|#999999}}",
         "bold": false,
         "italic": false
       },
@@ -231,8 +231,20 @@
         "strength": 2                 //   интенсивность
       },
       "format": "<font size='{{battletype?13|0}}'>{{position}}</font>"  //  формат текста. См. описание макросов в macros.txt
+    },
+    // "Top tankers" rank.
+    // Позиция в "Танковых асах".
+    "topTankers": {
+      "name": "topTankers",
+      "enabled": true,
+      "x": 33,
+      "y": -21,
+      "alpha": 100,
+      "align": "left",
+      "format": "<img src='{{top_tankers_emblem}}' width='16' height='16'>"
     }
   },
+  // Settings for allies.
   // Настройки для союзников.
   "ally": {
     // Type of vehicle icon (HT/MT/LT/TD/Arty).
@@ -260,6 +272,7 @@
       // Смещение по оси Y (?)
       "offsetY": 0
     },
+    // Health indicator.
     // Индикатор здоровья.
     "healthBar": {
       "enabled": true,                  //   false - не отображать
@@ -270,16 +283,19 @@
       "lcolor": null,                   //   цвет дополнительный (для градиента)
       "width": 70,                      //   ширина полосы здоровья
       "height": 12,                     //   высота полосы здоровья
+      // Substrate and frame parameters.
       // Параметры подложки и рамки.
       "border": {
         "alpha": 35,                    //     прозрачность
         "color": "0x000000",            //     цвет
         "size": 1                       //     размер рамки
       },
+      // Parameters of the remaining health.
       // Параметры оставшегося здоровья.
       "fill": {
         "alpha": 50                     //     прозрачность
       },
+      // Decreasing HP animation parameters.
       // Параметры анимации отнимаемого здоровья.
       "damage": {
         "alpha": 100,                   //     прозрачность
@@ -333,9 +349,27 @@
       "y": -67,          // Position on the Y axis / Положение по оси Y.
       "alpha": 100       // Opacity                / Прозрачность.
     },
+    // Stun marker and consumables marker in "Frontline Returns" mode (smoke screen, morale boost, engineering crew)
+    // Маркер оглушения и маркер боевого снаряжения в режиме "Линия фронта" (дымовая завеса, воодушевление, инженерный отряд)
+    "vehicleStatusMarker": {
+      "enabled": true,   // false - disable        / не отображать.
+      "x": 0,            // Position on the X axis / Положение по оси X.
+      "y": -67,          // Position on the Y axis / Положение по оси Y.
+      "alpha": 100       // Opacity                / Прозрачность.
+    },
+    // Damage indicator (ricochet, critical hit, ...)
+    // Индикатор урона (рикошет, критический урон, ...)
+    "damageIndicator": {
+      "enabled": true,   // false - disable        / не отображать.
+      "showText": true,  // false - show only icon / показывать только иконку.
+      "x": 53,           // Position on the X axis / Положение по оси X.
+      "y": -27,          // Position on the Y axis / Положение по оси Y.
+      "alpha": 100       // Opacity                / Прозрачность.
+    },
     // Block of text fields (extended format supported, see extra-field.txt).
     // Блок текстовых полей (поддерживается расширенный формат, см. extra-field.txt).
     "textFields": [
+      ${ "def.topTankers" },
       ${ "def.tankName" },
       ${ "def.playerName" },
       ${ "def.tankHp" },
@@ -343,6 +377,7 @@
       ${ "def.xmqpEvent" }
     ]
   },
+  // Settings for enemies.
   // Настройки для противников.
   "enemy": {
     // Type of vehicle icon (HT/MT/LT/TD/Arty).
@@ -357,6 +392,7 @@
       "offsetX": 0,
       "offsetY": 0
     },
+    // Health indicator.
     // Индикатор здоровья.
     "healthBar": {
       "enabled": true,
@@ -418,9 +454,27 @@
       "y": -67,
       "alpha": 100
     },
+    // Stun marker and consumables marker in "Frontline Returns" mode (smoke screen, morale boost, engineering crew)
+    // Маркер оглушения и маркер боевого снаряжения в режиме "Линия фронта" (дымовая завеса, воодушевление, инженерный отряд)
+    "vehicleStatusMarker": {
+      "enabled": true,
+      "x": 0,
+      "y": -67,
+      "alpha": 100
+    },
+    // Damage indicator (ricochet, critical hit, ...)
+    // Индикатор урона (рикошет, критический урон, ...)
+    "damageIndicator": {
+      "enabled": true,
+      "showText": true,
+      "x": 53,
+      "y": -27,
+      "alpha": 100
+    },
     // Block of text fields (extended format supported, see extra-field.txt).
     // Блок текстовых полей (поддерживается расширенный формат, см. extra-field.txt).
     "textFields": [
+      ${ "def.topTankers" },
       ${ "def.tankName" },
       ${ "def.tankHp" },
       ${ "def.rating" },

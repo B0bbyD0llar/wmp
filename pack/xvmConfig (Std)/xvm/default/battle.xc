@@ -4,10 +4,10 @@
  */
 {
   "battle": {
-    // false - Disable tank icon mirroring (good for alternative icons).
+    // false - disable tank icon mirroring (good for alternative icons).
     // false - отключить зеркалирования иконок танков (полезно для альтернативных иконок).
     "mirroredVehicleIcons": true,
-    // false - Disable pop-up panel at the bottom after death.
+    // false - disable pop-up panel at the bottom after death.
     // false - отключить всплывающую внизу панель после смерти.
     "showPostmortemTips": true,
     // false - disable highlighting of own vehicle icon and squad.
@@ -26,6 +26,19 @@
     // Duration of the sixth sense indicator (msec).
     // Длительность отображения индикатора 6-го чувства (мсек).
     "sixthSenseDuration": 2000,
+    // true - hide the tips in battle.
+    // true - скрыть подсказки в бою.
+    "battleHint": {
+      // true - hide the tips aiming mode changing in strategic mode.
+      // true - скрыть подсказку смены режима прицеливания в стратегическом режиме.
+      "hideTrajectoryView": false,
+      // true - hide the tips about switching to siege mode.
+      // true - скрыть подсказку перехода в осадный режим.
+      "hideSiegeIndicator": false,
+      // true - hide the tips about switching to menu Personal Missions.
+      // true - скрыть подсказку перехода в меню ЛБЗ.
+      "hideQuestProgress": false
+    },
     // GUI elements settings (experts only)
     // Настройки графических элементов (только для экспертов!)
     "elements": ${"elements.xc":"elements"},
