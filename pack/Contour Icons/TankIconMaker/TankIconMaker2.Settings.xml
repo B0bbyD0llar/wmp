@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Settings>
-  <SavedByVersion>54</SavedByVersion>
+  <SavedByVersion>55</SavedByVersion>
   <MainWindow>
     <DimensionsByRes>
       <item key="2560x1440">
-        <Left>446</Left>
-        <Top>96</Top>
+        <Left>42</Left>
+        <Top>68</Top>
         <Width>1994</Width>
         <Height>1231</Height>
         <Maximized>False</Maximized>
@@ -130,7 +130,7 @@
     <item>
       <Name>Black_Spy (Kopie)</Name>
       <Author>Black_Spy</Author>
-      <SavedByVersion>54</SavedByVersion>
+      <SavedByVersion>55</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -1409,7 +1409,7 @@
     <item>
       <Name>Dark Agent (Kopie)</Name>
       <Author>Romkyns</Author>
-      <SavedByVersion>54</SavedByVersion>
+      <SavedByVersion>55</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -2175,7 +2175,7 @@
     <item refid="1">
       <Name>DMVK</Name>
       <Author>Ltd_Webber</Author>
-      <SavedByVersion>54</SavedByVersion>
+      <SavedByVersion>55</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -2775,7 +2775,7 @@
     <item>
       <Name>DMVK</Name>
       <Author>Ltd_Webber</Author>
-      <SavedByVersion>54</SavedByVersion>
+      <SavedByVersion>55</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -2841,7 +2841,7 @@
     <item>
       <Name>HARDicons Colored (Kopie)</Name>
       <Author>Andrey_Hard</Author>
-      <SavedByVersion>54</SavedByVersion>
+      <SavedByVersion>55</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -3537,7 +3537,7 @@
     <item>
       <Name>Korolins (DMVK Setting)</Name>
       <Author>Ltd_Webber</Author>
-      <SavedByVersion>54</SavedByVersion>
+      <SavedByVersion>55</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -3603,7 +3603,7 @@
     <item>
       <Name>Original (Kopie)</Name>
       <Author>Wargaming.net</Author>
-      <SavedByVersion>54</SavedByVersion>
+      <SavedByVersion>55</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
