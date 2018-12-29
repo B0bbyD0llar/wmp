@@ -665,56 +665,56 @@
     <height> 84 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R132_VNII_100LT </name>
+    <name> ussr-R11_MS-1 </name>
     <x> 2746 </x>
     <y> 1062 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R70_T_50_2 </name>
+    <name> ussr-R56_T-127 </name>
     <x> 2773 </x>
     <y> 1727 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R11_MS-1_bot </name>
+    <name> ussr-R41_T-50 </name>
     <x> 3852 </x>
     <y> 1771 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R11_MS-1 </name>
+    <name> ussr-R11_MS-1_bot </name>
     <x> 2423 </x>
     <y> 2035 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R06_T-28_bootcamp </name>
+    <name> ussr-R98_T44_85M </name>
     <x> 3975 </x>
     <y> 2057 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R41_T-50 </name>
+    <name> ussr-R70_T_50_2 </name>
     <x> 2423 </x>
     <y> 2060 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R98_T44_85M </name>
+    <name> ussr-R132_VNII_100LT </name>
     <x> 3947 </x>
     <y> 2082 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R56_T-127 </name>
+    <name> ussr-R06_T-28_bootcamp </name>
     <x> 2421 </x>
     <y> 2085 </y>
     <width> 80 </width>
@@ -728,14 +728,14 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R154_T_34E_1943 </name>
+    <name> ussr-R87_T62A </name>
     <x> 3716 </x>
     <y> 2099 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R87_T62A </name>
+    <name> ussr-R154_T_34E_1943 </name>
     <x> 3797 </x>
     <y> 2099 </y>
     <width> 80 </width>
@@ -749,21 +749,21 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R33_Churchill_LL </name>
+    <name> ussr-R110_Object_260 </name>
     <x> 2235 </x>
     <y> 2105 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R95_Object_907 </name>
+    <name> ussr-R10_AT-1 </name>
     <x> 2316 </x>
     <y> 2105 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R05_KV </name>
+    <name> ussr-R50_SU76I_bootcamp </name>
     <x> 1174 </x>
     <y> 2107 </y>
     <width> 80 </width>
@@ -777,35 +777,35 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R78_SU_85I </name>
+    <name> ussr-R49_SU100Y </name>
     <x> 1336 </x>
     <y> 2107 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R10_AT-1 </name>
+    <name> ussr-R88_Object268 </name>
     <x> 1417 </x>
     <y> 2107 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R90_IS_4M </name>
+    <name> ussr-R33_Churchill_LL </name>
     <x> 1498 </x>
     <y> 2107 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R93_Object263B </name>
+    <name> ussr-R13_KV-1s </name>
     <x> 1579 </x>
     <y> 2107 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R88_Object268 </name>
+    <name> ussr-R93_Object263B </name>
     <x> 3878 </x>
     <y> 2107 </y>
     <width> 80 </width>
@@ -819,7 +819,7 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R50_SU76I_bootcamp </name>
+    <name> ussr-R90_IS_4M </name>
     <x> 2397 </x>
     <y> 2110 </y>
     <width> 80 </width>
@@ -833,7 +833,7 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R52_Object_261 </name>
+    <name> germany-G50_T-15 </name>
     <x> 1093 </x>
     <y> 2115 </y>
     <width> 80 </width>
@@ -847,154 +847,154 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R16_SU-18 </name>
+    <name> germany-G140_HWK_30 </name>
     <x> 1741 </x>
     <y> 2119 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G12_Ltraktor </name>
+    <name> ussr-R95_Object_907 </name>
     <x> 1822 </x>
     <y> 2119 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R110_Object_260 </name>
+    <name> ussr-R05_KV </name>
     <x> 1903 </x>
     <y> 2119 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G50_T-15 </name>
+    <name> germany-G125_Spz_57_Rh </name>
     <x> 1984 </x>
     <y> 2119 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G83_Pz_IV_AusfA </name>
+    <name> germany-G34_S35_captured </name>
     <x> 2065 </x>
     <y> 2119 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G79_Pz_IV_AusfGH </name>
+    <name> germany-G03_PzV_Panther_bootcamp </name>
     <x> 3716 </x>
     <y> 2124 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R13_KV-1s </name>
+    <name> germany-G83_Pz_IV_AusfA </name>
     <x> 3797 </x>
     <y> 2124 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G03_PzV_Panther_bootcamp </name>
+    <name> ussr-R78_SU_85I </name>
     <x> 2146 </x>
     <y> 2130 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> ussr-R49_SU100Y </name>
+    <name> germany-G73_E50_Ausf_M </name>
     <x> 2227 </x>
     <y> 2130 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G90_DW_II </name>
+    <name> germany-G79_Pz_IV_AusfGH </name>
     <x> 2308 </x>
     <y> 2130 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G105_T-55_NVA_DDR </name>
+    <name> germany-G35_B-1bis_captured </name>
     <x> 1174 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G106_PzKpfwPanther_AusfF </name>
+    <name> germany-G90_DW_II </name>
     <x> 1255 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G35_B-1bis_captured </name>
+    <name> germany-G42_Maus </name>
     <x> 1336 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G140_HWK_30 </name>
+    <name> germany-G92_VK7201 </name>
     <x> 1417 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G21_PanzerJager_I </name>
+    <name> germany-G118_VK4503 </name>
     <x> 1498 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G21_PanzerJager_I_bootcamp </name>
+    <name> ussr-R16_SU-18 </name>
     <x> 1579 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G92_VK7201 </name>
+    <name> ussr-R52_Object_261 </name>
     <x> 3050 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G34_S35_captured </name>
+    <name> germany-G21_PanzerJager_I </name>
     <x> 3131 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G73_E50_Ausf_M </name>
+    <name> germany-G104_Stug_IV </name>
     <x> 3212 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G05_StuG_40_AusfG </name>
+    <name> germany-G12_Ltraktor </name>
     <x> 3293 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G98_Waffentrager_E100 </name>
+    <name> germany-G21_PanzerJager_I_bootcamp </name>
     <x> 3374 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G104_Stug_IV </name>
+    <name> germany-G98_Waffentrager_E100 </name>
     <x> 3455 </x>
     <y> 2132 </y>
     <width> 80 </width>
@@ -1008,70 +1008,70 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G23_Grille </name>
+    <name> germany-G05_StuG_40_AusfG </name>
     <x> 3617 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G125_Spz_57_Rh </name>
+    <name> germany-G72_JagdPz_E100 </name>
     <x> 3878 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G42_Maus </name>
+    <name> germany-G61_G_E </name>
     <x> 3959 </x>
     <y> 2132 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G72_JagdPz_E100 </name>
+    <name> germany-G23_Grille </name>
     <x> 2389 </x>
     <y> 2135 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A01_T1_Cunningham </name>
+    <name> germany-G41_DickerMax </name>
     <x> 2470 </x>
     <y> 2135 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G118_VK4503 </name>
+    <name> usa-A99_T92_LT </name>
     <x> 2551 </x>
     <y> 2135 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A116_XM551 </name>
+    <name> germany-G105_T-55_NVA_DDR </name>
     <x> 1093 </x>
     <y> 2140 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G41_DickerMax </name>
+    <name> germany-G106_PzKpfwPanther_AusfF </name>
     <x> 0 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A24_T2_med_bot </name>
+    <name> usa-A116_XM551 </name>
     <x> 81 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> germany-G61_G_E </name>
+    <name> usa-A19_T2_lt </name>
     <x> 162 </x>
     <y> 2144 </y>
     <width> 80 </width>
@@ -1085,119 +1085,119 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A99_T92_LT </name>
+    <name> usa-A01_T1_Cunningham_bot </name>
     <x> 324 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A23_M7_med </name>
+    <name> usa-A78_M4_Improved </name>
     <x> 405 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A120_M48A5 </name>
+    <name> usa-A24_T2_med_bot </name>
     <x> 486 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A24_T2_med </name>
+    <name> usa-A120_M48A5 </name>
     <x> 1660 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A09_T1_hvy </name>
+    <name> usa-A21_T14 </name>
     <x> 1741 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A92_M60 </name>
+    <name> usa-A23_M7_med </name>
     <x> 1822 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A21_T14 </name>
+    <name> usa-A01_T1_Cunningham </name>
     <x> 1903 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A78_M4_Improved </name>
+    <name> usa-A24_T2_med </name>
     <x> 1984 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A26_T18 </name>
+    <name> usa-A09_T1_hvy </name>
     <x> 2065 </x>
     <y> 2144 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A69_T110E5 </name>
+    <name> usa-A30_M10_Wolverine </name>
     <x> 3698 </x>
     <y> 2149 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A05_M4_Sherman </name>
+    <name> usa-A13_T34_hvy </name>
     <x> 3779 </x>
     <y> 2149 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A46_T3 </name>
+    <name> usa-A92_M60 </name>
     <x> 2146 </x>
     <y> 2155 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A13_T34_hvy </name>
+    <name> usa-A05_M4_Sherman </name>
     <x> 2227 </x>
     <y> 2155 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A107_T1_HMC </name>
+    <name> usa-A46_T3 </name>
     <x> 2308 </x>
     <y> 2155 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A15_T57 </name>
+    <name> usa-A102_T28_concept </name>
     <x> 1174 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A38_T92 </name>
+    <name> usa-A26_T18 </name>
     <x> 1255 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A01_T1_Cunningham_bot </name>
+    <name> usa-A83_T110E4 </name>
     <x> 1336 </x>
     <y> 2157 </y>
     <width> 80 </width>
@@ -1211,49 +1211,49 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A19_T2_lt </name>
+    <name> usa-A107_T1_HMC </name>
     <x> 1498 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A102_T28_concept </name>
+    <name> usa-A38_T92 </name>
     <x> 1579 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F97_ELC_EVEN_90 </name>
+    <name> france-F62_ELC_AMX </name>
     <x> 3050 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F88_AMX_13_105 </name>
+    <name> france-F97_ELC_EVEN_90 </name>
     <x> 3131 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F62_ELC_AMX </name>
+    <name> usa-A18_M41 </name>
     <x> 3212 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A18_M41 </name>
+    <name> usa-A101_M56 </name>
     <x> 3293 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F19_Lorraine40t </name>
+    <name> usa-A69_T110E5 </name>
     <x> 3374 </x>
     <y> 2157 </y>
     <width> 80 </width>
@@ -1267,112 +1267,112 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A30_M10_Wolverine </name>
+    <name> france-F01_RenaultFT_bot </name>
     <x> 3536 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F74_AMX_M4_1949 </name>
+    <name> usa-A15_T57 </name>
     <x> 3617 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F73_M4A1_Revalorise </name>
+    <name> france-F74_AMX_M4_1949 </name>
     <x> 3860 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A83_T110E4 </name>
+    <name> france-F04_B1 </name>
     <x> 3941 </x>
     <y> 2157 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F01_RenaultFT_bot </name>
+    <name> france-F88_AMX_13_105 </name>
     <x> 2389 </x>
     <y> 2160 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F30_RenaultFT_AC </name>
+    <name> france-F04_B1_bootcamp </name>
     <x> 2470 </x>
     <y> 2160 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F10_AMX_50B_fallout </name>
+    <name> france-F10_AMX_50B </name>
     <x> 2551 </x>
     <y> 2160 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> usa-A101_M56 </name>
+    <name> france-F10_AMX_50B_fallout </name>
     <x> 1093 </x>
     <y> 2165 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F04_B1_bootcamp </name>
+    <name> france-F19_Lorraine40t </name>
     <x> 0 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F03_D2 </name>
+    <name> france-F73_M4A1_Revalorise </name>
     <x> 81 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F04_B1 </name>
+    <name> france-F89_Canon_dassaut_de_105 </name>
     <x> 162 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F27_FCM_36Pak40 </name>
+    <name> france-F64_AMX_50Fosh_B </name>
     <x> 243 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F20_RenaultBS </name>
+    <name> france-F27_FCM_36Pak40 </name>
     <x> 324 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F28_105_leFH18B2 </name>
+    <name> france-F64_AMX_50Fosh_155 </name>
     <x> 405 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F10_AMX_50B </name>
+    <name> france-F28_105_leFH18B2 </name>
     <x> 486 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch06_Renault_NC31 </name>
+    <name> france-F30_RenaultFT_AC </name>
     <x> 1660 </x>
     <y> 2169 </y>
     <width> 80 </width>
@@ -1386,84 +1386,84 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch09_M5 </name>
+    <name> france-F03_D2 </name>
     <x> 1822 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F22_AMX_105AM </name>
+    <name> france-F38_Bat_Chatillon155_58 </name>
     <x> 1903 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F64_AMX_50Fosh_155 </name>
+    <name> china-Ch42_WalkerBulldog_M41D </name>
     <x> 1984 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch24_Type64 </name>
+    <name> china-Ch06_Renault_NC31 </name>
     <x> 2065 </x>
     <y> 2169 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch21_T34 </name>
+    <name> china-Ch09_M5 </name>
     <x> 2632 </x>
     <y> 2173 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch26_59_Patton </name>
+    <name> france-F33_S_35CA </name>
     <x> 2713 </x>
     <y> 2173 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F33_S_35CA </name>
+    <name> china-Ch26_59_Patton </name>
     <x> 2794 </x>
     <y> 2173 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch19_121 </name>
+    <name> china-Ch01_Type59 </name>
     <x> 2875 </x>
     <y> 2173 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch23_112 </name>
+    <name> china-Ch29_Type_62C_prot </name>
     <x> 2956 </x>
     <y> 2173 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch29_Type_62C_prot </name>
+    <name> china-Ch03_WZ-111 </name>
     <x> 3698 </x>
     <y> 2173 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch03_WZ-111 </name>
+    <name> china-Ch10_IS2 </name>
     <x> 3779 </x>
     <y> 2173 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch30_T-26G_FT </name>
+    <name> china-Ch24_Type64 </name>
     <x> 2146 </x>
     <y> 2180 </y>
     <width> 80 </width>
@@ -1477,91 +1477,91 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F64_AMX_50Fosh_B </name>
+    <name> china-Ch30_T-26G_FT </name>
     <x> 2308 </x>
     <y> 2180 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch01_Type59 </name>
+    <name> china-Ch21_T34 </name>
     <x> 1174 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch38_WZ113G_FT </name>
+    <name> china-Ch19_121 </name>
     <x> 1255 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F89_Canon_dassaut_de_105 </name>
+    <name> china-Ch40_WZ120G_FT </name>
     <x> 1336 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> france-F38_Bat_Chatillon155_58 </name>
+    <name> france-F20_RenaultBS </name>
     <x> 1417 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch40_WZ120G_FT </name>
+    <name> china-Ch39_WZ120_1G_FT </name>
     <x> 1498 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB14_M2 </name>
+    <name> uk-GB76_Mk_VIC </name>
     <x> 1579 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB01_Medium_Mark_I_bot </name>
+    <name> china-Ch38_WZ113G_FT </name>
     <x> 3037 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch10_IS2 </name>
+    <name> uk-GB01_Medium_Mark_I </name>
     <x> 3118 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB86_Centurion_Action_X </name>
+    <name> uk-GB14_M2 </name>
     <x> 3199 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB20_Crusader </name>
+    <name> uk-GB68_Matilda_Black_Prince </name>
     <x> 3280 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB76_Mk_VIC </name>
+    <name> uk-GB86_Centurion_Action_X </name>
     <x> 3361 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB68_Matilda_Black_Prince </name>
+    <name> france-F22_AMX_105AM </name>
     <x> 3442 </x>
     <y> 2182 </y>
     <width> 80 </width>
@@ -1575,42 +1575,42 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB63_TOG_II </name>
+    <name> uk-GB70_FV4202_105 </name>
     <x> 3604 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB91_Super_Conqueror </name>
+    <name> uk-GB33_Sentinel_AC_I </name>
     <x> 3860 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB39_Universal_CarrierQF2 </name>
+    <name> uk-GB91_Super_Conqueror </name>
     <x> 3941 </x>
     <y> 2182 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch39_WZ120_1G_FT </name>
+    <name> uk-GB73_AT2 </name>
     <x> 2389 </x>
     <y> 2185 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> china-Ch42_WalkerBulldog_M41D </name>
+    <name> uk-GB96_Excalibur </name>
     <x> 2470 </x>
     <y> 2185 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB70_FV4202_105 </name>
+    <name> uk-GB71_AT_15A </name>
     <x> 2551 </x>
     <y> 2185 </y>
     <width> 80 </width>
@@ -1624,245 +1624,245 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB01_Medium_Mark_I </name>
+    <name> uk-GB01_Medium_Mark_I_bot </name>
     <x> 0 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB73_AT2 </name>
+    <name> uk-GB39_Universal_CarrierQF2 </name>
     <x> 81 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB71_AT_15A </name>
+    <name> uk-GB20_Crusader </name>
     <x> 162 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB33_Sentinel_AC_I </name>
+    <name> uk-GB31_Conqueror_Gun </name>
     <x> 243 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> japan-J01_NC27_bot </name>
+    <name> uk-GB63_TOG_II </name>
     <x> 324 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB96_Excalibur </name>
+    <name> japan-J01_NC27_bot </name>
     <x> 405 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> japan-J01_NC27 </name>
+    <name> china-Ch23_112 </name>
     <x> 486 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB25_Loyd_Gun_Carriage </name>
+    <name> japan-J08_Chi_Nu </name>
     <x> 1660 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB78_Sexton_I </name>
+    <name> japan-J12_Chi_Nu_Kai </name>
     <x> 1741 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB28_Bishop </name>
+    <name> japan-J16_ST_B1 </name>
     <x> 1822 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> japan-J15_Chi_Ni </name>
+    <name> japan-J22_Type_95_bootcamp </name>
     <x> 1903 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> japan-J08_Chi_Nu </name>
+    <name> uk-GB28_Bishop </name>
     <x> 1984 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB31_Conqueror_Gun </name>
+    <name> japan-J21_Type_91 </name>
     <x> 2065 </x>
     <y> 2194 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> uk-GB08_Churchill_I </name>
+    <name> czech-Cz06_Kolohousenka </name>
     <x> 2632 </x>
     <y> 2198 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> czech-Cz11_V_8_H </name>
+    <name> uk-GB78_Sexton_I </name>
     <x> 2713 </x>
     <y> 2198 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> japan-J19_Tiger_I_Jpn </name>
+    <name> japan-J20_Type_2605 </name>
     <x> 2794 </x>
     <y> 2198 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> japan-J20_Type_2605 </name>
+    <name> japan-J19_Tiger_I_Jpn </name>
     <x> 2875 </x>
     <y> 2198 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> japan-J16_ST_B1 </name>
+    <name> czech-Cz04_T50_51 </name>
     <x> 2956 </x>
     <y> 2198 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> japan-J22_Type_95_bootcamp </name>
+    <name> sweden-S05_Strv_M21_29 </name>
     <x> 3685 </x>
     <y> 2198 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S04_Lago_I </name>
+    <name> japan-J15_Chi_Ni </name>
     <x> 3766 </x>
     <y> 2198 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> czech-Cz04_T50_51 </name>
+    <name> sweden-S15_L_60 </name>
     <x> 2146 </x>
     <y> 2205 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> czech-Cz06_Kolohousenka </name>
+    <name> japan-J01_NC27 </name>
     <x> 2227 </x>
     <y> 2205 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S05_Strv_M21_29 </name>
+    <name> sweden-S23_Strv_81 </name>
     <x> 2308 </x>
     <y> 2205 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> czech-Cz01_Skoda_T40 </name>
+    <name> czech-Cz11_V_8_H </name>
     <x> 1174 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S18_EMIL_1951_E1 </name>
+    <name> uk-GB08_Churchill_I </name>
     <x> 1255 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S09_L_120_TD </name>
+    <name> czech-Cz01_Skoda_T40 </name>
     <x> 1336 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S15_L_60 </name>
+    <name> sweden-S18_EMIL_1951_E1 </name>
     <x> 1417 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> japan-J21_Type_91 </name>
+    <name> sweden-S09_L_120_TD </name>
     <x> 1498 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S01_Strv_74_A2 </name>
+    <name> uk-GB25_Loyd_Gun_Carriage </name>
     <x> 1579 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> poland-Pl14_4TP </name>
+    <name> sweden-S14_Ikv_103 </name>
     <x> 3037 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S11_Strv_103B </name>
+    <name> poland-Pl01_TKS_20mm </name>
     <x> 3118 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> poland-Pl03_PzV_Poland </name>
+    <name> sweden-S25_EMIL_51 </name>
     <x> 3199 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S23_Strv_81 </name>
+    <name> sweden-S11_Strv_103B </name>
     <x> 3280 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> japan-J12_Chi_Nu_Kai </name>
+    <name> sweden-S22_Strv_S1 </name>
     <x> 3361 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> poland-Pl01_TKS_20mm </name>
+    <name> poland-Pl14_4TP </name>
     <x> 3442 </x>
     <y> 2207 </y>
     <width> 80 </width>
@@ -1876,70 +1876,70 @@
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S25_EMIL_51 </name>
+    <name> italy-It06_M14_41 </name>
     <x> 3604 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> poland-Pl11_45TP_Habicha </name>
+    <name> sweden-S01_Strv_74_A2 </name>
     <x> 3847 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> poland-Pl08_50TP_prototyp </name>
+    <name> poland-Pl11_45TP_Habicha </name>
     <x> 3928 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> poland-Pl12_25TP_KSUST_II </name>
+    <name> poland-Pl08_50TP_prototyp </name>
     <x> 4009 </x>
     <y> 2207 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> italy-It08_Progetto_M40_mod_65 </name>
+    <name> italy-It11_P43 </name>
     <x> 2389 </x>
     <y> 2210 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S22_Strv_S1 </name>
+    <name> sweden-S04_Lago_I </name>
     <x> 2470 </x>
     <y> 2210 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> italy-It11_P43 </name>
+    <name> poland-Pl03_PzV_Poland </name>
     <x> 2551 </x>
     <y> 2210 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> italy-It06_M14_41 </name>
+    <name> italy-It08_Progetto_M40_mod_65 </name>
     <x> 1093 </x>
     <y> 2215 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> sweden-S14_Ikv_103 </name>
+    <name> italy-It13_Progetto_M35_mod_46 </name>
     <x> 0 </x>
     <y> 2219 </y>
     <width> 80 </width>
     <height> 24 </height>
   </SubTexture>
   <SubTexture>
-    <name> italy-It13_Progetto_M35_mod_46 </name>
+    <name> poland-Pl12_25TP_KSUST_II </name>
     <x> 81 </x>
     <y> 2219 </y>
     <width> 80 </width>
