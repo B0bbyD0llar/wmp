@@ -15,7 +15,7 @@
 		"WN8": ["WN8K"],
 		"WIN": ["WinCounter:r"],
 		"XWN": ["XWGR", "XEFF", "XBS", "XWN6", "XWN7", "XWN8", "XWN8K"],
-		"DamageAvg": ["AssistedAvg", "AssistedRadioAvg", "AssistedTrackAvg", "BlockedByArmorAvg", "DamageDealtAvg", "SniperDamageAvg", "DamageDealt"],
+		"DamageAvg": ["AssistedAvg", "AssistedRadioAvg", "AssistedTrackAvg", "BlockedByArmorAvg", "DamageDealtAvg", "SniperDamageAvg", "DamageDealt", "AssistedDamageRating"],
 		"XP": ["OriginalXPAvg", "TmenXP"]
 	},
 
@@ -31,6 +31,7 @@
 		"SpottedAvg":		[{"value": 0.6, "color": "very_bad"}, {"value": 1, "color": "bad"}, {"value": 1.5, "color": "normal"}, {"value": 2, "color": "good"}, {"value": 5, "color": "very_good"}, {"value": 15, "color": "unique"}],
 		"XP":				[{"value": 135, "color": "very_bad"}, {"value": 201, "color": "bad"}, {"value": 401, "color": "normal"}, {"value": 535, "color": "good"}, {"value": 735, "color": "very_good"}, {"value": 99999, "color": "unique"}],
 		"XPAvg":			[{"value": 401, "color": "very_bad"}, {"value": 601, "color": "bad"}, {"value": 1201, "color": "normal"}, {"value": 1601, "color": "good"}, {"value": 2201, "color": "very_good"}, {"value": 99999, "color": "unique"}],
+		"WinsNextWinrate":	[{"value": 1, "color": "unique"}, {"value": 2, "color": "very_good"}, {"value": 3, "color": "good"}, {"value": 4, "color": "normal"}, {"value": 5, "color": "bad"}, {"value": 99, "color": "very_bad"}],
 
 		"Result":			[{"value": "Defeat", "color": "#C40900"}, {"value": "Draw", "color": "#D86704"}, {"value": "Win", "color": "#46B700"}],
 		"DiffDamageRating":	[{"value": -0.009, "color": "dwn.png"}, {"value": 0.009, "color": ""}, {"value": 9999999, "color": "up.png"}],

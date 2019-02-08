@@ -6,7 +6,7 @@
 	"SkinDescription": {
 		"Author": "ShuraBB",
 		"Name": "TimeSpent Lite",
-		"Version": "3.0",
+		"Version": "3.1",
 		"Description": "txt:DescLite"
 	},
 
@@ -22,6 +22,12 @@
 	},
 
 	"ResultName": {"Win": "txt:Win", "Defeat": "txt:Defeat", "Draw": "txt:Draw"},
+
+	"ResultsWindowPattern": [
+		"{{DefaultName}}\t",
+		"<img src='img://gui/maps/icons/statistic/wins24.png' width='24' height='24' vspace='-5'><font color='{{c:Winrate}}'>{{Winrate:2f}}%</font> ( <font color='{{c:WinsNextWinrate}}'>{{WinsNextWinrate}}</font>|<font color='{{c:Current_NumWinsReserve}}'>{{Current_NumWinsReserve:0f}}</font> )\t",
+		"{{up:BattleMarksOnGunIcon}}( <font color='{{c:BattleAssistedDamageRating}}'>{{BattleAssistedDamageRating}}</font> )"
+	],
 
 	"Pages": {
 		"First": "Current",
@@ -77,7 +83,9 @@
 		"um:ButtonTanks": ["<a href='event:Page:Tanks'><b>txt:bTanks</b></a>"],
 		"um:ButtonReset": ["<a href='event:Reset'><b>[R]</b></a>"]
 	},
-
+	"UserPattern": {
+		"up:BattleMarksOnGunIcon": ["<img src='img://gui/maps/icons/marksOnGun/95x85/{{BattleMarksOnGunIcon}}' width='15' height='15' vspace='-8'><font color='{{c:BattleDamageRating}}'>{{BattleDamageRating:2f}}%</font><img src='img://../res_mods/configs/BBMods/Default/{{c:BattleDiffDamageRating}}' vspace='-3'>", ""]
+	},
 	"Current_MapsStat": {
 		"SortKey": "BattleCounter#des",
 		"template": ["{{Name}}:\t{{BattleCounter}}/{{WinCounter}}\t{{BattleTimerAvg:t}}\t{{BattleTimer:t}}\n"]

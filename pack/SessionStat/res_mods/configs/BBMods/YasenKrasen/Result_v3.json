@@ -24,7 +24,8 @@
 
 	"UserPattern": {
 		"up:BattleDailyXPFactor": ["<img src='img://gui/maps/icons/library/bonus_{{BattleDailyXPFactor}}.png' width='46' height='18' vspace='-4'>  ", ""],
-		"up:MarkOfMastery": ["<img src='img://gui/maps/icons/library/proficiency/class_icons_{{MarkOfMastery}}.png' width='20' height='20' vspace='-6'>", ""]
+		"up:MarkOfMastery": ["<img src='img://gui/maps/icons/library/proficiency/class_icons_{{MarkOfMastery}}.png' width='20' height='20' vspace='-6'>", ""],
+		"up:BattleMarksOnGunIcon": ["<img src='img://gui/maps/icons/marksOnGun/95x85/{{BattleMarksOnGunIcon}}' width='15' height='15' vspace='-8'><font color='{{c:BattleDamageRating}}'>{{BattleDamageRating:2f}}%</font><img src='img://../res_mods/configs/BBMods/Default/{{c:BattleDiffDamageRating}}' vspace='-3'>", ""]
 	},
 
 	"Achievements": {

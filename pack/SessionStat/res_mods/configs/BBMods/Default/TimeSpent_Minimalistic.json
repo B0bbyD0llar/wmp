@@ -6,7 +6,7 @@
 	"SkinDescription": {
 		"Author": "ShuraBB",
 		"Name": "TimeSpent Minimalistic",
-		"Version": "3.2",
+		"Version": "3.3",
 		"Description": "txt:Description"
 	},
 	"ShowStatIn": 2,
@@ -33,6 +33,12 @@
 	"ResultPattern": {
 		"template": ["{{um:Results}}"]
 	},
+
+	"ResultsWindowPattern": [
+		"{{DefaultName}}\t",
+		"<img src='img://gui/maps/icons/statistic/wins24.png' width='24' height='24' vspace='-5'><font color='{{c:Winrate}}'>{{Winrate:2f}}%</font> ( <font color='{{c:WinsNextWinrate}}'>{{WinsNextWinrate}}</font>|<font color='{{c:Current_NumWinsReserve}}'>{{Current_NumWinsReserve:0f}}</font> )\t",
+		"{{up:BattleMarksOnGunIcon}}( <font color='{{c:BattleAssistedDamageRating}}'>{{BattleAssistedDamageRating}}</font> )"
+	],
 
 	"Pages": {
 		"First": "Current",

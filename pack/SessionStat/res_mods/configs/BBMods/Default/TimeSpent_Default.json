@@ -8,7 +8,7 @@
 		// Название конфигурации
 		"Name": "TimeSpent Default",
 		// Версия конфигурации
-		"Version": "2.0",
+		"Version": "2.1",
 		// Описание конфигурации
 		"Description": "2 секции статистики, все типы боев, результаты последнего боя, общая статистика по картам и танкам, альтернативные текстовые кнопки."
 	},
@@ -129,6 +129,13 @@
 			"</font>"
 		]
 	},
+
+	// Шаблон вывода информации в окне результатов боя.
+	"ResultsWindowPattern": [
+		"{{DefaultName}}\t",
+		"<img src='img://gui/maps/icons/statistic/wins24.png' width='24' height='24' vspace='-5'><font color='{{c:Winrate}}'>{{Winrate:2f}}%</font> ( <font color='{{c:WinsNextWinrate}}'>{{WinsNextWinrate}}</font>|<font color='{{c:Current_NumWinsReserve}}'>{{Current_NumWinsReserve:0f}}</font> )\t",
+		"{{up:BattleMarksOnGunIcon}}( <font color='{{c:BattleAssistedDamageRating}}'>{{BattleAssistedDamageRating}}</font> )"
+	],
 
 	// Страницы с выводимой информацией. Имена страниц "NoBattle" и "LastBattle" используются для целей мода.
 	"Pages": {
@@ -417,6 +424,7 @@
 		"up:MarksOnGunIcon": ["<img src='img://gui/maps/icons/marksOnGun/95x85/{{MarksOnGunIcon}}' width='15' height='15' vspace='-8'><font color='{{c:DamageRating}}'>{{DamageRating:2f}}%</font>", ""],
 		"up:BattleMastery": [" <img src='img://gui/maps/icons/library/proficiency/class_icons_{{BattleMastery}}.png' width='20' height='20' vspace='-5'>", ""],
 		"up:BattleDamageRating": ["% отметки:\t<font color='#D3D3D3'>{{BattleDamageRating:2f}}%</font>\n", ""],
-		"up:DamageRating": ["<font color='{{c:DamageRating}}'>{{DamageRating:2f}}%</font>", ""]
+		"up:DamageRating": ["<font color='{{c:DamageRating}}'>{{DamageRating:2f}}%</font>", ""],
+		"up:BattleMarksOnGunIcon": ["<img src='img://gui/maps/icons/marksOnGun/95x85/{{BattleMarksOnGunIcon}}' width='15' height='15' vspace='-8'><font color='{{c:BattleDamageRating}}'>{{BattleDamageRating:2f}}%</font><img src='img://../res_mods/configs/BBMods/Default/{{c:BattleDiffDamageRating}}' vspace='-3'>", ""]
 	}
 }

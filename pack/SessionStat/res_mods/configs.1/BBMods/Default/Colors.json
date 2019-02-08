@@ -1,0 +1,41 @@
+{
+	// Буквенное обозначение цветов
+	"ColorNames": {
+		// За место "very_bad" в таблице "Colors" будет подставлен код #FE0E00"
+		"very_bad": "#FE0E00",
+		"bad": "#FE7903",
+		"normal": "#F8F400",
+		"good": "#60FF00",
+		"very_good": "#02C9B3",
+		"unique": "#D042F3"
+	},
+
+	"ColorAliases": {
+		// Для всех перечисленных макросов будет использоваться таблица значение:цвет аналогичная макросу "XWN"
+		"WN8": ["WN8K"],
+		"WIN": ["WinCounter:r"],
+		"XWN": ["XWGR", "XEFF", "XBS", "XWN6", "XWN7", "XWN8", "XWN8K"],
+		"DamageAvg": ["AssistedAvg", "AssistedRadioAvg", "AssistedTrackAvg", "BlockedByArmorAvg", "DamageDealtAvg", "SniperDamageAvg", "DamageDealt"],
+		"XP": ["OriginalXPAvg", "TmenXP"]
+	},
+
+	"Colors": {
+		"BattleLevelAvg":	[{"value": 2, "color": "very_bad"}, {"value": 3, "color": "bad"}, {"value": 5, "color": "normal"}, {"value": 7, "color": "good"}, {"value": 9, "color": "very_good"}, {"value": 13, "color": "unique"}],
+		"BattleTimerAvg":	[{"value": 180, "color": "very_bad"}, {"value": 300, "color": "bad"}, {"value": 420, "color": "normal"}, {"value": 600, "color": "good"}, {"value": 720, "color": "very_good"}, {"value": 840, "color": "unique"}],
+		"DamageAvg":		[{"value": 500, "color": "very_bad"}, {"value": 750, "color": "bad"}, {"value": 1000, "color": "normal"}, {"value": 1800, "color": "good"}, {"value": 2500, "color": "very_good"}, {"value": 9999, "color": "unique"}],
+		"DamageRating":		[{"value": 40, "color": "very_bad"}, {"value": 50, "color": "bad"}, {"value": 65, "color": "normal"}, {"value": 85, "color": "good"}, {"value": 95, "color": "very_good"}, {"value": 100, "color": "unique"}],
+		"FreeXP": 			[{"value": 7,   "color": "very_bad"}, {"value": 10,   "color": "bad"}, {"value": 20,   "color": "normal"}, {"value": 27,   "color": "good"}, {"value": 37,   "color": "very_good"}, {"value": 999, "color": "unique"}],
+		"Kills":			[{"value": 0, "color": "very_bad"}, {"value": 1, "color": "bad"}, {"value": 2, "color": "normal"}, {"value": 6, "color": "good"}, {"value": 12, "color": "very_good"}, {"value": 15, "color": "unique"}],
+		"KillsAvg":			[{"value": 0.6, "color": "very_bad"}, {"value": 0.8, "color": "bad"}, {"value": 1, "color": "normal"}, {"value": 1.3, "color": "good"}, {"value": 2, "color": "very_good"}, {"value": 15, "color": "unique"}],
+		"RatioDamageWN8":	[{"value": 0.6, "color": "very_bad"}, {"value": 0.8, "color": "bad"}, {"value": 1, "color": "normal"}, {"value": 1.3, "color": "good"}, {"value": 2, "color": "very_good"}, {"value": 15, "color": "unique"}],
+		"SpottedAvg":		[{"value": 0.6, "color": "very_bad"}, {"value": 1, "color": "bad"}, {"value": 1.5, "color": "normal"}, {"value": 2, "color": "good"}, {"value": 5, "color": "very_good"}, {"value": 15, "color": "unique"}],
+		"XP":				[{"value": 135, "color": "very_bad"}, {"value": 201, "color": "bad"}, {"value": 401, "color": "normal"}, {"value": 535, "color": "good"}, {"value": 735, "color": "very_good"}, {"value": 99999, "color": "unique"}],
+		"XPAvg":			[{"value": 401, "color": "very_bad"}, {"value": 601, "color": "bad"}, {"value": 1201, "color": "normal"}, {"value": 1601, "color": "good"}, {"value": 2201, "color": "very_good"}, {"value": 99999, "color": "unique"}],
+
+		"Result":			[{"value": "Defeat", "color": "#C40900"}, {"value": "Draw", "color": "#D86704"}, {"value": "Win", "color": "#46B700"}],
+		"DiffDamageRating":	[{"value": -0.009, "color": "dwn.png"}, {"value": 0.009, "color": ""}, {"value": 9999999, "color": "up.png"}],
+
+		// Макрос подставляется для любого не существующего макроса.
+		"Any":				[{"value": -0.0000001, "color": "very_bad"}, {"value": 0, "color": "#A1A1A1"}, {"value": 9999999, "color": "#3DDA56"}]
+	}
+}

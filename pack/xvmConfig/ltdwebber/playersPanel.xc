@@ -600,7 +600,6 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
         ${"def.xmqpServiceMarker"}
       ],
@@ -610,7 +609,6 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
         ${"def.enemySpottedMarker"}
       ]
