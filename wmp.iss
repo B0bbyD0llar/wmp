@@ -2,7 +2,7 @@
 #define MyAppPublisher "Ltd Webber"
 #define MyAppURL "https://materialvernichtungskombinat.de"
 #define MyDefaultDir "C:\Games\World_of_Tanks"
-#define MyAppWotVersion "1.4.0.0"
+#define MyAppWotVersion "1.4.0.1"
 #define BuildNum Int(ReadIni(SourcePath	+ "\\BuildInfo.ini","Info","Build","0"))
 #expr BuildNum = BuildNum + 1
 ;#expr WriteIni(SourcePath + "\\BuildInfo.ini","Info","Build", BuildNum)
@@ -196,12 +196,12 @@ Source: {srcexe}; DestDir: {app}\wmp; Flags: ignoreversion external
 Source: embedded\7za.exe; DestDir: {tmp}\; Flags: deleteafterinstall; Components: ; Tasks: ; Languages: 
 Source: embedded\UnRAR.exe; DestDir: {tmp}\; Flags: deleteafterinstall; Components: ; Tasks: ; Languages: 
 
-Source: pack\Contour Icons\Korolins (DMVK)\1.4.0.0\mod\gui\flash\atlases\battleAtlas.png; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
-Source: pack\Contour Icons\Korolins (DMVK)\1.4.0.0\mod\gui\flash\atlases\battleAtlas.dds; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
-Source: pack\Contour Icons\Korolins (DMVK)\1.4.0.0\mod\gui\flash\atlases\battleAtlas.xml; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\1.4.0.1\mod\gui\flash\atlases\battleAtlas.png; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\1.4.0.1\mod\gui\flash\atlases\battleAtlas.dds; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\1.4.0.1\mod\gui\flash\atlases\battleAtlas.xml; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
 
-Source: pack\SessionStat\res_mods\1.4.0.0\scripts\client\gui\mods\BBModsSDK.pyc; Components: session; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
-Source: pack\SessionStat\res_mods\1.4.0.0\scripts\client\gui\mods\mod_TimeSpent.pyc; Components: session; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\SessionStat\res_mods\1.4.0.1\scripts\client\gui\mods\BBModsSDK.pyc; Components: session; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
+Source: pack\SessionStat\res_mods\1.4.0.1\scripts\client\gui\mods\mod_TimeSpent.pyc; Components: session; DestDir: {app}\res_mods\{#MyAppWotVersion}\scripts\client\gui\mods
 Source: pack\SessionStat\res_mods\configs\*; Flags: ignoreversion createallsubdirs recursesubdirs; DestDir: {app}\res_mods\configs\; Components: session
 
 Source: pack\Live WN8\mods\1.4.0.0\izeberg.modsettingsapi_1.1.4.wotmod; Components: battle\igwn8; DestDir: {app}\mods\{#MyAppWotVersion}
