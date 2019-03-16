@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "08.021.2019",
+    "date": "01.03.2019",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "1.4.0.0",
+    "gameVersion": "1.4.0.1",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "7.8.0"
+    "modMinVersion": "7.8.2"
   },
 
   // Parameters for login screen.
@@ -169,23 +169,23 @@
   // Замена названий танков.
   "vehicleNames": ${"vehicleNames.xc":"vehicleNames"},
 
-  // Export data
-  // Выгрузка данных
+  // Export data.
+  // Выгрузка данных.
   "export": ${"export.xc":"export"},
 
-  // Parameters for tooltips
-  // Параметры всплывающих подсказок
+  // Parameters for tooltips.
+  // Параметры всплывающих подсказок.
   "tooltips": ${"tooltips.xc":"tooltips"},
 
-  // Extra sounds settings
-  // Настройки дополнительных звуков
+  // Extra sounds settings.
+  // Настройки дополнительных звуков.
   "sounds": ${"sounds.xc":"sounds"},
 
-  // XMQP services settings
-  // Настройки сервисов XMQP
+  // XMQP services settings.
+  // Настройки сервисов XMQP.
   "xmqp": ${"xmqp.xc":"xmqp"},
 
-  // Various settings for advanced users
-  // Различные настройки для продвинутых пользоватей
+  // Various settings for advanced users.
+  // Различные настройки для продвинутых пользоватей.
   "tweaks": ${"tweaks.xc":"tweaks"}
 }
