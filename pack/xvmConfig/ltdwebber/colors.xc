@@ -6,11 +6,11 @@
   // Color values for substitutions.
   // Значения цветов для подстановок.
   "def": {
-    "al": "0x96FF00", // ally       / союзник
-    "sq": "0xFFDD33", // squadman   / взводный
-    "tk": "0x00EAFF", // teamKiller / тимкиллер
-    "en": "0xF50800", // enemy      / противник
-    "pl": "0xFCFCFC", // player     / игрок
+    "al": "0x96FF00",                 // ally       / союзник
+    "sq": "0xFFB964",                 // squadman   / взводный
+    "tk": "0x00EAFF",                 // teamKiller / тимкиллер
+    "en": "0xF50800",                 // enemy      / противник
+    "pl": "0xFCFCFC",                 // player     / игрок
     // Dynamic color by various statistical parameters.
     // Динамический цвет по различным статистическим показателям.
     "colorRating": {
@@ -346,6 +346,16 @@
       { "value": 74.4, "color": ${"def.colorRating.good"     } },
       { "value": 78.4, "color": ${"def.colorRating.very_good"} },
       { "value": 100,  "color": ${"def.colorRating.unique"   } }
+    ],
+    // Dynamic color by percentage of damage caused.
+    // Динамический цвет по проценту нанесенного урона цели.
+    "dmg_ratio_player": [
+      { "value": 16.5, "color": ${"def.colorRating.very_bad" } },
+      { "value": 33.5, "color": ${"def.colorRating.bad"      } },
+      { "value": 49.5, "color": ${"def.colorRating.normal"   } },
+      { "value": 66.5, "color": ${"def.colorRating.good"     } },
+      { "value": 83.5, "color": ${"def.colorRating.very_good"} },
+      { "value": 999,  "color": ${"def.colorRating.unique"   } }
     ]
   }
 }

@@ -111,12 +111,12 @@
     // Set of formats for left panel (extended format supported, see extra-field.txt).
     // Набор форматов для левой панели (поддерживается расширенный формат, см. extra-field.txt).
     "extraFieldsLeft": [
-      //${"templates.clanIcon"}
+      ${"templates.clanIcon"}
     ],
     // Set of formats for right panel (extended format supported, see extra-field.txt).
     // Набор форматов для правой панели (поддерживается расширенный формат, см. extra-field.txt).
     "extraFieldsRight": [
-      //${"templates.clanIcon"}
+      ${"templates.clanIcon"}
     ]
   }
 }
