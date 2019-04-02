@@ -1,0 +1,8 @@
+{
+	"StatPath": "res_mods/configs/BBMods/StatisticResults/",
+	"ReloadConfig": false,
+	"ShowStatIn": 1,
+	"ErrorLevel": 0,
+	${"YasenKrasen/YasenKrasen.json"},
+	${"YasenKrasen/Result_v3.json"}
+}

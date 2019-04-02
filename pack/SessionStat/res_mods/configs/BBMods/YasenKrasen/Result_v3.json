@@ -7,19 +7,21 @@
 	},
 
 	"ResultPattern": {
-		"bgIcon": "img://../res_mods/configs/BBMods/YasenKrasen/img/Bg{{BattleResult}}-v3.png",
-		"template": [
-			"<font color='{{c:BattleResult}}' size='17'>{{BattleResultName}}</font>\n",
-			"<font size='12' color='#CDC673'>{{BattleMapName}}\n",
-			"<b>{{BattleTankName}}</b></font>{{um:imgTank2}}\n",
-			"{{BattleXP}} {{um:imgXpIcon}}{{up:BattleDailyXPFactor}} <font color='#FFFFFF'><b>{{BattleCredits}}</b></font> {{um:imgCredits}}\n",
-			"{{BattleAchievements}}<font size='8'>\n</font>",
-			"<textformat tabstops='[70,135]'><font size='12' color='#CDC673'>",
-			"txt:Expenses\t<font color='#FFFFFF'>-{{BattleExpenses}} {{um:imgCredits}}</font>\n",
-			"<b>txt:Total\t<font color='{{c:BattleCreditDebit}}'>{{BattleCreditDebit}} {{um:imgCredits}}</font>\tWN8:</font> <font color='{{c:BattleWN8}}'>{{BattleWN8}}</font> (<font color='{{c:BattleWN8}}'>{{BattleXWN8}}</font>)</b>\n",
-			"</textformat></font>",
-			"<p align='center'>\n{{um:ButtonDetailed}}</p>"
-		]
+		"Default": {
+			"bgIcon": "img://../res_mods/configs/BBMods/YasenKrasen/img/Bg{{BattleResult}}-v3.png",
+			"template": [
+				"<font color='{{c:BattleResult}}' size='17'>{{BattleResultName}}</font>\n",
+				"<font size='12' color='#CDC673'>{{BattleMapName}}\n",
+				"<b>{{BattleTankName}}</b></font>{{um:imgTank2}}\n",
+				"{{BattleXP}} {{um:imgXpIcon}}{{up:BattleDailyXPFactor}} <font color='#FFFFFF'><b>{{BattleCredits}}</b></font> {{um:imgCredits}}\n",
+				"{{BattleAchievements}}<font size='8'>\n</font>",
+				"<textformat tabstops='[70,135]'><font size='12' color='#CDC673'>",
+				"txt:Expenses\t<font color='#FFFFFF'>-{{BattleExpenses}} {{um:imgCredits}}</font>\n",
+				"<b>txt:Total\t<font color='{{c:BattleCreditDebit}}'>{{BattleCreditDebit}} {{um:imgCredits}}</font>\tWN8:</font> <font color='{{c:BattleWN8}}'>{{BattleWN8}}</font> (<font color='{{c:BattleWN8}}'>{{BattleXWN8}}</font>)</b>\n",
+				"</textformat></font>",
+				"<p align='center'>\n{{um:ButtonDetailed}}</p>"
+			]
+		}
 	},
 
 	"UserPattern": {
