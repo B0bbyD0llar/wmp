@@ -11,8 +11,8 @@
     "hitLogHeader": {
       "enabled": false,
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY), ON_PANEL_MODE_CHANGED",
-      "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
-      "y": "{{pp.mode=0?65|35}}",
+      "x": "{{pp.mode=0?{{battletype-key=epic_battle?240|5}}|{{py:sum({{pp.widthLeft}},50)}}}}",
+      "y": "{{pp.mode=0?{{battletype-key=epic_battle?55|65}}|35}}",
       "width": 300,
       "height": 22,
       "textFormat": { "color": "0xF4EFE8", "size": 15 },
@@ -23,9 +23,9 @@
     "hitLogBody": {
       "enabled": true,
       "updateEvent": "PY(ON_HIT_LOG), ON_PANEL_MODE_CHANGED",
-      // "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},{{py:xvm.hitLog.log.x}})}}}}",
+      // "x": "{{pp.mode=0?{{battletype-key=epic_battle?240|5}}|{{py:sum({{pp.widthLeft}},{{py:xvm.hitLog.log.x}})}}}}",
       "x": "2",
-      // "y": "{{pp.mode=0?90|{{py:xvm.hitLog.log.y}}}}",
+      // "y": "{{pp.mode=0?{{battletype-key=epic_battle?80|90}}|{{py:xvm.hitLog.log.y}}}}",
       "y": "440",
       "width": 500,
       "height": 1000,
@@ -48,8 +48,8 @@
     "totalEfficiency": {
       "enabled": false,
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY), ON_PANEL_MODE_CHANGED",
-      "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
-      "y": "{{pp.mode=0?65|35}}",
+      "x": "{{pp.mode=0?{{battletype-key=epic_battle?240|5}}|{{py:sum({{pp.widthLeft}},50)}}}}",
+      "y": "{{pp.mode=0?{{battletype-key=epic_battle?55|65}}|35}}",
       "width": "{{py:xvm.isStuns?350|260}}",
       "height": 22,
       "textFormat": { "size": 16 },
@@ -65,13 +65,13 @@
       "screenHAlign": "center",
       "align": "center",
       "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },
-      "textFormat": { "font": "mono", "size": 0, "align": "center" },
+      "textFormat": { "font": "mono", "size": 10, "align": "center" },
       "format": "{{py:xvm.total_hp.text}}"
     },
     // Avg damage on current vehicle.
     // Средний урон на текущей технике.
     "avgDamage": {
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
       "x": -170,
       "y": 30,
@@ -104,7 +104,7 @@
       "height": 210,
       "layer": "bottom",
       "screenVAlign": "bottom",
-      "shadow": { 
+      "shadow": {
         "distance": "{{py:xvm.damageLog.log.shadow('distance')}}",
         "angle": "{{py:xvm.damageLog.log.shadow('angle')}}",
         "color": "{{py:xvm.damageLog.log.shadow('color')}}",
@@ -114,7 +114,7 @@
         "hideObject": "{{py:xvm.damageLog.log.shadow('hideObject')}}",
         "inner": "{{py:xvm.damageLog.log.shadow('inner')}}",
         "knockout": "{{py:xvm.damageLog.log.shadow('knockout')}}",
-        "quality": "{{py:xvm.damageLog.log.shadow('quality')}}" 
+        "quality": "{{py:xvm.damageLog.log.shadow('quality')}}"
       },
       "textFormat": { "color": "0xF4EFE8", "size": 16 },
       "format": "{{py:xvm.damageLog.log}}",
@@ -126,12 +126,12 @@
       }
     },
     // Background of the log of the received damage (see damageLog.xc).
-    // Подложка лога полученного урона (см. damageLog.xc).    
+    // Подложка лога полученного урона (см. damageLog.xc).
     "damageLogBackground": {
       "enabled": false,
       "$ref": { "path":"def.damageLog" },
       "format": "{{py:xvm.damageLog.log.bg}}"
-    },    
+    },
     // Display the last damage (hit) (see damageLog.xc).
     // Отображение последнего урона (попадания) (см. damageLog.xc).
     "lastHit": {
@@ -144,7 +144,7 @@
       "layer": "bottom",
       "screenHAlign": "center",
       "screenVAlign": "center",
-      "shadow": { 
+      "shadow": {
         "distance": "{{py:xvm.damageLog.lastHit.shadow('distance')}}",
         "angle": "{{py:xvm.damageLog.lastHit.shadow('angle')}}",
         "color": "{{py:xvm.damageLog.lastHit.shadow('color')}}",
@@ -154,7 +154,7 @@
         "hideObject": "{{py:xvm.damageLog.lastHit.shadow('hideObject')}}",
         "inner": "{{py:xvm.damageLog.lastHit.shadow('inner')}}",
         "knockout": "{{py:xvm.damageLog.lastHit.shadow('knockout')}}",
-        "quality": "{{py:xvm.damageLog.lastHit.shadow('quality')}}" 
+        "quality": "{{py:xvm.damageLog.lastHit.shadow('quality')}}"
       },
       "textFormat": {"align": "center", "color": "0xF4EFE8", "size": 16 },
       "format": "{{py:xvm.damageLog.lastHit}}",

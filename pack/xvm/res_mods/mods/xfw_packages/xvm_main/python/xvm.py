@@ -7,11 +7,12 @@ import BigWorld
 from CurrentVehicle import g_currentVehicle
 from messenger import MessengerEntry
 from gui import SystemMessages
-from gui.app_loader import g_appLoader
-from gui.app_loader.settings import APP_NAME_SPACE, GUI_GLOBAL_SPACE_ID
+from gui.app_loader.settings import APP_NAME_SPACE
 from gui.battle_control import avatar_getter
 from gui.shared import g_eventBus, events
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
+from helpers import dependency
+from skeletons.gui.app_loader import IAppLoader, GuiGlobalSpaceID
 
 from xfw import *
 from xfw_actionscript.python import *
@@ -29,10 +30,10 @@ import dossier
 import minimap_circles
 import python_macro
 import reserve
-import test
 import topclans
 import wgutils
 import xvmapi
+import xvm_debug
 
 _LOG_COMMANDS = (
     XVM_COMMAND.LOAD_STAT_BATTLE,
@@ -82,6 +83,8 @@ def l10n(text):
 class Xvm(object):
     _initialized_apps = {}
 
+    appLoader = dependency.descriptor(IAppLoader)
+
     def __init__(self):
         self.xvmServicesInitialized = False
         self.currentAccountDBID = None
@@ -124,7 +127,7 @@ class Xvm(object):
 
         trace('onAppInitialized: {}'.format(event.ctx.ns))
 
-        app = g_appLoader.getApp(event.ctx.ns)
+        app = self.appLoader.getApp(event.ctx.ns)
         if app is not None and app.loaderManager is not None:
             app.loaderManager.onViewLoaded += self.onViewLoaded
         # initialize XVM services if game restarted after crash or in replay
@@ -137,19 +140,19 @@ class Xvm(object):
             del self._initialized_apps[event.ctx.ns]
         if event.ctx.ns == APP_NAME_SPACE.SF_LOBBY:
             self.hangarDispose()
-        app = g_appLoader.getApp(event.ctx.ns)
+        app = self.appLoader.getApp(event.ctx.ns)
         if app is not None and app.loaderManager is not None:
             app.loaderManager.onViewLoaded -= self.onViewLoaded
 
     def onGUISpaceEntered(self, spaceID):
         #trace('onGUISpaceEntered: {}'.format(spaceID))
-        if spaceID == GUI_GLOBAL_SPACE_ID.LOGIN:
+        if spaceID == GuiGlobalSpaceID.LOGIN:
             self.onStateLogin()
-        elif spaceID == GUI_GLOBAL_SPACE_ID.LOBBY:
+        elif spaceID == GuiGlobalSpaceID.LOBBY:
             self.onStateLobby()
-        elif spaceID == GUI_GLOBAL_SPACE_ID.BATTLE_LOADING:
+        elif spaceID == GuiGlobalSpaceID.BATTLE_LOADING:
             self.onStateBattleLoading()
-        elif spaceID == GUI_GLOBAL_SPACE_ID.BATTLE:
+        elif spaceID == GuiGlobalSpaceID.BATTLE:
             self.onStateBattle()
 
     # LOGIN
@@ -187,7 +190,7 @@ class Xvm(object):
         BigWorld.callback(0, self.updateTankParams)
 
         if IS_DEVELOPMENT:
-            test.onHangarInit()
+            xvm_debug.onHangarInit()
 
     def hangarDispose(self):
         trace('hangarDispose')
@@ -337,11 +340,11 @@ class Xvm(object):
         config.token = config.XvmServicesToken.restore()
         config.token.updateTokenFromApi()
 
-        data = xvmapi.getVersionWithLimit(config.networkServicesSettings.topClansCount)
+        data = xvmapi.getVersion(config.networkServicesSettings.topClansCountWgm, config.networkServicesSettings.topClansCountWsh)
         topclans.update(data)
         config.verinfo = config.XvmVersionInfo(data)
 
-        if g_appLoader.getSpaceID() == GUI_GLOBAL_SPACE_ID.LOBBY:
+        if self.appLoader.getSpaceID() == GuiGlobalSpaceID.LOBBY:
             svcmsg.tokenUpdated()
 
         g_eventBus.handleEvent(events.HasCtxEvent(XVM_EVENT.XVM_SERVICES_INITIALIZED))
@@ -350,12 +353,12 @@ class Xvm(object):
         try:
             if not event.isRepeatedEvent():
                 # debug("key=" + str(event.key) + ' ' + ('down' if event.isKeyDown() else 'up'))
-                spaceID = g_appLoader.getSpaceID()
-                if spaceID == GUI_GLOBAL_SPACE_ID.BATTLE:
+                spaceID = self.appLoader.getSpaceID()
+                if spaceID == GuiGlobalSpaceID.BATTLE:
                     app = getBattleApp()
                     if app and not MessengerEntry.g_instance.gui.isFocused():
                         as_xfw_cmd(XVM_COMMAND.AS_ON_KEY_EVENT, event.key, event.isKeyDown())
-                elif spaceID == GUI_GLOBAL_SPACE_ID.LOBBY:
+                elif spaceID == GuiGlobalSpaceID.LOBBY:
                     app = getLobbyApp()
                     if app:
                         as_xfw_cmd(XVM_COMMAND.AS_ON_KEY_EVENT, event.key, event.isKeyDown())

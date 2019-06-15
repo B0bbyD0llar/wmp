@@ -26,7 +26,7 @@ def checkNames(vehs):
 # PRIVATE
 
 _data = {
-    # Last update: 02.03.2019
+    # Last update: 11.06.2019
     "china:Ch01_Type59":                     'Typ59',
     "china:Ch01_Type59_Gold":                'Typ59g',
     "china:Ch02_Type62":                     'Typ62',
@@ -89,6 +89,7 @@ _data = {
     "czech:Cz09_T_24":                       'skT24',
     "czech:Cz10_LT_vz38":                    'vz.38',
     "czech:Cz11_V_8_H":                      'vz.39',
+    "czech:Cz13_T_27":                       'skT27',
     "france:F01_RenaultFT":                  'FT',
     "france:F01_RenaultFT_bot":              'FT',
     "france:F02_D1":                         'D1',
@@ -168,6 +169,7 @@ _data = {
     "france:F82_AMX_M4_Mle1949_Ter":         'amx4·54',
     "france:F83_AMX_M4_Mle1949_Bis":         'amx4·51',
     "france:F84_Somua_SM":                   'Som·SM',
+    "france:F85_M4A1_FL10":                  'm4a1·fl10',
     "france:F87_Batignolles-Chatillon_12t":  'BChat12t',
     "france:F88_AMX_13_105":                 '13·105',
     "france:F89_Canon_dassaut_de_105":       'amx·cda',
@@ -233,6 +235,7 @@ _data = {
     "germany:G139_MKA":                      'MKA',
     "germany:G13_VK3001H":                   '3001h',
     "germany:G140_HWK_30":                   'HWK30',
+    "germany:G141_VK7501K":                  '7501k',
     "germany:G15_VK3601H":                   '3601h',
     "germany:G16_PzVIB_Tiger_II":            'Tig2',
     "germany:G16_PzVIB_Tiger_II_F":          'Tig2·h',
@@ -408,6 +411,9 @@ _data = {
     "sweden:S23_Strv_81_sabaton":            'Pr.Vict',
     "sweden:S25_EMIL_51":                    'emil·1951',
     "sweden:S26_Lansen_C":                   'lans·C',
+    "sweden:S27_UDES_16":                    'udes·16',
+    "sweden:S28_UDES_15_16":                 'udes·15/16',
+    "sweden:S29_UDES_14_5":                  'udes·14·5',
     "uk:GB01_Medium_Mark_I":                 'Med1',
     "uk:GB01_Medium_Mark_I_bot":             'Med1',
     "uk:GB03_Cruiser_Mk_I":                  'Crus1',
@@ -419,6 +425,7 @@ _data = {
     "uk:GB08_Churchill_I":                   'Chrch1',
     "uk:GB08_Churchill_I_IGR":               'Chrch1',
     "uk:GB09_Churchill_VII":                 'Chrch7',
+    "uk:GB101_FV1066_Senlac":                'Senlac',
     "uk:GB10_Black_Prince":                  'BlPrn',
     "uk:GB11_Caernarvon":                    'Caer',
     "uk:GB11_Caernarvon_IGR":                'Caer',
@@ -531,6 +538,8 @@ _data = {
     "usa:A120_M48A5_IGR":                    'M48Pt',
     "usa:A121_M26_Cologne":                  'Eagle7',
     "usa:A122_TS-5":                         'TS-5',
+    "usa:A123_T78":                          'T78',
+    "usa:A126_PzVI_Tiger_II_capt":           'K.TigrC',
     "usa:A12_T32":                           'T32',
     "usa:A13_T34_hvy":                       'T34',
     "usa:A13_T34_hvy_BF":                    'T34bf',
@@ -684,6 +693,7 @@ _data = {
     "ussr:R159_SU_130PM":                    'Su130pm',
     "ussr:R15_S-51":                         'S·51',
     "ussr:R160_T_50_2":                      't50·2',
+    "ussr:R161_T_116":                       't116',
     "ussr:R16_SU-18":                        'Su·18',
     "ussr:R17_SU-100":                       'Su100',
     "ussr:R18_SU-152":                       'Su152',

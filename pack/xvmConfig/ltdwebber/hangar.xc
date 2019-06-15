@@ -4,27 +4,30 @@
  */
 {
   "hangar": {
-    // Show "Buy premium" button.
-    // Показать кнопку "Купить премиум".
+    // true - show "Buy premium" button.
+    // true - показать кнопку "Купить премиум".
     "showBuyPremiumButton": true,
-    // Show "Premium shop" button.
-    // Показать кнопку "Премиум магазин".
+    // true - show "Premium shop" button.
+    // true - показать кнопку "Премиум магазин".
     "showPremiumShopButton": true,
-    // Show "Create squad" text on the squad creation button.
-    // Показать текст "Создать взвод" на кнопке создания взвода.
+    // true - show "Create squad" text on the squad creation button.
+    // true - показать текст "Создать взвод" на кнопке создания взвода.
     "showCreateSquadButtonText": true,
-    // Show selected battle mode text.
-    // Показать текст с названием выбранного режима боя.
+    // true - show selected battle mode text.
+    // true - показать текст с названием выбранного режима боя.
     "showBattleTypeSelectorText": true,
-    // Show "Referral Program" button.
-    // Показать кнопку "Реферальная программа".
+    // true - show "Referral Program" button.
+    // true - показать кнопку "Реферальная программа".
     "showReferralButton": true,
-    // Show "General chat" button.
-    // Показать кнопку "Общий чат".
+    // true - show "General chat" button.
+    // true - показать кнопку "Общий чат".
     "showGeneralChatButton": false,
     // false - disable display promo of premium vehicle (on the background in the hangar).
     // false - отключить отображение рекламы премиум техники (на фоне в ангаре).
     "showPromoPremVehicle": true,
+    // true - show info window with list of received awards for "Reward for Merit".
+    // true - показывать информационное окно с перечнем полученных наград за "Довольствие".
+    "showRewardWindow": true,
     // "Combat Intelligence" - show/hide notifications in the main window and counters in the menu.
     // "Полевая почта" - показывать/прятать уведомления в главном окне и счетчики в меню.
     "combatIntelligence": {
@@ -37,13 +40,13 @@
     },
     // true - enable locker for gold.
     // true - включить замок для золота.
-    "enableGoldLocker": false,
+    "enableGoldLocker": true,
     // true - enable locker for free XP.
     // true - включить замок для свободного опыта.
-    "enableFreeXpLocker": false,
+    "enableFreeXpLocker": true,
     // true - enable locker for bonds.
     // true - включить замок для бонов.
-    "enableCrystalLocker": false,
+    "enableCrystalLocker": true,
     // Show/hide server info or change its parameters.
     // Показать/спрятать информацию о сервере, или изменить ее параметры.
     "serverInfo": {

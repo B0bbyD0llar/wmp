@@ -1,8 +1,10 @@
 ﻿/**
-  * Log of the received damage.
-  * For additional settings see battleLabelsTemplates.xc
-  * Лог полученного урона.
-  * Дополнительные настройки см. в battleLabelsTemplates.xc
+ * Log of the received damage.
+ * For additional settings see battleLabelsTemplates.xc
+ * Лог полученного урона.
+ * Дополнительные настройки см. в battleLabelsTemplates.xc
+ * 
+ * https://kr.cm/f/t/35169/
 
   Macros used in damageLog:
   Макросы используемые в damageLog:
@@ -69,6 +71,18 @@
       "moveInBattle": false,
       "x": 240,
       "y": -23,
+      // true - show hits without damage.
+      // true - отображать попадания без урона.
+      "showHitNoDamage": true,
+      // true - summarize damages from fire.
+      // true - суммировать повреждения от пожара.
+      "groupDamagesFromFire": true,
+      // true - summarize damages from ramming, crash, falling (if more than one damage per second).
+      // true - суммировать повреждения от тарана, столкновения, падения (если больше одного повреждения в секунду).
+      "groupDamagesFromRamming_WorldCollision": true,
+      // true - summarize damages from artillery strike and airstrike (if more than one damage per second).
+      // true - суммировать повреждения от артудара и авионалета (если больше одного повреждения в секунду).
+      "groupDamageFromArtAndAirstrike": true,
       // Kind of the received damage (macro {{dmg-kind}}).
       // Тип полученного урона (макрос {{dmg-kind}}).
       "dmg-kind": {
@@ -113,8 +127,8 @@
         "hollow_charge": "<font color='{{c:costShell}}'>{{l10n:hollow_charge}}</font>",         // high explosive anti-tank / кумулятивный.
         "not_shell": ""                                                                         // another source of damage / другой источник урона.
       },
-      // Color by shell kind (macro {{type-shell}}).
-      // Цвет по типу снаряда (макрос {{type-shell}}).
+      // Color by shell kind (macro {{c:type-shell}}).
+      // Цвет по типу снаряда (макрос {{c:type-shell}}).
       "c:type-shell": {
         "armor_piercing": "#CCCCCC",    // armor piercing / бронебойный.
         "high_explosive": "#CCCCCC",    // high explosive / осколочно-фугасный.
@@ -237,15 +251,6 @@
         "silver-shell": "#CCCCCC", // credits / кредиты.
         "unknown": ""              // unknown / неизвестно.
       },
-      // true - show hits without damage.
-      // true - отображать попадания без урона.
-      "showHitNoDamage": true,
-      // true - summarize damages from fire.
-      // true - суммировать повреждения от пожара.
-      "groupDamagesFromFire": true,
-      // true - summarize damages from ramming, crash, falling (if more than one damage per second).
-      // true - суммировать повреждения от тарана, столкновения, падения (если больше одного повреждения в секунду).
-      "groupDamagesFromRamming_WorldCollision": true,
       // Shadow settings.
       // Настройки тени.
       "shadow": {
@@ -286,7 +291,7 @@
     // Background of the log of the received damage (alternative mode).
     // Подложка лога полученного урона (альтернативный режим).
     "logAltBackground": {
-      "$ref": { "path":"damageLog.logAlt" },
+      "$ref": { "path":"damageLog.logBackground" },
       // Damage log background format.
       // Формат подложки лога повреждений.
       "formatHistory": "<img height='20' width='310' src='xvm://res/icons/damageLog/{{dmg=0?no_dmg|dmg}}.png'>"

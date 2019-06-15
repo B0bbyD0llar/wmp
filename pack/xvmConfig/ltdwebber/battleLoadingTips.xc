@@ -28,7 +28,7 @@
     "vehicleIconAlpha": 100,
     // true - disable vehicle level indicator.
     // true - убрать отображение уровня танка.
-    "removeVehicleLevel": true,
+    "removeVehicleLevel": false,
     // true - disable vehicle type icon. This space will be used for formatted vehicle field.
     // true - убрать отображение типа танка. Пустое место будет использовано под форматируемое поле.
     "removeVehicleTypeIcon": false,

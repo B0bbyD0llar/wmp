@@ -7,7 +7,6 @@ import traceback
 import sys
 from math import degrees, pi
 
-import BigWorld
 from constants import SHELL_TYPES
 import game
 import gui.shared.tooltips.vehicle as tooltips_vehicle
@@ -24,8 +23,11 @@ from gui.shared.items_parameters.formatters import measureUnitsForParameter
 from gui.shared.items_parameters.params_helper import getParameters as getParameters_helper
 from gui.shared.items_parameters.params_helper import idealCrewComparator as idealCrewComparator_helper
 from gui.shared.utils.requesters.ItemsRequester import ItemsRequester
-from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
+from gui.shared.tooltips import getUnlockPrice
 from gui.Scaleform.locale.TOOLTIPS import TOOLTIPS
+from gui.Scaleform.locale.STORAGE import STORAGE
+from gui.Scaleform.locale.RES_ICONS import RES_ICONS
+from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.Scaleform.framework.tooltip_mgr import ToolTip
 from gui.Scaleform.daapi.view.battle.shared.consumables_panel import ConsumablesPanel
 from gui.Scaleform.daapi.view.meta.ModuleInfoMeta import ModuleInfoMeta
@@ -37,6 +39,7 @@ import nations
 import BigWorld
 from items import _xml
 from constants import ITEM_DEFS_PATH
+
 from xfw import *
 
 import xvm_main.python.config as config
@@ -88,7 +91,7 @@ def _i18n_makeString(base, key, *args, **kwargs):
 @overrideMethod(ToolTip, 'onCreateComplexTooltip')
 def _ToolTip_onCreateComplexTooltip(base, self, tooltipId, stateType):
     if tooltipId is None or XVM_TOOLTIPS.HIDE not in tooltipId:
-        _createTooltip(self, lambda:_onCreateComplexTooltip_callback(base, self, tooltipId, stateType))
+        _createTooltip(self, lambda: _onCreateComplexTooltip_callback(base, self, tooltipId, stateType))
 
 # tooltip delay to resolve performance issue
 # suppress carousel tooltips
@@ -102,7 +105,7 @@ def _ToolTip_onCreateTypedTooltip(base, self, type, *args):
         err(traceback.format_exc())
 
     if args and XVM_TOOLTIPS.HIDE not in args[0]:
-        _createTooltip(self, lambda:_onCreateTypedTooltip_callback(base, self, type, *args))
+        _createTooltip(self, lambda: _onCreateTypedTooltip_callback(base, self, type, *args))
 
 @overrideMethod(ToolTip, 'onHideTooltip')
 def _ToolTip_onHideTooltip(base, self, tooltipId):
@@ -170,7 +173,8 @@ def AdditionalStatsBlockConstructor_construct(base, self):
     else:
         return base(self)
 
-@overrideMethod(text_styles, "_getStyle")
+# TODO:1.5.0: disabled, is required?
+#@overrideMethod(text_styles, "_getStyle")
 def text_styles_getStyle(base, style, ctx = None):
     if ctx is None:
         ctx = {}
@@ -225,8 +229,8 @@ class ShellData(object):
         self.shells = {}
         self.shell()
         self.data = {'costShell': {}}
-    
-    def shell(self):                
+
+    def shell(self):
         xmlPath = ''
         for nation in nations.NAMES:
             xmlPath = '%s%s%s%s' % (ITEM_DEFS_PATH, 'vehicles/', nation, '/components/shells.xml')
@@ -234,7 +238,7 @@ class ShellData(object):
             id_xmlCtx_s = ((_xml.readInt(xmlCtx, s, 'id', 0, 65535), xmlCtx, s) for xmlCtx, s in xmlCtx_s)
             self.shells[nation] = [i for i, xmlCtx, s in id_xmlCtx_s if s.readBool('improved', False)]
         ResMgr.purge(xmlPath, True)
-              
+
     def typeShell(self, gun):
         self.data['costShell'] = {}
         for shell in gun.shots:
@@ -242,8 +246,31 @@ class ShellData(object):
             self.data['costShell'][shell.shell.compactDescr] = 'gold' if shell_id[1] in self.shells[nations.NAMES[shell_id[0]]] else 'silver'
         return self.data['costShell']
 
-                                         
+
 shellData = ShellData()
+
+# add to hangar tooltips display the missing experience to unlock the vehicle
+@overrideMethod(tooltips_vehicle.StatusBlockConstructor, 'construct')
+def StatusBlockConstructor_construct(base, self):
+    block, result = base(self)
+    if block and config.get('tooltips/showXpToUnlockVeh'):
+        try:
+            techTreeNode = self.configuration.node
+            vehicle = self.vehicle
+            isUnlocked = vehicle.isUnlocked
+            parentCD = techTreeNode.unlockProps.parentID if techTreeNode is not None else None
+            if parentCD is not None:
+                isAvailable, cost, need, defCost, discount = getUnlockPrice(vehicle.intCD, parentCD, vehicle.level)
+                if isAvailable and not isUnlocked and need > 0 and techTreeNode is not None:
+                    icon = "<img src='{}' vspace='{}'".format(RES_ICONS.MAPS_ICONS_LIBRARY_XPCOSTICON_1.replace('..', 'img://gui'), -3)
+                    template = "<font face='$TitleFont' size='14'><font color='#ff2717'>{}</font> {}</font> {}"
+                    block[0]['data']['text'] = template.format(i18n.makeString(STORAGE.BLUEPRINTS_CARD_CONVERTREQUIRED), need, icon)
+            return block, result
+        except Exception as ex:
+            err(traceback.format_exc())
+            return block, result
+    else:
+        return block, result
 
 # overriding tooltips for tanks in hangar, configuration in tooltips.xc
 @overrideMethod(tooltips_vehicle.CommonStatsBlockConstructor, 'construct')
@@ -528,10 +555,8 @@ def formatters_formatModuleParamName(base, paramName):
     if weightTooHeavy and paramName == 'weight':
         builder.addStyledText(text_styles.error, MENU.moduleinfo_params(paramName))
         builder.addStyledText(text_styles.error, param_formatter.MEASURE_UNITS.get(paramName, ''))
-    else:
-        builder.addStyledText(text_styles.main, MENU.moduleinfo_params(paramName))
-        builder.addStyledText(text_styles.standard, param_formatter.MEASURE_UNITS.get(paramName, ''))
-    return builder.render()
+        return builder.render()
+    return base (paramName)
 
 @overrideMethod(ModuleBlockTooltipData, '_packBlocks')
 def ModuleBlockTooltipData_packBlocks(base, self, *args, **kwargs):

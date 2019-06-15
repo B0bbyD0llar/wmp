@@ -45,7 +45,6 @@ import imghdr
 import BigWorld
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
-from gui.app_loader import g_appLoader
 from gui.battle_control import avatar_getter
 from items.vehicles import VEHICLE_CLASS_TAGS
 
@@ -450,13 +449,15 @@ class _Stat(object):
                         stat['v']['id'] = pl.vehCD
                     break
 
-        self._fix_common2(stat, orig_name, False)
+        self._fix_common2(stat, orig_name)
         self._addContactData(stat)
         return stat
 
     def _fix_user(self, stat, orig_name=None):
         self._fix_common(stat)
-        self._fix_common2(stat, orig_name, True)
+        stat['vehicles'] = stat['v']
+        del stat['v']
+        self._fix_common2(stat, orig_name)
         self._addContactData(stat)
         return stat
 
@@ -509,22 +510,22 @@ class _Stat(object):
         if stat.get('wtr', 0) <= 0:
             stat['wtr'] = None
 
-    def _fix_common2(self, stat, orig_name, multiVehicles):
+    def _fix_common2(self, stat, orig_name):
         if orig_name is not None:
             stat['name'] = orig_name
         if 'battles' in stat and 'wins' in stat and stat['battles'] > 0:
             self._calculateGWR(stat)
             self._calculateXvmScale(stat)
-            if multiVehicles:
-                for vehicleID, vData in stat['v'].iteritems():
-                    vData['id'] = int(vehicleID)
+            if 'v' in stat:
+                vData = stat['v']
+                if 'id' in vData:
                     self._calculateVehicleValues(stat, vData)
                     self._calculateXTDB(vData)
                     self._calculateXTE(vData)
                     self._calculateVXWTR(vData)
-            else:
-                vData = stat['v']
-                if 'id' in vData:
+            if 'vehicles' in stat:
+                for vehicleID, vData in stat['vehicles'].iteritems():
+                    vData['id'] = int(vehicleID)
                     self._calculateVehicleValues(stat, vData)
                     self._calculateXTDB(vData)
                     self._calculateXTE(vData)
@@ -621,8 +622,7 @@ class _Stat(object):
             elif pl.clanInfo:
                 rank = pl.clanInfo.get('rank', -1)
                 url = pl.clanInfo.get('emblem', None)
-                # url = 'http://stat.modxvm.com:81'
-                if url and 0 <= rank <= config.networkServicesSettings.topClansCount:
+                if url and rank >= 0:
                     url = url.replace('{size}', '32x32')
                     tID = 'icons/clan/{0}'.format(pl.clanInfo['clan_id'])
                     self._loadingClanIconsCount += 1
