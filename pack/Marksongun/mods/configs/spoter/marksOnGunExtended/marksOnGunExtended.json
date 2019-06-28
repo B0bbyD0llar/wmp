@@ -1,6 +1,6 @@
 ﻿{
     "UI": 9,
-    "background": true,
+    "background": false,
     "backgroundData": {
         "alpha": 1.0,
         "width": 115,
@@ -95,7 +95,7 @@
     },
     "showInBattle": true,
     "showInBattleHalfPercents": false,
-    "showInHangar": true,
+    "showInHangar": false,
     "showInReplay": true,
     "showInStatistic": true,
     "showInTechTree": true,

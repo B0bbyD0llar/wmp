@@ -3,7 +3,7 @@
     "name": "XVM Export",
     "description": "XVM Export Module",
 
-    "version": "7.9.5.9179",
+    "version": "7.9.6.9196",
     "dependencies": ["com.modxvm.xvm"],
 
     "url": "https://modxvm.com/",
