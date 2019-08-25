@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Settings>
-  <SavedByVersion>56</SavedByVersion>
+  <SavedByVersion>58</SavedByVersion>
   <MainWindow>
     <DimensionsByRes>
       <item key="2560x1440">
@@ -130,7 +130,7 @@
     <item>
       <Name>Black_Spy (Kopie)</Name>
       <Author>Black_Spy</Author>
-      <SavedByVersion>56</SavedByVersion>
+      <SavedByVersion>58</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -762,6 +762,7 @@
           <Height>999</Height>
           <Baseline>False</Baseline>
           <Format null="1" />
+          <isSeveralValue>False</isSeveralValue>
           <Property>
             <FileId>Tier (Arabic)</FileId>
             <ColumnId null="1" />
@@ -1017,6 +1018,7 @@
           <Height>999</Height>
           <Baseline>True</Baseline>
           <Format null="1" />
+          <isSeveralValue>False</isSeveralValue>
           <Property>
             <FileId>NameShort</FileId>
             <ColumnId null="1" />
@@ -1409,7 +1411,7 @@
     <item>
       <Name>Dark Agent (Kopie)</Name>
       <Author>Romkyns</Author>
-      <SavedByVersion>56</SavedByVersion>
+      <SavedByVersion>58</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -1907,6 +1909,7 @@
           <Height>999</Height>
           <Baseline>False</Baseline>
           <Format null="1" />
+          <isSeveralValue>False</isSeveralValue>
           <Property>
             <FileId>Tier (Arabic)</FileId>
             <ColumnId null="1" />
@@ -2163,6 +2166,7 @@
           <Height>999</Height>
           <Baseline>True</Baseline>
           <Format null="1" />
+          <isSeveralValue>False</isSeveralValue>
           <Property>
             <FileId>NameShort</FileId>
             <ColumnId null="1" />
@@ -2175,7 +2179,7 @@
     <item refid="1">
       <Name>DMVK</Name>
       <Author>Ltd_Webber</Author>
-      <SavedByVersion>56</SavedByVersion>
+      <SavedByVersion>58</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -2587,6 +2591,7 @@
           <Height>999</Height>
           <Baseline>False</Baseline>
           <Format null="1" />
+          <isSeveralValue>False</isSeveralValue>
           <Property>
             <FileId>Tier (Arabic)</FileId>
             <ColumnId null="1" />
@@ -2763,6 +2768,7 @@
           <Height>999</Height>
           <Baseline>False</Baseline>
           <Format null="1" />
+          <isSeveralValue>False</isSeveralValue>
           <Property>
             <FileId>NameSlang</FileId>
             <ColumnId>De</ColumnId>
@@ -2775,7 +2781,7 @@
     <item>
       <Name>DMVK</Name>
       <Author>Ltd_Webber</Author>
-      <SavedByVersion>56</SavedByVersion>
+      <SavedByVersion>58</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -2841,7 +2847,7 @@
     <item>
       <Name>HARDicons Colored (Kopie)</Name>
       <Author>Andrey_Hard</Author>
-      <SavedByVersion>56</SavedByVersion>
+      <SavedByVersion>58</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -3349,6 +3355,7 @@
           <Height>999</Height>
           <Baseline>False</Baseline>
           <Format null="1" />
+          <isSeveralValue>False</isSeveralValue>
           <Property>
             <FileId>NameShort</FileId>
             <ColumnId null="1" />
@@ -3525,6 +3532,7 @@
           <Height>999</Height>
           <Baseline>False</Baseline>
           <Format null="1" />
+          <isSeveralValue>False</isSeveralValue>
           <Property>
             <FileId>Tier (Roman)</FileId>
             <ColumnId null="1" />
@@ -3537,7 +3545,7 @@
     <item>
       <Name>Korolins (DMVK Setting)</Name>
       <Author>Ltd_Webber</Author>
-      <SavedByVersion>56</SavedByVersion>
+      <SavedByVersion>58</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
@@ -3603,7 +3611,7 @@
     <item>
       <Name>Original (Kopie)</Name>
       <Author>Wargaming.net</Author>
-      <SavedByVersion>56</SavedByVersion>
+      <SavedByVersion>58</SavedByVersion>
       <PathTemplate></PathTemplate>
       <BattleAtlasPathTemplate null="1" />
       <VehicleMarkersAtlasPathTemplate null="1" />
