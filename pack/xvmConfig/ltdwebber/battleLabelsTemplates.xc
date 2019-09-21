@@ -66,7 +66,7 @@
       "align": "center",
       "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },
       "textFormat": { "font": "mono", "size": 10, "align": "center" },
-      "format": "{{py:xvm.total_hp.text}}"
+      "format": "{{battletype-key!=epic_battle?{{py:xvm.total_hp.text}}}}"
     },
     // Avg damage on current vehicle.
     // Средний урон на текущей технике.
@@ -162,7 +162,7 @@
         "knockout": "{{py:xvm.damageLog.lastHit.shadow('knockout')}}",
         "quality": "{{py:xvm.damageLog.lastHit.shadow('quality')}}"
       },
-      "textFormat": {"align": "center", "color": "0xF4EFE8", "size": 16 },
+      "textFormat": { "align": "center", "color": "0xF4EFE8", "size": 16 },
       "format": "{{py:xvm.damageLog.lastHit}}",
       "mouseEvents": {
         "mouseDown": "lastHit_mouseDown",
