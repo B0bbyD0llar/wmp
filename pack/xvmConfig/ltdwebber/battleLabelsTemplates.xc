@@ -35,7 +35,8 @@
       "mouseEvents": {
         "mouseDown": "hitLog_mouseDown",
         "mouseUp": "hitLog_mouseUp",
-        "mouseMove": "hitLog_mouseMove"
+        "mouseMove": "hitLog_mouseMove",
+        "mouseWheel": "hitLog_mouseWheel"
       }
     },
     // Background of the log of applied damage.
