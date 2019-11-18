@@ -2,779 +2,779 @@ WOT-DATA,2
 {{ID}},Hull,Turret
 {{EN}},"Hull armor thickness (front, sides, rear).","Top turret armor thickness (front, sides, rear)."
 {{RU}},"Бронирование корпуса (перед, бока, зад).","Бронирование топ башни (перед, бока, зад)."
-china-Ch01_Type59,100  80 45,230 130 60,#69
-china-Ch01_Type59_Gold,100  80 45,230 130 60,#69
-china-Ch02_Type62,35 20 20,45 30 20,#69
-china-Ch03_WZ_111_A,120 120 60,230 120 60,#69
-china-Ch03_WZ-111,120 120 60,230 120 60,#69
-china-Ch04_T34_1, 60  45 40,170 120 60,#69
-china-Ch04_T34_1_training,60 45 40,90 75 52,#69
-china-Ch05_T34_2, 70  45 45,180 120 60,#69
-china-Ch06_Renault_NC31,16 16 16,22 22 22,#69
-china-Ch06_Renault_NC31_bot,16 16 16,22 22 22,#69
-china-Ch07_Vickers_MkE_Type_BT26,13 13 13,30 15 15,#69
-china-Ch08_Type97_Chi_Ha,25 25 20,35 25 25,#69
-china-Ch08_Type97_Chi_Ha_bootcamp,25 25 20,35 25 25,#69
-china-Ch09_M5,29 29 25,44 32 32,#69
-china-Ch10_IS2, 90 90 60,100 90 90,#69
-china-Ch11_110,120  90 60,201 148 50,#69
-china-Ch11_110_IGR,120  90 60,201 148 50,#69
-china-Ch12_111_1_2_3,120 120 60,230 120 60,#69
-china-Ch14_T34_3,100  80 45,200 130 60,#69
-china-Ch15_59_16,30 20 20,45 30 20,#69
-china-Ch16_WZ_131,35 20 20,45 30 20,#69
-china-Ch17_WZ131_1_WZ132,50 25 20,55 35 20,#69
-china-Ch17_WZ131_1_WZ132_IGR,50 25 20,55 35 20,#69
-china-Ch18_WZ-120,100  80 45,220 160 65,#69
-china-Ch19_121,120  80 60,240 130 60,#69
-china-Ch19_121_IGR,120  80 60,240 130 60,#69
-china-Ch20_Type58,45 45 40,90 75 52,#69
-china-Ch21_T34,45 40 40,52 52 45,#69
-china-Ch22_113,120 120 70,290 180 80,#69
-china-Ch22_113_Beijing_Opera,120 120 70,290 180 80,#69
-china-Ch22_113P,120 120 70,290 180 80,#69
-china-Ch23_112,120 120 60,240 130 60,#69
-china-Ch23_112_FL,120 120 60,240 130 60,#69
-china-Ch24_Type64,25 13 19,25 13 13,#69
-china-Ch25_121_mod_1971B,130  80 60,240 160 60,#69
-china-Ch26_59_Patton,100 80 45,178 76 51,#69
-china-Ch28_WZ_132A,50 25 20,55 35 20,#69
-china-Ch29_Type_62C_prot, 50  25 20,200 160 65,#69
-china-Ch30_T-26G_FT,18 15 15,,#69
-china-Ch31_M3G_FT,25 25 25,,#69
-china-Ch32_SU-76G_FT,25 15 10,,#69
-china-Ch33_60G_FT,25 20 20,,#69
-china-Ch34_WZ131G_FT,35 20 20,,#69
-china-Ch35_T-34-2G_FT,70 45 45,,#69
-china-Ch36_WZ111_1G_FT,180 80 60,,#69
-china-Ch37_WZ111G_FT,200 80 60,,#69
-china-Ch38_WZ113G_FT,230 80 70,,#69
-china-Ch39_WZ120_1G_FT,120 80 45,,#69
-china-Ch40_WZ120G_FT,150 80 45,,#69
-china-Ch41_WZ_111_5A,140 120 60,300 180 60,#69
-china-Ch41_WZ_111_QL,140 120 60,300 180 60,#69
-china-Ch42_WalkerBulldog_M41D,25 25 19,25 25 25,#69
-czech-Cz01_Skoda_T40,65 40 30,65 40 40,#69
-czech-Cz02_TVP_T50, 65 40 40,120 80 60,#69
-czech-Cz03_LT_vz35,25 16 16,25 16 16,#69
-czech-Cz04_T50_51, 65 40 30,120 80 60,#69
-czech-Cz05_T34_100,45 45 45,90 75 52,#69
-czech-Cz06_Kolohousenka,14  8  6,14 14 14,#69
-czech-Cz07_TVP_46,65 40 30,65 40 40,#69
-czech-Cz08_T_25,50 35 35,50 35 35,#69
-czech-Cz09_T_24,50 30 30,50 30 30,#69
-czech-Cz10_LT_vz38,25 15 15,50 30 25,#69
-czech-Cz11_V_8_H,32 25 20,60 40 30,#69
-czech-Cz13_T_27, 65  40  40,100 100 100,#69
-france-F01_RenaultFT,16 16 16,22 22 16,#69
-france-F01_RenaultFT_bot,16 16 16,16 16 14,#69
-france-F02_D1,30 30 30,40 40 40,#69
-france-F03_D2,40 40 40,46 46 46,#69
-france-F04_B1,60 60 55,46 46 46,#69
-france-F04_B1_bootcamp,60 60 55,40 40 40,#69
-france-F05_BDR_G1B,60 40 60,80 70 60,#69
-france-F06_ARL_44,120 60 40,110 30 30,#69
-france-F07_AMX_M4_1945, 90 40 40,100 70 40,#69
-france-F08_AMX_50_100,90 35 30,90 30 30,#69
-france-F08_AMX_50_100_IGR,90 35 30,90 30 30,#69
-france-F09_AMX_50_120,100 80 60,100 80 60,#69
-france-F10_AMX_50B,170 30 30,100 50 30,#69
-france-F10_AMX_50B_fallout,170 30 30,100 50 30,#69
-france-F100_Panhard_EBR_90,40 16 40,40 25 20,#69
-france-F106_Panhard_EBR_75_Mle1954,40 16 40,40 20 20,#69
-france-F107_Hotchkiss_EBR,40 20 20,40 20 20,#69
-france-F108_Panhard_EBR_105,40 16 40,15 10 10,#69
-france-F109_AMD_Panhard_178B,20 13 13,20 13 13,#69
-france-F11_Renault_G1R,60 60 60,60 60 60,#69
-france-F110_Lynx_6x6,13 13 13,16 13 13,#69
-france-F111_AM39_Gendron_Somua,15 15 15,15 15 15,#69
-france-F112_M10_RBFM,38 19 19,57 25 25,#69
-france-F113_Bretagne_Panther, 80 40 40,100 45 45,#69
-france-F12_Hotchkiss_H35,40 40 40,40 40 40,#69
-france-F13_AMX38,60 40 40,60 40 40,#69
-france-F14_AMX40,70 65 40,80 60 60,#69
-france-F15_AMX_12t,50 20 15,30 20 20,#69
-france-F16_AMX_13_75,50 20 15,40 20 20,#69
-france-F17_AMX_13_90,50 20 15,40 20 20,#69
-france-F17_AMX_13_90_IGR,50 20 15,40 20 20,#69
-france-F18_Bat_Chatillon25t,60 40 30,50 30 15,#69
-france-F18_Bat_Chatillon25t_IGR,60 40 30,50 30 15,#69
-france-F19_Lorraine40t,40 30 25,45 30 20,#69
-france-F20_RenaultBS,16 16 16,,#69
-france-F21_Lorraine39_L_AM,20 9 16,,#69
-france-F22_AMX_105AM,40 20 15,,#69
-france-F23_AMX_13F3AM,40 20 15,,#69
-france-F24_Lorraine155_50,40 30 20,,#69
-france-F25_Lorraine155_51,40 30 25,,#69
-france-F27_FCM_36Pak40,40 20 20,,#69
-france-F28_105_leFH18B2,60 60 55,,#69
-france-F28_105_leFH18B2_IGR,60 60 55,,#69
-france-F30_RenaultFT_AC,16 16 16,,#69
-france-F32_Somua_Sau_40,36 35 35,,#69
-france-F33_S_35CA,56 35 35,,#69
-france-F33_S_35CA_IGR,56 35 35,,#69
-france-F34_ARL_V39,60 40 60,,#69
-france-F35_AMX_AC_Mle1946,120 40 40,,#69
-france-F36_AMX_AC_Mle1948,150 55 40,,#69
-france-F36_AMX_AC_Mle1948_IGR,150 40 40,,#69
-france-F37_AMX50_Foch,180 70 40,,#69
-france-F38_Bat_Chatillon155_58,16 16 12,,#69
-france-F44_Somua_S35,47 40 35,40 40 60,#69
-france-F49_RenaultR35,40 40 32,40 40 40,#69
-france-F50_FCM36_20t,40 20 20,40 40 40,#69
-france-F52_RenaultUE57,9 6 6,,#69
-france-F62_ELC_AMX,25 10 15,20 15 10,#69
-france-F62_ELC_AMX_IGR,25 10 15,,#69
-france-F64_AMX_50Fosh_155,180 80 40,,#69
-france-F64_AMX_50Fosh_B,180 80 40,,#69
-france-F65_FCM_50t,120 80 80,120 80 60,#69
-france-F66_AMX_Ob_Am105,30 20 15,,#69
-france-F67_Bat_Chatillon155_55,16 16 12,,#69
-france-F68_AMX_Chasseur_de_char_46,30 20 20,30 20 20,#69
-france-F69_AMX13_57_100,50 20 15,40 20 20,#69
-france-F69_AMX13_57_100_GrandFinal,50 20 15,40 20 20,#69
-france-F70_SARL42,40 30 30,40 30 30,#69
-france-F71_AMX_30_prototype, 80 30 30,150 40 30,#69
-france-F72_AMX_30, 80 35 30,150 40 30,#69
-france-F73_M4A1_Revalorise,51 38 38,64 64 64,#69
-france-F73_M4A1_Revalorise_FL,51 38 38,64 64 64,#69
-france-F74_AMX_M4_1949,190  55 40,250 120 60,#69
-france-F74_AMX_M4_1949_FL,190  55 40,250 120 60,#69
-france-F74_AMX_M4_1949_Liberte,190  55 40,250 120 60,#69
-france-F75_Char_de_25t,30 25 20,25 25 20,#69
-france-F81_Char_de_65t,100 80 60,250 80 60,#69
-france-F82_AMX_M4_Mle1949_Ter,220 60 40,300 80 40,#69
-france-F83_AMX_M4_Mle1949_Bis,180 60 40,300 80 40,#69
-france-F84_Somua_SM,140 90 70,120 60 60,#69
-france-F85_M4A1_FL10,51 38 38,40 20 20,#69
-france-F87_Batignolles-Chatillon_12t,40 20 20,25 25 25,#69
-france-F88_AMX_13_105,50 20 15,40 20 20,#69
-france-F89_Canon_dassaut_de_105,100 40 30,,#69
-france-F97_ELC_EVEN_90,15 10 10,15 10 10,#69
-germany-Env_Artillery,30 15 0,,#69
-germany-G02_Hummel,30 20 20,,#69
-germany-G03_PzV_Panther, 85 50 40,120 60 60,#69
-germany-G03_PzV_Panther_bootcamp, 85 50 40,100 45 45,#69
-germany-G03_PzV_Panther_IGR, 85 50 40,120 60 60,#69
-germany-G03_PzV_Panther_training,85 40 40,45 45 45,#69
-germany-G04_PzVI_Tiger_I,100 80 80,100 80 80,#69
-germany-G04_PzVI_Tiger_I_IGR,100 80 80,100 80 80,#69
-germany-G04_PzVI_Tiger_IA,100 80 80,100 80 80,#69
-germany-G05_StuG_40_AusfG,80 30 50,,#69
-germany-G05_StuG_40_AusfG_IGR,80 30 50,,#69
-germany-G06_PzII,30 20 15,30 20 20,#69
-germany-G06_PzII_bot,30 20 15,30 15 15,#69
-germany-G07_Pz35t,25 16 16,25 16 16,#69
-germany-G08_Pz38t,25 15 15,50 30 25,#69
-germany-G08_Pz38t_bootcamp,25 15 15,25 15 15,#69
-germany-G09_Hetzer,60 20 8,,#69
-germany-G10_PzIII_AusfJ,50 30 50,30 30 30,#69
-germany-G10_PzIII_AusfJ_training,30 30 50,30 30 30,#69
-germany-G100_Gtraktor_Krupp,14 8 8,14 8 8,#69
-germany-G101_StuG_III,50 30 30,,#69
-germany-G102_Pz_III,30 30 20,30 30 30,#69
-germany-G102_Pz_III_bootcamp,30 30 20,16 14 14,#69
-germany-G103_RU_251,25 20  8,20 20 20,#69
-germany-G104_Stug_IV,80 30 20,,#69
-germany-G105_T-55_NVA_DDR,100  80 45,240 180 65,#69
-germany-G106_PzKpfwPanther_AusfF, 85 50 40,120 60 60,#69
-germany-G107_PzKpfwIII_AusfK,50 30 50,50 30 30,#69
-germany-G108_PzKpfwII_AusfD,30 14 14,14 14 14,#69
-germany-G109_Steyr_WT,20 10  8,20 10 10,#69
-germany-G11_Bison_I,13 13 13,,#69
-germany-G110_Typ_205,200 155 135,240 160 150,#69
-germany-G112_KanonenJagdPanzer,30 30 8,,#69
-germany-G112_KanonenJagdPanzer_105,30 30 8,,#69
-germany-G113_SP_I_C,10 10 10,15 10 10,#69
-germany-G114_Rheinmetall_Skorpian,30 16 20,,#69
-germany-G114_Skorpian,30 16 20,,#69
-germany-G115_Typ_205_4_Jun,200 130 120,230 160 140,#69
-germany-G115_Typ_205B,200 130 120,230 160 140,#69
-germany-G116_Turan_III_prot,50 25 25,75 35 55,#69
-germany-G117_Toldi_III,35 13 10,35 25 25,#69
-germany-G117_Toldi_III_bootcamp,35 13 10,35 25 25,#69
-germany-G118_VK4503,100 80 80,100 80 80,#69
-germany-G119_Panzer58, 90 30 40,120 65 40,#69
-germany-G119_Panzer58_BF, 90 30 40,120 65 40,#69
-germany-G119_Panzer58_FL, 90 30 40,120 65 40,#69
-germany-G119_Pz58_Mutz, 90 30 40,120 65 40,#69
-germany-G12_Ltraktor,14 14 14,14 14 14,#69
-germany-G12_Ltraktor_bot,14 14 14,14 14 14,#69
-germany-G120_M41_90,25 25 19,25 25 25,#69
-germany-G120_M41_90_GrandFinal,25 25 19,25 25 25,#69
-germany-G121_Grille_15_L63,30 16 20,,#69
-germany-G122_VK6501H,80 80 80,80 80 80,#69
-germany-G125_Spz_57_Rh,30 30  8,20 20 20,#69
-germany-G126_HWK_12,14 14 14,15 10 10,#69
-germany-G13_VK3001H,50 50 50,80 60 60,#69
-germany-G134_PzKpfw_VII,240 160 120,200 160 120,#69
-germany-G136_Tiger_131,100 80 80,100 80 80,#69
-germany-G137_PzVI_Tiger_217,100 80 80,100 80 80,#69
-germany-G138_VK168_02,180 130 100,230 160 100,#69
-germany-G138_VK168_02_Mauerbrecher,180 130 100,230 160 100,#69
-germany-G139_MKA,25 18 16,25 16 16,#69
-germany-G140_HWK_30,25 20  8,20 20 20,#69
-germany-G141_VK7501K,180 100 80,250 100 80,#69
-germany-G142_M48RPz,152 76 25,254 76 51,#69
-germany-G143_E75_TS,120  80 80,230 120 80,#69
-germany-G144_Kpz_50t,120 40 20,250 40 30,#69
-germany-G15_VK3601H,100 60 60,100 80 80,#69
-germany-G16_PzVIB_Tiger_II,150 80 80,185 80 80,#69
-germany-G16_PzVIB_Tiger_II_F,150 80 80,185 80 80,#69
-germany-G16_PzVIB_Tiger_II_IGR,150 80 80,185 80 80,#69
-germany-G16_PzVIB_Tiger_II_training,200 65 20,200 65 20,#69
-germany-G17_JagdPzIV,80 40 22,,#69
-germany-G18_JagdPanther,80 50 40,,#69
-germany-G19_Wespe,30 14 14,,#69
-germany-G20_Marder_II,30 14 14,,#69
-germany-G21_PanzerJager_I,13 13 13,,#69
-germany-G21_PanzerJager_I_bootcamp,13 13 13,,#69
-germany-G22_Sturmpanzer_II,30 14 14,,#69
-germany-G23_Grille,15 15 10,,#69
-germany-G24_VK3002DB, 80 45 50,120 60 60,#69
-germany-G25_PzII_Luchs,30 20 20,50 30 30,#69
-germany-G26_VK1602,50 30 30,50 30 30,#69
-germany-G27_VK3001P, 75 62 40,100 80 80,#69
-germany-G28_PzIII_IV,80 30 20,50 30 30,#69
-germany-G32_PzV_PzIV,85 40 40,50 30 30,#69
-germany-G32_PzV_PzIV_ausf_Alfa,85 40 40,50 30 30,#69
-germany-G32_PzV_PzIV_ausf_Alfa_CN,85 40 40,50 30 30,#69
-germany-G32_PzV_PzIV_CN,85 40 40,50 30 30,#69
-germany-G33_H39_captured,40 40 40,40 40 40,#69
-germany-G34_S35_captured,36 35 25,56 46 46,#69
-germany-G35_B-1bis_captured,60 60 55,46 46 46,#69
-germany-G36_PzII_J,80 50 50,80 50 50,#69
-germany-G37_Ferdinand,200 80 80,,#69
-germany-G37_Ferdinand_IGR,200 80 80,,#69
-germany-G39_Marder_III,50 15 15,,#69
-germany-G40_Nashorn,30 20 20,,#69
-germany-G41_DickerMax,50 20 20,,#69
-germany-G42_Maus,200 185 160,260 210 210,#69
-germany-G42_Maus_IGR,200 185 160,260 210 210,#69
-germany-G43_Sturer_Emil,50 30 30,,#69
-germany-G44_JagdTiger,250 80 80,,#69
-germany-G44_JagdTigerH,250 80 80,,#69
-germany-G45_G_Tiger,30 16 16,,#69
-germany-G46_T-25,50 45 35,60 60 35,#69
-germany-G48_E-25,50 30 30,,#69
-germany-G48_E-25_IGR,50 30 30,,#69
-germany-G49_G_Panther,50 30 20,,#69
-germany-G50_T-15,30 20 12,30 25 25,#69
-germany-G51_Lowe,150 100 80,120  80 80,#69
-germany-G51_Lowe_FL,150 100 80,120  80 80,#69
-germany-G52_Pz38_NA,30 25 20,30 20 20,#69
-germany-G53_PzI,13 13 13,14 13 13,#69
-germany-G54_E-50,150 80 80,185 80 80,#69
-germany-G55_E-75,160 120 120,252 160 160,#69
-germany-G56_E-100,200 120 150,250 150 150,#69
-germany-G57_PzVI_Tiger_P,200 80 80,100 80 80,#69
-germany-G58_VK4502P,200 120 100,265 160 160,#69
-germany-G58_VK4502P7, 80 80 80,100 80 80,#69
-germany-G61_G_E,80 50 40,,#69
-germany-G63_PzI_ausf_C,30 20 14,30 14 14,#69
-germany-G64_Panther_II,100 60 40,120 60 60,#69
-germany-G64_Panther_II_IGR,100 60 40,120 60 60,#69
-germany-G65_JagdTiger_SdKfz_185,250 80 80,,#69
-germany-G65_JagdTiger_SdKfz_185_IGR,250 80 80,,#69
-germany-G66_VK2801,50 30 30,50 30 30,#69
-germany-G67_VK4502A,150 80 80,185 80 80,#69
-germany-G70_PzIV_Hydro,50 30 20,50 30 30,#69
-germany-G71_JagdPantherII,100 60 40,,#69
-germany-G72_JagdPz_E100,200 120 150,,#69
-germany-G73_E50_Ausf_M,150 80 80,185 80 80,#69
-germany-G76_Pz_Sfl_IVc,20 14 14,,#69
-germany-G77_PzIV_Schmalturm, 80 30 20,120 60 60,#69
-germany-G78_Panther_M10, 85 50 40,100 45 45,#69
-germany-G79_Pz_IV_AusfGH,80 30 20,50 30 30,#69
-germany-G80_Pz_IV_AusfD,30 20 20,30 20 20,#69
-germany-G80_Pz_IV_AusfD_bootcamp,30 20 20,30 14 14,#69
-germany-G81_Pz_IV_AusfH,80 30 20,50 30 30,#69
-germany-G82_Pz_II_AusfG,30 20 14,30 14 14,#69
-germany-G83_Pz_IV_AusfA,14 14 14,30 14 14,#69
-germany-G85_Auf_Panther,85 50 40,50 30 30,#69
-germany-G85_Aufklarungspanzer_V,85 50 40,50 30 30,#69
-germany-G86_VK2001DB,50 40 30,57 30 30,#69
-germany-G87_VK3002DB_V1,60 40 50,80 45 45,#69
-germany-G88_Indien_Panzer,90 90 45,90 90 45,#69
-germany-G89_Leopard1,70 35 25,52 60 60,#69
-germany-G90_DW_II,50 50 50,50 50 50,#69
-germany-G91_Pro_Ag_A,70 35 25,52 60 60,#69
-germany-G92_VK7201,240 160 120,200 160 120,#69
-germany-G93_GW_Mk_VIe,22 14 14,,#69
-germany-G94_GW_Tiger_P,100 80 16,,#69
-germany-G95_Pz_Sfl_IVb,20 14 14,,#69
-germany-G96_VK3002M, 85 40 40,100 45 45,#69
-germany-G97_Waffentrager_IV,80 30 20,,#69
-germany-G98_Waffentrager_E100,80 50 40,20 10  8,#69
-germany-G98_Waffentrager_E100_P,80 50 40,20 10  8,#69
-germany-G99_RhB_Waffentrager,20 10 8,,#69
-italy-It03_M15_42,45 25 25,42 25 25,#69
-italy-It04_Fiat_3000,16 16 16,16 16 16,#69
-italy-It05_Carro_L6_40,30 15 15,30 15 15,#69
-italy-It06_M14_41,30 25 25,42 25 25,#69
-italy-It07_P26_40,50 40 40,50 40 40,#69
-italy-It08_Progetto_M40_mod_65, 50 40 25,120 40 30,#69
-italy-It09_P43_ter,100 50 50,100 50 50,#69
-italy-It10_P43_bis,80 50 50,80 50 50,#69
-italy-It11_P43,80 50 50,80 50 50,#69
-italy-It12_Prototipo_Standard_B,50 25 15,60 55 55,#69
-italy-It13_Progetto_M35_mod_46,60 30 20,80 60 25,#69
-italy-It14_P44_Pantera, 80 50 50,120 60 60,#69
-japan-J01_NC27,30 30 22,20 20 20,#69
-japan-J01_NC27_bot,30 30 22,18 18 16,#69
-japan-J02_Te_Ke,12 10  8,12 10 10,#69
-japan-J03_Ha_Go,12 12 10,35 25 25,#69
-japan-J04_Ke_Ni,16 12 10,30 16 16,#69
-japan-J04_Ke_Ni_bootcamp,16 12 10,30 16 16,#69
-japan-J05_Ke_Ni_B,16 12 10,30 16 16,#69
-japan-J06_Ke_Ho,20 16 12,30 20 16,#69
-japan-J07_Chi_Ha,25 25 20,35 25 25,#69
-japan-J08_Chi_Nu,50 25 20,50 35 25,#69
-japan-J09_Chi_He,50 25 20,50 35 25,#69
-japan-J10_Chi_To,75 35 35,75 35 50,#69
-japan-J11_Chi_Ri,75 35 35,75 50 50,#69
-japan-J11_Chi_Ri_IGR,75 35 35,75 50 50,#69
-japan-J12_Chi_Nu_Kai,50 25 20,75 50 50,#69
-japan-J13_STA_1,45 35 25,70 60 35,#69
-japan-J13_STA_1_IGR,45 35 25,70 60 35,#69
-japan-J14_Type_61,55 45 25,85 80 35,#69
-japan-J15_Chi_Ni,25 12 10,30 20 20,#69
-japan-J16_ST_B1,110 35 25,222 60 25,#69
-japan-J16_ST_B1_IGR,110  35 25,132 132 37,#69
-japan-J18_STA_2_3,45 35 25,70 60 35,#69
-japan-J19_Tiger_I_Jpn,100 80 80,100 80 80,#69
-japan-J20_Type_2605,270 160 150,280 210 200,#69
-japan-J21_Type_91,20 15 15,20 20 20,#69
-japan-J22_Type_95,35 30 25,30 25 25,#69
-japan-J22_Type_95_bootcamp,35 30 25,30 25 25,#69
-japan-J23_Mi_To,125 70 70,125 75 75,#69
-japan-J24_Mi_To_130_tons,150  70 105,150 150 105,#69
-japan-J25_Type_4,250 140 150,250 200 200,#69
-japan-J26_Type_89,17 15 15,15 15 15,#69
-japan-J27_O_I_120,200 105 150,200 200 200,#69
-japan-J28_O_I_100,175  70 150,200 150 150,#69
-japan-J29_Nameless,220  80 80,240 150 80,#69
-japan-J30_Edelweiss,120 60 60,120 80 60,#69
-poland-Pl01_TKS_20mm,10 8 8,,#69
-poland-Pl03_PzV_Poland, 85 50 40,100 45 45,#69
-poland-Pl05_50TP_Tyszkiewicza,120  90  60,230 160 100,#69
-poland-Pl06_10TP,20 20 20,18 16 16,#69
-poland-Pl07_14TP,30 25 25,30 27 25,#69
-poland-Pl08_50TP_prototyp,170  90  80,210 150 100,#69
-poland-Pl09_7TP,17 13 10,18 16 15,#69
-poland-Pl10_40TP_Habicha, 90 40 35,130 60 40,#69
-poland-Pl11_45TP_Habicha,100  50 40,170 100 70,#69
-poland-Pl12_25TP_KSUST_II,45 40 35,80 50 45,#69
-poland-Pl13_53TP_Markowskiego,110  80 50,210 140 90,#69
-poland-Pl14_4TP,11 8 6,10 8 6,#69
-poland-Pl15_60TP_Lewandowskiego,160 100  90,260 150 100,#69
-poland-Pl16_T34_85_Rudy,45 45 40,90 75 52,#69
-sweden-S01_Strv_74_A2,55 30 20,40 20 20,#69
-sweden-S02_Strv_M42,55 30 20,55 30 20,#69
-sweden-S03_Strv_M38,13 13 13,15 13 13,#69
-sweden-S04_Lago_I,34 34 24,34 28 20,#69
-sweden-S05_Strv_M21_29,14 14 14,14 14 14,#69
-sweden-S06_Ikv_90_Typ_B_Bofors,15 12 12,,#69
-sweden-S07_Strv_74,55 30 20,20 20 20,#69
-sweden-S08_Ikv_65_Alt_2,15 10 10,,#69
-sweden-S09_L_120_TD,10 8 8,,#69
-sweden-S10_Strv_103_0_Series,40 30 30,,#69
-sweden-S11_Strv_103B,40 30 30,,#69
-sweden-S12_Strv_M40,48 13 13,50 20 35,#69
-sweden-S13_Leo,70 30 20,70 30 20,#69
-sweden-S14_Ikv_103,18 7 12,,#69
-sweden-S15_L_60,13 13  7,13 13 13,#69
-sweden-S16_Kranvagn, 90 70 37,225 70 37,#69
-sweden-S17_EMIL_1952_E2, 80 60 30,215 60 30,#69
-sweden-S18_EMIL_1951_E1,100 35 30,180 35 20,#69
-sweden-S19_Sav_M43,50 15 15,,#69
-sweden-S20_Ikv_72,18 7 12,,#69
-sweden-S21_UDES_03,20 20 20,,#69
-sweden-S22_Strv_S1,30 30 30,,#69
-sweden-S23_Strv_81, 76 51 38,254 89 89,#69
-sweden-S23_Strv_81_sabaton, 76 51 38,254 89 89,#69
-sweden-S25_EMIL_51,100 35 30,180 35 20,#69
-sweden-S26_Lansen_C,60 40 25,70 70 40,#69
-sweden-S27_UDES_16,45 40 20,70 40 20,#69
-sweden-S28_UDES_15_16, 50 50 30,100 40 20,#69
-sweden-S29_UDES_14_5,35 35 10,66 30 20,#69
-uk-GB01_Medium_Mark_I,6 6 6,6 6 6,#69
-uk-GB01_Medium_Mark_I_bot,6 6 6,6 6 6,#69
-uk-GB03_Cruiser_Mk_I,14 10 10,14 14 14,#69
-uk-GB04_Valentine,60 60 60,65 65 65,#69
-uk-GB05_Vickers_Medium_Mk_II,8 8 8,8 8 8,#69
-uk-GB05_Vickers_Medium_Mk_II_bot,8 8 8,8 6 6,#69
-uk-GB06_Vickers_Medium_Mk_III,14  9  9,14 14 14,#69
-uk-GB07_Matilda,75 70 55,75 75 75,#69
-uk-GB08_Churchill_I,178 64 51, 89 89 76,#69
-uk-GB08_Churchill_I_IGR,178 64 51, 89 89 76,#69
-uk-GB09_Churchill_VII,152 95 51,152 95 95,#69
-uk-GB10_Black_Prince,152 95  51,240 95 102,#69
-uk-GB100_Manticore,50 30 25,80 40 30,#69
-uk-GB101_FV1066_Senlac,22 20 11,32 20 15,#69
-uk-GB102_LHMTV,30 20 15,60 25 20,#69
-uk-GB103_GSOR3301_AVR_FS,35 25 20,70 30 20,#69
-uk-GB104_GSR_3301_Setter,30 15 15,40 15 15,#69
-uk-GB105_Black_Prince_2019,152 95  51,152 95 102,#69
-uk-GB11_Caernarvon,130 76 38,254 89 89,#69
-uk-GB11_Caernarvon_IGR,130  51 38,198 152 95,#69
-uk-GB12_Conqueror,152 76 38,254 89 70,#69
-uk-GB13_FV215b,152 102  76,254 152 102,#69
-uk-GB13_FV215b_IGR,152 102  76,254 152 102,#69
-uk-GB14_M2,38 25 25,38 25 25,#69
-uk-GB15_Stuart_I,38 25 25,38 32 32,#69
-uk-GB17_Grant_I,51 38 38,,#69
-uk-GB19_Sherman_Firefly,51 38 38,76 51 51,#69
-uk-GB20_Crusader,40 28 28,51 24 30,#69
-uk-GB21_Cromwell,64 43 32,76 64 57,#69
-uk-GB21_Cromwell_IGR,64 43 32,76 64 57,#69
-uk-GB22_Comet, 76 43 32,102 64 57,#69
-uk-GB23_Centurion, 76 51 38,254 89 89,#69
-uk-GB23_Centurion_IGR, 76 51 38,152 89 89,#69
-uk-GB24_Centurion_Mk3,121 51 32,254 89 89,#69
-uk-GB25_Loyd_Gun_Carriage,7 7 0,,#69
-uk-GB26_Birch_Gun,6 6 6,,#69
-uk-GB27_Sexton,51 38 38,,#69
-uk-GB28_Bishop,60 50 60,,#69
-uk-GB29_Crusader_5inch,28 28 12,,#69
-uk-GB30_FV3805,51 51 51,,#69
-uk-GB31_Conqueror_Gun,130 51 76,,#69
-uk-GB32_Tortoise,273 152 102,,#69
-uk-GB33_Sentinel_AC_I,65 45 45,65 65 65,#69
-uk-GB35_Sentinel_AC_IV,65 45 45,65 65 65,#69
-uk-GB39_Universal_CarrierQF2,10 7 7,,#69
-uk-GB40_Gun_Carrier_Churchill,89 64 51,,#69
-uk-GB41_Challenger,89 51  38,51 40 200,#69
-uk-GB42_Valentine_AT,60 60 60,,#69
-uk-GB44_Archer,20 20 20,,#69
-uk-GB45_Achilles_IIC,38 19 19,57 25 25,#69
-uk-GB48_FV215b_183,152  51 76,,#69
-uk-GB50_Sherman_III,51 38 38,64 64 64,#69
-uk-GB51_Excelsior,114 32 108,114 92  92,#69
-uk-GB52_A45, 76 51 38,152 89 89,#69
-uk-GB57_Alecto,6 10 10,,#69
-uk-GB58_Cruiser_Mk_III,14 14 14,14 12 14,#69
-uk-GB59_Cruiser_Mk_IV,30 14 14,30 12 14,#69
-uk-GB60_Covenanter,40 30 25,39 20 25,#69
-uk-GB63_TOG_II, 76 76 51,114 76 53,#69
-uk-GB68_Matilda_Black_Prince,75 70 55,76 64 57,#69
-uk-GB69_Cruiser_Mk_II,30 22 12,30 26 30,#69
-uk-GB70_FV4202_105,121  51 32,196 196 35,#69
-uk-GB70_N_FV4202_105, 51 51 32,200 90 90,#69
-uk-GB70_N_FV4202_105_FL, 51 51 32,200 90 90,#69
-uk-GB71_AT_15A,229 152 102,,#69
-uk-GB72_AT15,229 152 102,,#69
-uk-GB72_AT15_IGR,229 152 102,,#69
-uk-GB73_AT2,152 76 51,,#69
-uk-GB74_AT8,203 102 102,,#69
-uk-GB75_AT7,203 102 102,,#69
-uk-GB76_Mk_VIC,14 13  6,14 14 11,#69
-uk-GB77_FV304,14 14 14,,#69
-uk-GB77_FV304_IGR,14 14 14,,#69
-uk-GB78_Sexton_I,51 32 38,,#69
-uk-GB79_FV206,51 51 51,,#69
-uk-GB80_Charioteer,64 46 38,30 25 30,#69
-uk-GB81_FV4004, 76 51 38,132 95 36,#69
-uk-GB83_FV4005,76 51 38,,#69
-uk-GB84_Chieftain_Mk6, 85  51 25,250 140 30,#69
-uk-GB85_Cromwell_Berlin,64 43 32,76 64 57,#69
-uk-GB86_Centurion_Action_X,121  51 32,254 152 95,#69
-uk-GB87_Chieftain_T95_turret, 85 51 25,254 89 51,#69
-uk-GB88_T95_Chieftain_turret,114  51 19,250 140 30,#69
-uk-GB91_Super_Conqueror,152 102 38,279  89 70,#69
-uk-GB92_FV217,356 102 38,,#69
-uk-GB93_Caernarvon_AX,130  51 38,254 152 95,#69
-uk-GB94_Centurion_Mk5-1_RAAC,121 51 38,254 89 89,#69
-uk-GB95_Ekins_Firefly_M4A4,51 38 38,76 51 51,#69
-uk-GB96_Excalibur,50 25 15,,#69
-uk-GB97_Chimera,114 76 51,203 76 76,#69
-uk-GB98_T95_FV4201_Chieftain,127  89 48,350 175 35,#69
-uk-GB99_Turtle_Mk1,254 102 76,,#69
-usa-A01_T1_Cunningham,10 6 6,10 6 6,#69
-usa-A01_T1_Cunningham_bot,10  6  6,10 10 10,#69
-usa-A02_M2_lt,38 25 25,38 25 25,#69
-usa-A03_M3_Stuart,38 25 25,38 32 32,#69
-usa-A03_M3_Stuart_bootcamp,38 25 25,38 25 25,#69
-usa-A04_M3_Grant,51 38 38,,#69
-usa-A05_M4_Sherman,51 38 38,64 64 64,#69
-usa-A05_M4_Sherman_IGR,51 38 38,64 64 64,#69
-usa-A06_M4A3E8_Sherman,64 38 38,64 64 64,#69
-usa-A06_M4A3E8_Sherman_training,18 16 16,18 16 16,#69
-usa-A07_T20,64 51 38,89 64 64,#69
-usa-A08_T23,76 51 38,64 64 64,#69
-usa-A09_T1_hvy, 95 52 46,102 83 83,#69
-usa-A10_M6,102 52 46,102 82 82,#69
-usa-A100_T49,25 25 19,38 16 16,#69
-usa-A101_M56,1 1 1,,#69
-usa-A102_T28_concept,203 102 51,,#69
-usa-A103_T71E1,25 22 19,22 22 22,#69
-usa-A103_T71E1_IGR,25 22 19,22 22 22,#69
-usa-A104_M4A3E8A,64 38 38,64 64 64,#69
-usa-A106_M48A2_120,152 76 38,203 76 51,#69
-usa-A107_T1_HMC,10 10 10,,#69
-usa-A108_T18_HMC,51 32 25,,#69
-usa-A109_T56_GMC,38 25 13,,#69
-usa-A11_T29,102  76  51,279 127 102,#69
-usa-A11_T29_IGR,102  76  51,279 127 102,#69
-usa-A111_T25_Pilot,76 51 38,76 64 64,#69
-usa-A112_T71E2,25 22 19,22 22 22,#69
-usa-A112_T71E2R,25 22 19,22 22 22,#69
-usa-A115_Chrysler_K,152 102 76,254 127 89,#69
-usa-A115_Chrysler_K_GF,152 102 76,254 127 89,#69
-usa-A116_XM551,14 32 13,38 16 16,#69
-usa-A117_T26E5,152  76  51,190 114 127,#69
-usa-A117_T26E5_Patriot,152  76  51,190 114 127,#69
-usa-A118_M4_Thunderbolt,124 38 38, 64 64 64,#69
-usa-A12_T32,127  76  51,298 197 152,#69
-usa-A120_M48A5,152 76 25,254 76 51,#69
-usa-A120_M48A5_IGR,152 76 25,254 76 51,#69
-usa-A121_M26_Cologne,102 76 51,102 76 76,#69
-usa-A122_TS-5,260 100 51,,#69
-usa-A123_T78,25 25 19,76 25 25,#69
-usa-A124_T54E2,152  76 38,250 140 40,#69
-usa-A125_AEP_1,121  89 38,292 102 51,#69
-usa-A126_PzVI_Tiger_II_capt,150 80 80,185 80 80,#69
-usa-A127_TL_1_LPC, 89 51 25,178 76 51,#69
-usa-A13_T34_hvy,102  76  51,279 127 203,#69
-usa-A13_T34_hvy_BF,102  76  51,279 127 203,#69
-usa-A13_T34_hvy_FL,102  76  51,279 127 203,#69
-usa-A13_T34_hvy_IGR,102  76  51,279 127 203,#69
-usa-A14_T30,102  76  51,279 127 102,#69
-usa-A15_T57,29 25 25,,#69
-usa-A16_M7_Priest,102 38 13,,#69
-usa-A17_M37,13 13 13,,#69
-usa-A18_M41,13 13 13,,#69
-usa-A19_T2_lt,17 15  6,16 16 16,#69
-usa-A21_T14, 51  51  51,102 101 101,#69
-usa-A22_M5_Stuart,29 29 25,44 32 32,#69
-usa-A22_M5_Stuart_bootcamp,29 29 25,38 32 32,#69
-usa-A23_M7_med,38 33 32,52 41 41,#69
-usa-A24_T2_med,22 22 22,25 25 25,#69
-usa-A24_T2_med_bot,22 22 22,22 22 22,#69
-usa-A25_M2_med,32 18 13,38 25 25,#69
-usa-A25_M2_med_bootcamp,32 18 13,25 25 25,#69
-usa-A26_T18,51 32 25,,#69
-usa-A27_T82,29 29 25,,#69
-usa-A29_T40,51 38 38,,#69
-usa-A30_M10_Wolverine,38 19 19,57 25 25,#69
-usa-A31_M36_Slagger,114 25 25, 76 25 25,#69
-usa-A32_M12,51 19 19,,#69
-usa-A33_MTLS-1G14,38 25 25,38 25 25,#69
-usa-A34_M24_Chaffee,25 25 19,38 25 25,#69
-usa-A35_Pershing,102 76 51,127 76 64,#69
-usa-A35_Pershing_IGR,102 76 51,127 76 64,#69
-usa-A36_Sherman_Jumbo,102 76 38, 64 64 64,#69
-usa-A36_Sherman_Jumbo_bootcamp,102  76  38,152 152 152,#69
-usa-A36_Sherman_Jumbo_IGR,102 76 38, 64 64 64,#69
-usa-A37_M40M43,108 13 13,,#69
-usa-A38_T92,25 25 13,,#69
-usa-A39_T28,254 102 51,,#69
-usa-A40_T95,305 152 51,,#69
-usa-A41_M18_Hellcat,13 13  13,76 32 127,#69
-usa-A43_M22_Locust,25 13 13,25 25 25,#69
-usa-A44_M4A2E4,65 38 38,76 51 51,#69
-usa-A45_M6A2E1,191 66  51,229 89 208,#69
-usa-A46_T3,16 13 6,,#69
-usa-A57_M8A1,29 29 25,38 25 25,#69
-usa-A58_T67,13 13 13,25 13 13,#69
-usa-A58_T67_IGR,13 13 13,25 13 13,#69
-usa-A62_Ram-II,76 63 38,76 76 51,#69
-usa-A63_M46_Patton,102 76 51,216 64 76,#69
-usa-A63_M46_Patton_KR,102 76 51,127 76 76,#69
-usa-A64_T25_AT,89 76 38,,#69
-usa-A66_M103,229 44 44,254 99 53,#69
-usa-A67_T57_58,229  44 44,152 127 51,#69
-usa-A68_T28_Prototype,203  51  51,,#69
-usa-A69_T110E5,254  76 38,203 127 76,#69
-usa-A71_T21,29 25 22,29 25 25,#69
-usa-A72_T25_2,76 51 38,76 25 25,#69
-usa-A74_T1_E6,16 6 6,13 6 6,#69
-usa-A78_M4_Improved,51 64 51,76 51 51,#69
-usa-A80_T26_E4_SuperPershing,102 76 51,102 76 76,#69
-usa-A80_T26_E4_SuperPershing_FL,102 76 51,102 76 76,#69
-usa-A81_T95_E2,114 51 19,178 76 51,#69
-usa-A83_T110E4,260  76  38,,#69
-usa-A85_T110E3,305 76 38,,#69
-usa-A86_T23E3,76 51 38,76 64 64,#69
-usa-A87_M44,13 13 13,,#69
-usa-A88_M53_55,25 13 13,,#69
-usa-A89_T54E1,152 76 38,127 70 51,#69
-usa-A90_T69,102  76 38,152 114 64,#69
-usa-A90_T69_IGR,102  76 38,152 114 64,#69
-usa-A92_M60, 93 74 25,178 76 51,#69
-usa-A93_T7_Combat_Car,16 13  6,13 13 13,#69
-usa-A94_T37,25 25 19,32 25 25,#69
-usa-A95_T95_E6,114 51 19,343 76 51,#69
-usa-A97_M41_Bulldog,25 25 19,25 25 25,#69
-usa-A99_T92_LT,32 25 19,29 29 29,#69
-ussr-Observer, 8 16 16,18 16 16,#69
-ussr-R01_IS,120 90 60,100 90 90,#69
-ussr-R02_SU-85,45 45 40,,#69
-ussr-R03_BT-7,20 19 13,20 15 15,#69
-ussr-R03_BT-7_bootcamp,20 19 13,20 15 15,#69
-ussr-R04_T-34,45 45 40,52 52 45,#69
-ussr-R05_KV,75 75 70,90 75 75,#69
-ussr-R06_T-28,30 20 20,25 25 25,#69
-ussr-R06_T-28_bootcamp,30 20 20,20 20 20,#69
-ussr-R07_T-34-85,45 45 40,90 75 52,#69
-ussr-R07_T-34-85_bootcamp,45 45 40,90 75 52,#69
-ussr-R07_T-34-85_training,45 45 45,90 75 52,#69
-ussr-R08_BT-2,15 13 10,26 13 13,#69
-ussr-R08_BT-2_bootcamp,15 13 10,26 13 13,#69
-ussr-R09_T-26,15 15 15,15 15 15,#69
-ussr-R09_T-26_bot,15 15 15,15 15 15,#69
-ussr-R10_AT-1,15 15 15,,#69
-ussr-R100_SU122A,25 15 10,,#69
-ussr-R101_MT25,45 40 40,45 40 40,#69
-ussr-R104_Object_430_II, 80  60 40,,#69
-ussr-R105_BT_7A,20 19 13,15 15 13,#69
-ussr-R106_KV85, 75 60 60,100 90 90,#69
-ussr-R106_KV85_IGR, 75 60 60,100 90 90,#69
-ussr-R107_LTB,90 45 40,90 75 52,#69
-ussr-R108_T34_85M,75 45 45,90 75 52,#69
-ussr-R109_T54S, 80  60 45,180 120 60,#69
-ussr-R11_MS-1,16 16 16,16 16 16,#69
-ussr-R11_MS-1_bot, 8 16 16,18 16 16,#69
-ussr-R110_Object_260,150 150  70,350 240 100,#69
-ussr-R111_ISU130,90 90 60,,#69
-ussr-R112_T54_45,120  90 45,200 120 75,#69
-ussr-R112_T54_45_FL,120  90 45,200 120 75,#69
-ussr-R113_Object_730,120 120 60,201 129 90,#69
-ussr-R114_Object_244,120 100 60,100  90 90,#69
-ussr-R115_IS-3_auto,110  90  60,249 172 100,#69
-ussr-R115_IS-3_auto_test,110  90  60,249 172 100,#69
-ussr-R116_ISU122C_Berlin,90 90 60,,#69
-ussr-R117_T34_85_Rudy,45 45 40,90 75 52,#69
-ussr-R118_T28_F30,50 40 50,50 40 40,#69
-ussr-R119_Object_777,132 115 45,258 225 90,#69
-ussr-R119_Object_777C,132 115 45,258 225 90,#69
-ussr-R12_A-20,20 20 16,37 37 25,#69
-ussr-R120_T22SR_A22,100  80  80,230 170 140,#69
-ussr-R121_KV4_KTT,200 125 125,,#69
-ussr-R122_T44_100, 90  75  45,190 130 100,#69
-ussr-R122_T44_100B, 90  75  45,190 130 100,#69
-ussr-R123_Kirovets_1,140 100  60,195 120 100,#69
-ussr-R125_T_45,25 15 25,35 35 35,#69
-ussr-R126_Object_730_5,120 90 40,230 90 60,#69
-ussr-R127_T44_100_K, 90  75  45,190 130 100,#69
-ussr-R127_T44_100_P, 90  75  45,190 130 100,#69
-ussr-R127_T44_100_U, 90  75  45,190 130 100,#69
-ussr-R128_KV4_Kreslavskiy,180 125  90,180 160 100,#69
-ussr-R129_Object_257,150 140  70,350 240 100,#69
-ussr-R13_KV-1s,75 60 60,82 82 82,#69
-ussr-R131_Tank_Gavalov, 40 40 40,110 80 80,#69
-ussr-R132_VNII_100LT, 90 40 40,180 40 40,#69
-ussr-R133_KV_122, 75 60 60,100 90 90,#69
-ussr-R134_Object_252K,130 100  90,250 150 100,#69
-ussr-R134_Object_252U,130 100  90,250 150 100,#69
-ussr-R135_T_103,100 100 60,220 145 60,#69
-ussr-R139_IS_M,130 120  80,250 140 120,#69
-ussr-R14_SU-5,15 15 15,,#69
-ussr-R140_M4_Loza,64 38 38,64 64 64,#69
-ussr-R143_T_29,30 20 20,20 20 20,#69
-ussr-R144_K_91,140  60 45,,#69
-ussr-R145_Object_705_A,175 100  60,330 180 120,#69
-ussr-R146_STG,100  45 45,210 180 45,#69
-ussr-R146_STG_Tday,100  45 45,210 180 45,#69
-ussr-R148_Object_430_U,160  90 45,300 195 65,#69
-ussr-R149_Object_268_4,260 100 45,,#69
-ussr-R15_S-51,60 60 60,,#69
-ussr-R151_Object_257_2,130 130  70,350 240 100,#69
-ussr-R152_KV2_W,75 75 70,75 75 70,#69
-ussr-R153_Object_705,155  90  60,300 150 100,#69
-ussr-R154_T_34E_1943,45 45 40,45 45 45,#69
-ussr-R155_Object_277,140 112 50,290 224 80,#69
-ussr-R156_IS_2M,100 90 60,100 90 90,#69
-ussr-R157_Object_279R,185 120 90,330 140 90,#69
-ussr-R158_LT_432, 70  40 40,160 100 60,#69
-ussr-R159_SU_130PM,20 15 8,,#69
-ussr-R16_SU-18,16 16 16,,#69
-ussr-R160_T_50_2,37 37 37,52 52 52,#69
-ussr-R161_T_116,15 13 13,15 13 13,#69
-ussr-R165_Object_703_II,140 100 60,220 120 90,#69
-ussr-R165_Object_703_II_2,140 100 60,220 120 90,#69
-ussr-R17_SU-100,75 45 45,,#69
-ussr-R18_SU-152,75 60 60,,#69
-ussr-R18_SU-152_IGR,75 60 60,,#69
-ussr-R19_IS-3,110  90  60,249 172 100,#69
-ussr-R19_IS-3_IGR,110  90  60,249 172 100,#69
-ussr-R20_T-44, 90  75  45,190 130 100,#69
-ussr-R20_T-44_FL, 90  75  45,190 130 100,#69
-ussr-R20_T-44_IGR, 90  75  45,120 100 100,#69
-ussr-R22_T-46,15 15 15,30 15 15,#69
-ussr-R22_T-46_bootcamp,15 15 15,30 15 15,#69
-ussr-R23_T-43,75 75 75,90 90 90,#69
-ussr-R24_SU-76,25 15 15,,#69
-ussr-R25_GAZ-74b,25 15 15,,#69
-ussr-R26_SU-8,30 20 20,,#69
-ussr-R27_SU-14,50 30 20,,#69
-ussr-R31_Valentine_LL,60 60 60,65 65 65,#69
-ussr-R31_Valentine_LL_IGR,60 60 60,65 65 65,#69
-ussr-R32_Matilda_II_LL,75 70 55,75 75 75,#69
-ussr-R33_Churchill_LL,176 76 51, 88 88 76,#69
-ussr-R34_BT-SV,25 20 16,25 25 25,#69
-ussr-R38_KV-220,120 100 100, 90  75  75,#69
-ussr-R38_KV-220_beta,120 100 100, 90  75  75,#69
-ussr-R39_KV-3,120  90  90,130 130 130,#69
-ussr-R40_T-54,120  80 45,240 180 65,#69
-ussr-R41_T-50,37 37 37,37 37 15,#69
-ussr-R42_T-60,35 15 25,25 25 25,#69
-ussr-R43_T-70,35 15 25,35 35 35,#69
-ussr-R43_T-70_bootcamp,35 15 25,35 35 35,#69
-ussr-R44_T80,35 25 25,35 35 35,#69
-ussr-R45_IS-7,150 150 100,240 185  94,#69
-ussr-R45_IS-7_fallout,150 150 100,240 185  94,#69
-ussr-R45_IS-7_IGR,150 150 100,240 185  94,#69
-ussr-R46_KV-13,120 85 85,100 90 90,#69
-ussr-R47_ISU-152,90 90 60,,#69
-ussr-R47_ISU-152_IGR,90 90 60,,#69
-ussr-R49_SU100Y,60 60 60,,#69
-ussr-R50_SU76I,60 30 50,,#69
-ussr-R50_SU76I_bootcamp,60 30 20,,#69
-ussr-R51_Object_212,60 60 60,,#69
-ussr-R52_Object_261,75 50 30,,#69
-ussr-R53_Object_704,120 90 60,,#69
-ussr-R54_KV-5,180 150 140,190 180 180,#69
-ussr-R54_KV-5_IGR,180 150 140,180 180 180,#69
-ussr-R56_T-127,40 30 30,40 30 30,#69
-ussr-R57_A43,60 45 40,75 75 75,#69
-ussr-R58_SU-101,150 90 40,,#69
-ussr-R59_A44,150 60 60, 90 90 90,#69
-ussr-R60_Object416, 75 45 45,,#69
-ussr-R61_Object252,110 100  60,150 150 100,#69
-ussr-R61_Object252_BF,110 100  60,150 150 100,#69
-ussr-R61_Object252_FL,110 100  60,150 150 100,#69
-ussr-R63_ST_I,150 140 100,250 160 160,#69
-ussr-R66_SU-26,15 15 15,,#69
-ussr-R67_M3_LL,38 25 25,38 25 25,#69
-ussr-R68_A-32,35 30 16,35 35 35,#69
-ussr-R70_T_50_2,37 37 37,37 37 37,#69
-ussr-R71_IS_2B,100 90 60,100 90 90,#69
-ussr-R72_T150, 90  90 75,100 100 75,#69
-ussr-R73_KV4,180 150  90,180 150 140,#69
-ussr-R74_SU100M1,140 75 45,,#69
-ussr-R75_SU122_54,100 80 45,,#69
-ussr-R77_KV2,75 75 70,75 75 70,#69
-ussr-R77_KV2_IGR,75 75 70,75 75 70,#69
-ussr-R78_SU_85I,60 30 50,,#69
-ussr-R80_KV1, 75  75  70,110 110 110,#69
-ussr-R81_IS8,120 120 60,250 201 90,#69
-ussr-R84_Tetrarch_LL,16 14 10,16 14 10,#69
-ussr-R86_LTP,30 20 30,30 30 30,#69
-ussr-R86_LTP_bootcamp,60 80 30,60 80 30,#69
-ussr-R87_T62A,100  80 45,240 161 65,#69
-ussr-R87_T62A_fallout,100  80 45,240 161 65,#69
-ussr-R88_Object268,187 100 50,,#69
-ussr-R89_SU122_44,90 75 45,,#69
-ussr-R90_IS_4M,140 160 100,250 200 170,#69
-ussr-R91_SU14_1,20 20 10,,#69
-ussr-R93_Object263,250 80 50,,#69
-ussr-R93_Object263B,250 80 50,,#69
-ussr-R95_Object_907,110 100 45,228 180 46,#69
-ussr-R95_Object_907A,110 100 45,228 180 46,#69
-ussr-R96_Object_430,120  80 40,248 185 63,#69
-ussr-R96_Object_430B,120  80 40,248 185 63,#69
-ussr-R97_Object_140,100  80 55,240 187 65,#69
-ussr-R98_T44_85, 75 75 45,120 90 75,#69
-ussr-R98_T44_85M, 90 75 45,120 90 75,#69
-ussr-R99_T44_122,75 75 45,90 70 70,#69
+china-Ch01_Type59,100  80 45,230 130 60,#77
+china-Ch01_Type59_Gold,100  80 45,230 130 60,#77
+china-Ch02_Type62,35 20 20,45 30 20,#77
+china-Ch03_WZ_111_A,120 120 60,230 120 60,#77
+china-Ch03_WZ-111,120 120 60,230 120 60,#77
+china-Ch04_T34_1, 60  45 40,170 120 60,#77
+china-Ch04_T34_1_training,60 45 40,90 75 52,#77
+china-Ch05_T34_2, 70  45 45,180 120 60,#77
+china-Ch06_Renault_NC31,16 16 16,22 22 22,#77
+china-Ch06_Renault_NC31_bot,16 16 16,22 22 22,#77
+china-Ch07_Vickers_MkE_Type_BT26,13 13 13,30 15 15,#77
+china-Ch08_Type97_Chi_Ha,25 25 20,35 25 25,#77
+china-Ch08_Type97_Chi_Ha_bootcamp,25 25 20,35 25 25,#77
+china-Ch09_M5,29 29 25,44 32 32,#77
+china-Ch10_IS2, 90 90 60,100 90 90,#77
+china-Ch11_110,120  90 60,201 148 50,#77
+china-Ch11_110_IGR,120  90 60,201 148 50,#77
+china-Ch12_111_1_2_3,120 120 60,230 120 60,#77
+china-Ch14_T34_3,100  80 45,200 130 60,#77
+china-Ch15_59_16,30 20 20,45 30 20,#77
+china-Ch16_WZ_131,35 20 20,45 30 20,#77
+china-Ch17_WZ131_1_WZ132,50 25 20,55 35 20,#77
+china-Ch17_WZ131_1_WZ132_IGR,50 25 20,55 35 20,#77
+china-Ch18_WZ-120,100  80 45,220 160 65,#77
+china-Ch19_121,120  80 60,240 130 60,#77
+china-Ch19_121_IGR,120  80 60,240 130 60,#77
+china-Ch20_Type58,45 45 40,90 75 52,#77
+china-Ch21_T34,45 40 40,52 52 45,#77
+china-Ch22_113,120 120 70,290 180 80,#77
+china-Ch22_113_Beijing_Opera,120 120 70,290 180 80,#77
+china-Ch22_113P,120 120 70,290 180 80,#77
+china-Ch23_112,120 120 60,240 130 60,#77
+china-Ch23_112_FL,120 120 60,240 130 60,#77
+china-Ch24_Type64,25 13 19,25 13 13,#77
+china-Ch25_121_mod_1971B,130  80 60,240 160 60,#77
+china-Ch26_59_Patton,100 80 45,178 76 51,#77
+china-Ch28_WZ_132A,50 25 20,55 35 20,#77
+china-Ch29_Type_62C_prot, 50  25 20,200 160 65,#77
+china-Ch30_T-26G_FT,18 15 15,,#77
+china-Ch31_M3G_FT,25 25 25,,#77
+china-Ch32_SU-76G_FT,25 15 10,,#77
+china-Ch33_60G_FT,25 20 20,,#77
+china-Ch34_WZ131G_FT,35 20 20,,#77
+china-Ch35_T-34-2G_FT,70 45 45,,#77
+china-Ch36_WZ111_1G_FT,180 80 60,,#77
+china-Ch37_WZ111G_FT,200 80 60,,#77
+china-Ch38_WZ113G_FT,230 80 70,,#77
+china-Ch39_WZ120_1G_FT,120 80 45,,#77
+china-Ch40_WZ120G_FT,150 80 45,,#77
+china-Ch41_WZ_111_5A,140 120 60,300 180 60,#77
+china-Ch41_WZ_111_QL,140 120 60,300 180 60,#77
+china-Ch42_WalkerBulldog_M41D,25 25 19,25 25 25,#77
+czech-Cz01_Skoda_T40,65 40 30,65 40 40,#77
+czech-Cz02_TVP_T50, 65 40 40,120 80 60,#77
+czech-Cz03_LT_vz35,25 16 16,25 16 16,#77
+czech-Cz04_T50_51, 65 40 30,120 80 60,#77
+czech-Cz05_T34_100,45 45 45,90 75 52,#77
+czech-Cz06_Kolohousenka,14  8  6,14 14 14,#77
+czech-Cz07_TVP_46,65 40 30,65 40 40,#77
+czech-Cz08_T_25,50 35 35,50 35 35,#77
+czech-Cz09_T_24,50 30 30,50 30 30,#77
+czech-Cz10_LT_vz38,25 15 15,50 30 25,#77
+czech-Cz11_V_8_H,32 25 20,60 40 30,#77
+czech-Cz13_T_27, 65  40  40,100 100 100,#77
+france-F01_RenaultFT,16 16 16,22 22 16,#77
+france-F01_RenaultFT_bot,16 16 16,16 16 14,#77
+france-F02_D1,30 30 30,40 40 40,#77
+france-F03_D2,40 40 40,46 46 46,#77
+france-F04_B1,60 60 55,46 46 46,#77
+france-F04_B1_bootcamp,60 60 55,40 40 40,#77
+france-F05_BDR_G1B,60 40 60,80 70 60,#77
+france-F06_ARL_44,120 60 40,110 30 30,#77
+france-F07_AMX_M4_1945, 90 40 40,100 70 40,#77
+france-F08_AMX_50_100,90 35 30,90 30 30,#77
+france-F08_AMX_50_100_IGR,90 35 30,90 30 30,#77
+france-F09_AMX_50_120,100 80 60,100 80 60,#77
+france-F10_AMX_50B,170 30 30,100 50 30,#77
+france-F10_AMX_50B_fallout,170 30 30,100 50 30,#77
+france-F100_Panhard_EBR_90,40 16 40,40 25 20,#77
+france-F106_Panhard_EBR_75_Mle1954,40 16 40,40 20 20,#77
+france-F107_Hotchkiss_EBR,40 20 20,40 20 20,#77
+france-F108_Panhard_EBR_105,40 16 40,15 10 10,#77
+france-F109_AMD_Panhard_178B,20 13 13,20 13 13,#77
+france-F11_Renault_G1R,60 60 60,60 60 60,#77
+france-F110_Lynx_6x6,13 13 13,16 13 13,#77
+france-F111_AM39_Gendron_Somua,15 15 15,15 15 15,#77
+france-F112_M10_RBFM,38 19 19,57 25 25,#77
+france-F113_Bretagne_Panther, 80 40 40,100 45 45,#77
+france-F12_Hotchkiss_H35,40 40 40,40 40 40,#77
+france-F13_AMX38,60 40 40,60 40 40,#77
+france-F14_AMX40,70 65 40,80 60 60,#77
+france-F15_AMX_12t,50 20 15,30 20 20,#77
+france-F16_AMX_13_75,50 20 15,40 20 20,#77
+france-F17_AMX_13_90,50 20 15,40 20 20,#77
+france-F17_AMX_13_90_IGR,50 20 15,40 20 20,#77
+france-F18_Bat_Chatillon25t,60 40 30,50 30 15,#77
+france-F18_Bat_Chatillon25t_IGR,60 40 30,50 30 15,#77
+france-F19_Lorraine40t,40 30 25,45 30 20,#77
+france-F20_RenaultBS,16 16 16,,#77
+france-F21_Lorraine39_L_AM,20 9 16,,#77
+france-F22_AMX_105AM,40 20 15,,#77
+france-F23_AMX_13F3AM,40 20 15,,#77
+france-F24_Lorraine155_50,40 30 20,,#77
+france-F25_Lorraine155_51,40 30 25,,#77
+france-F27_FCM_36Pak40,40 20 20,,#77
+france-F28_105_leFH18B2,60 60 55,,#77
+france-F28_105_leFH18B2_IGR,60 60 55,,#77
+france-F30_RenaultFT_AC,16 16 16,,#77
+france-F32_Somua_Sau_40,36 35 35,,#77
+france-F33_S_35CA,56 35 35,,#77
+france-F33_S_35CA_IGR,56 35 35,,#77
+france-F34_ARL_V39,60 40 60,,#77
+france-F35_AMX_AC_Mle1946,120 40 40,,#77
+france-F36_AMX_AC_Mle1948,150 55 40,,#77
+france-F36_AMX_AC_Mle1948_IGR,150 40 40,,#77
+france-F37_AMX50_Foch,180 70 40,,#77
+france-F38_Bat_Chatillon155_58,16 16 12,,#77
+france-F44_Somua_S35,47 40 35,40 40 60,#77
+france-F49_RenaultR35,40 40 32,40 40 40,#77
+france-F50_FCM36_20t,40 20 20,40 40 40,#77
+france-F52_RenaultUE57,9 6 6,,#77
+france-F62_ELC_AMX,25 10 15,20 15 10,#77
+france-F62_ELC_AMX_IGR,25 10 15,,#77
+france-F64_AMX_50Fosh_155,180 80 40,,#77
+france-F64_AMX_50Fosh_B,180 80 40,,#77
+france-F65_FCM_50t,120 80 80,120 80 60,#77
+france-F66_AMX_Ob_Am105,30 20 15,,#77
+france-F67_Bat_Chatillon155_55,16 16 12,,#77
+france-F68_AMX_Chasseur_de_char_46,30 20 20,30 20 20,#77
+france-F69_AMX13_57_100,50 20 15,40 20 20,#77
+france-F69_AMX13_57_100_GrandFinal,50 20 15,40 20 20,#77
+france-F70_SARL42,40 30 30,40 30 30,#77
+france-F71_AMX_30_prototype, 80 30 30,150 40 30,#77
+france-F72_AMX_30, 80 35 30,150 40 30,#77
+france-F73_M4A1_Revalorise,51 38 38,64 64 64,#77
+france-F73_M4A1_Revalorise_FL,51 38 38,64 64 64,#77
+france-F74_AMX_M4_1949,190  55 40,250 120 60,#77
+france-F74_AMX_M4_1949_FL,190  55 40,250 120 60,#77
+france-F74_AMX_M4_1949_Liberte,190  55 40,250 120 60,#77
+france-F75_Char_de_25t,30 25 20,25 25 20,#77
+france-F81_Char_de_65t,100 80 60,250 80 60,#77
+france-F82_AMX_M4_Mle1949_Ter,220 60 40,300 80 40,#77
+france-F83_AMX_M4_Mle1949_Bis,180 60 40,300 80 40,#77
+france-F84_Somua_SM,140 90 70,120 60 60,#77
+france-F85_M4A1_FL10,51 38 38,40 20 20,#77
+france-F87_Batignolles-Chatillon_12t,40 20 20,25 25 25,#77
+france-F88_AMX_13_105,50 20 15,40 20 20,#77
+france-F89_Canon_dassaut_de_105,100 40 30,,#77
+france-F97_ELC_EVEN_90,15 10 10,15 10 10,#77
+germany-Env_Artillery,30 15 0,,#77
+germany-G02_Hummel,30 20 20,,#77
+germany-G03_PzV_Panther, 85 50 40,120 60 60,#77
+germany-G03_PzV_Panther_bootcamp, 85 50 40,100 45 45,#77
+germany-G03_PzV_Panther_IGR, 85 50 40,120 60 60,#77
+germany-G03_PzV_Panther_training,85 40 40,45 45 45,#77
+germany-G04_PzVI_Tiger_I,100 80 80,100 80 80,#77
+germany-G04_PzVI_Tiger_I_IGR,100 80 80,100 80 80,#77
+germany-G04_PzVI_Tiger_IA,100 80 80,100 80 80,#77
+germany-G05_StuG_40_AusfG,80 30 50,,#77
+germany-G05_StuG_40_AusfG_IGR,80 30 50,,#77
+germany-G06_PzII,30 20 15,30 20 20,#77
+germany-G06_PzII_bot,30 20 15,30 15 15,#77
+germany-G07_Pz35t,25 16 16,25 16 16,#77
+germany-G08_Pz38t,25 15 15,50 30 25,#77
+germany-G08_Pz38t_bootcamp,25 15 15,25 15 15,#77
+germany-G09_Hetzer,60 20 8,,#77
+germany-G10_PzIII_AusfJ,50 30 50,30 30 30,#77
+germany-G10_PzIII_AusfJ_training,30 30 50,30 30 30,#77
+germany-G100_Gtraktor_Krupp,14 8 8,14 8 8,#77
+germany-G101_StuG_III,50 30 30,,#77
+germany-G102_Pz_III,30 30 20,30 30 30,#77
+germany-G102_Pz_III_bootcamp,30 30 20,16 14 14,#77
+germany-G103_RU_251,25 20  8,20 20 20,#77
+germany-G104_Stug_IV,80 30 20,,#77
+germany-G105_T-55_NVA_DDR,100  80 45,240 180 65,#77
+germany-G106_PzKpfwPanther_AusfF, 85 50 40,120 60 60,#77
+germany-G107_PzKpfwIII_AusfK,50 30 50,50 30 30,#77
+germany-G108_PzKpfwII_AusfD,30 14 14,14 14 14,#77
+germany-G109_Steyr_WT,20 10  8,20 10 10,#77
+germany-G11_Bison_I,13 13 13,,#77
+germany-G110_Typ_205,200 155 135,240 160 150,#77
+germany-G112_KanonenJagdPanzer,30 30 8,,#77
+germany-G112_KanonenJagdPanzer_105,30 30 8,,#77
+germany-G113_SP_I_C,10 10 10,15 10 10,#77
+germany-G114_Rheinmetall_Skorpian,30 16 20,,#77
+germany-G114_Skorpian,30 16 20,,#77
+germany-G115_Typ_205_4_Jun,200 130 120,230 160 140,#77
+germany-G115_Typ_205B,200 130 120,230 160 140,#77
+germany-G116_Turan_III_prot,50 25 25,75 35 55,#77
+germany-G117_Toldi_III,35 13 10,35 25 25,#77
+germany-G117_Toldi_III_bootcamp,35 13 10,35 25 25,#77
+germany-G118_VK4503,100 80 80,100 80 80,#77
+germany-G119_Panzer58, 90 30 40,120 65 40,#77
+germany-G119_Panzer58_BF, 90 30 40,120 65 40,#77
+germany-G119_Panzer58_FL, 90 30 40,120 65 40,#77
+germany-G119_Pz58_Mutz, 90 30 40,120 65 40,#77
+germany-G12_Ltraktor,14 14 14,14 14 14,#77
+germany-G12_Ltraktor_bot,14 14 14,14 14 14,#77
+germany-G120_M41_90,25 25 19,25 25 25,#77
+germany-G120_M41_90_GrandFinal,25 25 19,25 25 25,#77
+germany-G121_Grille_15_L63,30 16 20,,#77
+germany-G122_VK6501H,80 80 80,80 80 80,#77
+germany-G125_Spz_57_Rh,30 30  8,20 20 20,#77
+germany-G126_HWK_12,14 14 14,15 10 10,#77
+germany-G13_VK3001H,50 50 50,80 60 60,#77
+germany-G134_PzKpfw_VII,240 160 120,200 160 120,#77
+germany-G136_Tiger_131,100 80 80,100 80 80,#77
+germany-G137_PzVI_Tiger_217,100 80 80,100 80 80,#77
+germany-G138_VK168_02,180 130 100,230 160 100,#77
+germany-G138_VK168_02_Mauerbrecher,180 130 100,230 160 100,#77
+germany-G139_MKA,25 18 16,25 16 16,#77
+germany-G140_HWK_30,25 20  8,20 20 20,#77
+germany-G141_VK7501K,180 100 80,250 100 80,#77
+germany-G142_M48RPz,152 76 25,254 76 51,#77
+germany-G143_E75_TS,120  80 80,230 120 80,#77
+germany-G144_Kpz_50t,120 40 20,250 40 30,#77
+germany-G15_VK3601H,100 60 60,100 80 80,#77
+germany-G16_PzVIB_Tiger_II,150 80 80,185 80 80,#77
+germany-G16_PzVIB_Tiger_II_F,150 80 80,185 80 80,#77
+germany-G16_PzVIB_Tiger_II_IGR,150 80 80,185 80 80,#77
+germany-G16_PzVIB_Tiger_II_training,200 65 20,200 65 20,#77
+germany-G17_JagdPzIV,80 40 22,,#77
+germany-G18_JagdPanther,80 50 40,,#77
+germany-G19_Wespe,30 14 14,,#77
+germany-G20_Marder_II,30 14 14,,#77
+germany-G21_PanzerJager_I,13 13 13,,#77
+germany-G21_PanzerJager_I_bootcamp,13 13 13,,#77
+germany-G22_Sturmpanzer_II,30 14 14,,#77
+germany-G23_Grille,15 15 10,,#77
+germany-G24_VK3002DB, 80 45 50,120 60 60,#77
+germany-G25_PzII_Luchs,30 20 20,50 30 30,#77
+germany-G26_VK1602,50 30 30,50 30 30,#77
+germany-G27_VK3001P, 75 62 40,100 80 80,#77
+germany-G28_PzIII_IV,80 30 20,50 30 30,#77
+germany-G32_PzV_PzIV,85 40 40,50 30 30,#77
+germany-G32_PzV_PzIV_ausf_Alfa,85 40 40,50 30 30,#77
+germany-G32_PzV_PzIV_ausf_Alfa_CN,85 40 40,50 30 30,#77
+germany-G32_PzV_PzIV_CN,85 40 40,50 30 30,#77
+germany-G33_H39_captured,40 40 40,40 40 40,#77
+germany-G34_S35_captured,36 35 25,56 46 46,#77
+germany-G35_B-1bis_captured,60 60 55,46 46 46,#77
+germany-G36_PzII_J,80 50 50,80 50 50,#77
+germany-G37_Ferdinand,200 80 80,,#77
+germany-G37_Ferdinand_IGR,200 80 80,,#77
+germany-G39_Marder_III,50 15 15,,#77
+germany-G40_Nashorn,30 20 20,,#77
+germany-G41_DickerMax,50 20 20,,#77
+germany-G42_Maus,200 185 160,260 210 210,#77
+germany-G42_Maus_IGR,200 185 160,260 210 210,#77
+germany-G43_Sturer_Emil,50 30 30,,#77
+germany-G44_JagdTiger,250 80 80,,#77
+germany-G44_JagdTigerH,250 80 80,,#77
+germany-G45_G_Tiger,30 16 16,,#77
+germany-G46_T-25,50 45 35,60 60 35,#77
+germany-G48_E-25,50 30 30,,#77
+germany-G48_E-25_IGR,50 30 30,,#77
+germany-G49_G_Panther,50 30 20,,#77
+germany-G50_T-15,30 20 12,30 25 25,#77
+germany-G51_Lowe,150 100 80,120  80 80,#77
+germany-G51_Lowe_FL,150 100 80,120  80 80,#77
+germany-G52_Pz38_NA,30 25 20,30 20 20,#77
+germany-G53_PzI,13 13 13,14 13 13,#77
+germany-G54_E-50,150 80 80,185 80 80,#77
+germany-G55_E-75,160 120 120,252 160 160,#77
+germany-G56_E-100,200 120 150,250 150 150,#77
+germany-G57_PzVI_Tiger_P,200 80 80,100 80 80,#77
+germany-G58_VK4502P,200 120 100,265 160 160,#77
+germany-G58_VK4502P7, 80 80 80,100 80 80,#77
+germany-G61_G_E,80 50 40,,#77
+germany-G63_PzI_ausf_C,30 20 14,30 14 14,#77
+germany-G64_Panther_II,100 60 40,120 60 60,#77
+germany-G64_Panther_II_IGR,100 60 40,120 60 60,#77
+germany-G65_JagdTiger_SdKfz_185,250 80 80,,#77
+germany-G65_JagdTiger_SdKfz_185_IGR,250 80 80,,#77
+germany-G66_VK2801,50 30 30,50 30 30,#77
+germany-G67_VK4502A,150 80 80,185 80 80,#77
+germany-G70_PzIV_Hydro,50 30 20,50 30 30,#77
+germany-G71_JagdPantherII,100 60 40,,#77
+germany-G72_JagdPz_E100,200 120 150,,#77
+germany-G73_E50_Ausf_M,150 80 80,185 80 80,#77
+germany-G76_Pz_Sfl_IVc,20 14 14,,#77
+germany-G77_PzIV_Schmalturm, 80 30 20,120 60 60,#77
+germany-G78_Panther_M10, 85 50 40,100 45 45,#77
+germany-G79_Pz_IV_AusfGH,80 30 20,50 30 30,#77
+germany-G80_Pz_IV_AusfD,30 20 20,30 20 20,#77
+germany-G80_Pz_IV_AusfD_bootcamp,30 20 20,30 14 14,#77
+germany-G81_Pz_IV_AusfH,80 30 20,50 30 30,#77
+germany-G82_Pz_II_AusfG,30 20 14,30 14 14,#77
+germany-G83_Pz_IV_AusfA,14 14 14,30 14 14,#77
+germany-G85_Auf_Panther,85 50 40,50 30 30,#77
+germany-G85_Aufklarungspanzer_V,85 50 40,50 30 30,#77
+germany-G86_VK2001DB,50 40 30,57 30 30,#77
+germany-G87_VK3002DB_V1,60 40 50,80 45 45,#77
+germany-G88_Indien_Panzer,90 90 45,90 90 45,#77
+germany-G89_Leopard1,70 35 25,52 60 60,#77
+germany-G90_DW_II,50 50 50,50 50 50,#77
+germany-G91_Pro_Ag_A,70 35 25,52 60 60,#77
+germany-G92_VK7201,240 160 120,200 160 120,#77
+germany-G93_GW_Mk_VIe,22 14 14,,#77
+germany-G94_GW_Tiger_P,100 80 16,,#77
+germany-G95_Pz_Sfl_IVb,20 14 14,,#77
+germany-G96_VK3002M, 85 40 40,100 45 45,#77
+germany-G97_Waffentrager_IV,80 30 20,,#77
+germany-G98_Waffentrager_E100,80 50 40,20 10  8,#77
+germany-G98_Waffentrager_E100_P,80 50 40,20 10  8,#77
+germany-G99_RhB_Waffentrager,20 10 8,,#77
+italy-It03_M15_42,45 25 25,42 25 25,#77
+italy-It04_Fiat_3000,16 16 16,16 16 16,#77
+italy-It05_Carro_L6_40,30 15 15,30 15 15,#77
+italy-It06_M14_41,30 25 25,42 25 25,#77
+italy-It07_P26_40,50 40 40,50 40 40,#77
+italy-It08_Progetto_M40_mod_65, 50 40 25,120 40 30,#77
+italy-It09_P43_ter,100 50 50,100 50 50,#77
+italy-It10_P43_bis,80 50 50,80 50 50,#77
+italy-It11_P43,80 50 50,80 50 50,#77
+italy-It12_Prototipo_Standard_B,50 25 15,60 55 55,#77
+italy-It13_Progetto_M35_mod_46,60 30 20,80 60 25,#77
+italy-It14_P44_Pantera, 80 50 50,120 60 60,#77
+japan-J01_NC27,30 30 22,20 20 20,#77
+japan-J01_NC27_bot,30 30 22,18 18 16,#77
+japan-J02_Te_Ke,12 10  8,12 10 10,#77
+japan-J03_Ha_Go,12 12 10,35 25 25,#77
+japan-J04_Ke_Ni,16 12 10,30 16 16,#77
+japan-J04_Ke_Ni_bootcamp,16 12 10,30 16 16,#77
+japan-J05_Ke_Ni_B,16 12 10,30 16 16,#77
+japan-J06_Ke_Ho,20 16 12,30 20 16,#77
+japan-J07_Chi_Ha,25 25 20,35 25 25,#77
+japan-J08_Chi_Nu,50 25 20,50 35 25,#77
+japan-J09_Chi_He,50 25 20,50 35 25,#77
+japan-J10_Chi_To,75 35 35,75 35 50,#77
+japan-J11_Chi_Ri,75 35 35,75 50 50,#77
+japan-J11_Chi_Ri_IGR,75 35 35,75 50 50,#77
+japan-J12_Chi_Nu_Kai,50 25 20,75 50 50,#77
+japan-J13_STA_1,45 35 25,70 60 35,#77
+japan-J13_STA_1_IGR,45 35 25,70 60 35,#77
+japan-J14_Type_61,55 45 25,85 80 35,#77
+japan-J15_Chi_Ni,25 12 10,30 20 20,#77
+japan-J16_ST_B1,110 35 25,222 60 25,#77
+japan-J16_ST_B1_IGR,110  35 25,132 132 37,#77
+japan-J18_STA_2_3,45 35 25,70 60 35,#77
+japan-J19_Tiger_I_Jpn,100 80 80,100 80 80,#77
+japan-J20_Type_2605,270 160 150,280 210 200,#77
+japan-J21_Type_91,20 15 15,20 20 20,#77
+japan-J22_Type_95,35 30 25,30 25 25,#77
+japan-J22_Type_95_bootcamp,35 30 25,30 25 25,#77
+japan-J23_Mi_To,125 70 70,125 75 75,#77
+japan-J24_Mi_To_130_tons,150  70 105,150 150 105,#77
+japan-J25_Type_4,250 140 150,250 200 200,#77
+japan-J26_Type_89,17 15 15,15 15 15,#77
+japan-J27_O_I_120,200 105 150,200 200 200,#77
+japan-J28_O_I_100,175  70 150,200 150 150,#77
+japan-J29_Nameless,220  80 80,240 150 80,#77
+japan-J30_Edelweiss,120 60 60,120 80 60,#77
+poland-Pl01_TKS_20mm,10 8 8,,#77
+poland-Pl03_PzV_Poland, 85 50 40,100 45 45,#77
+poland-Pl05_50TP_Tyszkiewicza,120  90  60,230 160 100,#77
+poland-Pl06_10TP,20 20 20,18 16 16,#77
+poland-Pl07_14TP,30 25 25,30 27 25,#77
+poland-Pl08_50TP_prototyp,170  90  80,210 150 100,#77
+poland-Pl09_7TP,17 13 10,18 16 15,#77
+poland-Pl10_40TP_Habicha, 90 40 35,130 60 40,#77
+poland-Pl11_45TP_Habicha,100  50 40,170 100 70,#77
+poland-Pl12_25TP_KSUST_II,45 40 35,80 50 45,#77
+poland-Pl13_53TP_Markowskiego,110  80 50,210 140 90,#77
+poland-Pl14_4TP,11 8 6,10 8 6,#77
+poland-Pl15_60TP_Lewandowskiego,160 100  90,260 150 100,#77
+poland-Pl16_T34_85_Rudy,45 45 40,90 75 52,#77
+sweden-S01_Strv_74_A2,55 30 20,40 20 20,#77
+sweden-S02_Strv_M42,55 30 20,55 30 20,#77
+sweden-S03_Strv_M38,13 13 13,15 13 13,#77
+sweden-S04_Lago_I,34 34 24,34 28 20,#77
+sweden-S05_Strv_M21_29,14 14 14,14 14 14,#77
+sweden-S06_Ikv_90_Typ_B_Bofors,15 12 12,,#77
+sweden-S07_Strv_74,55 30 20,20 20 20,#77
+sweden-S08_Ikv_65_Alt_2,15 10 10,,#77
+sweden-S09_L_120_TD,10 8 8,,#77
+sweden-S10_Strv_103_0_Series,40 30 30,,#77
+sweden-S11_Strv_103B,40 30 30,,#77
+sweden-S12_Strv_M40,48 13 13,50 20 35,#77
+sweden-S13_Leo,70 30 20,70 30 20,#77
+sweden-S14_Ikv_103,18 7 12,,#77
+sweden-S15_L_60,13 13  7,13 13 13,#77
+sweden-S16_Kranvagn, 90 70 37,225 70 37,#77
+sweden-S17_EMIL_1952_E2, 80 60 30,215 60 30,#77
+sweden-S18_EMIL_1951_E1,100 35 30,180 35 20,#77
+sweden-S19_Sav_M43,50 15 15,,#77
+sweden-S20_Ikv_72,18 7 12,,#77
+sweden-S21_UDES_03,20 20 20,,#77
+sweden-S22_Strv_S1,30 30 30,,#77
+sweden-S23_Strv_81, 76 51 38,254 89 89,#77
+sweden-S23_Strv_81_sabaton, 76 51 38,254 89 89,#77
+sweden-S25_EMIL_51,100 35 30,180 35 20,#77
+sweden-S26_Lansen_C,60 40 25,70 70 40,#77
+sweden-S27_UDES_16,45 40 20,70 40 20,#77
+sweden-S28_UDES_15_16, 50 50 30,100 40 20,#77
+sweden-S29_UDES_14_5,35 35 10,66 30 20,#77
+uk-GB01_Medium_Mark_I,6 6 6,6 6 6,#77
+uk-GB01_Medium_Mark_I_bot,6 6 6,6 6 6,#77
+uk-GB03_Cruiser_Mk_I,14 10 10,14 14 14,#77
+uk-GB04_Valentine,60 60 60,65 65 65,#77
+uk-GB05_Vickers_Medium_Mk_II,8 8 8,8 8 8,#77
+uk-GB05_Vickers_Medium_Mk_II_bot,8 8 8,8 6 6,#77
+uk-GB06_Vickers_Medium_Mk_III,14  9  9,14 14 14,#77
+uk-GB07_Matilda,75 70 55,75 75 75,#77
+uk-GB08_Churchill_I,178 64 51, 89 89 76,#77
+uk-GB08_Churchill_I_IGR,178 64 51, 89 89 76,#77
+uk-GB09_Churchill_VII,152 95 51,152 95 95,#77
+uk-GB10_Black_Prince,152 95  51,240 95 102,#77
+uk-GB100_Manticore,50 30 25,80 40 30,#77
+uk-GB101_FV1066_Senlac,22 20 11,32 20 15,#77
+uk-GB102_LHMTV,30 20 15,60 25 20,#77
+uk-GB103_GSOR3301_AVR_FS,35 25 20,70 30 20,#77
+uk-GB104_GSR_3301_Setter,30 15 15,40 15 15,#77
+uk-GB105_Black_Prince_2019,152 95  51,152 95 102,#77
+uk-GB11_Caernarvon,130 76 38,254 89 89,#77
+uk-GB11_Caernarvon_IGR,130  51 38,198 152 95,#77
+uk-GB12_Conqueror,152 76 38,254 89 70,#77
+uk-GB13_FV215b,152 102  76,254 152 102,#77
+uk-GB13_FV215b_IGR,152 102  76,254 152 102,#77
+uk-GB14_M2,38 25 25,38 25 25,#77
+uk-GB15_Stuart_I,38 25 25,38 32 32,#77
+uk-GB17_Grant_I,51 38 38,,#77
+uk-GB19_Sherman_Firefly,51 38 38,76 51 51,#77
+uk-GB20_Crusader,40 28 28,51 24 30,#77
+uk-GB21_Cromwell,64 43 32,76 64 57,#77
+uk-GB21_Cromwell_IGR,64 43 32,76 64 57,#77
+uk-GB22_Comet, 76 43 32,102 64 57,#77
+uk-GB23_Centurion, 76 51 38,254 89 89,#77
+uk-GB23_Centurion_IGR, 76 51 38,152 89 89,#77
+uk-GB24_Centurion_Mk3,121 51 32,254 89 89,#77
+uk-GB25_Loyd_Gun_Carriage,7 7 0,,#77
+uk-GB26_Birch_Gun,6 6 6,,#77
+uk-GB27_Sexton,51 38 38,,#77
+uk-GB28_Bishop,60 50 60,,#77
+uk-GB29_Crusader_5inch,28 28 12,,#77
+uk-GB30_FV3805,51 51 51,,#77
+uk-GB31_Conqueror_Gun,130 51 76,,#77
+uk-GB32_Tortoise,273 152 102,,#77
+uk-GB33_Sentinel_AC_I,65 45 45,65 65 65,#77
+uk-GB35_Sentinel_AC_IV,65 45 45,65 65 65,#77
+uk-GB39_Universal_CarrierQF2,10 7 7,,#77
+uk-GB40_Gun_Carrier_Churchill,89 64 51,,#77
+uk-GB41_Challenger,89 51  38,51 40 200,#77
+uk-GB42_Valentine_AT,60 60 60,,#77
+uk-GB44_Archer,20 20 20,,#77
+uk-GB45_Achilles_IIC,38 19 19,57 25 25,#77
+uk-GB48_FV215b_183,152  51 76,,#77
+uk-GB50_Sherman_III,51 38 38,64 64 64,#77
+uk-GB51_Excelsior,114 32 108,114 92  92,#77
+uk-GB52_A45, 76 51 38,152 89 89,#77
+uk-GB57_Alecto,6 10 10,,#77
+uk-GB58_Cruiser_Mk_III,14 14 14,14 12 14,#77
+uk-GB59_Cruiser_Mk_IV,30 14 14,30 12 14,#77
+uk-GB60_Covenanter,40 30 25,39 20 25,#77
+uk-GB63_TOG_II, 76 76 51,114 76 53,#77
+uk-GB68_Matilda_Black_Prince,75 70 55,76 64 57,#77
+uk-GB69_Cruiser_Mk_II,30 22 12,30 26 30,#77
+uk-GB70_FV4202_105,121  51 32,196 196 35,#77
+uk-GB70_N_FV4202_105, 51 51 32,200 90 90,#77
+uk-GB70_N_FV4202_105_FL, 51 51 32,200 90 90,#77
+uk-GB71_AT_15A,229 152 102,,#77
+uk-GB72_AT15,229 152 102,,#77
+uk-GB72_AT15_IGR,229 152 102,,#77
+uk-GB73_AT2,152 76 51,,#77
+uk-GB74_AT8,203 102 102,,#77
+uk-GB75_AT7,203 102 102,,#77
+uk-GB76_Mk_VIC,14 13  6,14 14 11,#77
+uk-GB77_FV304,14 14 14,,#77
+uk-GB77_FV304_IGR,14 14 14,,#77
+uk-GB78_Sexton_I,51 32 38,,#77
+uk-GB79_FV206,51 51 51,,#77
+uk-GB80_Charioteer,64 46 38,30 25 30,#77
+uk-GB81_FV4004, 76 51 38,132 95 36,#77
+uk-GB83_FV4005,76 51 38,,#77
+uk-GB84_Chieftain_Mk6, 85  51 25,250 140 30,#77
+uk-GB85_Cromwell_Berlin,64 43 32,76 64 57,#77
+uk-GB86_Centurion_Action_X,121  51 32,254 152 95,#77
+uk-GB87_Chieftain_T95_turret, 85 51 25,254 89 51,#77
+uk-GB88_T95_Chieftain_turret,114  51 19,250 140 30,#77
+uk-GB91_Super_Conqueror,152 102 38,279  89 70,#77
+uk-GB92_FV217,356 102 38,,#77
+uk-GB93_Caernarvon_AX,130  51 38,254 152 95,#77
+uk-GB94_Centurion_Mk5-1_RAAC,121 51 38,254 89 89,#77
+uk-GB95_Ekins_Firefly_M4A4,51 38 38,76 51 51,#77
+uk-GB96_Excalibur,50 25 15,,#77
+uk-GB97_Chimera,114 76 51,203 76 76,#77
+uk-GB98_T95_FV4201_Chieftain,127  89 48,350 175 35,#77
+uk-GB99_Turtle_Mk1,254 102 76,,#77
+usa-A01_T1_Cunningham,10 6 6,10 6 6,#77
+usa-A01_T1_Cunningham_bot,10  6  6,10 10 10,#77
+usa-A02_M2_lt,38 25 25,38 25 25,#77
+usa-A03_M3_Stuart,38 25 25,38 32 32,#77
+usa-A03_M3_Stuart_bootcamp,38 25 25,38 25 25,#77
+usa-A04_M3_Grant,51 38 38,,#77
+usa-A05_M4_Sherman,51 38 38,64 64 64,#77
+usa-A05_M4_Sherman_IGR,51 38 38,64 64 64,#77
+usa-A06_M4A3E8_Sherman,64 38 38,64 64 64,#77
+usa-A06_M4A3E8_Sherman_training,18 16 16,18 16 16,#77
+usa-A07_T20,64 51 38,89 64 64,#77
+usa-A08_T23,76 51 38,64 64 64,#77
+usa-A09_T1_hvy, 95 52 46,102 83 83,#77
+usa-A10_M6,102 52 46,102 82 82,#77
+usa-A100_T49,25 25 19,38 16 16,#77
+usa-A101_M56,1 1 1,,#77
+usa-A102_T28_concept,203 102 51,,#77
+usa-A103_T71E1,25 22 19,22 22 22,#77
+usa-A103_T71E1_IGR,25 22 19,22 22 22,#77
+usa-A104_M4A3E8A,64 38 38,64 64 64,#77
+usa-A106_M48A2_120,152 76 38,203 76 51,#77
+usa-A107_T1_HMC,10 10 10,,#77
+usa-A108_T18_HMC,51 32 25,,#77
+usa-A109_T56_GMC,38 25 13,,#77
+usa-A11_T29,102  76  51,279 127 102,#77
+usa-A11_T29_IGR,102  76  51,279 127 102,#77
+usa-A111_T25_Pilot,76 51 38,76 64 64,#77
+usa-A112_T71E2,25 22 19,22 22 22,#77
+usa-A112_T71E2R,25 22 19,22 22 22,#77
+usa-A115_Chrysler_K,152 102 76,254 127 89,#77
+usa-A115_Chrysler_K_GF,152 102 76,254 127 89,#77
+usa-A116_XM551,14 32 13,38 16 16,#77
+usa-A117_T26E5,152  76  51,190 114 127,#77
+usa-A117_T26E5_Patriot,152  76  51,190 114 127,#77
+usa-A118_M4_Thunderbolt,124 38 38, 64 64 64,#77
+usa-A12_T32,127  76  51,298 197 152,#77
+usa-A120_M48A5,152 76 25,254 76 51,#77
+usa-A120_M48A5_IGR,152 76 25,254 76 51,#77
+usa-A121_M26_Cologne,102 76 51,102 76 76,#77
+usa-A122_TS-5,260 100 51,,#77
+usa-A123_T78,25 25 19,76 25 25,#77
+usa-A124_T54E2,152  76 38,250 140 40,#77
+usa-A125_AEP_1,121  89 38,292 102 51,#77
+usa-A126_PzVI_Tiger_II_capt,150 80 80,185 80 80,#77
+usa-A127_TL_1_LPC, 89 51 25,178 76 51,#77
+usa-A13_T34_hvy,102  76  51,279 127 203,#77
+usa-A13_T34_hvy_BF,102  76  51,279 127 203,#77
+usa-A13_T34_hvy_FL,102  76  51,279 127 203,#77
+usa-A13_T34_hvy_IGR,102  76  51,279 127 203,#77
+usa-A14_T30,102  76  51,279 127 102,#77
+usa-A15_T57,29 25 25,,#77
+usa-A16_M7_Priest,102 38 13,,#77
+usa-A17_M37,13 13 13,,#77
+usa-A18_M41,13 13 13,,#77
+usa-A19_T2_lt,17 15  6,16 16 16,#77
+usa-A21_T14, 51  51  51,102 101 101,#77
+usa-A22_M5_Stuart,29 29 25,44 32 32,#77
+usa-A22_M5_Stuart_bootcamp,29 29 25,38 32 32,#77
+usa-A23_M7_med,38 33 32,52 41 41,#77
+usa-A24_T2_med,22 22 22,25 25 25,#77
+usa-A24_T2_med_bot,22 22 22,22 22 22,#77
+usa-A25_M2_med,32 18 13,38 25 25,#77
+usa-A25_M2_med_bootcamp,32 18 13,25 25 25,#77
+usa-A26_T18,51 32 25,,#77
+usa-A27_T82,29 29 25,,#77
+usa-A29_T40,51 38 38,,#77
+usa-A30_M10_Wolverine,38 19 19,57 25 25,#77
+usa-A31_M36_Slagger,114 25 25, 76 25 25,#77
+usa-A32_M12,51 19 19,,#77
+usa-A33_MTLS-1G14,38 25 25,38 25 25,#77
+usa-A34_M24_Chaffee,25 25 19,38 25 25,#77
+usa-A35_Pershing,102 76 51,127 76 64,#77
+usa-A35_Pershing_IGR,102 76 51,127 76 64,#77
+usa-A36_Sherman_Jumbo,102 76 38, 64 64 64,#77
+usa-A36_Sherman_Jumbo_bootcamp,102  76  38,152 152 152,#77
+usa-A36_Sherman_Jumbo_IGR,102 76 38, 64 64 64,#77
+usa-A37_M40M43,108 13 13,,#77
+usa-A38_T92,25 25 13,,#77
+usa-A39_T28,254 102 51,,#77
+usa-A40_T95,305 152 51,,#77
+usa-A41_M18_Hellcat,13 13  13,76 32 127,#77
+usa-A43_M22_Locust,25 13 13,25 25 25,#77
+usa-A44_M4A2E4,65 38 38,76 51 51,#77
+usa-A45_M6A2E1,191 66  51,229 89 208,#77
+usa-A46_T3,16 13 6,,#77
+usa-A57_M8A1,29 29 25,38 25 25,#77
+usa-A58_T67,13 13 13,25 13 13,#77
+usa-A58_T67_IGR,13 13 13,25 13 13,#77
+usa-A62_Ram-II,76 63 38,76 76 51,#77
+usa-A63_M46_Patton,102 76 51,216 64 76,#77
+usa-A63_M46_Patton_KR,102 76 51,127 76 76,#77
+usa-A64_T25_AT,89 76 38,,#77
+usa-A66_M103,229 44 44,254 99 53,#77
+usa-A67_T57_58,229  44 44,152 127 51,#77
+usa-A68_T28_Prototype,203  51  51,,#77
+usa-A69_T110E5,254  76 38,203 127 76,#77
+usa-A71_T21,29 25 22,29 25 25,#77
+usa-A72_T25_2,76 51 38,76 25 25,#77
+usa-A74_T1_E6,16 6 6,13 6 6,#77
+usa-A78_M4_Improved,51 64 51,76 51 51,#77
+usa-A80_T26_E4_SuperPershing,102 76 51,102 76 76,#77
+usa-A80_T26_E4_SuperPershing_FL,102 76 51,102 76 76,#77
+usa-A81_T95_E2,114 51 19,178 76 51,#77
+usa-A83_T110E4,260  76  38,,#77
+usa-A85_T110E3,305 76 38,,#77
+usa-A86_T23E3,76 51 38,76 64 64,#77
+usa-A87_M44,13 13 13,,#77
+usa-A88_M53_55,25 13 13,,#77
+usa-A89_T54E1,152 76 38,127 70 51,#77
+usa-A90_T69,102  76 38,152 114 64,#77
+usa-A90_T69_IGR,102  76 38,152 114 64,#77
+usa-A92_M60, 93 74 25,178 76 51,#77
+usa-A93_T7_Combat_Car,16 13  6,13 13 13,#77
+usa-A94_T37,25 25 19,32 25 25,#77
+usa-A95_T95_E6,114 51 19,343 76 51,#77
+usa-A97_M41_Bulldog,25 25 19,25 25 25,#77
+usa-A99_T92_LT,32 25 19,29 29 29,#77
+ussr-Observer, 8 16 16,18 16 16,#77
+ussr-R01_IS,120 90 60,100 90 90,#77
+ussr-R02_SU-85,45 45 40,,#77
+ussr-R03_BT-7,20 19 13,20 15 15,#77
+ussr-R03_BT-7_bootcamp,20 19 13,20 15 15,#77
+ussr-R04_T-34,45 45 40,52 52 45,#77
+ussr-R05_KV,75 75 70,90 75 75,#77
+ussr-R06_T-28,30 20 20,25 25 25,#77
+ussr-R06_T-28_bootcamp,30 20 20,20 20 20,#77
+ussr-R07_T-34-85,45 45 40,90 75 52,#77
+ussr-R07_T-34-85_bootcamp,45 45 40,90 75 52,#77
+ussr-R07_T-34-85_training,45 45 45,90 75 52,#77
+ussr-R08_BT-2,15 13 10,26 13 13,#77
+ussr-R08_BT-2_bootcamp,15 13 10,26 13 13,#77
+ussr-R09_T-26,15 15 15,15 15 15,#77
+ussr-R09_T-26_bot,15 15 15,15 15 15,#77
+ussr-R10_AT-1,15 15 15,,#77
+ussr-R100_SU122A,25 15 10,,#77
+ussr-R101_MT25,45 40 40,45 40 40,#77
+ussr-R104_Object_430_II, 80  60 40,,#77
+ussr-R105_BT_7A,20 19 13,15 15 13,#77
+ussr-R106_KV85, 75 60 60,100 90 90,#77
+ussr-R106_KV85_IGR, 75 60 60,100 90 90,#77
+ussr-R107_LTB,90 45 40,90 75 52,#77
+ussr-R108_T34_85M,75 45 45,90 75 52,#77
+ussr-R109_T54S, 80  60 45,180 120 60,#77
+ussr-R11_MS-1,16 16 16,16 16 16,#77
+ussr-R11_MS-1_bot, 8 16 16,18 16 16,#77
+ussr-R110_Object_260,150 150  70,350 240 100,#77
+ussr-R111_ISU130,90 90 60,,#77
+ussr-R112_T54_45,120  90 45,200 120 75,#77
+ussr-R112_T54_45_FL,120  90 45,200 120 75,#77
+ussr-R113_Object_730,120 120 60,201 129 90,#77
+ussr-R114_Object_244,120 100 60,100  90 90,#77
+ussr-R115_IS-3_auto,110  90  60,249 172 100,#77
+ussr-R115_IS-3_auto_test,110  90  60,249 172 100,#77
+ussr-R116_ISU122C_Berlin,90 90 60,,#77
+ussr-R117_T34_85_Rudy,45 45 40,90 75 52,#77
+ussr-R118_T28_F30,50 40 50,50 40 40,#77
+ussr-R119_Object_777,132 115 45,258 225 90,#77
+ussr-R119_Object_777C,132 115 45,258 225 90,#77
+ussr-R12_A-20,20 20 16,37 37 25,#77
+ussr-R120_T22SR_A22,100  80  80,230 170 140,#77
+ussr-R121_KV4_KTT,200 125 125,,#77
+ussr-R122_T44_100, 90  75  45,190 130 100,#77
+ussr-R122_T44_100B, 90  75  45,190 130 100,#77
+ussr-R123_Kirovets_1,140 100  60,195 120 100,#77
+ussr-R125_T_45,25 15 25,35 35 35,#77
+ussr-R126_Object_730_5,120 90 40,230 90 60,#77
+ussr-R127_T44_100_K, 90  75  45,190 130 100,#77
+ussr-R127_T44_100_P, 90  75  45,190 130 100,#77
+ussr-R127_T44_100_U, 90  75  45,190 130 100,#77
+ussr-R128_KV4_Kreslavskiy,180 125  90,180 160 100,#77
+ussr-R129_Object_257,150 140  70,350 240 100,#77
+ussr-R13_KV-1s,75 60 60,82 82 82,#77
+ussr-R131_Tank_Gavalov, 40 40 40,110 80 80,#77
+ussr-R132_VNII_100LT, 90 40 40,180 40 40,#77
+ussr-R133_KV_122, 75 60 60,100 90 90,#77
+ussr-R134_Object_252K,130 100  90,250 150 100,#77
+ussr-R134_Object_252U,130 100  90,250 150 100,#77
+ussr-R135_T_103,100 100 60,220 145 60,#77
+ussr-R139_IS_M,130 120  80,250 140 120,#77
+ussr-R14_SU-5,15 15 15,,#77
+ussr-R140_M4_Loza,64 38 38,64 64 64,#77
+ussr-R143_T_29,30 20 20,20 20 20,#77
+ussr-R144_K_91,140  60 45,,#77
+ussr-R145_Object_705_A,175 100  60,330 180 120,#77
+ussr-R146_STG,100  45 45,210 180 45,#77
+ussr-R146_STG_Tday,100  45 45,210 180 45,#77
+ussr-R148_Object_430_U,160  90 45,300 195 65,#77
+ussr-R149_Object_268_4,260 100 45,,#77
+ussr-R15_S-51,60 60 60,,#77
+ussr-R151_Object_257_2,130 130  70,350 240 100,#77
+ussr-R152_KV2_W,75 75 70,75 75 70,#77
+ussr-R153_Object_705,155  90  60,300 150 100,#77
+ussr-R154_T_34E_1943,45 45 40,45 45 45,#77
+ussr-R155_Object_277,140 112 50,290 224 80,#77
+ussr-R156_IS_2M,100 90 60,100 90 90,#77
+ussr-R157_Object_279R,185 120 90,330 140 90,#77
+ussr-R158_LT_432, 70  40 40,160 100 60,#77
+ussr-R159_SU_130PM,20 15 8,,#77
+ussr-R16_SU-18,16 16 16,,#77
+ussr-R160_T_50_2,37 37 37,52 52 52,#77
+ussr-R161_T_116,15 13 13,15 13 13,#77
+ussr-R165_Object_703_II,140 100 60,220 120 90,#77
+ussr-R165_Object_703_II_2,140 100 60,220 120 90,#77
+ussr-R17_SU-100,75 45 45,,#77
+ussr-R18_SU-152,75 60 60,,#77
+ussr-R18_SU-152_IGR,75 60 60,,#77
+ussr-R19_IS-3,110  90  60,249 172 100,#77
+ussr-R19_IS-3_IGR,110  90  60,249 172 100,#77
+ussr-R20_T-44, 90  75  45,190 130 100,#77
+ussr-R20_T-44_FL, 90  75  45,190 130 100,#77
+ussr-R20_T-44_IGR, 90  75  45,120 100 100,#77
+ussr-R22_T-46,15 15 15,30 15 15,#77
+ussr-R22_T-46_bootcamp,15 15 15,30 15 15,#77
+ussr-R23_T-43,75 75 75,90 90 90,#77
+ussr-R24_SU-76,25 15 15,,#77
+ussr-R25_GAZ-74b,25 15 15,,#77
+ussr-R26_SU-8,30 20 20,,#77
+ussr-R27_SU-14,50 30 20,,#77
+ussr-R31_Valentine_LL,60 60 60,65 65 65,#77
+ussr-R31_Valentine_LL_IGR,60 60 60,65 65 65,#77
+ussr-R32_Matilda_II_LL,75 70 55,75 75 75,#77
+ussr-R33_Churchill_LL,176 76 51, 88 88 76,#77
+ussr-R34_BT-SV,25 20 16,25 25 25,#77
+ussr-R38_KV-220,120 100 100, 90  75  75,#77
+ussr-R38_KV-220_beta,120 100 100, 90  75  75,#77
+ussr-R39_KV-3,120  90  90,130 130 130,#77
+ussr-R40_T-54,120  80 45,240 180 65,#77
+ussr-R41_T-50,37 37 37,37 37 15,#77
+ussr-R42_T-60,35 15 25,25 25 25,#77
+ussr-R43_T-70,35 15 25,35 35 35,#77
+ussr-R43_T-70_bootcamp,35 15 25,35 35 35,#77
+ussr-R44_T80,35 25 25,35 35 35,#77
+ussr-R45_IS-7,150 150 100,240 185  94,#77
+ussr-R45_IS-7_fallout,150 150 100,240 185  94,#77
+ussr-R45_IS-7_IGR,150 150 100,240 185  94,#77
+ussr-R46_KV-13,120 85 85,100 90 90,#77
+ussr-R47_ISU-152,90 90 60,,#77
+ussr-R47_ISU-152_IGR,90 90 60,,#77
+ussr-R49_SU100Y,60 60 60,,#77
+ussr-R50_SU76I,60 30 50,,#77
+ussr-R50_SU76I_bootcamp,60 30 20,,#77
+ussr-R51_Object_212,60 60 60,,#77
+ussr-R52_Object_261,75 50 30,,#77
+ussr-R53_Object_704,120 90 60,,#77
+ussr-R54_KV-5,180 150 140,190 180 180,#77
+ussr-R54_KV-5_IGR,180 150 140,180 180 180,#77
+ussr-R56_T-127,40 30 30,40 30 30,#77
+ussr-R57_A43,60 45 40,75 75 75,#77
+ussr-R58_SU-101,150 90 40,,#77
+ussr-R59_A44,150 60 60, 90 90 90,#77
+ussr-R60_Object416, 75 45 45,,#77
+ussr-R61_Object252,110 100  60,150 150 100,#77
+ussr-R61_Object252_BF,110 100  60,150 150 100,#77
+ussr-R61_Object252_FL,110 100  60,150 150 100,#77
+ussr-R63_ST_I,150 140 100,250 160 160,#77
+ussr-R66_SU-26,15 15 15,,#77
+ussr-R67_M3_LL,38 25 25,38 25 25,#77
+ussr-R68_A-32,35 30 16,35 35 35,#77
+ussr-R70_T_50_2,37 37 37,37 37 37,#77
+ussr-R71_IS_2B,100 90 60,100 90 90,#77
+ussr-R72_T150, 90  90 75,100 100 75,#77
+ussr-R73_KV4,180 150  90,180 150 140,#77
+ussr-R74_SU100M1,140 75 45,,#77
+ussr-R75_SU122_54,100 80 45,,#77
+ussr-R77_KV2,75 75 70,75 75 70,#77
+ussr-R77_KV2_IGR,75 75 70,75 75 70,#77
+ussr-R78_SU_85I,60 30 50,,#77
+ussr-R80_KV1, 75  75  70,110 110 110,#77
+ussr-R81_IS8,120 120 60,250 201 90,#77
+ussr-R84_Tetrarch_LL,16 14 10,16 14 10,#77
+ussr-R86_LTP,30 20 30,30 30 30,#77
+ussr-R86_LTP_bootcamp,60 80 30,60 80 30,#77
+ussr-R87_T62A,100  80 45,240 161 65,#77
+ussr-R87_T62A_fallout,100  80 45,240 161 65,#77
+ussr-R88_Object268,187 100 50,,#77
+ussr-R89_SU122_44,90 75 45,,#77
+ussr-R90_IS_4M,140 160 100,250 200 170,#77
+ussr-R91_SU14_1,20 20 10,,#77
+ussr-R93_Object263,250 80 50,,#77
+ussr-R93_Object263B,250 80 50,,#77
+ussr-R95_Object_907,110 100 45,228 180 46,#77
+ussr-R95_Object_907A,110 100 45,228 180 46,#77
+ussr-R96_Object_430,120  80 40,248 185 63,#77
+ussr-R96_Object_430B,120  80 40,248 185 63,#77
+ussr-R97_Object_140,100  80 55,240 187 65,#77
+ussr-R98_T44_85, 75 75 45,120 90 75,#77
+ussr-R98_T44_85M, 90 75 45,120 90 75,#77
+ussr-R99_T44_122,75 75 45,90 70 70,#77
