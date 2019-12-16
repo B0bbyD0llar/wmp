@@ -1,0 +1,9 @@
+﻿{
+    "gui_buttonApply": "Übernehmen",
+    "gui_buttonCancel": "Abbrechen",
+    "gui_buttonOK": "Ok",
+    "gui_enableButtonTooltip": "{HEADER}Mod Einstellungen{/HEADER}{BODY}Aktivieren oder Deaktivieren der Modifikationen.{/BODY}",
+    "gui_name": "MOD - Einstellungen",
+    "gui_windowTitle": "MOD Einstellungen",
+    "version": 223
+}
