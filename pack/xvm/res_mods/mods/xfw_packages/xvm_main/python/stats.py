@@ -363,8 +363,7 @@ class _Stat(object):
             if cacheKey not in self.cacheBattle:
                 all_cached = False
 
-            if pl.vehCD != 65281:
-                requestList.append("{}={}".format(pl.accountDBID, pl.vehCD))
+            requestList.append("{}={}".format(pl.accountDBID, pl.vehCD))
 
         if all_cached or not requestList:
             return
