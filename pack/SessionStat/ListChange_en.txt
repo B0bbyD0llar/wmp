@@ -1,5 +1,0 @@
-*** IMPORTANT CHANGES ***
-
-
-*** Changes in release ***
-- Adaptation to the 1.1.0 release
