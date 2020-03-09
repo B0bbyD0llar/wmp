@@ -1,0 +1,10 @@
+{
+    "background": {
+        "alpha": 0.1,
+        "color": "0x000000",
+        "enabled": false
+    },
+    "hideTankName": true,
+    "x": 0,
+    "y": 0
+}
