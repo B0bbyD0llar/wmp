@@ -3,7 +3,7 @@
     "name": "XVM Battle Results",
     "description": "XVM Battle Results module",
 
-    "version": "8.3.3.4",
+    "version": "8.3.5.4",
     "dependencies": ["com.modxvm.xvm"],
 
     "url": "https://modxvm.com/",

@@ -3,7 +3,7 @@
     "name": "XVM Sounds",
     "description": "XVM Sounds module",
 
-    "version": "8.3.3.4",
+    "version": "8.3.5.4",
     "dependencies": ["com.modxvm.xvm"],
     "dependencies_optional": ["com.modxvm.xfw.wwise"],
 
