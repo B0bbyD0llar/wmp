@@ -9,8 +9,8 @@ import simplejson
 
 import constants
 from account_helpers.AccountSettings import AccountSettings, DEFAULT_VALUES, KEY_FILTERS
-from account_helpers.AccountSettings import CAROUSEL_FILTER_2, RANKED_CAROUSEL_FILTER_2, EPICBATTLE_CAROUSEL_FILTER_2
-from account_helpers.AccountSettings import CAROUSEL_FILTER_CLIENT_1, RANKED_CAROUSEL_FILTER_CLIENT_1, EPICBATTLE_CAROUSEL_FILTER_CLIENT_1, BATTLEPASS_CAROUSEL_FILTER_CLIENT_1
+from account_helpers.AccountSettings import CAROUSEL_FILTER_2, RANKED_CAROUSEL_FILTER_2, EPICBATTLE_CAROUSEL_FILTER_2, BOB_CAROUSEL_FILTER_2
+from account_helpers.AccountSettings import CAROUSEL_FILTER_CLIENT_1, RANKED_CAROUSEL_FILTER_CLIENT_1, EPICBATTLE_CAROUSEL_FILTER_CLIENT_1, BATTLEPASS_CAROUSEL_FILTER_CLIENT_1, BOB_CAROUSEL_FILTER_CLIENT_1
 from account_helpers.settings_core.ServerSettingsManager import ServerSettingsManager
 from gui.shared.gui_items.dossier.achievements import MarkOfMasteryAchievement
 from gui.shared.utils.functions import makeTooltip
@@ -42,17 +42,18 @@ class PREFS(object):
     IGR = 'igr'
     # added by XVM
     NORMAL = 'normal'
+    SPECIAL = 'special'
     NON_ELITE = 'nonelite'
     FULL_CREW = 'fullCrew'
     TRAINING_CREW = 'trainingCrew'
     NO_MASTER = 'noMaster'
     RESERVE = 'reserve'
-    XVM_KEYS = (NORMAL, NON_ELITE, FULL_CREW, TRAINING_CREW, NO_MASTER, RESERVE)
+    XVM_KEYS = (NORMAL, SPECIAL, NON_ELITE, FULL_CREW, TRAINING_CREW, NO_MASTER, RESERVE)
 
 class USERPREFS(object):
     CAROUSEL_FILTERS = "users/{accountDBID}/tankcarousel/filters"
 
-_SUPPORTED_SECTIONS = (CAROUSEL_FILTER_2, RANKED_CAROUSEL_FILTER_2, EPICBATTLE_CAROUSEL_FILTER_2)
+_SUPPORTED_SECTIONS = (CAROUSEL_FILTER_2, RANKED_CAROUSEL_FILTER_2, EPICBATTLE_CAROUSEL_FILTER_2, BOB_CAROUSEL_FILTER_2)
 
 #####################################################################
 # initialization/finalization
@@ -60,7 +61,7 @@ _SUPPORTED_SECTIONS = (CAROUSEL_FILTER_2, RANKED_CAROUSEL_FILTER_2, EPICBATTLE_C
 # Update original settings
 
 for section in _SUPPORTED_SECTIONS:
-    DEFAULT_VALUES[KEY_FILTERS][section].update({x:False for x in PREFS.XVM_KEYS})
+    DEFAULT_VALUES[KEY_FILTERS][section].update({x: False for x in PREFS.XVM_KEYS})
 
 #####################################################################
 # handlers
@@ -75,7 +76,7 @@ def _ServerSettingsManager_getSection(base, self, section, defaults = None):
         except Exception as ex:
             err(traceback.format_exc())
             prefs = []
-        res.update({x:int(x in prefs) for x in PREFS.XVM_KEYS})
+        res.update({x: int(x in prefs) for x in PREFS.XVM_KEYS})
     return res
 
 @overrideMethod(ServerSettingsManager, 'setSections')
@@ -85,20 +86,20 @@ def _ServerSettingsManager_setSections(base, self, sections, settings):
             try:
                 prefs = [key for key, value in settings.iteritems() if key in PREFS.XVM_KEYS and value]
                 settings = {key: value for key, value in settings.iteritems() if key not in PREFS.XVM_KEYS}
-                userprefs.set(USERPREFS.CAROUSEL_FILTERS, simplejson.dumps({'prefs':prefs}, separators=(',',':')))
+                userprefs.set(USERPREFS.CAROUSEL_FILTERS, simplejson.dumps({'prefs': prefs}, separators=(',', ':')))
             except Exception as ex:
                 err(traceback.format_exc())
     return base(self, sections, settings)
 
 @overrideStaticMethod(AccountSettings, 'setFilter')
 def _AccountSettings_setFilter(base, name, value):
-    if name in (CAROUSEL_FILTER_CLIENT_1, RANKED_CAROUSEL_FILTER_CLIENT_1, EPICBATTLE_CAROUSEL_FILTER_CLIENT_1, BATTLEPASS_CAROUSEL_FILTER_CLIENT_1):
+    if name in (CAROUSEL_FILTER_CLIENT_1, RANKED_CAROUSEL_FILTER_CLIENT_1, EPICBATTLE_CAROUSEL_FILTER_CLIENT_1, BATTLEPASS_CAROUSEL_FILTER_CLIENT_1, BOB_CAROUSEL_FILTER_CLIENT_1):
         value = {key: value for key, value in value.iteritems() if key not in PREFS.XVM_KEYS}
     base(name, value)
 
 # Filters:
-#   Premium       Normal    Elite    NonElite    CompleteCrew
-#   TrainingCrew  NoMaster  Reserve  Rented      [igr]
+#   Premium       Special       Normal    Elite    NonElite
+#   CompleteCrew  TrainingCrew  NoMaster  Reserve  Rented    [igr]
 @overrideMethod(TankCarouselFilterPopover, '_getInitialVO')
 def _TankCarouselFilterPopover_getInitialVO(base, self, filters, xpRateMultiplier):
     data = base(self, filters, xpRateMultiplier)
@@ -108,7 +109,8 @@ def _TankCarouselFilterPopover_getInitialVO(base, self, filters, xpRateMultiplie
         #debug(mapping)
         try:
             premium = data['specials'][mapping[_SECTION.SPECIALS].index(PREFS.PREMIUM)]
-            premium['value'] = '../../../mods/shared_resources/xvm/res/icons/carousel/filter/premium.png'
+            premium = {'value': '../../../mods/shared_resources/xvm/res/icons/carousel/filter/premium.png', 'tooltip': makeTooltip(l10n('PremiumTooltipHeader'), l10n('PremiumTooltipBody'))}
+            special = {'value': '../../../mods/shared_resources/xvm/res/icons/carousel/filter/special.png', 'tooltip': makeTooltip(l10n('SpecialTooltipHeader'), l10n('SpecialTooltipBody')), 'selected': filters[PREFS.SPECIAL]}
             normal = {'value': '../../../mods/shared_resources/xvm/res/icons/carousel/filter/normal.png', 'tooltip': makeTooltip(l10n('NormalTooltipHeader'), l10n('NormalTooltipBody')), 'selected': filters[PREFS.NORMAL]}
             elite = data['specials'][mapping[_SECTION.SPECIALS].index(PREFS.ELITE)]
             elite['value'] = '../../../mods/shared_resources/xvm/res/icons/carousel/filter/elite.png'
@@ -124,8 +126,8 @@ def _TankCarouselFilterPopover_getInitialVO(base, self, filters, xpRateMultiplie
             if is_igr:
                 igr = data['specials'][-1]
             data['specials'] = [
-                premium, normal, elite, non_elite, full_crew,
-                training_crew, no_master, reserve, rented]
+                premium, special, normal, elite, non_elite,
+                full_crew, training_crew, no_master, reserve, rented]
             if is_igr:
                 data['specials'].append(igr)
         except Exception as ex:
@@ -137,8 +139,8 @@ def _TankCarouselFilterPopover_generateMapping(base, cls, hasRented, hasEvent):
     mapping = base(hasRented, hasEvent)
     is_igr = PREFS.IGR in mapping[_SECTION.SPECIALS]
     mapping[_SECTION.SPECIALS] = [
-        PREFS.PREMIUM, PREFS.NORMAL, PREFS.ELITE, PREFS.NON_ELITE, PREFS.FULL_CREW,
-        PREFS.TRAINING_CREW, PREFS.NO_MASTER, PREFS.RESERVE, PREFS.RENTED]
+        PREFS.PREMIUM, PREFS.SPECIAL, PREFS.NORMAL, PREFS.ELITE, PREFS.NON_ELITE,
+        PREFS.FULL_CREW, PREFS.TRAINING_CREW, PREFS.NO_MASTER, PREFS.RESERVE, PREFS.RENTED]
     if is_igr:
         mapping[_SECTION.SPECIALS].append(PREFS.IGR)
     return mapping
@@ -160,6 +162,7 @@ def _BasicCriteriesGroup_update(base, self, filters):
 
 def _applyXvmFilter(item, filters, total_stats, vehicles_stats):
     premium = filters[PREFS.PREMIUM]
+    special = filters[PREFS.SPECIAL]
     normal = filters[PREFS.NORMAL]
     elite = filters[PREFS.ELITE]
     non_elite = filters[PREFS.NON_ELITE]
@@ -174,8 +177,18 @@ def _applyXvmFilter(item, filters, total_stats, vehicles_stats):
 
     remove = False
 
-    if premium != normal:
-        remove |= premium and not item.isPremium
+    # isPremium include 'premium' and 'special' vehicles
+    if premium and special and normal:
+        pass
+    elif premium and special:
+        remove |= not item.isPremium
+    elif premium and normal:
+        remove |= vdata['special']
+    elif special and normal:
+        remove |= vdata['premium']
+    else:
+        remove |= premium and not vdata['premium']
+        remove |= special and not vdata['special']
         remove |= normal and item.isPremium
 
     if elite != non_elite:

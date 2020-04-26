@@ -225,6 +225,10 @@
       <Translation>特种坦克</Translation>
       <Old>Special</Old>
     </ctDisplayModeCategorySpecial>
+    <ctDisplayModeCategoryCollector>
+      <Translation>收藏品</Translation>
+      <Old>Collector</Old>
+    </ctDisplayModeCategoryCollector>
     <ctDisplayModeTierLow>
       <Translation>低级坦克</Translation>
       <Old>Low tiers</Old>
@@ -556,7 +560,7 @@
       </Description>
     </ImageFile>
     <MissingImageWarning>
-      <Translation> {0} 这个图像无法找到。</Translation>
+      <Translation>{0} 这个图像无法找到。</Translation>
       <Old>The image {0} could not be found.</Old>
     </MissingImageWarning>
   </CustomImageLayer>
@@ -1184,7 +1188,7 @@
       </Description>
     </InvertTr>
     <ErrorInvalidId>
-      <Translation> 未发现层ID “{0}” 。</Translation>
+      <Translation>未发现层ID “{0}” 。</Translation>
       <Old>No layer with ID “{0}” found.</Old>
     </ErrorInvalidId>
     <ErrorRecursiveLayerReference>
@@ -1902,7 +1906,7 @@
       <Old null="1" />
     </Country>
     <Category>
-      <Translation>Availability (normal • premium • special)</Translation>
+      <Translation>Availability (Normal • Premium • etc)</Translation>
       <Old null="1" />
     </Category>
     <Tier>
@@ -2115,11 +2119,11 @@
   <Selector>
     <By>
       <Translation>条件</Translation>
-      <Old> Vary by</Old>
+      <Old>Vary by</Old>
     </By>
     <ByN>
       <Translation>条件 (#{0})</Translation>
-      <Old> Vary by (#{0})</Old>
+      <Old>Vary by (#{0})</Old>
     </ByN>
     <By_Color_Description>
       <Translation>指定一个坦克属性的颜色是不同的。坦克的颜色的颜色设置为透明的黑色(# 00000000)是不同的根据”随(# { 0 })”。</Translation>
@@ -2237,6 +2241,10 @@
       <Translation>Avail.: 特种</Translation>
       <Old>Avail.: Special</Old>
     </CategSpecial>
+    <CategCollector>
+      <Translation>Avail.: 收藏品</Translation>
+      <Old>Avail.: Collector</Old>
+    </CategCollector>
     <Single>
       <Translation>不改变</Translation>
       <Old>Not varied</Old>

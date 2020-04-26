@@ -225,6 +225,10 @@
       <Translation>Spezial</Translation>
       <Old>Special</Old>
     </ctDisplayModeCategorySpecial>
+    <ctDisplayModeCategoryCollector>
+      <Translation>Sammlerstück</Translation>
+      <Old>Collector</Old>
+    </ctDisplayModeCategoryCollector>
     <ctDisplayModeTierLow>
       <Translation>Niedrige Stufen</Translation>
       <Old>Low tiers</Old>
@@ -1968,8 +1972,8 @@
       <Old>Country (USSR • Germany • USA • etc)</Old>
     </Country>
     <Category>
-      <Translation>Verfügbarkeit (Normal • Premium • Spezial)</Translation>
-      <Old>Availability (normal • premium • special)</Old>
+      <Translation>Verfügbarkeit (Normal • Premium • ...)</Translation>
+      <Old>Availability (Normal • Premium • etc)</Old>
     </Category>
     <Tier>
       <Translation>Stufe (1 – 10)</Translation>
@@ -2180,12 +2184,12 @@
   </Category>
   <Selector>
     <By>
-      <Translation> Unterscheiden nach</Translation>
-      <Old> Vary by</Old>
+      <Translation>Unterscheiden nach</Translation>
+      <Old>Vary by</Old>
     </By>
     <ByN>
-      <Translation> Unterscheiden nach (#{0})</Translation>
-      <Old> Vary by (#{0})</Old>
+      <Translation>Unterscheiden nach (#{0})</Translation>
+      <Old>Vary by (#{0})</Old>
     </ByN>
     <By_Color_Description>
       <Translation>Bestimmt, nach welcher Panzereigenschaft sich die Farbe richten soll. Panzer, bei denen transparentes Schwarz (#00000000) ausgewählt wird, erhalten stattdessen eine Farbe gemäß „Unterscheiden nach (#{0})“.</Translation>
@@ -2303,6 +2307,10 @@
       <Translation>Verf.: Spezial</Translation>
       <Old>Avail.: Special</Old>
     </CategSpecial>
+    <CategCollector>
+      <Translation>Verf.: Sammlerstück</Translation>
+      <Old>Avail.: Collector</Old>
+    </CategCollector>
     <Single>
       <Translation>Nicht unterschieden</Translation>
       <Old>Not varied</Old>

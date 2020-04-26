@@ -2,11 +2,11 @@
 #define MyAppPublisher "Ltd Webber"
 #define MyAppURL "https://materialvernichtungskombinat.de"
 #define MyDefaultDir "C:\Games\World_of_Tanks"
-#define MyAppWotVersion "1.8.0.1"
+#define MyAppWotVersion "1.9.0.1"
 #define BuildNum Int(ReadIni(SourcePath	+ "\\BuildInfo.ini","Info","Build","0"))
 #expr BuildNum = BuildNum + 1
 ;#expr WriteIni(SourcePath + "\\BuildInfo.ini","Info","Build", BuildNum)
-#define MyAppVersion '1.180.' + Str(BuildNum)
+#define MyAppVersion '1.190.' + Str(BuildNum)
 
 [Setup]
 AppId={{15C07E64-0DDA-4864-A175-4C481004C53C}
@@ -162,18 +162,18 @@ Source: {srcexe}; DestDir: {app}\wmp; Flags: ignoreversion external
 Source: embedded\7za.exe; DestDir: {tmp}\; Flags: deleteafterinstall; Components: ; Tasks: ; Languages: 
 Source: embedded\UnRAR.exe; DestDir: {tmp}\; Flags: deleteafterinstall; Components: ; Tasks: ; Languages: 
 
-Source: pack\Contour Icons\Korolins (DMVK)\1.8.0.0\mod\gui\flash\atlases\battleAtlas.png; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
-Source: pack\Contour Icons\Korolins (DMVK)\1.8.0.0\mod\gui\flash\atlases\battleAtlas.dds; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
-Source: pack\Contour Icons\Korolins (DMVK)\1.8.0.0\mod\gui\flash\atlases\battleAtlas.xml; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\1.9.0.1\mod\gui\flash\atlases\battleAtlas.png; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\1.9.0.1\mod\gui\flash\atlases\battleAtlas.dds; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\1.9.0.1\mod\gui\flash\atlases\battleAtlas.xml; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
 
-Source: pack\Live WN8\mods\1.8.0.0\izeberg.modsettingsapi_1.3.0.wotmod; Components: battle\igwn8; DestDir: {app}\mods\{#MyAppWotVersion}
-Source: pack\Live WN8\mods\1.8.0.0\poliroid.modslistapi_1.3.0.wotmod; Components: battle\igwn8; DestDir: {app}\mods\{#MyAppWotVersion}
-Source: pack\Live WN8\mods\1.8.0.0\tv.protanki.efficiency_2.1.wotmod; Components: battle\igwn8; DestDir: {app}\mods\{#MyAppWotVersion}
+Source: pack\Live WN8\mods\1.9.0.1\izeberg.modsettingsapi_1.3.0.wotmod; Components: battle\igwn8; DestDir: {app}\mods\{#MyAppWotVersion}
+Source: pack\Live WN8\mods\1.9.0.1\poliroid.modslistapi_1.3.1.wotmod; Components: battle\igwn8; DestDir: {app}\mods\{#MyAppWotVersion}
+Source: pack\Live WN8\mods\1.9.0.1\tv.protanki.efficiency_2.2.wotmod; Components: battle\igwn8; DestDir: {app}\mods\{#MyAppWotVersion}
 Source: pack\Live WN8\mods\configs\protanki\efficiency.ltd.json; Components: battle\igwn8; DestDir: {app}\mods\configs\protanki; DestName: efficiency.json
 
-Source: pack\InfoPanel\mods\1.8.0.0\izeberg.modsettingsapi_1.3.0.wotmod; Components: battle\infopanel; DestDir: {app}\mods\{#MyAppWotVersion}
-Source: pack\InfoPanel\mods\1.8.0.0\poliroid.modslistapi_1.3.0.wotmod; Components: battle\infopanel; DestDir: {app}\mods\{#MyAppWotVersion}
-Source: pack\InfoPanel\mods\1.8.0.0\tv.protanki.infopanel.wotmod; Components: battle\infopanel; DestDir: {app}\mods\{#MyAppWotVersion}
+Source: pack\InfoPanel\mods\1.9.0.1\izeberg.modsettingsapi_1.3.0.wotmod; Components: battle\infopanel; DestDir: {app}\mods\{#MyAppWotVersion}
+Source: pack\InfoPanel\mods\1.9.0.1\poliroid.modslistapi_1.3.1.wotmod; Components: battle\infopanel; DestDir: {app}\mods\{#MyAppWotVersion}
+Source: pack\InfoPanel\mods\1.9.0.1\tv.protanki.infopanel.wotmod; Components: battle\infopanel; DestDir: {app}\mods\{#MyAppWotVersion}
 Source: pack\InfoPanel\mods\configs\infopanel\skin_1_simple.xml; Components: battle\infopanel; DestDir: {app}\mods\configs\infopanel
 Source: pack\InfoPanel\mods\configs\infopanel\skin_2_standard.xml; Components: battle\infopanel; DestDir: {app}\mods\configs\infopanel
 Source: pack\InfoPanel\mods\configs\infopanel\skin_3_colored.xml; Components: battle\infopanel; DestDir: {app}\mods\configs\infopanel
@@ -186,15 +186,15 @@ Source: pack\Marksongun\mods\configs\spoter\marksOnGunExtended\i18n\en.json; Des
 Source: pack\Marksongun\mods\configs\spoter\marksOnGunExtended\i18n\ru.json; DestDir: {app}\mods\configs\spoter\marksOnGunExtended\i18n; Components: battle\moe
 Source: pack\Marksongun\mods\configs\spoter\marksOnGunExtended\marksOnGunExtended.json; DestDir: {app}\mods\configs\spoter\marksOnGunExtended; Components: battle\moe
 ;Source: pack\Marksongun\mods\configs\promod\hangarMarks.json; DestDir: {app}\mods\configs\promod; Components: battle\moe
-Source: pack\Marksongun\mods\1.8.0.0\mod_mods_gui_2.24.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\moe
-Source: pack\Marksongun\mods\1.8.0.0\marksOnGunExtended_8.08.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\moe
-Source: pack\Marksongun\mods\1.8.0.0\gambiter.guiflash_0.3.1.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\moe
+Source: pack\Marksongun\mods\1.9.0.1\mod_mods_gui_2.24.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\moe
+Source: pack\Marksongun\mods\1.9.0.1\gambiter.guiflash_0.3.1.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\moe
+Source: pack\Marksongun\mods\1.9.0.1\spoter\spoter.marksOnGunExtended_8.08.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}\spoter; Components: battle\moe
 ;Source: pack\Marksongun\mods\1.8.0.0\oldskool.hangarMarks_1.0.2.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\moe
 
-Source: pack\Flytime\mods\1.7.1.1\gambiter.guiflash_0.3.1.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\spgst
-Source: pack\Flytime\mods\1.7.1.1\oldskool.flytime.spg_1.0.6.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\spgst
-Source: pack\Flytime\mods\1.7.1.1\oldskool.modsettings.api_1.1.5.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\spgst
-Source: pack\Flytime\mods\1.7.1.1\poliroid.modslistapi_1.3.0.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\spgst
+Source: pack\Flytime\mods\1.9.0.1\gambiter.guiflash_0.3.1.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\spgst
+Source: pack\Flytime\mods\1.9.0.1\oldskool.flytime.spg_1.0.6.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\spgst
+Source: pack\Flytime\mods\1.9.0.1\oldskool.modsettings.api_1.1.6.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\spgst
+Source: pack\Flytime\mods\1.9.0.1\poliroid.modslistapi_1.3.1.wotmod; DestDir: {app}\mods\{#MyAppWotVersion}; Components: battle\spgst
 Source: pack\Flytime\mods\configs\promod\flytime.json; DestDir: {app}\mods\configs\promod\; Components: battle\spgst
 
 [INI]

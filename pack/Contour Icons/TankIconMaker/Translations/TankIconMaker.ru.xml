@@ -229,6 +229,10 @@
       <Translation>Акционный</Translation>
       <Old>Special</Old>
     </ctDisplayModeCategorySpecial>
+    <ctDisplayModeCategoryCollector>
+      <Translation>Коллекционный</Translation>
+      <Old>Collector</Old>
+    </ctDisplayModeCategoryCollector>
     <ctDisplayModeTierLow>
       <Translation>Низкие уровни</Translation>
       <Old>Low tiers</Old>
@@ -753,7 +757,7 @@
     </FontColor>
     <Baseline>
       <DisplayName>
-        <Translation> По линии шрифта</Translation>
+        <Translation>По линии шрифта</Translation>
         <Old>Align baselines</Old>
       </DisplayName>
       <Description>
@@ -1339,7 +1343,7 @@
     </Y>
     <PositionByPixels>
       <DisplayName>
-        <Translation> По пикселям</Translation>
+        <Translation>По пикселям</Translation>
         <Old>Use pixels</Old>
       </DisplayName>
       <Description>
@@ -1349,7 +1353,7 @@
     </PositionByPixels>
     <SizeByPixels>
       <DisplayName>
-        <Translation> По пикселям</Translation>
+        <Translation>По пикселям</Translation>
         <Old>Use pixels</Old>
       </DisplayName>
       <Description>
@@ -1499,7 +1503,7 @@
     </EffectDescription>
     <Hue>
       <DisplayName>
-        <Translation> Тон</Translation>
+        <Translation>Тон</Translation>
         <Old>Hue shift</Old>
       </DisplayName>
       <Description>
@@ -2008,8 +2012,8 @@
       <Old>Country (USSR • Germany • USA • etc)</Old>
     </Country>
     <Category>
-      <Translation>Доступность (премиумный • акционный • ...)</Translation>
-      <Old>Availability (normal • premium • special)</Old>
+      <Translation>Доступность (Обычный • Премиумный • ...)</Translation>
+      <Old>Availability (Normal • Premium • etc)</Old>
     </Category>
     <Tier>
       <Translation>Уровень (1 .. 10)</Translation>
@@ -2182,7 +2186,7 @@
       <Old>Image</Old>
     </Image>
     <Font>
-      <Translation> Шрифт</Translation>
+      <Translation>Шрифт</Translation>
       <Old>Font</Old>
     </Font>
     <Position>
@@ -2198,7 +2202,7 @@
       <Old>Mask</Old>
     </Mask>
     <TextSource>
-      <Translation> Источник текста</Translation>
+      <Translation>Источник текста</Translation>
       <Old>Text source</Old>
     </TextSource>
     <Debug>
@@ -2220,12 +2224,12 @@
   </Category>
   <Selector>
     <By>
-      <Translation> Варьировать по</Translation>
-      <Old> Vary by</Old>
+      <Translation>Варьировать по</Translation>
+      <Old>Vary by</Old>
     </By>
     <ByN>
-      <Translation> Варьировать по (#{0})</Translation>
-      <Old> Vary by (#{0})</Old>
+      <Translation>Варьировать по (#{0})</Translation>
+      <Old>Vary by (#{0})</Old>
     </ByN>
     <By_Color_Description>
       <Translation>Указывает свойство танка, на основании которого выбирается цвет. В случае если один из цветов является прозрачным-черным (#00000000), значения для соответствующих танков варьируются на основании "Варьировать по (#{0})".</Translation>
@@ -2343,6 +2347,10 @@
       <Translation>Доступ: Акционный</Translation>
       <Old>Avail.: Special</Old>
     </CategSpecial>
+    <CategCollector>
+      <Translation>Доступ: Коллекционный</Translation>
+      <Old>Avail.: Collector</Old>
+    </CategCollector>
     <Single>
       <Translation>Без вариаций</Translation>
       <Old>Not varied</Old>
