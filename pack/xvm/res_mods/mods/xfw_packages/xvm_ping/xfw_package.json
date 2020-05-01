@@ -3,7 +3,7 @@
     "name": "XVM Ping",
     "description": "XVM Ping module",
 
-    "version": "8.4.1.0031",
+    "version": "8.5.0.0033",
     "dependencies": ["com.modxvm.xvm", "com.modxvm.xfw.actionscript"],
     "dependencies_optional": ["com.modxvm.xfw.ping"],
 
