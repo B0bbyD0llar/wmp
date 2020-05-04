@@ -2,7 +2,7 @@
 #define MyAppPublisher "Ltd Webber"
 #define MyAppURL "https://materialvernichtungskombinat.de"
 #define MyDefaultDir "C:\Games\World_of_Tanks"
-#define MyAppWotVersion "1.9.0.1"
+#define MyAppWotVersion "1.9.0.2"
 #define BuildNum Int(ReadIni(SourcePath	+ "\\BuildInfo.ini","Info","Build","0"))
 #expr BuildNum = BuildNum + 1
 ;#expr WriteIni(SourcePath + "\\BuildInfo.ini","Info","Build", BuildNum)
@@ -162,9 +162,9 @@ Source: {srcexe}; DestDir: {app}\wmp; Flags: ignoreversion external
 Source: embedded\7za.exe; DestDir: {tmp}\; Flags: deleteafterinstall; Components: ; Tasks: ; Languages: 
 Source: embedded\UnRAR.exe; DestDir: {tmp}\; Flags: deleteafterinstall; Components: ; Tasks: ; Languages: 
 
-Source: pack\Contour Icons\Korolins (DMVK)\1.9.0.1\mod\gui\flash\atlases\battleAtlas.png; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
-Source: pack\Contour Icons\Korolins (DMVK)\1.9.0.1\mod\gui\flash\atlases\battleAtlas.dds; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
-Source: pack\Contour Icons\Korolins (DMVK)\1.9.0.1\mod\gui\flash\atlases\battleAtlas.xml; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\1.9.0.2\mod\gui\flash\atlases\battleAtlas.png; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\1.9.0.2\mod\gui\flash\atlases\battleAtlas.dds; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
+Source: pack\Contour Icons\Korolins (DMVK)\1.9.0.2\mod\gui\flash\atlases\battleAtlas.xml; Components: xvm; DestDir: {app}\res_mods\{#MyAppWotVersion}\gui\flash\atlases
 
 Source: pack\Live WN8\mods\1.9.0.1\izeberg.modsettingsapi_1.3.0.wotmod; Components: battle\igwn8; DestDir: {app}\mods\{#MyAppWotVersion}
 Source: pack\Live WN8\mods\1.9.0.1\poliroid.modslistapi_1.3.1.wotmod; Components: battle\igwn8; DestDir: {app}\mods\{#MyAppWotVersion}
