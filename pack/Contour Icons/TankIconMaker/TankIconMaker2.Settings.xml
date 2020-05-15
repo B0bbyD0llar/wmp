@@ -18,8 +18,8 @@
         <Maximized>False</Maximized>
       </item>
       <item key="2048x1152">
-        <Left>252</Left>
-        <Top>62.400000000000006</Top>
+        <Left>49.6</Left>
+        <Top>47.2</Top>
         <Width>1672</Width>
         <Height>944.80000000000007</Height>
         <Maximized>False</Maximized>
@@ -120,7 +120,7 @@
   </CustomColors>
   <IconScaleNormal>1</IconScaleNormal>
   <IconScaleZoomed>5</IconScaleZoomed>
-  <UiZoom>1</UiZoom>
+  <UiZoom>1.1</UiZoom>
   <Lingo>German</Lingo>
   <OsLingo>German</OsLingo>
   <DefaultPropertyAuthor>Wargaming</DefaultPropertyAuthor>
