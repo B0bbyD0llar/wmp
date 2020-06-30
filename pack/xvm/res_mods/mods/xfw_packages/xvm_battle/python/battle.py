@@ -395,7 +395,10 @@ class Battle(object):
                     battleLoading = self.battle_page.getComponent(BATTLE_VIEW_ALIASES.BATTLE_LOADING)
                     if battleLoading:
                         battle_loading._setBattleLoading(False)
-                        battleLoading.invalidateArenaInfo()
+                        try:
+                            battleLoading.invalidateArenaInfo()
+                        except Exception:
+                            err(traceback.format_exc())
             ctrl = self.battle_page.getComponent(BATTLE_VIEW_ALIASES.BATTLE_STATISTIC_DATA_CONTROLLER)
             if ctrl and not isinstance(ctrl, EpicStatisticsDataController):
                 ctrl._dispose()

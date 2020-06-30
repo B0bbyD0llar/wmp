@@ -9,8 +9,8 @@ import simplejson
 
 import constants
 from account_helpers.AccountSettings import AccountSettings, DEFAULT_VALUES, KEY_FILTERS
-from account_helpers.AccountSettings import CAROUSEL_FILTER_2, RANKED_CAROUSEL_FILTER_2, EPICBATTLE_CAROUSEL_FILTER_2, BOB_CAROUSEL_FILTER_2
-from account_helpers.AccountSettings import CAROUSEL_FILTER_CLIENT_1, RANKED_CAROUSEL_FILTER_CLIENT_1, EPICBATTLE_CAROUSEL_FILTER_CLIENT_1, BATTLEPASS_CAROUSEL_FILTER_CLIENT_1, BOB_CAROUSEL_FILTER_CLIENT_1
+from account_helpers.AccountSettings import CAROUSEL_FILTER_2, RANKED_CAROUSEL_FILTER_2, EPICBATTLE_CAROUSEL_FILTER_2
+from account_helpers.AccountSettings import CAROUSEL_FILTER_CLIENT_1, RANKED_CAROUSEL_FILTER_CLIENT_1, EPICBATTLE_CAROUSEL_FILTER_CLIENT_1, BATTLEPASS_CAROUSEL_FILTER_CLIENT_1
 from account_helpers.settings_core.ServerSettingsManager import ServerSettingsManager
 from gui.shared.gui_items.dossier.achievements import MarkOfMasteryAchievement
 from gui.shared.utils.functions import makeTooltip
@@ -53,7 +53,7 @@ class PREFS(object):
 class USERPREFS(object):
     CAROUSEL_FILTERS = "users/{accountDBID}/tankcarousel/filters"
 
-_SUPPORTED_SECTIONS = (CAROUSEL_FILTER_2, RANKED_CAROUSEL_FILTER_2, EPICBATTLE_CAROUSEL_FILTER_2, BOB_CAROUSEL_FILTER_2)
+_SUPPORTED_SECTIONS = (CAROUSEL_FILTER_2, RANKED_CAROUSEL_FILTER_2, EPICBATTLE_CAROUSEL_FILTER_2)
 
 #####################################################################
 # initialization/finalization
@@ -93,7 +93,7 @@ def _ServerSettingsManager_setSections(base, self, sections, settings):
 
 @overrideStaticMethod(AccountSettings, 'setFilter')
 def _AccountSettings_setFilter(base, name, value):
-    if name in (CAROUSEL_FILTER_CLIENT_1, RANKED_CAROUSEL_FILTER_CLIENT_1, EPICBATTLE_CAROUSEL_FILTER_CLIENT_1, BATTLEPASS_CAROUSEL_FILTER_CLIENT_1, BOB_CAROUSEL_FILTER_CLIENT_1):
+    if name in (CAROUSEL_FILTER_CLIENT_1, RANKED_CAROUSEL_FILTER_CLIENT_1, EPICBATTLE_CAROUSEL_FILTER_CLIENT_1, BATTLEPASS_CAROUSEL_FILTER_CLIENT_1):
         value = {key: value for key, value in value.iteritems() if key not in PREFS.XVM_KEYS}
     base(name, value)
 
@@ -135,8 +135,8 @@ def _TankCarouselFilterPopover_getInitialVO(base, self, filters, xpRateMultiplie
     return data
 
 @overrideClassMethod(TankCarouselFilterPopover, '_generateMapping')
-def _TankCarouselFilterPopover_generateMapping(base, cls, hasRented, hasEvent):
-    mapping = base(hasRented, hasEvent)
+def _TankCarouselFilterPopover_generateMapping(base, cls, hasRented, hasEvent, hasRoles):
+    mapping = base(hasRented, hasEvent, hasRoles)
     is_igr = PREFS.IGR in mapping[_SECTION.SPECIALS]
     mapping[_SECTION.SPECIALS] = [
         PREFS.PREMIUM, PREFS.SPECIAL, PREFS.NORMAL, PREFS.ELITE, PREFS.NON_ELITE,

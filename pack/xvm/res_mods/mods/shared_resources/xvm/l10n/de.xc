@@ -65,7 +65,7 @@
     "chassis": "Kette",
     "wheel": "reifen",
     "Hit percent": "Trefferquote",
-    "Damage (assisted / own)": "Schaden (ermöglicht / verursacht)",
+    "Damage (assisted / own)": "Schaden (erm./verursacht)",
     "BR_xpCrew": "",
     "Friend": "Freund",
     "Ignored": "Ignoriert",

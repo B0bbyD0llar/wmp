@@ -22,10 +22,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 import traceback
 
 import base64
+import constants
+import debug_utils
 from account_helpers.CustomFilesCache import CustomFilesCache
 
 from xfw import *
 from xvm_main.python.logger import *
+
+#####################################################################
+# constants
+
+isCommonTest = constants.CURRENT_REALM == 'CT'
 
 #####################################################################
 # handlers
@@ -43,3 +50,11 @@ def _CustomFilesCache__onReadLocalFile(base, self, url, showImmediately):
             base(self, url, showImmediately)
         except Exception:
             err(traceback.format_exc())
+
+@overrideMethod(debug_utils, '_doLog')
+def _doLog(base, category, msg, *args, **kwargs):
+    if isCommonTest:
+        if category == 'DEBUG':
+            if msg == '_updateToLatestVersion':
+                return
+    base(category, msg, args, kwargs)
