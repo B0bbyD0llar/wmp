@@ -23,6 +23,7 @@ from messenger.gui.Scaleform.lobby_entry import LobbyEntry
 from HeroTank import HeroTank
 from vehicle_systems.tankStructure import ModelStates
 from gui.promo.hangar_teaser_widget import TeaserViewer
+from gui.game_control.AwardController import ProgressiveItemsRewardHandler
 from gui.game_control.PromoController import PromoController
 from skeletons.account_helpers.settings_core import ISettingsCore
 from gui.Scaleform.daapi.view.lobby.messengerBar.messenger_bar import MessengerBar
@@ -83,7 +84,7 @@ def Vehicle_isAmmoFull(base, self):
             mult = self.NOT_FULL_AMMO_MULTIPLIER
         else:
             mult = 1.0
-        return sum((s.count for s in self.shells)) >= self.ammoMaxSize * mult
+        return sum((s.count for s in self.shells.installed.getItems())) >= self.ammoMaxSize * mult
     except Exception as ex:
         err(traceback.format_exc())
         return base(self)
@@ -219,20 +220,12 @@ def _populate(base, self):
         return
     base(self)
 
-# hide display session statistics help hints
-def hideSessionStatsHint():
-    settingsCore = dependency.instance(ISettingsCore)
-    settingsCore.serverSettings.setOnceOnlyHintsSettings({'SessionStatsOpenBtnHint': 1})
-    settingsCore.serverSettings.setOnceOnlyHintsSettings({'SessionStatsSettingsBtnHint': 1})
-    settingsCore.serverSettings.setSessionStatsSettings({'OnlyOnceHintShownField': 1})
-    return
-
 # hide display session statistics button
 @overrideMethod(MessengerBar, '_MessengerBar__updateSessionStatsBtn')
 def updateSessionStatsBtn(base, self):
     if not config.get('hangar/sessionStatsButton/showButton', True):
         self.as_setSessionStatsButtonVisibleS(False)
-        hideSessionStatsHint()
+        self._MessengerBar__onSessionStatsBtnOnlyOnceHintHidden(True) # hide display session statistics help hints
         return
     base(self)
 
@@ -249,6 +242,13 @@ def shouldHide(base, self):
     if not config.get('hangar/showDailyQuestWidget', True):
         return True
     base(self)
+
+# hide display pop-up window when receiving progressive decals
+@overrideMethod(ProgressiveItemsRewardHandler, '_showAward')
+def _showAward(base, self, ctx):
+    if not config.get('hangar/showProgressiveDecalsWindow', True):
+        return
+    base(self, ctx)
 
 # hide display banner - World of Tanks' 10th Anniversary
 @overrideMethod(Hangar, '_Hangar__updateTenYearsCountdownEntryPointVisibility')

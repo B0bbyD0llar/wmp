@@ -105,8 +105,9 @@ def _ToolTip_onCreateTypedTooltip(base, self, type, *args):
     except Exception as ex:
         err(traceback.format_exc())
 
-    if args and XVM_TOOLTIPS.HIDE not in args[0]:
-        _createTooltip(self, lambda: _onCreateTypedTooltip_callback(base, self, type, *args))
+    if isinstance(args[0], basestring) and XVM_TOOLTIPS.HIDE in args[0]:
+        return
+    _createTooltip(self, lambda: _onCreateTypedTooltip_callback(base, self, type, *args))
 
 @overrideMethod(ToolTip, 'onHideTooltip')
 def _ToolTip_onHideTooltip(base, self, tooltipId):
@@ -164,6 +165,13 @@ def VehicleInfoTooltipData_packBlocks(base, self, *args, **kwargs):
 def SimplifiedStatsBlockConstructor_construct(base, self):
     if config.get('tooltips/hideSimplifiedVehParams'):
         return []
+    else:
+        return base(self)
+
+@overrideMethod(tooltips_vehicle.CrystalBlockConstructor, 'construct')
+def CrystalBlockConstructor_construct(base, self):
+    if config.get('tooltips/hideCrystalBlock'):
+        return [], None
     else:
         return base(self)
 
@@ -461,7 +469,7 @@ def CommonStatsBlockConstructor_construct(base, self):
             # optional devices icons, must be in the end
             if 'optDevicesIcons' in params_list:
                 optDevicesIcons_arr = []
-                for key in vehicle.optDevices:
+                for key in vehicle.optDevices.installed.getItems():
                     if key:
                         imgPath = 'img://gui' + key.icon.lstrip('.')
                     else:
@@ -473,13 +481,13 @@ def CommonStatsBlockConstructor_construct(base, self):
             # equipment icons, must be in the end
             if 'equipmentIcons' in params_list:
                 equipmentIcons_arr = []
-                for key in vehicle.equipment.regularConsumables.getInstalledItems():
+                for key in vehicle.consumables.installed.getItems():
                     if key:
                         imgPath = 'img://gui' + key.icon.lstrip('.')
                     else:
                         imgPath = 'img://gui/maps/icons/artefact/empty.png'
                     equipmentIcons_arr.append('<img src="%s" height="16" width="16">' % imgPath)
-                for key in vehicle.equipment.battleBoosterConsumables.getInstalledItems():
+                for key in vehicle.battleBoosters.installed.getItems():
                     if key:
                         imgPath = 'img://gui' + key.icon.lstrip('.')
                     else:
@@ -514,8 +522,8 @@ def CommonStatsBlockConstructor_construct(base, self):
 
 # in battle, add tooltip for HE shells - explosion radius
 @overrideMethod(ConsumablesPanel, '_ConsumablesPanel__makeShellTooltip')
-def ConsumablesPanel__makeShellTooltip(base, self, descriptor, piercingPower):
-    result = base(self, descriptor, piercingPower)
+def ConsumablesPanel__makeShellTooltip(base, self, descriptor, piercingPower, shotSpeed):
+    result = base(self, descriptor, piercingPower, shotSpeed)
     try:
         if descriptor.kind == SHELL_TYPES.HIGH_EXPLOSIVE:
             key_str = i18n.makeString(MENU.TANK_PARAMS_EXPLOSIONRADIUS)

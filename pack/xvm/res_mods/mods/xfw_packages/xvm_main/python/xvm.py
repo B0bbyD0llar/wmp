@@ -195,7 +195,7 @@ class Xvm(object):
             accountDBID = getCurrentAccountDBID()
             if accountDBID is not None and self.currentAccountDBID != accountDBID:
                 self.currentAccountDBID = accountDBID
-                config.token = config.XvmServicesToken({'accountDBID':accountDBID})
+                config.token = config.XvmServicesToken({'accountDBID': accountDBID})
                 config.token.saveLastAccountDBID()
                 self.xvmServicesInitialized = False
                 self.initializeXvmServices()
@@ -343,7 +343,7 @@ class Xvm(object):
                 return (None, True)
 
             if cmd == XVM_COMMAND.LOAD_STAT_USER:
-                stats.getUserData(args)
+                stats.getUserData(args, as_xfw_cmd)
                 return (None, True)
 
             # profiler

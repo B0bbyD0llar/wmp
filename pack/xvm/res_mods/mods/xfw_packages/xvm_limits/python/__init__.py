@@ -17,6 +17,7 @@ import traceback
 import BigWorld
 import game
 from gui import shop
+from gui.impl import backport
 from gui.shared import g_eventBus, tooltips
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.money import Currency
@@ -24,11 +25,13 @@ from gui.shared.utils.requesters.StatsRequester import StatsRequester
 from gui.Scaleform.daapi.view.lobby.techtree.settings import UNKNOWN_VEHICLE_LEVEL
 from gui.Scaleform.daapi.view.lobby.techtree.techtree_page import TechTree
 from gui.Scaleform.daapi.view.lobby.techtree.research_page import Research
-from gui.Scaleform.daapi.view.lobby.hangar.TechnicalMaintenance import TechnicalMaintenance
 from gui.Scaleform.daapi.view.lobby.recruitWindow.RecruitWindow import RecruitWindow
 from gui.Scaleform.daapi.view.lobby.PersonalCase import PersonalCase
 from gui.Scaleform.daapi.view.lobby.exchange.ExchangeFreeToTankmanXpWindow import ExchangeFreeToTankmanXpWindow
 from gui.Scaleform.daapi.view.lobby.customization.main_view import MainView
+from gui.Scaleform.genConsts.CURRENCIES_CONSTANTS import CURRENCIES_CONSTANTS
+from gui.shared.formatters import text_styles
+from gui.shared.tooltips.common import HeaderMoneyAndXpTooltipData
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 
@@ -167,6 +170,20 @@ def StatsRequester_crystal(base, self):
         return max(self.actualCrystal, 0)
     return 0
 
+@overrideMethod(HeaderMoneyAndXpTooltipData, '_getValue')
+def _getValue(base, self):
+    valueStr = '0'
+    if self._btnType == CURRENCIES_CONSTANTS.GOLD:
+        valueStr = text_styles.gold(backport.getIntegralFormat(max(self.itemsCache.items.stats.actualGold, 0)))
+    elif self._btnType == CURRENCIES_CONSTANTS.CREDITS:
+        valueStr = text_styles.credits(backport.getIntegralFormat(max(self.itemsCache.items.stats.actualCredits, 0)))
+    elif self._btnType == CURRENCIES_CONSTANTS.CRYSTAL:
+        valueStr = text_styles.crystal(backport.getIntegralFormat(max(self.itemsCache.items.stats.actualCrystal, 0)))
+    elif self._btnType == CURRENCIES_CONSTANTS.EVENT_COIN:
+        valueStr = text_styles.eventCoin(backport.getIntegralFormat(max(self.itemsCache.items.stats.actualEventCoin, 0)))
+    elif self._btnType == CURRENCIES_CONSTANTS.FREE_XP:
+        valueStr = text_styles.expText(backport.getIntegralFormat(max(self.itemsCache.items.stats.actualFreeXP, 0)))
+    return valueStr
 
 ##############################################################
 # handlers of windows that use gold/freeXP/crystal
@@ -190,16 +207,6 @@ def Research_populate(self, *args, **kwargs):
 def Research_dispose(self, *args, **kwargs):
     global Research_handler
     Research_handler = None
-
-@registerEvent(TechnicalMaintenance, '_populate')
-def TechnicalMaintenance_populate(self, *args, **kwargs):
-    global TechnicalMaintenance_handler
-    TechnicalMaintenance_handler = self
-
-@registerEvent(TechnicalMaintenance, '_dispose')
-def TechnicalMaintenance_dispose(self, *args, **kwargs):
-    global TechnicalMaintenance_handler
-    TechnicalMaintenance_handler = None
 
 @registerEvent(RecruitWindow, '_populate')
 def RecruitWindow_populate(self, *args, **kwargs):

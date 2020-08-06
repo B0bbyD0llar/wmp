@@ -30,7 +30,7 @@ from gui.Scaleform.daapi.view.battle.shared.markers2d import settings as markers
 from gui.Scaleform.daapi.view.battle.shared.minimap.plugins import ArenaVehiclesPlugin
 from gui.Scaleform.daapi.view.battle.shared.page import SharedPage
 from gui.Scaleform.daapi.view.battle.shared.stats_exchage import BattleStatisticsDataController
-from gui.Scaleform.daapi.view.battle.shared.hint_panel.plugins import TrajectoryViewHintPlugin, SiegeIndicatorHintPlugin, PreBattleHintPlugin
+from gui.Scaleform.daapi.view.battle.shared.hint_panel.plugins import TrajectoryViewHintPlugin, SiegeIndicatorHintPlugin, PreBattleHintPlugin, RadarHintPlugin
 from helpers import dependency
 from skeletons.gui.app_loader import IAppLoader
 
@@ -50,7 +50,8 @@ import xmqp_events
 
 NOT_SUPPORTED_BATTLE_TYPES = [constants.ARENA_GUI_TYPE.TUTORIAL,
                            constants.ARENA_GUI_TYPE.EVENT_BATTLES,
-                           constants.ARENA_GUI_TYPE.BOOTCAMP]
+                           constants.ARENA_GUI_TYPE.BOOTCAMP,
+                           constants.ARENA_GUI_TYPE.BATTLE_ROYALE]
 
 #####################################################################
 # initialization/finalization
@@ -185,7 +186,7 @@ def _DamagePanel_updateDeviceState(self, value):
     except:
         err(traceback.format_exc())
 
-@registerEvent(ArenaVehiclesPlugin, '_ArenaVehiclesPlugin__setInAoI')
+@registerEvent(ArenaVehiclesPlugin, '_setInAoI')
 def _ArenaVehiclesPlugin_setInAoI(self, entry, isInAoI):
     try:
         for vehicleID, entry2 in self._entries.iteritems():
@@ -234,6 +235,18 @@ def canDisplayHelpHint(base, self, typeDescriptor):
         return False
     base(self, typeDescriptor)
 
+@overrideMethod(PreBattleHintPlugin, '_PreBattleHintPlugin__canDisplayBattleCommunicationHint')
+def canDisplayBattleCommunicationHint(base, self):
+    if config.get('battle/battleHint/hideBattleCommunication'):
+        return False
+    base(self)
+
+@overrideMethod(RadarHintPlugin, '_RadarHintPlugin__updateHint')
+def updateHint(base, self):
+    if config.get('battle/battleHint/hideRadarHint'):
+        return
+    base(self)
+
 
 #####################################################################
 # Battle
@@ -270,7 +283,8 @@ class Battle(object):
         if view and view.uniqueName in [VIEW_ALIAS.CLASSIC_BATTLE_PAGE,
                                         VIEW_ALIAS.EPIC_RANDOM_PAGE,
                                         VIEW_ALIAS.EPIC_BATTLE_PAGE,
-                                        VIEW_ALIAS.RANKED_BATTLE_PAGE]:
+                                        VIEW_ALIAS.RANKED_BATTLE_PAGE,
+                                        VIEW_ALIAS.BATTLE_ROYALE_PAGE]:
             self.battle_page = weakref.proxy(view)
 
     def onStartBattle(self):
@@ -309,13 +323,13 @@ class Battle(object):
                 self.is_moving = is_moving
                 as_xfw_cmd(XVM_BATTLE_COMMAND.AS_MOVING_STATE_CHANGED, is_moving)
 
-    def onOptionalDeviceAdded(self, intCD, descriptor, isOn):
-        if intCD == INT_CD.STEREOSCOPE:
-            as_xfw_cmd(XVM_BATTLE_COMMAND.AS_STEREOSCOPE_TOGGLED, isOn)
+    def onOptionalDeviceAdded(self, optDeviceInBattle):
+        if optDeviceInBattle.getIntCD() == INT_CD.STEREOSCOPE:
+            as_xfw_cmd(XVM_BATTLE_COMMAND.AS_STEREOSCOPE_TOGGLED, bool(optDeviceInBattle.getStatus()))
 
-    def onOptionalDeviceUpdated(self, intCD, isOn):
-        if intCD == INT_CD.STEREOSCOPE:
-            as_xfw_cmd(XVM_BATTLE_COMMAND.AS_STEREOSCOPE_TOGGLED, isOn)
+    def onOptionalDeviceUpdated(self, optDeviceInBattle):
+        if optDeviceInBattle.getIntCD() == INT_CD.STEREOSCOPE:
+            as_xfw_cmd(XVM_BATTLE_COMMAND.AS_STEREOSCOPE_TOGGLED, bool(optDeviceInBattle.getStatus()))
 
     def onVehicleHealthChanged(self, vehicleID, newHealth, attackerID, attackReasonID):
         inv = INV.CUR_HEALTH
@@ -334,6 +348,8 @@ class Battle(object):
         try:
             data = {}
 
+            arenaDP = self.sessionProvider.getArenaDP()
+
             if targets & INV.SPOTTED_STATUS:
                 data['spottedStatus'] = self.getSpottedStatus(vehicleID)
 
@@ -348,15 +364,17 @@ class Battle(object):
                         data['curHealth'] = entity.health
 
                 if targets & INV.MAX_HEALTH:
-                    if entity and hasattr(entity, 'typeDescriptor'):
-                        data['maxHealth'] = entity.typeDescriptor.maxHealth
+                    vInfoVO = arenaDP.getVehicleInfo(vehicleID)
+                    if vInfoVO:
+                        data['maxHealth'] = vInfoVO.vehicleType.maxHealth
+                    elif entity and hasattr(entity, 'maxHealth'):
+                        data['maxHealth'] = entity.maxHealth
 
                 if targets & INV.MARKS_ON_GUN:
                     if entity and hasattr(entity, 'publicInfo'):
                         data['marksOnGun'] = entity.publicInfo.marksOnGun
 
             if targets & (INV.ALL_VINFO | INV.ALL_VSTATS):
-                arenaDP = self.sessionProvider.getArenaDP()
                 if targets & INV.ALL_VINFO:
                     vInfoVO = arenaDP.getVehicleInfo(vehicleID)
                 if targets & INV.ALL_VSTATS:
