@@ -76,14 +76,16 @@ def fini():
 #####################################################################
 # handlers
 
-# original function in 9.10 does not take into account NOT_FULL_AMMO_MULTIPLIER
+# replace original 'NOT_FULL_AMMO_MULTIPLIER'
 @overrideMethod(Vehicle, 'isAmmoFull')
 def Vehicle_isAmmoFull(base, self):
     try:
-        if not self.isEvent:
-            mult = self.NOT_FULL_AMMO_MULTIPLIER
+        if self.isOnlyForEventBattles:
+            mult = 0.2
+        elif self.isOnlyForBattleRoyaleBattles:
+            mult = 0.2
         else:
-            mult = 1.0
+            mult = self.NOT_FULL_AMMO_MULTIPLIER
         return sum((s.count for s in self.shells.installed.getItems())) >= self.ammoMaxSize * mult
     except Exception as ex:
         err(traceback.format_exc())
@@ -127,6 +129,8 @@ def Vehicle_isReadyToPrebattle(base, self, *args, **kwargs):
         return
     elif self.isOnlyForEventBattles:
         return True
+    elif self.isOnlyForBattleRoyaleBattles:
+        return True
     try:
         if not self.hasLockMode() and not self.isAmmoFull and cfg_hangar_blockVehicleIfLowAmmo:
             return False
@@ -140,6 +144,8 @@ def Vehicle_isReadyToFight(base, self, *args, **kwargs):
     if isInBootcamp():
         return
     elif self.isOnlyForEventBattles:
+        return
+    elif self.isOnlyForBattleRoyaleBattles:
         return
     try:
         if not self.hasLockMode() and not self.isAmmoFull and cfg_hangar_blockVehicleIfLowAmmo:
@@ -155,6 +161,8 @@ def _CurrentVehicleActionsValidator_validate(base, self):
     if isInBootcamp():
         return res
     elif g_currentVehicle.isOnlyForEventBattles():
+        return res
+    elif g_currentVehicle.isOnlyForBattleRoyaleBattles():
         return res
     if not res or res[0] == True:
         try:
