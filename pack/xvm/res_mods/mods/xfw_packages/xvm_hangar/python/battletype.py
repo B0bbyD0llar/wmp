@@ -1,78 +1,60 @@
-""" XVM (c) https://modxvm.com 2013-2020 """
+"""
+This file is part of the XVM project.
 
-import traceback
+Copyright (c) 2013-2020 XVM Team.
+Copyright (c) 2020      Andrey Andruschyshyn
 
-import BigWorld
-from gui.prb_control.settings import PREBATTLE_ACTION_NAME
+XVM is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as
+published by the Free Software Foundation, version 3.
+
+XVM is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+"""
+
+#Python
+import logging
+
+# WoT
 from gui.Scaleform.daapi.view.lobby.header import battle_selector_items
 from gui.Scaleform.daapi.view.lobby.header.LobbyHeader import LobbyHeader
+from gui.shared import g_eventBus, events
 
-from xfw import *
-from xfw_actionscript.python import *
+#XFW
+from xfw_actionscript.python import as_xfw_cmd
+from xfw.events import *
 
-from xvm_main.python.logger import *
+#XVM
 import xvm_main.python.config as config
 import xvm_main.python.userprefs as userprefs
 
-class USERPREFS(object):
-    BATTLE_TYPE = "users/{accountDBID}/last_battle_type"
 
-XVM_RESTORE_BATTLE_TYPES = [PREBATTLE_ACTION_NAME.RANDOM,
-                            PREBATTLE_ACTION_NAME.RANKED,
-                            PREBATTLE_ACTION_NAME.EPIC]
+class XVM_Hangar_BattleType(object):
 
-class COMMAND(object):
-    AS_UPDATE_BATTLE_TYPE = 'xvm_hangar.as_update_battle_type'
+    def __init__(self):
+        self._userpref = "users/{accountDBID}/last_battle_type"
+        g_eventBus.addListener(events.GUICommonEvent.LOBBY_VIEW_LOADED, self.changeMode)
 
-_populated = False
-
-@overrideMethod(LobbyHeader, '_populate')
-def _LobbyHeader_populate(base, self):
-
-    def _restore_battle_type(item):
-        if not item.isDisabled() and not item.isSelected():
-            debug('restore battle type: ' + item.getData())
-            item.select()
-        global _populated
-        _populated = True
-
-    base(self)
-
-    if config.get('hangar/restoreBattleType', False):
-        self._updatePrebattleControls()
-        actionName = userprefs.get(USERPREFS.BATTLE_TYPE, None)
-        if actionName and actionName in XVM_RESTORE_BATTLE_TYPES:
-            _items = battle_selector_items.getItems()._BattleSelectorItems__items
-            _extraItems = battle_selector_items.getItems()._BattleSelectorItems__extraItems
-            items = dict(_items.items() + _extraItems.items())
-            if actionName in items:
-                item = items[actionName]
-                BigWorld.callback(0, lambda: _restore_battle_type(item))
-                return
-
-    global _populated
-    _populated = True
-
-@overrideMethod(LobbyHeader, '_dispose')
-def _LobbyHeader_dispose(base, self):
-    global _populated
-    _populated = False
-    base(self)
-
-@overrideMethod(LobbyHeader, '_LobbyHeader__handleFightButtonUpdated')
-def _LobbyHeader__handleFightButtonUpdated(base, self, _):
-    base(self, _)
-    global _populated
-    if _populated:
+    def changeMode(self, *a, **kw):
         if config.get('hangar/restoreBattleType', False):
-            if self.prbDispatcher:
-                selected = battle_selector_items.getItems().update(self.prbDispatcher.getFunctionalState())
-                actionName = selected.getData()
-                if actionName != userprefs.get(USERPREFS.BATTLE_TYPE, None):
-                    debug('save battle type: ' + actionName)
-                    userprefs.set(USERPREFS.BATTLE_TYPE, actionName)
+            actionName = userprefs.get(self._userpref, None)
+            if actionName is not None:
+                battle_selector_items.getItems().select(actionName)
 
+g_xvm_hangar_battle_type = XVM_Hangar_BattleType()
+
+@registerEvent(battle_selector_items._BattleSelectorItems, 'select')
+def select(self, action, onlyActive=False):
+    if config.get('hangar/restoreBattleType', False) and self.isSelected(action):
+        userprefs.set(g_xvm_hangar_battle_type._userpref, action)
+
+#needed for {{battleType}} macro
 @overrideMethod(LobbyHeader, 'as_updateBattleTypeS')
 def _LobbyHeader_as_updateBattleTypeS(base, self, battleTypeName, battleTypeIcon, isEnabled, tooltip, tooltipType, battleTypeID, eventBgEnabled, eventAnimEnabled):
     base(self, battleTypeName, battleTypeIcon, isEnabled, tooltip, tooltipType, battleTypeID, eventBgEnabled, eventAnimEnabled)
-    as_xfw_cmd(COMMAND.AS_UPDATE_BATTLE_TYPE, battleTypeID)
+    as_xfw_cmd('xvm_hangar.as_update_battle_type', battleTypeID)

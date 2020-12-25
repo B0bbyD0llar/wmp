@@ -1,0 +1,6 @@
+Hello Commander
+
+To install the mod unpack the zip file into the \res_mods folder
+(WOT_intalldir)\res_mods overwriting existing files
+An example:
+C:\Games\World_of_Tanks\res_mods\

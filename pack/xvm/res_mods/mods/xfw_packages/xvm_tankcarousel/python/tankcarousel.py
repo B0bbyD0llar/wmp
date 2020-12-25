@@ -10,13 +10,13 @@ import weakref
 
 import BigWorld
 import game
+from constants import QUEUE_TYPE
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK as ACHIEVEMENT_BLOCK
 from gui import GUI_NATIONS_ORDER_INDEX
 from gui.shared import g_eventBus
 from gui.shared.gui_items.Vehicle import VEHICLE_TYPES_ORDER_INDICES
 from gui.shared.utils.requesters import REQ_CRITERIA
 from gui.DialogsInterface import showDialog
-from gui.Scaleform.framework import ViewTypes
 from gui.Scaleform.framework.managers.containers import POP_UP_CRITERIA
 from gui.Scaleform.genConsts.HANGAR_ALIASES import HANGAR_ALIASES
 from gui.Scaleform.genConsts.PROFILE_DROPDOWN_KEYS import PROFILE_DROPDOWN_KEYS
@@ -27,6 +27,7 @@ import gui.Scaleform.daapi.view.lobby.hangar.hangar_cm_handlers as hangar_cm_han
 from gui.Scaleform.daapi.view.lobby.hangar.carousels.basic.carousel_data_provider import CarouselDataProvider, HangarCarouselDataProvider, _SUPPLY_ITEMS
 from gui.Scaleform.daapi.view.lobby.hangar.carousels.basic.tank_carousel import TankCarousel
 from gui.Scaleform.daapi.view.common.vehicle_carousel import carousel_data_provider
+from frameworks.wulf import WindowLayer
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 
@@ -97,18 +98,31 @@ XVM_LOBBY_UI_SWF = 'xvm_lobby_ui.swf'
 
 @overrideMethod(Hangar, 'as_setCarouselS')
 def _Hangar_as_setCarouselS(base, self, linkage, alias):
-    if not isInBootcamp():
-        if swf_loaded_info.swf_loaded_get(XVM_LOBBY_UI_SWF):
-            if linkage == HANGAR_ALIASES.TANK_CAROUSEL_UI:
-                linkage = 'com.xvm.lobby.ui.tankcarousel::UI_TankCarousel'
-        else:
-            log('WARNING: as_setCarouselS: ({}) {} is not loaded'.format(linkage, XVM_LOBBY_UI_SWF))
-            g_eventBus.removeListener(XFW_EVENT.SWF_LOADED, onSwfLoaded)
-            g_eventBus.addListener(XFW_EVENT.SWF_LOADED, onSwfLoaded)
-    base(self, linkage, alias)
+    #log('xvm_tankcarousel: Hangar::as_setCarouselS, linkage=%s, alias=%s' % (linkage, alias))
+
+    #do not modify tankcarousel in bootcamp
+    if isInBootcamp():
+        return base(self, linkage, alias)
+
+    #do not modify tankcarousel in events
+    isEvent = self.prbDispatcher.getFunctionalState().isQueueSelected(QUEUE_TYPE.EVENT_BATTLES)
+    if isEvent:
+        return base(self, linkage, alias)
+
+    #in other cases, replace UI linkage with XVMs one
+    if swf_loaded_info.swf_loaded_get(XVM_LOBBY_UI_SWF):
+        if linkage == HANGAR_ALIASES.TANK_CAROUSEL_UI:
+            linkage = 'com.xvm.lobby.ui.tankcarousel::UI_TankCarousel'
+    else:
+        log('WARNING: as_setCarouselS: ({}) {} is not loaded'.format(linkage, XVM_LOBBY_UI_SWF))
+        g_eventBus.removeListener(XFW_EVENT.SWF_LOADED, onSwfLoaded)
+        g_eventBus.addListener(XFW_EVENT.SWF_LOADED, onSwfLoaded)
+
+    return base(self, linkage, alias)
+
 
 def onSwfLoaded(e):
-    log('onSwfLoaded: {}'.format(e.ctx))
+    log('xvm_tankcarousel: onSwfLoaded: {}'.format(e.ctx))
     if e.ctx.lower() == XVM_LOBBY_UI_SWF:
         g_eventBus.removeListener(XFW_EVENT.SWF_LOADED, onSwfLoaded)
         wgutils.reloadHangar()
@@ -263,7 +277,7 @@ def updateReserve(vehCD, isReserved):
         reserve.set_reserved(vehCD, isReserved)
         as_xfw_cmd(XVM_COMMAND.AS_UPDATE_RESERVE, vehinfo.getVehicleInfoDataArray())
         app = getLobbyApp()
-        hangar = app.containerManager.getView(ViewTypes.LOBBY_SUB,
+        hangar = app.containerManager.getView(WindowLayer.SUB_VIEW,
             criteria={POP_UP_CRITERIA.VIEW_ALIAS: VIEW_ALIAS.LOBBY_HANGAR})
         #log(str(hangar))
         if hangar:

@@ -29,7 +29,8 @@ from gui.Scaleform.daapi.view.battle.shared.damage_panel import DamagePanel
 from gui.Scaleform.daapi.view.battle.shared.markers2d import settings as markers2d_settings
 from gui.Scaleform.daapi.view.battle.shared.minimap.plugins import ArenaVehiclesPlugin
 from gui.Scaleform.daapi.view.battle.shared.page import SharedPage
-from gui.Scaleform.daapi.view.battle.shared.stats_exchage import BattleStatisticsDataController
+from gui.Scaleform.daapi.view.battle.shared.postmortem_panel import PostmortemPanel
+from gui.Scaleform.daapi.view.battle.shared.stats_exchange import BattleStatisticsDataController
 from gui.Scaleform.daapi.view.battle.shared.hint_panel.plugins import TrajectoryViewHintPlugin, SiegeIndicatorHintPlugin, PreBattleHintPlugin, RadarHintPlugin
 from helpers import dependency
 from skeletons.gui.app_loader import IAppLoader
@@ -213,39 +214,51 @@ def _BattleStatisticsDataController_as_setQuestsInfoS(base, self, data, setForce
 
 @overrideMethod(TrajectoryViewHintPlugin, '_TrajectoryViewHintPlugin__addHint')
 def addHint(base, self):
-    if config.get('battle/battleHint/hideTrajectoryView'):
+    if not config.get('battle/showBattleHint'):
         return
     base(self)
 
 @overrideMethod(SiegeIndicatorHintPlugin, '_SiegeIndicatorHintPlugin__updateHint')
 def updateHint(base, self):
-    if config.get('battle/battleHint/hideSiegeIndicator'):
+    if not config.get('battle/showBattleHint'):
         return
     base(self)
 
 @overrideMethod(PreBattleHintPlugin, '_PreBattleHintPlugin__canDisplayQuestHint')
 def canDisplayQuestHint(base, self):
-    if config.get('battle/battleHint/hideQuestProgress'):
+    if not config.get('battle/showBattleHint'):
         return False
     base(self)
 
 @overrideMethod(PreBattleHintPlugin, '_PreBattleHintPlugin__canDisplayHelpHint')
 def canDisplayHelpHint(base, self, typeDescriptor):
-    if config.get('battle/battleHint/hideHelpScreen'):
+    if not config.get('battle/showBattleHint'):
         return False
     base(self, typeDescriptor)
 
 @overrideMethod(PreBattleHintPlugin, '_PreBattleHintPlugin__canDisplayBattleCommunicationHint')
 def canDisplayBattleCommunicationHint(base, self):
-    if config.get('battle/battleHint/hideBattleCommunication'):
+    if not config.get('battle/showBattleHint'):
         return False
     base(self)
 
 @overrideMethod(RadarHintPlugin, '_RadarHintPlugin__areOtherIndicatorsShown')
 def areOtherIndicatorsShown(base, self):
-    if config.get('battle/battleHint/hideRadarHint'):
+    if not config.get('battle/showBattleHint'):
         return True
     base(self)
+
+@overrideMethod(PostmortemPanel, 'onDogTagKillerInPlaySound')
+def onDogTagKillerInPlaySound(base, self):
+    if not config.get('battle/showPostmortemDogTag', True) or not config.get('battle/showPostmortemTips', True):
+        return
+    base(self)
+
+@overrideMethod(PostmortemPanel, '_PostmortemPanel__onKillerDogTagSet')
+def onKillerDogTagSet(base, self, dogTagInfo):
+    if not config.get('battle/showPostmortemDogTag', True):
+        return
+    base(self, dogTagInfo)
 
 
 #####################################################################
@@ -308,7 +321,7 @@ class Battle(object):
             (newHealth, aInfo, attackReasonID) = value
             attackerID = aInfo.vehicleID if aInfo is not None else -1
             self.onVehicleHealthChanged(vehicleID, newHealth, attackerID, attackReasonID)
-        elif eventID == FEEDBACK_EVENT_ID.VEHICLE_IN_FOCUS:
+        elif eventID == FEEDBACK_EVENT_ID.ENTITY_IN_FOCUS:
             self.targetVehicleID = vehicleID
             if self.updateTargetCallbackID:
                 BigWorld.cancelCallback(self.updateTargetCallbackID)
@@ -324,11 +337,11 @@ class Battle(object):
                 as_xfw_cmd(XVM_BATTLE_COMMAND.AS_MOVING_STATE_CHANGED, is_moving)
 
     def onOptionalDeviceAdded(self, optDeviceInBattle):
-        if optDeviceInBattle.getIntCD() == INT_CD.STEREOSCOPE:
+        if optDeviceInBattle.getIntCD() in INT_CD.STEREOSCOPE:
             as_xfw_cmd(XVM_BATTLE_COMMAND.AS_STEREOSCOPE_TOGGLED, bool(optDeviceInBattle.getStatus()))
 
     def onOptionalDeviceUpdated(self, optDeviceInBattle):
-        if optDeviceInBattle.getIntCD() == INT_CD.STEREOSCOPE:
+        if optDeviceInBattle.getIntCD() in INT_CD.STEREOSCOPE:
             as_xfw_cmd(XVM_BATTLE_COMMAND.AS_STEREOSCOPE_TOGGLED, bool(optDeviceInBattle.getStatus()))
 
     def onVehicleHealthChanged(self, vehicleID, newHealth, attackerID, attackReasonID):

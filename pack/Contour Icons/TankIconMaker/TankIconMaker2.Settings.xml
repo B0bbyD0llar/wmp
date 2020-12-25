@@ -149,6 +149,8 @@
       <IconWidth>80</IconWidth>
       <IconHeight>24</IconHeight>
       <Centerable>False</Centerable>
+      <AtlasTextureWidth>4096</AtlasTextureWidth>
+      <AtlasTextureHeight>4512</AtlasTextureHeight>
       <Layers>
         <item type="TankIconMaker.Layers.BkgDarkAgentLayer">
           <Name></Name>
@@ -1459,6 +1461,8 @@
       <IconWidth>80</IconWidth>
       <IconHeight>24</IconHeight>
       <Centerable>False</Centerable>
+      <AtlasTextureWidth>4096</AtlasTextureWidth>
+      <AtlasTextureHeight>4512</AtlasTextureHeight>
       <Layers>
         <item type="TankIconMaker.Layers.BkgDarkAgentLayer">
           <Name></Name>
@@ -2244,6 +2248,8 @@
       <IconWidth>80</IconWidth>
       <IconHeight>24</IconHeight>
       <Centerable>True</Centerable>
+      <AtlasTextureWidth>4096</AtlasTextureWidth>
+      <AtlasTextureHeight>4512</AtlasTextureHeight>
       <Layers>
         <item type="TankIconMaker.Layers.TankImageLayer">
           <Name>Panzerbild</Name>
@@ -2859,6 +2865,8 @@
       <IconWidth>80</IconWidth>
       <IconHeight>24</IconHeight>
       <Centerable>True</Centerable>
+      <AtlasTextureWidth>4096</AtlasTextureWidth>
+      <AtlasTextureHeight>4512</AtlasTextureHeight>
       <Layers>
         <item type="TankIconMaker.Layers.TankImageLayer">
           <Name>Panzerbild</Name>
@@ -2926,6 +2934,8 @@
       <IconWidth>80</IconWidth>
       <IconHeight>24</IconHeight>
       <Centerable>False</Centerable>
+      <AtlasTextureWidth>4096</AtlasTextureWidth>
+      <AtlasTextureHeight>4512</AtlasTextureHeight>
       <Layers>
         <item type="TankIconMaker.Layers.TankImageLayer">
           <Name>Tank image</Name>
@@ -3640,6 +3650,8 @@
       <IconWidth>80</IconWidth>
       <IconHeight>24</IconHeight>
       <Centerable>False</Centerable>
+      <AtlasTextureWidth>4096</AtlasTextureWidth>
+      <AtlasTextureHeight>4512</AtlasTextureHeight>
       <Layers>
         <item type="TankIconMaker.Layers.FilenamePatternImageLayer">
           <Name></Name>
@@ -3707,6 +3719,8 @@
       <IconWidth>80</IconWidth>
       <IconHeight>24</IconHeight>
       <Centerable>False</Centerable>
+      <AtlasTextureWidth>4096</AtlasTextureWidth>
+      <AtlasTextureHeight>4512</AtlasTextureHeight>
       <Layers>
         <item type="TankIconMaker.Layers.TankImageLayer">
           <Name></Name>
