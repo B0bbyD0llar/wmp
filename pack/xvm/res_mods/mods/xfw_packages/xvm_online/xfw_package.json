@@ -3,7 +3,7 @@
     "name": "XVM Online",
     "description": "XVM Online module",
 
-    "version": "8.7.0.0018",
+    "version": "8.7.1.0006",
     "dependencies": ["com.modxvm.xvm"],
 
     "url": "https://modxvm.com/",
