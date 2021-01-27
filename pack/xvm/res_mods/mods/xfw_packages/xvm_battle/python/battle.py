@@ -1,4 +1,4 @@
-""" XVM (c) https://modxvm.com 2013-2020 """
+""" XVM (c) https://modxvm.com 2013-2021 """
 
 #####################################################################
 # imports
@@ -162,7 +162,7 @@ def _PlayerAvatar_vehicle_onEnterWorld(self, vehicle):
 
 # any vehicle health changed
 @registerEvent(Vehicle, 'onHealthChanged')
-def onHealthChanged(self, newHealth, attackerID, attackReasonID):
+def onHealthChanged(self, newHealth, oldHealth, attackerID, attackReasonID):
     # update only for player vehicle, others handled on vehicle feedback event
     if self.isPlayerVehicle:
         g_battle.onVehicleHealthChanged(self.id, newHealth, attackerID, attackReasonID)
