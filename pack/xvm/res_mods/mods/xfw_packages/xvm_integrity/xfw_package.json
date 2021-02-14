@@ -3,7 +3,7 @@
     "name": "XVM Integrity",
     "description": "XVM Integrity Module",
 
-    "version": "8.7.6.0004",
+    "version": "8.7.6.0005",
     "dependencies": ["com.modxvm.xvm"],
 
     "url": "https://modxvm.com/",

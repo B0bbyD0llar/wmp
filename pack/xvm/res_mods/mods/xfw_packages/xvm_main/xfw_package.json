@@ -3,7 +3,7 @@
     "name": "XVM",
     "description": "XVM",
 
-    "version": "8.7.6.0004",
+    "version": "8.7.6.0005",
     "dependencies": ["com.modxvm.xfw.libraries"],
     "dependencies_optional": [
         "com.modxvm.xfw.filewatcher",
